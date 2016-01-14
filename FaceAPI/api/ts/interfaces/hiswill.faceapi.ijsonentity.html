@@ -89,7 +89,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="ientity.html" class="tsd-signature-type">IEntity</a>
+						<a href="samchon.protocol.ientity.html" class="tsd-signature-type">IEntity</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">IJSONEntity</span>
@@ -112,6 +112,7 @@
 					<li><a href="../classes/hiswill.faceapi.face.html" class="tsd-signature-type">Face</a></li>
 					<li><a href="../classes/hiswill.faceapi.faceattribute.html" class="tsd-signature-type">FaceAttribute</a></li>
 					<li><a href="../classes/hiswill.faceapi.faceattributes.html" class="tsd-signature-type">FaceAttributes</a></li>
+					<li><a href="../classes/hiswill.faceapi.facegroup.html" class="tsd-signature-type">FaceGroup</a></li>
 					<li><a href="../classes/hiswill.faceapi.facelandmark.html" class="tsd-signature-type">FaceLandmark</a></li>
 					<li><a href="../classes/hiswill.faceapi.facelandmarks.html" class="tsd-signature-type">FaceLandmarks</a></li>
 					<li><a href="../classes/hiswill.faceapi.facepair.html" class="tsd-signature-type">FacePair</a></li>
@@ -121,11 +122,15 @@
 					<li><a href="../classes/hiswill.faceapi.facialhair.html" class="tsd-signature-type">FacialHair</a></li>
 					<li><a href="../classes/hiswill.faceapi.headpose.html" class="tsd-signature-type">HeadPose</a></li>
 					<li><a href="../classes/hiswill.faceapi.lip.html" class="tsd-signature-type">Lip</a></li>
+					<li><a href="../classes/hiswill.faceapi.messyfacegroup.html" class="tsd-signature-type">MessyFaceGroup</a></li>
 					<li><a href="../classes/hiswill.faceapi.mouth.html" class="tsd-signature-type">Mouth</a></li>
 					<li><a href="../classes/hiswill.faceapi.nose.html" class="tsd-signature-type">Nose</a></li>
 					<li><a href="../classes/hiswill.faceapi.picture.html" class="tsd-signature-type">Picture</a></li>
 					<li><a href="../classes/hiswill.faceapi.point.html" class="tsd-signature-type">Point</a></li>
 					<li><a href="../classes/hiswill.faceapi.pupil.html" class="tsd-signature-type">Pupil</a></li>
+					<li><a href="../classes/hiswill.faceapi.similarface.html" class="tsd-signature-type">SimilarFace</a></li>
+					<li><a href="../classes/hiswill.faceapi.similarfacegroup.html" class="tsd-signature-type">SimilarFaceGroup</a></li>
+					<li><a href="../classes/hiswill.faceapi.similarfacegrouparray.html" class="tsd-signature-type">SimilarFaceGroupArray</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -156,9 +161,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="ientity.html">IEntity</a>.<a href="ientity.html#tag">TAG</a></p>
+								<p>Inherited from <a href="samchon.protocol.ientity.html">IEntity</a>.<a href="samchon.protocol.ientity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/SamchonFramework.ts#L2593">SamchonFramework.ts:2593</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/samchon/protocol/IEntity.ts#L58">samchon/protocol/IEntity.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,14 +182,14 @@
 					<a name="construct" class="tsd-anchor"></a>
 					<h3>construct</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="../classes/xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="ientity.html">IEntity</a>.<a href="ientity.html#construct">construct</a></p>
+								<p>Inherited from <a href="samchon.protocol.ientity.html">IEntity</a>.<a href="samchon.protocol.ientity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/SamchonFramework.ts#L2576">SamchonFramework.ts:2576</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/samchon/protocol/IEntity.ts#L41">samchon/protocol/IEntity.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,13 +203,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>xml: <a href="../classes/xml.html" class="tsd-signature-type">XML</a></h5>
+									<h5>xml: <a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An xml used to contruct data of entity.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -218,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/IJSonEntity.ts:16</li>
+									<li>Defined in hiswill/faceAPI/IJSonEntity.ts:20</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -248,9 +253,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="ientity.html">IEntity</a>.<a href="ientity.html#key">key</a></p>
+								<p>Inherited from <a href="samchon.protocol.ientity.html">IEntity</a>.<a href="samchon.protocol.ientity.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/SamchonFramework.ts#L2584">SamchonFramework.ts:2584</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/samchon/protocol/IEntity.ts#L49">samchon/protocol/IEntity.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,14 +273,14 @@
 					<a name="toxml" class="tsd-anchor"></a>
 					<h3>toXML</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">toXML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/xml.html" class="tsd-signature-type">XML</a></li>
+						<li class="tsd-signature tsd-kind-icon">toXML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="ientity.html">IEntity</a>.<a href="ientity.html#toxml">toXML</a></p>
+								<p>Inherited from <a href="samchon.protocol.ientity.html">IEntity</a>.<a href="samchon.protocol.ientity.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/SamchonFramework.ts#L2633">SamchonFramework.ts:2633</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/samchon/protocol/IEntity.ts#L99">samchon/protocol/IEntity.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,12 +313,13 @@
 &lt;id&gt;jhnam88&lt;/id&gt;
 &lt;name&gt;Jeongho+Nam&lt;name&gt;
 &lt;birthdate&gt;1988-03-11&lt;/birthdate&gt;
-&lt;/member&gt;</pre>
+&lt;/member&gt;
+         </pre>
 										</td>
 									</tr>
 								</table>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/xml.html" class="tsd-signature-type">XML</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
 							<p>An XML object representing the Entity.</p>
 						</li>
 					</ul>
@@ -327,117 +333,26 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/samchon.html">samchon</a>
+					</li>
+					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class=" tsd-kind-module tsd-is-external">
+					<li class="current tsd-kind-module tsd-is-external">
 						<a href="../modules/hiswill.html">hiswill</a>
-					</li>
-					<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-external">
-						<a href="../modules/hiswill.faceapi.html">hiswill.faceapi</a>
+						<ul>
+							<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-external">
+								<a href="../modules/hiswill.faceapi.html">faceapi</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.candidateperson.html" class="tsd-kind-icon">Candidate<wbr>Person</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.candidatepersonarray.html" class="tsd-kind-icon">Candidate<wbr>Person<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.direction.html" class="tsd-kind-icon">Direction</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.eye.html" class="tsd-kind-icon">Eye</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.eyebrow.html" class="tsd-kind-icon">Eyebrow</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.eyebrows.html" class="tsd-kind-icon">Eyebrows</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.eyes.html" class="tsd-kind-icon">Eyes</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.face.html" class="tsd-kind-icon">Face</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.faceapi.html" class="tsd-kind-icon">FaceAPI</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.faceattribute.html" class="tsd-kind-icon">Face<wbr>Attribute</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.faceattributes.html" class="tsd-kind-icon">Face<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facelandmark.html" class="tsd-kind-icon">Face<wbr>Landmark</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facelandmarks.html" class="tsd-kind-icon">Face<wbr>Landmarks</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facelist.html" class="tsd-kind-icon">Face<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facelistarray.html" class="tsd-kind-icon">Face<wbr>List<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facepair.html" class="tsd-kind-icon">Face<wbr>Pair</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facepairarray.html" class="tsd-kind-icon">Face<wbr>Pair<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facerectangle.html" class="tsd-kind-icon">Face<wbr>Rectangle</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.facialhair.html" class="tsd-kind-icon">Facial<wbr>Hair</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.global.html" class="tsd-kind-icon">Global</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.headpose.html" class="tsd-kind-icon">Head<wbr>Pose</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.lip.html" class="tsd-kind-icon">Lip</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.mouth.html" class="tsd-kind-icon">Mouth</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.nose.html" class="tsd-kind-icon">Nose</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.person.html" class="tsd-kind-icon">Person</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.persongroup.html" class="tsd-kind-icon">Person<wbr>Group</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.persongrouparray.html" class="tsd-kind-icon">Person<wbr>Group<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.picture.html" class="tsd-kind-icon">Picture</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.picturearray.html" class="tsd-kind-icon">Picture<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.point.html" class="tsd-kind-icon">Point</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/hiswill.faceapi.pupil.html" class="tsd-kind-icon">Pupil</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="hiswill.faceapi.ifaceapi.html" class="tsd-kind-icon">IFaceAPI</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="hiswill.faceapi.igroup.html" class="tsd-kind-icon">IGroup</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">

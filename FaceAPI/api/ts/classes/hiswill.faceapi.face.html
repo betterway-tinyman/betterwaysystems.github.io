@@ -89,7 +89,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/ientity.html" class="tsd-signature-type">IEntity</a></li>
+					<li><a href="../interfaces/samchon.protocol.ientity.html" class="tsd-signature-type">IEntity</a></li>
 					<li><a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-signature-type">IJSONEntity</a></li>
 					<li><a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-signature-type">IJSONEntity</a></li>
 					<li><a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-signature-type">IJSONEntity</a></li>
@@ -127,6 +127,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.face.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.face.html#constructbyjson" class="tsd-kind-icon">construct<wbr>ByJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#findsimilar" class="tsd-kind-icon">find<wbr>Similar</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#getattributes" class="tsd-kind-icon">get<wbr>Attributes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.face.html#getheight" class="tsd-kind-icon">get<wbr>Height</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#getid" class="tsd-kind-icon">getID</a></li>
@@ -138,7 +139,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.face.html#gety" class="tsd-kind-icon">getY</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#identify" class="tsd-kind-icon">identify</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.face.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.face.html#torectangle" class="tsd-kind-icon">to<wbr>Rectangle</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.face.html#toxml" class="tsd-kind-icon">toXML</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="hiswill.faceapi.face.html#group" class="tsd-kind-icon">group</a></li>
 							</ul>
 						</section>
 					</div>
@@ -157,12 +160,12 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:49</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L52">hiswill/faceAPI/Face.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Constructor from Picture.</p>
+									<p>Constructor from a Picture.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -189,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="hiswill.faceapi.faceattributes.html" class="tsd-signature-type">FaceAttributes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in hiswill/faceAPI/Face.ts:49</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L52">hiswill/faceAPI/Face.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -205,7 +208,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#height">height</a></p>
 						<ul>
-							<li>Defined in hiswill/faceAPI/FaceRectangle.ts:25</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FaceRectangle.ts#L25">hiswill/faceAPI/FaceRectangle.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -220,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in hiswill/faceAPI/Face.ts:39</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L42">hiswill/faceAPI/Face.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -235,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">landmarks<span class="tsd-signature-symbol">:</span> <a href="hiswill.faceapi.facelandmarks.html" class="tsd-signature-type">FaceLandmarks</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in hiswill/faceAPI/Face.ts:44</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L47">hiswill/faceAPI/Face.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -250,7 +253,7 @@
 					<div class="tsd-signature tsd-kind-icon">person<span class="tsd-signature-symbol">:</span> <a href="hiswill.faceapi.person.html" class="tsd-signature-type">Person</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in hiswill/faceAPI/Face.ts:34</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L37">hiswill/faceAPI/Face.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -265,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">picture<span class="tsd-signature-symbol">:</span> <a href="hiswill.faceapi.picture.html" class="tsd-signature-type">Picture</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in hiswill/faceAPI/Face.ts:29</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L32">hiswill/faceAPI/Face.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,7 +284,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#tag">tag</a></p>
 						<ul>
-							<li>Defined in hiswill/faceAPI/Point.ts:19</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Point.ts#L20">hiswill/faceAPI/Point.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -297,7 +300,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#width">width</a></p>
 						<ul>
-							<li>Defined in hiswill/faceAPI/FaceRectangle.ts:20</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FaceRectangle.ts#L20">hiswill/faceAPI/FaceRectangle.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +316,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#x">x</a></p>
 						<ul>
-							<li>Defined in hiswill/faceAPI/Point.ts:24</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Point.ts#L25">hiswill/faceAPI/Point.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -329,7 +332,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#y">y</a></p>
 						<ul>
-							<li>Defined in hiswill/faceAPI/Point.ts:29</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Point.ts#L30">hiswill/faceAPI/Point.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -353,7 +356,7 @@
 								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#tag">TAG</a></p>
 								<p>Overwrites <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#tag-1">TAG</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:206</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L266">hiswill/faceAPI/Face.ts:266</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -364,21 +367,21 @@
 					<a name="construct" class="tsd-anchor"></a>
 					<h3>construct</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#construct">construct</a></p>
-								<p>Overwrites <a href="entity.html">Entity</a>.<a href="entity.html#construct">construct</a></p>
+								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:72</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L75">hiswill/faceAPI/Face.ts:75</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>xml: <a href="xml.html" class="tsd-signature-type">XML</a></h5>
+									<h5>xml: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -397,7 +400,7 @@
 								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#constructbyjson">constructByJSON</a></p>
 								<p>Overwrites <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#constructbyjson">constructByJSON</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:86</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L89">hiswill/faceAPI/Face.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -414,13 +417,13 @@
 					<a name="equals" class="tsd-anchor"></a>
 					<h3>equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>face<span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>face<span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:128</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L188">hiswill/faceAPI/Face.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,8 +443,49 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A pair of flag (whether two Faces are from a same person) and confidence (conformality degree).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findsimilar" class="tsd-anchor"></a>
+					<h3>find<wbr>Similar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Similar<span class="tsd-signature-symbol">(</span>faceList<span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.facelist.html" class="tsd-signature-type">FaceList</a>, maxCandidates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.similarfacearray.html" class="tsd-signature-type">SimilarFaceArray</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L133">hiswill/faceAPI/Face.ts:133</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find similar faces in the FaceList from a Face.</p>
+								</div>
+								<ul>
+									<li> Reference: <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237">https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237</a> </li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>faceList: <a href="hiswill.faceapi.facelist.html" class="tsd-signature-type">FaceList</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Candidate faces.</p>
+									</div>
+								</li>
+								<li>
+									<h5>maxCandidates: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Maximum number of candidates to be retured.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="hiswill.faceapi.similarfacearray.html" class="tsd-signature-type">SimilarFaceArray</a></h4>
+							<p>Similar faces being looked similar.</p>
 						</li>
 					</ul>
 				</section>
@@ -455,7 +499,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:198</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L258">hiswill/faceAPI/Face.ts:258</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +522,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#getheight">getHeight</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/FaceRectangle.ts:62</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FaceRectangle.ts#L62">hiswill/faceAPI/FaceRectangle.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:166</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L226">hiswill/faceAPI/Face.ts:226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:190</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L250">hiswill/faceAPI/Face.ts:250</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -544,7 +588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:182</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L242">hiswill/faceAPI/Face.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -566,7 +610,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:174</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L234">hiswill/faceAPI/Face.ts:234</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,7 +633,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#getwidth">getWidth</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/FaceRectangle.ts:54</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FaceRectangle.ts#L54">hiswill/faceAPI/FaceRectangle.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -612,7 +656,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#getx">getX</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Point.ts:57</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Point.ts#L58">hiswill/faceAPI/Point.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,7 +679,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#gety">getY</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Point.ts:65</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Point.ts#L66">hiswill/faceAPI/Point.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -657,7 +701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:113</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L116">hiswill/faceAPI/Face.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -700,12 +744,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#key">key</a></p>
-								<p>Overwrites <a href="entity.html">Entity</a>.<a href="entity.html#key">key</a></p>
+								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:158</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L218">hiswill/faceAPI/Face.ts:218</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="torectangle" class="tsd-anchor"></a>
+					<h3>to<wbr>Rectangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Rectangle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IRect</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L283">hiswill/faceAPI/Face.ts:283</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IRect</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -713,7 +774,7 @@
 					<a name="toxml" class="tsd-anchor"></a>
 					<h3>toXML</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">toXML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="xml.html" class="tsd-signature-type">XML</a></li>
+						<li class="tsd-signature tsd-kind-icon">toXML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -721,10 +782,45 @@
 								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#toxml">toXML</a></p>
 								<p>Overwrites <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in hiswill/faceAPI/Face.ts:211</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L271">hiswill/faceAPI/Face.ts:271</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="xml.html" class="tsd-signature-type">XML</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="group" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>faces<span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hiswill.faceapi.similarfacegrouparray.html" class="tsd-signature-type">SimilarFaceGroupArray</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/Face.ts#L148">hiswill/faceAPI/Face.ts:148</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Divide candidate faces into groups based on face similarity. </p>
+								</div>
+								<ul>
+									<li> Reference: <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238">https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238</a> </li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>faces: <a href="hiswill.faceapi.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Candidate faces.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="hiswill.faceapi.similarfacegrouparray.html" class="tsd-signature-type">SimilarFaceGroupArray</a></h4>
+							<p>Grouped faces by similarity.</p>
 						</li>
 					</ul>
 				</section>
@@ -737,39 +833,26 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/samchon.html">samchon</a>
+					</li>
+					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class=" tsd-kind-module tsd-is-external">
+					<li class="current tsd-kind-module tsd-is-external">
 						<a href="../modules/hiswill.html">hiswill</a>
-					</li>
-					<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-external">
-						<a href="../modules/hiswill.faceapi.html">hiswill.faceapi</a>
+						<ul>
+							<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-external">
+								<a href="../modules/hiswill.faceapi.html">faceapi</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.candidateperson.html" class="tsd-kind-icon">Candidate<wbr>Person</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.candidatepersonarray.html" class="tsd-kind-icon">Candidate<wbr>Person<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.direction.html" class="tsd-kind-icon">Direction</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.eye.html" class="tsd-kind-icon">Eye</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.eyebrow.html" class="tsd-kind-icon">Eyebrow</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.eyebrows.html" class="tsd-kind-icon">Eyebrows</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.eyes.html" class="tsd-kind-icon">Eyes</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -821,6 +904,9 @@
 								<a href="hiswill.faceapi.face.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.face.html#findsimilar" class="tsd-kind-icon">find<wbr>Similar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="hiswill.faceapi.face.html#getattributes" class="tsd-kind-icon">get<wbr>Attributes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -853,91 +939,19 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.face.html#key" class="tsd-kind-icon">key</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.face.html#torectangle" class="tsd-kind-icon">to<wbr>Rectangle</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.face.html#toxml" class="tsd-kind-icon">toXML</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="hiswill.faceapi.face.html#group" class="tsd-kind-icon">group</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.faceapi.html" class="tsd-kind-icon">FaceAPI</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.faceattribute.html" class="tsd-kind-icon">Face<wbr>Attribute</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.faceattributes.html" class="tsd-kind-icon">Face<wbr>Attributes</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facelandmark.html" class="tsd-kind-icon">Face<wbr>Landmark</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facelandmarks.html" class="tsd-kind-icon">Face<wbr>Landmarks</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facelist.html" class="tsd-kind-icon">Face<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facelistarray.html" class="tsd-kind-icon">Face<wbr>List<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facepair.html" class="tsd-kind-icon">Face<wbr>Pair</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facepairarray.html" class="tsd-kind-icon">Face<wbr>Pair<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facerectangle.html" class="tsd-kind-icon">Face<wbr>Rectangle</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.facialhair.html" class="tsd-kind-icon">Facial<wbr>Hair</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.global.html" class="tsd-kind-icon">Global</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.headpose.html" class="tsd-kind-icon">Head<wbr>Pose</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.lip.html" class="tsd-kind-icon">Lip</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.mouth.html" class="tsd-kind-icon">Mouth</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.nose.html" class="tsd-kind-icon">Nose</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.person.html" class="tsd-kind-icon">Person</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.persongroup.html" class="tsd-kind-icon">Person<wbr>Group</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.persongrouparray.html" class="tsd-kind-icon">Person<wbr>Group<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.picture.html" class="tsd-kind-icon">Picture</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.picturearray.html" class="tsd-kind-icon">Picture<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.point.html" class="tsd-kind-icon">Point</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="hiswill.faceapi.pupil.html" class="tsd-kind-icon">Pupil</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/hiswill.faceapi.ifaceapi.html" class="tsd-kind-icon">IFaceAPI</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../interfaces/hiswill.faceapi.igroup.html" class="tsd-kind-icon">IGroup</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-kind-icon">IJSONEntity</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
