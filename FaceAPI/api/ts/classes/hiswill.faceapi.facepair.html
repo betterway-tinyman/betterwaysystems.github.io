@@ -109,7 +109,7 @@
 					<li><a href="../interfaces/samchon.protocol.ientity.html" class="tsd-signature-type">IEntity</a></li>
 					<li><a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-signature-type">IJSONEntity</a></li>
 					<li><a href="../interfaces/hiswill.faceapi.ijsonentity.html" class="tsd-signature-type">IJSONEntity</a></li>
-					<li><a href="../interfaces/hiswill.faceapi.ifaceapi.html" class="tsd-signature-type">IFaceAPI</a></li>
+					<li><a href="../interfaces/hiswill.faceapi.iasyncentity.html" class="tsd-signature-type">IAsyncEntity</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -125,6 +125,7 @@
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="hiswill.faceapi.facepair.html#eventdispatcher" class="tsd-kind-icon">event<wbr>Dispatcher</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="hiswill.faceapi.facepair.html#face" class="tsd-kind-icon">face</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="hiswill.faceapi.facepair.html#height" class="tsd-kind-icon">height</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="hiswill.faceapi.facepair.html#id" class="tsd-kind-icon">id</a></li>
@@ -141,8 +142,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.facepair.html#tag-1" class="tsd-kind-icon">TAG</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.facepair.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="hiswill.faceapi.facepair.html#constructbyjson" class="tsd-kind-icon">construct<wbr>ByJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#erasefromserver" class="tsd-kind-icon">erase<wbr>From<wbr>Server</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#getface" class="tsd-kind-icon">get<wbr>Face</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.facepair.html#getheight" class="tsd-kind-icon">get<wbr>Height</a></li>
@@ -152,9 +155,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.facepair.html#getwidth" class="tsd-kind-icon">get<wbr>Width</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.facepair.html#getx" class="tsd-kind-icon">getX</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="hiswill.faceapi.facepair.html#gety" class="tsd-kind-icon">getY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#inserttoserver" class="tsd-kind-icon">insert<wbr>ToServer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#isregistered" class="tsd-kind-icon">is<wbr>Registered</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="hiswill.faceapi.facepair.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#setfile" class="tsd-kind-icon">set<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#setid" class="tsd-kind-icon">setID</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="hiswill.faceapi.facepair.html#setrectangle" class="tsd-kind-icon">set<wbr>Rectangle</a></li>
@@ -177,7 +182,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="hiswill.faceapi.facerectangle.html">FaceRectangle</a>.<a href="hiswill.faceapi.facerectangle.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L51">hiswill/faceAPI/FacePair.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L56">hiswill/faceAPI/FacePair.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,6 +208,21 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="eventdispatcher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> event<wbr>Dispatcher</h3>
+					<div class="tsd-signature tsd-kind-icon">event<wbr>Dispatcher<span class="tsd-signature-symbol">:</span> <a href="samchon.library.eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L51">hiswill/faceAPI/FacePair.ts:51</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A chain instance of takeing responsibility of event dispatching.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="face" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> face</h3>
@@ -287,7 +307,7 @@
 					<div class="tsd-signature tsd-kind-icon">registered<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L51">hiswill/faceAPI/FacePair.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L56">hiswill/faceAPI/FacePair.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,13 +392,76 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#tag">TAG</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#tag">TAG</a></p>
 								<p>Overwrites <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#tag-1">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L194">hiswill/faceAPI/FacePair.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L236">hiswill/faceAPI/FacePair.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L220">hiswill/faceAPI/FacePair.ts:220</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
+											receives notification of an event. You can register event listeners on all nodes in the display
+										list for a specific type of event, phase, and priority.</p>
+								</div>
+								<p> After you successfully register an event listener, you cannot change its priority through
+									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
+								removeEventListener(). Then you can register the listener again with the new priority level. </p>
+								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
+									with a different type or useCapture value result in the creation of a separate listener
+									registration. For example, if you first register a listener with useCapture set to true,
+									it listens only during the capture phase. If you call addEventListener() again using the same
+									listener object, but with useCapture set to false, you have two separate listeners: one that
+								listens during the capture phase and another that listens during the target and bubbling phases. </p>
+								<p> You cannot register an event listener for only the target phase or the bubbling phase.
+									Those phases are coupled during registration because bubbling applies only to the ancestors of
+								the target node. </p>
+								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
+									memory problems could result. Event listeners are not automatically removed from memory because
+									the garbage collector does not remove the listener as long as the dispatching object exists
+								(unless the useWeakReference parameter is set to true). </p>
+								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
+									your newly created node needs an event listener, you must attach the listener after creating
+									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
+								it move along with it. </p>
+								<p> If the event listener is being registered on a node while an event is also being processed
+									on this node, the event listener is not triggered during the current phase but may be triggered
+								during a later phase in the event flow, such as the bubbling phase. </p>
+								<p> If an event listener is removed from a node while an event is being processed on the node,
+									it is still triggered by the current actions. After it is removed, the event listener is never
+								invoked again (unless it is registered again for future processing). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> thisArg: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -391,10 +474,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#construct">construct</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#construct">construct</a></p>
 								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L73">hiswill/faceAPI/FacePair.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L80">hiswill/faceAPI/FacePair.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -434,6 +517,36 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#dispatchevent">dispatchEvent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L212">hiswill/faceAPI/FacePair.ts:212</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Dispatches an event into the event flow. </p>
+									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="erasefromserver" class="tsd-anchor"></a>
 					<h3>erase<wbr>From<wbr>Server</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -442,9 +555,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ifaceapi.html">IFaceAPI</a>.<a href="../interfaces/hiswill.faceapi.ifaceapi.html#erasefromserver">eraseFromServer</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#erasefromserver">eraseFromServer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L98">hiswill/faceAPI/FacePair.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L105">hiswill/faceAPI/FacePair.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -461,7 +574,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L165">hiswill/faceAPI/FacePair.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L172">hiswill/faceAPI/FacePair.ts:172</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L173">hiswill/faceAPI/FacePair.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L180">hiswill/faceAPI/FacePair.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,7 +641,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L157">hiswill/faceAPI/FacePair.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L164">hiswill/faceAPI/FacePair.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L181">hiswill/faceAPI/FacePair.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L188">hiswill/faceAPI/FacePair.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,6 +745,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="haseventlistener" class="tsd-anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#haseventlistener">hasEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L204">hiswill/faceAPI/FacePair.ts:204</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Checks whether the EventDispatcher object has any listeners registered for a specific type
+										of event. This allows you to determine where an EventDispatcher object has altered handling of
+										an event type in the event flow hierarchy. To determine whether a specific event type actually
+									triggers an event listener, use willTrigger(). </p>
+								</div>
+								<p> The difference between hasEventListener() and willTrigger() is that hasEventListener()
+									examines only the object to which it belongs, whereas willTrigger() examines the entire event
+								flow for the event specified by the type parameter. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="inserttoserver" class="tsd-anchor"></a>
 					<h3>insert<wbr>ToServer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -640,9 +788,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ifaceapi.html">IFaceAPI</a>.<a href="../interfaces/hiswill.faceapi.ifaceapi.html#inserttoserver">insertToServer</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#inserttoserver">insertToServer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L93">hiswill/faceAPI/FacePair.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L100">hiswill/faceAPI/FacePair.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -658,9 +806,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ifaceapi.html">IFaceAPI</a>.<a href="../interfaces/hiswill.faceapi.ifaceapi.html#isregistered">isRegistered</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#isregistered">isRegistered</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L186">hiswill/faceAPI/FacePair.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L193">hiswill/faceAPI/FacePair.ts:193</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -676,13 +824,49 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#key">key</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#key">key</a></p>
 								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L149">hiswill/faceAPI/FacePair.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L156">hiswill/faceAPI/FacePair.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeeventlistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L228">hiswill/faceAPI/FacePair.ts:228</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
+									with the EventDispatcher object, a call to this method has no effect.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> thisArg: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -696,7 +880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L113">hiswill/faceAPI/FacePair.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L120">hiswill/faceAPI/FacePair.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -727,7 +911,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L143">hiswill/faceAPI/FacePair.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L150">hiswill/faceAPI/FacePair.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +942,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L127">hiswill/faceAPI/FacePair.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L134">hiswill/faceAPI/FacePair.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -789,10 +973,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/hiswill.faceapi.ijsonentity.html">IJSONEntity</a>.<a href="../interfaces/hiswill.faceapi.ijsonentity.html#toxml">toXML</a></p>
+								<p>Implementation of <a href="../interfaces/hiswill.faceapi.iasyncentity.html">IAsyncEntity</a>.<a href="../interfaces/hiswill.faceapi.iasyncentity.html#toxml">toXML</a></p>
 								<p>Overwrites <a href="hiswill.faceapi.point.html">Point</a>.<a href="hiswill.faceapi.point.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L199">hiswill/faceAPI/FacePair.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/FaceAPI/blob/master/ts/hiswill/faceAPI/FacePair.ts#L241">hiswill/faceAPI/FacePair.ts:241</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
@@ -810,19 +994,22 @@
 					<li class="label tsd-is-external">
 						<span>Internals</span>
 					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/hiswill.html">hiswill</a>
+						<ul>
+							<li class="current tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/hiswill.faceapi.html">faceapi</a>
+							</li>
+						</ul>
+					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/samchon.html">samchon</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class="current tsd-kind-module tsd-is-external">
-						<a href="../modules/hiswill.html">hiswill</a>
-						<ul>
-							<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-external">
-								<a href="../modules/hiswill.faceapi.html">faceapi</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-module tsd-is-external">
+						<a href="../modules/std.html">std</a>
 					</li>
 				</ul>
 			</nav>
@@ -835,6 +1022,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.facepair.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="hiswill.faceapi.facepair.html#eventdispatcher" class="tsd-kind-icon">event<wbr>Dispatcher</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="hiswill.faceapi.facepair.html#face" class="tsd-kind-icon">face</a>
@@ -869,11 +1059,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.facepair.html#tag-1" class="tsd-kind-icon">TAG</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.facepair.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.facepair.html#construct" class="tsd-kind-icon">construct</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="hiswill.faceapi.facepair.html#constructbyjson" class="tsd-kind-icon">construct<wbr>ByJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.facepair.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="hiswill.faceapi.facepair.html#erasefromserver" class="tsd-kind-icon">erase<wbr>From<wbr>Server</a>
@@ -903,6 +1099,9 @@
 								<a href="hiswill.faceapi.facepair.html#gety" class="tsd-kind-icon">getY</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.facepair.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="hiswill.faceapi.facepair.html#inserttoserver" class="tsd-kind-icon">insert<wbr>ToServer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -910,6 +1109,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="hiswill.faceapi.facepair.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="hiswill.faceapi.facepair.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="hiswill.faceapi.facepair.html#setfile" class="tsd-kind-icon">set<wbr>File</a>
