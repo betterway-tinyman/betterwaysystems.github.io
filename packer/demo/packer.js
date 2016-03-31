@@ -10,7 +10,7 @@ var boxologic;
      *
      * <p> {@link st_Instance} represents a physical, tangible instance of 3-dimension. </p>
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     var Instance = (function () {
         /* -----------------------------------------------------------
@@ -46,7 +46,7 @@ var boxologic;
      * A box, trying to pack into a {@link Pallet}.
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     var Box = (function (_super) {
         __extends(Box, _super);
@@ -74,7 +74,7 @@ var boxologic;
 * </ul>
 *
 * @author Bill Knechtel, <br>
-*		   Migrated and Refactored by Jeongho Nam
+*		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
 */
 var boxologic;
 (function (boxologic) {
@@ -88,8 +88,7 @@ var boxologic;
      * </ul>
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam, <br>
-     *		   in Hiswill Co., Ltd.
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     var Boxologic = (function () {
         /* ===========================================================
@@ -116,7 +115,7 @@ var boxologic;
         /**
          * <p> Encode data </p>
          *
-         * <p> Encodes {@link hiswill.packer Packer}'s data to be suitable for the
+         * <p> Encodes {@link bws.packer Packer}'s data to be suitable for the
          * {@link boxologic Boxologic}'s parametric data. </p>
          */
         Boxologic.prototype.encode = function () {
@@ -180,8 +179,8 @@ var boxologic;
         /**
          * <p> Pack instances to the {@link wrapper}. </p>
          *
-         * <p> The {@link Boxologic.pack} is an adaptor method between {@link hiswill::packer Packer} and
-         * {@link boxologic}. It encodes data from {@link hiswill::packer Packer}, deducts the best packing
+         * <p> The {@link Boxologic.pack} is an adaptor method between {@link bws.packer Packer} and
+         * {@link boxologic}. It encodes data from {@link bws.packer Packer}, deducts the best packing
          * solution decodes the optimization result and returns it. </p>
          *
          * <p> The optimization result is returned as a {@link Pair} like below: </p>
@@ -973,7 +972,7 @@ var boxologic;
      * A pallet containing boxes.
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     var Pallet = (function (_super) {
         __extends(Pallet, _super);
@@ -1034,7 +1033,7 @@ var boxologic;
      * <p> {@link Scrapped} represents an edge of the current layer under construction. </p>
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     var Scrap = (function () {
         function Scrap(cumx, cumz) {
@@ -1110,12 +1109,6 @@ var bws;
              */
             WrapperArray.prototype.CHILD_TAG = function () {
                 return "instance";
-            };
-            WrapperArray.prototype.toHTML = function () {
-                var html = "";
-                for (var i = 0; i < this.size(); i++)
-                    html += this.at(i).toHTML(i) + "\n";
-                return html;
             };
             return WrapperArray;
         }(samchon.protocol.EntityArray));
@@ -1203,7 +1196,7 @@ var bws;
         /**
          * An array of Instance objects.
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var InstanceArray = (function (_super) {
             __extends(InstanceArray, _super);
@@ -1303,7 +1296,7 @@ var bws;
         /**
          * A packer.
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var Packer = (function (_super) {
             __extends(Packer, _super);
@@ -1632,7 +1625,7 @@ var bws;
         /**
          * A product.
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var Product = (function (_super) {
             __extends(Product, _super);
@@ -1743,7 +1736,7 @@ var bws;
          * <p> Wrap also helps packing optimization and 3d-visualization with its own members
          * {@link orientation} and position variables {@link x}, {@link y} and {@link z}. </p>
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var Wrap = (function (_super) {
             __extends(Wrap, _super);
@@ -2131,7 +2124,7 @@ var bws;
         /**
          * A wrapper wrapping instances.
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var Wrapper = (function (_super) {
             __extends(Wrapper, _super);
@@ -2538,10 +2531,6 @@ var bws;
                 Wrapper.trackball.update();
                 Wrapper.renderer.render(Wrapper.scene, Wrapper.camera);
             };
-            Wrapper.prototype.toHTML = function (index) {
-                return "<li><a href='javascript:hiswill.packer.drawWrapper(" + index + ")'>"
-                    + this.name + "</a></li>";
-            };
             /* ===========================================================
                 VISUALIZERS
                     - MEMBERS
@@ -2567,7 +2556,7 @@ var bws;
         /**
          * A group of same type of {@link Wrapper Wrappers}.
          *
-         * @author Jeongho Nam
+         * @author Jeongho Nam <http://samchon.org>
          */
         var WrapperGroup = (function (_super) {
             __extends(WrapperGroup, _super);

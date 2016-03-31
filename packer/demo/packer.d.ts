@@ -4,7 +4,7 @@ declare namespace boxologic {
      *
      * <p> {@link st_Instance} represents a physical, tangible instance of 3-dimension. </p>
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     abstract class Instance {
         /**
@@ -50,7 +50,7 @@ declare namespace boxologic {
      * A box, trying to pack into a {@link Pallet}.
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     class Box extends Instance {
         /**
@@ -85,7 +85,7 @@ declare namespace boxologic {
 * </ul>
 *
 * @author Bill Knechtel, <br>
-*		   Migrated and Refactored by Jeongho Nam
+*		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
 */
 declare namespace boxologic {
     /**
@@ -98,8 +98,7 @@ declare namespace boxologic {
      * </ul>
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam, <br>
-     *		   in Hiswill Co., Ltd.
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     class Boxologic {
         /**
@@ -279,7 +278,7 @@ declare namespace boxologic {
         /**
          * <p> Encode data </p>
          *
-         * <p> Encodes {@link hiswill.packer Packer}'s data to be suitable for the
+         * <p> Encodes {@link bws.packer Packer}'s data to be suitable for the
          * {@link boxologic Boxologic}'s parametric data. </p>
          */
         private encode();
@@ -292,8 +291,8 @@ declare namespace boxologic {
         /**
          * <p> Pack instances to the {@link wrapper}. </p>
          *
-         * <p> The {@link Boxologic.pack} is an adaptor method between {@link hiswill::packer Packer} and
-         * {@link boxologic}. It encodes data from {@link hiswill::packer Packer}, deducts the best packing
+         * <p> The {@link Boxologic.pack} is an adaptor method between {@link bws.packer Packer} and
+         * {@link boxologic}. It encodes data from {@link bws.packer Packer}, deducts the best packing
          * solution decodes the optimization result and returns it. </p>
          *
          * <p> The optimization result is returned as a {@link Pair} like below: </p>
@@ -400,7 +399,7 @@ declare namespace boxologic {
      * A pallet containing boxes.
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     class Pallet extends Instance {
         /**
@@ -422,7 +421,7 @@ declare namespace boxologic {
      * <p> {@link Scrapped} represents an edge of the current layer under construction. </p>
      *
      * @author Bill Knechtel, <br>
-     *		   Migrated and Refactored by Jeongho Nam
+     *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
      */
     class Scrap {
         /**
@@ -472,7 +471,6 @@ declare namespace bws.packer {
          * @inheritdoc
          */
         CHILD_TAG(): string;
-        toHTML(): string;
     }
 }
 declare namespace bws.packer {
@@ -508,7 +506,7 @@ declare namespace bws.packer {
     /**
      * An interface of physical 3D-instances.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     interface Instance extends samchon.protocol.IEntity {
         /**
@@ -549,7 +547,7 @@ declare namespace bws.packer {
     /**
      * An array of Instance objects.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class InstanceArray extends samchon.protocol.EntityArray<Instance> {
         /**
@@ -579,7 +577,7 @@ declare namespace bws.packer {
     /**
      * A packer.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class Packer extends samchon.protocol.Entity {
         /**
@@ -653,7 +651,7 @@ declare namespace bws.packer {
     /**
      * A product.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class Product extends samchon.protocol.Entity implements Instance {
         /**
@@ -733,7 +731,7 @@ declare namespace bws.packer {
      * <p> Wrap also helps packing optimization and 3d-visualization with its own members
      * {@link orientation} and position variables {@link x}, {@link y} and {@link z}. </p>
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class Wrap extends samchon.protocol.Entity {
         /**
@@ -895,7 +893,7 @@ declare namespace bws.packer {
     /**
      * A wrapper wrapping instances.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class Wrapper extends samchon.protocol.EntityArray<Wrap> implements Instance {
         /**
@@ -1074,14 +1072,13 @@ declare namespace bws.packer {
         private static handleMouseMove(event);
         private static animate();
         private static render();
-        toHTML(index: number): string;
     }
 }
 declare namespace bws.packer {
     /**
      * A group of same type of {@link Wrapper Wrappers}.
      *
-     * @author Jeongho Nam
+     * @author Jeongho Nam <http://samchon.org>
      */
     class WrapperGroup extends WrapperArray {
         /**
