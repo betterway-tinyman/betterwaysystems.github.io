@@ -1,0 +1,4 @@
+<map id="st_Instance" name="st_Instance">
+<area shape="rect" id="node2" href="$structboxologic_1_1Box.html" title="A box, trying to pack into a Pallet. " alt="" coords="5,80,51,107"/>
+<area shape="rect" id="node3" href="$structboxologic_1_1Pallet.html" title="A pallet containing boxes. " alt="" coords="75,80,130,107"/>
+</map>
