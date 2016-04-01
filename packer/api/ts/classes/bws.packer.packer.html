@@ -75,10 +75,23 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A packer.</p>
-					</div>
 					<dl class="tsd-comment-tags">
+						<dt>brief</dt>
+						<dd><p>Packer, a solver of 3d bin packing with multiple wrappers.</p>
+						</dd>
+						<dt>details</dt>
+						<dd><p> Packer is a facade class supporting packing operations in user side. You can solve a packing problem
+								by constructing Packer class with <a href="bws.packer.wrapperarray.html">wrappers</a> and <a href="bws.packer.instancearray.html">instances</a> to
+							pack and executing <a href="bws.packer.packer.html#optimize">Packer.optimize()</a> method. </p>
+							<p><p> In background side, deducting packing solution, those algorithms are used. </p></p>
+							<ul>
+								<li> <a href="http://betterwaysystems.github.io/packer/reference/AirForceBinPacking.pdf" target="_blank">
+									Airforce Bin Packing; 3D pallet packing problem: A human intelligence-based heuristic approach </a>
+								</li>
+								<li> Genetic Algorithm </li>
+								<li> Greedy and Back-tracking algorithm </li>
+							</ul>
+						</dd>
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
 						</dd>
@@ -152,7 +165,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Entity.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L19">bws/packer/Packer.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L33">bws/packer/Packer.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +179,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Entity.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L27">bws/packer/Packer.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L41">bws/packer/Packer.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">instance<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="bws.packer.instancearray.html" class="tsd-signature-type">InstanceArray</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L19">bws/packer/Packer.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L33">bws/packer/Packer.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +234,7 @@
 					<div class="tsd-signature tsd-kind-icon">wrapper<wbr>Array<span class="tsd-signature-symbol">:</span> <a href="bws.packer.wrapperarray.html" class="tsd-signature-type">WrapperArray</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L14">bws/packer/Packer.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L28">bws/packer/Packer.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,7 +257,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Entity.TAG</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L292">bws/packer/Packer.ts:292</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L330">bws/packer/Packer.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,7 +281,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Entity.construct</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L56">bws/packer/Packer.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L70">bws/packer/Packer.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L76">bws/packer/Packer.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L90">bws/packer/Packer.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +332,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L68">bws/packer/Packer.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L82">bws/packer/Packer.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,13 +354,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L149">bws/packer/Packer.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L187">bws/packer/Packer.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Initialize sequence list (gene_array).</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>brief</dt>
+									<dd><p>Initialize sequence list (gene_array).</p>
+									</dd>
+									<dt>details</dt>
+									<dd><p> Deducts initial sequence list by such assumption: </p>
+										<ul>
+											<li> Cost of larger wrapper is less than smaller one, within framework of price per volume unit. </li>
+											<ul>
+												<li> Wrapper Larger: (price: $1,000, volume: 100cm^3 -&gt; price per volume unit: $10 / cm^3) </li>
+												<li> Wrapper Smaller: (price: $700, volume: 50cm^3 -&gt; price per volume unit: $14 / cm^3) </li>
+												<li> Larger&#39;s <u>cost</u> is less than Smaller, within framework of price per volume unit </li>
+											</ul>
+										</ul>
+										<p> Method <a href="bws.packer.packer.html#initgenes">initGenes()</a> constructs <a href="bws.packer.wrappergroup.html">WrapperGroups</a> corresponding
+											with the <a href="bws.packer.packer.html#wrapperarray">wrapperArray</a> and allocates <a href="bws.packer.packer.html#instancearray">instances</a> to a <a href="bws.packer.wrappergroup.html">WrapperGroup</a>,
+										has the smallest <u>cost</u> between containbles. </p>
+										<p> After executing packing solution by <a href="bws.packer.wrappergroup.html#optimize">WrapperGroup.optimize()</a>, trying to
+											<a href="bws.packer.packer.html#repack">re-pack</a> each <a href="bws.packer.wrappergroup.html">WrapperGroup</a> to another type of <a href="bws.packer.wrapper.html">Wrapper</a>, deducts the best
+										solution between them. It&#39;s the initial sequence list of genetic algorithm. </p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="bws.packer.gawrapperarray.html" class="tsd-signature-type">GAWrapperArray</a></h4>
 							<p>Initial sequence list.</p>
@@ -382,9 +414,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L84">bws/packer/Packer.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L102">bws/packer/Packer.ts:102</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><p> Deduct</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapperarray.html" class="tsd-signature-type">WrapperArray</a></h4>
 						</li>
 					</ul>
@@ -399,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L239">bws/packer/Packer.ts:239</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L277">bws/packer/Packer.ts:277</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,7 +469,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Entity.toXML</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L300">bws/packer/Packer.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/Packer.ts#L338">bws/packer/Packer.ts:338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

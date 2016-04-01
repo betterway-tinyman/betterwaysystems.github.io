@@ -6,5 +6,5 @@ var searchData=
   ['packing_5fbest',['packing_best',['../classboxologic_1_1Boxologic.html#ad4e6b29f2e60b6341097af5fe4422b25',1,'boxologic::Boxologic']]],
   ['pallet',['pallet',['../classboxologic_1_1Boxologic.html#ae7654b0c5ad635d3b3895c3382f480a8',1,'boxologic::Boxologic']]],
   ['pre_5flayer',['pre_layer',['../classboxologic_1_1Boxologic.html#a54ae5c92ab94da4f38ad89ee6f7d8187',1,'boxologic::Boxologic']]],
-  ['price',['price',['../classbws_1_1packer_1_1Wrapper.html#a80d1e9b73edf0b6c8aa055cb5cdaa2f2',1,'bws::packer::Wrapper']]]
+  ['price',['price',['../classbws_1_1packer_1_1GAWrapperArray.html#a80d1e9b73edf0b6c8aa055cb5cdaa2f2',1,'bws::packer::GAWrapperArray::price()'],['../classbws_1_1packer_1_1Wrapper.html#a80d1e9b73edf0b6c8aa055cb5cdaa2f2',1,'bws::packer::Wrapper::price()']]]
 ];

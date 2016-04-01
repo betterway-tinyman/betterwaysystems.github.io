@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['thickness',['thickness',['../classbws_1_1packer_1_1Wrapper.html#a20238819f2c84ce6d3f083ded9ac612d',1,'bws::packer::Wrapper']]],
-  ['total_5fbox_5fvolume',['total_box_volume',['../classboxologic_1_1Boxologic.html#ad314873c213fd2725d53fdd17ab415b5',1,'boxologic::Boxologic']]],
-  ['type',['TYPE',['../classbws_1_1packer_1_1Instance.html#a83510beaf6126ed9af005629c936ef86',1,'bws::packer::Instance::TYPE()'],['../classbws_1_1packer_1_1Product.html#a3eb3fc1778feab1e4f4247fbb0b232d0',1,'bws::packer::Product::TYPE()'],['../classbws_1_1packer_1_1Wrapper.html#a3eb3fc1778feab1e4f4247fbb0b232d0',1,'bws::packer::Wrapper::TYPE()']]]
+  ['sample',['sample',['../classbws_1_1packer_1_1WrapperGroup.html#a9265a6d12f2fe9645c6d733b2156d125',1,'bws::packer::WrapperGroup']]],
+  ['scrap_5flist',['scrap_list',['../classboxologic_1_1Boxologic.html#a78dde8ef32b0b9993c53d46951e86b4f',1,'boxologic::Boxologic']]],
+  ['scrap_5fmin_5fz',['scrap_min_z',['../classboxologic_1_1Boxologic.html#ad4817be15518e024f049d741e82a2003',1,'boxologic::Boxologic']]],
+  ['scrappad',['Scrappad',['../structScrappad.html',1,'']]],
+  ['scrappad',['Scrappad',['../structboxologic_1_1Scrappad.html',1,'boxologic']]],
+  ['set_5forientation',['set_orientation',['../structboxologic_1_1Pallet.html#afee3dc73640223f58b3bbfe6ce8da821',1,'boxologic::Pallet']]],
+  ['setorientation',['setOrientation',['../classbws_1_1packer_1_1Wrap.html#a51dafc25dc6cff1c2e3ac9f8e3c98946',1,'bws::packer::Wrap']]],
+  ['setposition',['setPosition',['../classbws_1_1packer_1_1Wrap.html#a97983e7ca185deab5af561508eab4caf',1,'bws::packer::Wrap']]],
+  ['st_5finstance',['st_Instance',['../structboxologic_1_1st__Instance.html',1,'boxologic']]]
 ];

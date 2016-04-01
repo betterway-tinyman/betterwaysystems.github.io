@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['set_5forientation',['set_orientation',['../structboxologic_1_1Pallet.html#afee3dc73640223f58b3bbfe6ce8da821',1,'boxologic::Pallet']]],
-  ['setorientation',['setOrientation',['../classbws_1_1packer_1_1Wrap.html#a51dafc25dc6cff1c2e3ac9f8e3c98946',1,'bws::packer::Wrap']]],
-  ['setposition',['setPosition',['../classbws_1_1packer_1_1Wrap.html#a97983e7ca185deab5af561508eab4caf',1,'bws::packer::Wrap']]]
+  ['repack',['repack',['../classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a',1,'bws::packer::Packer']]],
+  ['report_5fresults',['report_results',['../classboxologic_1_1Boxologic.html#a36aa72df3c4f998cc6ac79052e7f1434',1,'boxologic::Boxologic']]]
 ];

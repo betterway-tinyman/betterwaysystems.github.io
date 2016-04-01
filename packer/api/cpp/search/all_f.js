@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['sample',['sample',['../classbws_1_1packer_1_1WrapperGroup.html#a9265a6d12f2fe9645c6d733b2156d125',1,'bws::packer::WrapperGroup']]],
-  ['scrap_5flist',['scrap_list',['../classboxologic_1_1Boxologic.html#a78dde8ef32b0b9993c53d46951e86b4f',1,'boxologic::Boxologic']]],
-  ['scrap_5fmin_5fz',['scrap_min_z',['../classboxologic_1_1Boxologic.html#ad4817be15518e024f049d741e82a2003',1,'boxologic::Boxologic']]],
-  ['scrappad',['Scrappad',['../structboxologic_1_1Scrappad.html',1,'boxologic']]],
-  ['scrappad',['Scrappad',['../structScrappad.html',1,'']]],
-  ['set_5forientation',['set_orientation',['../structboxologic_1_1Pallet.html#afee3dc73640223f58b3bbfe6ce8da821',1,'boxologic::Pallet']]],
-  ['setorientation',['setOrientation',['../classbws_1_1packer_1_1Wrap.html#a51dafc25dc6cff1c2e3ac9f8e3c98946',1,'bws::packer::Wrap']]],
-  ['setposition',['setPosition',['../classbws_1_1packer_1_1Wrap.html#a97983e7ca185deab5af561508eab4caf',1,'bws::packer::Wrap']]],
-  ['st_5finstance',['st_Instance',['../structboxologic_1_1st__Instance.html',1,'boxologic']]]
+  ['remain_5flayout_5fheight',['remain_layout_height',['../classboxologic_1_1Boxologic.html#adf5531f9eb95d7b33a3ba09174290e69',1,'boxologic::Boxologic']]],
+  ['remain_5flayout_5flength',['remain_layout_length',['../classboxologic_1_1Boxologic.html#ae3d14f6050accbf6c49c8726686fdd4d',1,'boxologic::Boxologic']]],
+  ['repack',['repack',['../classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a',1,'bws::packer::Packer']]],
+  ['report_5fresults',['report_results',['../classboxologic_1_1Boxologic.html#a36aa72df3c4f998cc6ac79052e7f1434',1,'boxologic::Boxologic']]]
 ];

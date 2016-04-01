@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['wrap',['Wrap',['../classbws_1_1packer_1_1Wrap.html',1,'bws::packer']]],
-  ['wrapper',['Wrapper',['../classbws_1_1packer_1_1Wrapper.html',1,'bws::packer']]],
-  ['wrapperarray',['WrapperArray',['../classbws_1_1packer_1_1WrapperArray.html',1,'bws::packer']]],
-  ['wrappergroup',['WrapperGroup',['../classbws_1_1packer_1_1WrapperGroup.html',1,'bws::packer']]]
+  ['scrappad',['Scrappad',['../structboxologic_1_1Scrappad.html',1,'boxologic']]],
+  ['scrappad',['Scrappad',['../structScrappad.html',1,'']]],
+  ['st_5finstance',['st_Instance',['../structboxologic_1_1st__Instance.html',1,'boxologic']]]
 ];

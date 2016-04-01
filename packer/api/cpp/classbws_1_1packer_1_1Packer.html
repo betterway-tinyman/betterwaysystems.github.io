@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, packing optimization solver. ">Packer</a>, packing optimization solver.  
+<p><a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, a solver of 3d bin packing with multiple wrappers. ">Packer</a>, a solver of 3d bin packing with multiple wrappers.  
  <a href="classbws_1_1packer_1_1Packer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Packer_8hpp_source.html">Packer.hpp</a>&gt;</code></p>
@@ -123,7 +123,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a33c8398f6051f7a19bb10ab340b5f5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Instances. <br /></td></tr>
 <tr class="separator:a33c8398f6051f7a19bb10ab340b5f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0f90aa5044026b9c8e42694eb6a098"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098">optimize</a> (const library::GAParameters &amp;={500, 50, 20,.2}) const  -&gt; std::shared_ptr&lt; <a class="el" href="classbws_1_1packer_1_1WrapperArray.html">WrapperArray</a> &gt;</td></tr>
-<tr class="memdesc:afa0f90aa5044026b9c8e42694eb6a098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an optimized packing solution.  <a href="#afa0f90aa5044026b9c8e42694eb6a098">More...</a><br /></td></tr>
+<tr class="memdesc:afa0f90aa5044026b9c8e42694eb6a098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an optimized packing solution.  <a href="#afa0f90aa5044026b9c8e42694eb6a098">More...</a><br /></td></tr>
 <tr class="separator:afa0f90aa5044026b9c8e42694eb6a098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -132,6 +132,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a9e0c8a128cc1cffa3c617e01c50871fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize sequence list (gene_array).  <a href="#a9e0c8a128cc1cffa3c617e01c50871fc">More...</a><br /></td></tr>
 <tr class="separator:a9e0c8a128cc1cffa3c617e01c50871fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb1d8d4d1410b0cd5955a665ed9d2c5a"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a">repack</a> (const std::shared_ptr&lt; <a class="el" href="classbws_1_1packer_1_1WrapperArray.html">WrapperArray</a> &gt;) const  -&gt; std::shared_ptr&lt; <a class="el" href="classbws_1_1packer_1_1WrapperArray.html">WrapperArray</a> &gt;</td></tr>
+<tr class="memdesc:acb1d8d4d1410b0cd5955a665ed9d2c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to repack each wrappers to another type.  <a href="#acb1d8d4d1410b0cd5955a665ed9d2c5a">More...</a><br /></td></tr>
 <tr class="separator:acb1d8d4d1410b0cd5955a665ed9d2c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -146,11 +147,21 @@ std::shared_ptr&lt; <a class="el" href="classbws_1_1packer_1_1InstanceArray.html
 <tr class="separator:a8576159fe7354555d59383220f26ef9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, packing optimization solver. ">Packer</a>, packing optimization solver. </p>
-<p>Facade class</p>
+<div class="textblock"><p><a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, a solver of 3d bin packing with multiple wrappers. ">Packer</a>, a solver of 3d bin packing with multiple wrappers. </p>
+<p><a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, a solver of 3d bin packing with multiple wrappers. ">Packer</a> is a facade class supporting packing operations in user side. You can solve a packing problem by constructing <a class="el" href="classbws_1_1packer_1_1Packer.html" title="Packer, a solver of 3d bin packing with multiple wrappers. ">Packer</a> class with <a class="el" href="classbws_1_1packer_1_1WrapperArray.html">wrappers</a> and <a class="el" href="classbws_1_1packer_1_1InstanceArray.html">instances</a> to pack and executing <a class="el" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Compute an optimized packing solution. ">Packer::optimize()</a> method. </p>
+<p>During the optimization process by <a class="el" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Compute an optimized packing solution. ">Packer::optimize()</a>, ProgressEvent will be thrown. If you want to listen the ProgressEvent, register a listener function by #addEventListener() method. </p>
+<p>In background side, deducting packing solution, those algorithms are used. </p>
+<ul>
+<li>
+<a href="http://betterwaysystems.github.io/packer/reference/AirForceBinPacking.pdf" target="_blank">Airforce Bin Packing; 3D pallet packing problem: A human intelligence-based heuristic approach </a>  </li>
+<li>
+Genetic Algorithm  </li>
+<li>
+Greedy and Back-tracking algorithm  </li>
+</ul>
 <dl class="section author"><dt>Author</dt><dd>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Packer_8hpp_source.html#l00024">24</a> of file <a class="el" href="Packer_8hpp_source.html">Packer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Packer_8hpp_source.html#l00039">39</a> of file <a class="el" href="Packer_8hpp_source.html">Packer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad780d69f8f42e053ab35662b1636aacd"></a>
 <div class="memitem">
@@ -202,7 +213,7 @@ std::shared_ptr&lt; <a class="el" href="classbws_1_1packer_1_1InstanceArray.html
       </table>
 </div><div class="memdoc">
 
-<p>Get an optimized packing solution. </p>
+<p>Compute an optimized packing solution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gaParams</td><td>Parameters of genetic algorithm. </td></tr>
@@ -218,7 +229,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classbws_1_1packer_1_1Packer_afa0f90aa5044026b9c8e42694eb6a098_cgraph.png" border="0" usemap="#classbws_1_1packer_1_1Packer_afa0f90aa5044026b9c8e42694eb6a098_cgraph" alt=""/></div>
 <map name="classbws_1_1packer_1_1Packer_afa0f90aa5044026b9c8e42694eb6a098_cgraph" id="classbws_1_1packer_1_1Packer_afa0f90aa5044026b9c8e42694eb6a098_cgraph">
 <area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#a9e0c8a128cc1cffa3c617e01c50871fc" title="Initialize sequence list (gene_array). " alt="" coords="124,5,201,32"/>
-<area shape="rect" id="node3" href="classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a" title="repack" alt="" coords="249,31,311,57"/>
+<area shape="rect" id="node3" href="classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a" title="Try to repack each wrappers to another type. " alt="" coords="249,31,311,57"/>
 </map>
 </div>
 </p>
@@ -247,16 +258,31 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Initialize sequence list (gene_array). </p>
+<p>Deducts initial sequence list by such assumption: </p>
+<ul>
+<li>
+Cost of larger wrapper is less than smaller one, within framework of price per volume unit.  <ul>
+<li>
+<a class="el" href="classbws_1_1packer_1_1Wrapper.html" title="A wrapper, wrapping (containing) instances. ">Wrapper</a> Larger: (price: $1,000, volume: 100cm^3 -&gt; price per volume unit: $10 / cm^3)  </li>
+<li>
+<a class="el" href="classbws_1_1packer_1_1Wrapper.html" title="A wrapper, wrapping (containing) instances. ">Wrapper</a> Smaller: (price: $700, volume: 50cm^3 -&gt; price per volume unit: $14 / cm^3)  </li>
+<li>
+Larger's &lt;u&gt;cost&lt;/u&gt; is less than Smaller, within framework of price per volume unit  </li>
+</ul>
+</li>
+</ul>
+<p>Method <a class="el" href="classbws_1_1packer_1_1Packer.html#a9e0c8a128cc1cffa3c617e01c50871fc" title="Initialize sequence list (gene_array). ">initGenes()</a> construct <a class="el" href="classbws_1_1packer_1_1WrapperGroup.html">WrapperGroups</a> corresponding with <a class="el" href="classbws_1_1packer_1_1Packer.html#ab660a615b8326feebfc05011c7172bf3" title="Type of Wrapper(s). ">wrapperArray</a> and allocates <a class="el" href="classbws_1_1packer_1_1Packer.html#a8576159fe7354555d59383220f26ef9c">instances</a> to a <a class="el" href="classbws_1_1packer_1_1WrapperGroup.html" title="A group of Wrappers with same type. ">WrapperGroup</a>, has the smallest &lt;u&gt;cost&lt;/u&gt; between containbles. </p>
+<p>After executing packing solution by <a class="el" href="classbws_1_1packer_1_1WrapperGroup.html#aa5f96dceae0a01376ab1001f038abf9f" title="Run optimization in level of the group. ">WrapperGroup::optimize()</a>, trying to re-pack each <a class="el" href="classbws_1_1packer_1_1WrapperGroup.html" title="A group of Wrappers with same type. ">WrapperGroup</a> to another type of <a class="el" href="classbws_1_1packer_1_1Wrapper.html" title="A wrapper, wrapping (containing) instances. ">Wrapper</a>, deducts the best solution between them. It's the initial sequence list of genetic algorithm. </p>
 <dl class="section return"><dt>Returns</dt><dd>Initial sequence list. </dd></dl>
 
-<p>Definition at line <a class="el" href="Packer_8cpp_source.html#l00141">141</a> of file <a class="el" href="Packer_8cpp_source.html">Packer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Packer_8cpp_source.html#l00140">140</a> of file <a class="el" href="Packer_8cpp_source.html">Packer.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_cgraph.png" border="0" usemap="#classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_cgraph" alt=""/></div>
 <map name="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_cgraph" id="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_cgraph">
-<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a" title="repack" alt="" coords="131,5,192,32"/>
+<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#acb1d8d4d1410b0cd5955a665ed9d2c5a" title="Try to repack each wrappers to another type. " alt="" coords="131,5,192,32"/>
 </map>
 </div>
 </p>
@@ -266,7 +292,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_icgraph.png" border="0" usemap="#classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_icgraph" alt=""/></div>
 <map name="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_icgraph" id="classbws_1_1packer_1_1Packer_a9e0c8a128cc1cffa3c617e01c50871fc_icgraph">
-<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Get an optimized packing solution. " alt="" coords="131,5,201,32"/>
+<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Compute an optimized packing solution. " alt="" coords="131,5,201,32"/>
 </map>
 </div>
 </p>
@@ -294,7 +320,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>to repack each wrappers to another type.</p>
+
+<p>Try to repack each wrappers to another type. </p>
+<p>Re-packs instances who are packed in the $wrappers to another type of Wrappers. A type of <a class="el" href="classbws_1_1packer_1_1Wrapper.html" title="A wrapper, wrapping (containing) instances. ">Wrapper</a> with the smallest cost will be returned, containing the instances.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$wrappers</td><td>Wrappers to repack. </td></tr>
@@ -303,14 +331,14 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Re-packed wrappers. </dd></dl>
 
-<p>Definition at line <a class="el" href="Packer_8cpp_source.html#l00242">242</a> of file <a class="el" href="Packer_8cpp_source.html">Packer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Packer_8cpp_source.html#l00241">241</a> of file <a class="el" href="Packer_8cpp_source.html">Packer.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbws_1_1packer_1_1Packer_acb1d8d4d1410b0cd5955a665ed9d2c5a_icgraph.png" border="0" usemap="#classbws_1_1packer_1_1Packer_acb1d8d4d1410b0cd5955a665ed9d2c5a_icgraph" alt=""/></div>
 <map name="classbws_1_1packer_1_1Packer_acb1d8d4d1410b0cd5955a665ed9d2c5a_icgraph" id="classbws_1_1packer_1_1Packer_acb1d8d4d1410b0cd5955a665ed9d2c5a_icgraph">
-<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Get an optimized packing solution. " alt="" coords="240,5,311,32"/>
+<area shape="rect" id="node2" href="classbws_1_1packer_1_1Packer.html#afa0f90aa5044026b9c8e42694eb6a098" title="Compute an optimized packing solution. " alt="" coords="240,5,311,32"/>
 <area shape="rect" id="node3" href="classbws_1_1packer_1_1Packer.html#a9e0c8a128cc1cffa3c617e01c50871fc" title="Initialize sequence list (gene_array). " alt="" coords="115,31,192,57"/>
 </map>
 </div>
