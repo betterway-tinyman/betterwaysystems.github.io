@@ -6,6 +6,7 @@ var searchData=
   ['getcontainablelength',['getContainableLength',['../classbws_1_1packer_1_1Wrapper.html#abfe7aa924cc54153f5d1c2488c159947',1,'bws::packer::Wrapper']]],
   ['getcontainablevolume',['getContainableVolume',['../classbws_1_1packer_1_1Wrapper.html#aa2417ba37562e43f9edc9c5da3ebbfb3',1,'bws::packer::Wrapper']]],
   ['getcontainablewidth',['getContainableWidth',['../classbws_1_1packer_1_1Wrapper.html#a77dba3b69f5b2fc7d9bf5f0f213fca6e',1,'bws::packer::Wrapper']]],
+  ['getgaparameters',['getGAParameters',['../classbws_1_1packer_1_1PackerForm.html#abf717c7520851178ea88c380b75c3489',1,'bws::packer::PackerForm']]],
   ['getheight',['getHeight',['../classbws_1_1packer_1_1Instance.html#a707e75f3679bb44d16ead82180b5d1aa',1,'bws::packer::Instance::getHeight()'],['../classbws_1_1packer_1_1Wrap.html#a707e75f3679bb44d16ead82180b5d1aa',1,'bws::packer::Wrap::getHeight()']]],
   ['getinstance',['getInstance',['../classbws_1_1packer_1_1Wrap.html#a25b60b9b4c7c804b865883519a05c0de',1,'bws::packer::Wrap']]],
   ['getinstancearray',['getInstanceArray',['../classbws_1_1packer_1_1Packer.html#a33c8398f6051f7a19bb10ab340b5f5c0',1,'bws::packer::Packer']]],
