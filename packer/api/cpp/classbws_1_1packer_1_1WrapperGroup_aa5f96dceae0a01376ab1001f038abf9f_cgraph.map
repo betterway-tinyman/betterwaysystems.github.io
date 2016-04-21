@@ -1,6 +1,0 @@
-<map id="optimize" name="optimize">
-<area shape="rect" id="node2" href="$classbws_1_1packer_1_1WrapperGroup.html#a6e7fb180f403c92e0bf59020556c1d3d" title="Wrap allocated instances into a new Wrapper. " alt="" coords="124,71,175,98"/>
-<area shape="rect" id="node3" href="$classboxologic_1_1Boxologic.html#a56bac8cda8ab4da7c6a9cc355d8d577b" title="boxologic::Boxologic\l::pack" alt="" coords="223,5,365,47"/>
-<area shape="rect" id="node4" href="$classbws_1_1packer_1_1WrapperGroup.html#aebf65b9ad60016ba5cb75a20b096a76c" title="getPrice" alt="" coords="259,71,329,98"/>
-<area shape="rect" id="node5" href="$classbws_1_1packer_1_1WrapperGroup.html#a57ec854a3a1a1f3c4029a05cf769d42b" title="Get (calculate) utilization rate. " alt="" coords="245,122,343,149"/>
-</map>

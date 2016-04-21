@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OrderCrawler: D:/OneDrive/Project/HisWill/OrderCrawler/cpp/hiswill/order/bomtv/BomTVOrder.hpp 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OrderCrawler
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="../../namespaces.html"><span>네임스페이스</span></a></li>
+      <li><a href="../../annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/ddd/BomTVOrder_8hpp_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BomTVOrder.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/API.hpp&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/Order.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>order</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>bomtv</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">class </span>BomTVRequest;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">class </span>BomTVCustomerDelivery;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">BomTVOrder</a></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        : <span class="keyword">public</span> <a class="code" href="../../db/d36/classhiswill_1_1order_1_1Order.html">Order</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../db/d36/classhiswill_1_1order_1_1Order.html">Order</a> <a class="code" href="../../db/d36/classhiswill_1_1order_1_1Order.html">super</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#adb116829c6b41c6d1008b54f66d8b386">   32</a></span>&#160;        std::unique_ptr&lt;BomTVRequest&gt; <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#adb116829c6b41c6d1008b54f66d8b386">request</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a6a4b1db3f52e72b762593f0dd185ff1c">   37</a></span>&#160;        std::unique_ptr&lt;BomTVCustomerDelivery&gt; <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a6a4b1db3f52e72b762593f0dd185ff1c">customerDelivery</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a82e65634d8b37ffe2cb40c7f856c7f9c">   42</a></span>&#160;        std::string <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a82e65634d8b37ffe2cb40c7f856c7f9c">paper</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aa7f8dc581fed70406d74f5be94cbeee8">   47</a></span>&#160;        std::string <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aa7f8dc581fed70406d74f5be94cbeee8">deliveryComment</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac5c4e995f918e959099fe22c5b18033a">   52</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac5c4e995f918e959099fe22c5b18033a">volume</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a344b1fcbb6b35e20207d016cb11a28c5">   57</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a344b1fcbb6b35e20207d016cb11a28c5">people</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a13f952fa74cbdce6686cc64776e6e1a0">   62</a></span>&#160;        std::string <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a13f952fa74cbdce6686cc64776e6e1a0">prevDatetime</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">            CONSTRUCTORS</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac24d85e953e0dd59e2c5913b7328cbf4">BomTVOrder</a>(<a class="code" href="../../d0/d6b/classhiswill_1_1order_1_1Contractor.html">Contractor</a>*);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">BomTVOrder</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> construct(std::shared_ptr&lt;library::XML&gt;) <span class="keyword">override</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> construct(WeakString) <span class="keyword">override</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">auto</span> createChild(std::shared_ptr&lt;library::XML&gt;) -&gt; <a class="code" href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">Detail</a>* <span class="keyword">override</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">auto</span> <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ad5d519efe33646ba6a31e2e0334f2a60">createDelivery</a>() -&gt; <a class="code" href="../../d8/ddc/classhiswill_1_1order_1_1Delivery.html">Delivery</a>* <span class="keyword">override</span>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">            GETTERS</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">auto</span> <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aad7d74d3861606c24e1a76d2bf3a6d17">needCrawling</a>() const -&gt; <span class="keywordtype">bool</span> override;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">            LOAD FROM WEB</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#af745e0eda39d24f1122c67667238bdb5">load</a>() override;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    protected:</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">            EXPORETERS</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        virtual auto <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a43717ab21c49760d9f0902e6b57e19bd">toSurplusXML</a>() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::shared_ptr&lt;library::XML&gt; override;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    public:</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        virtual auto toRedXML(<a class="code" href="../../df/d7a/classhiswill_1_1order_1_1MergedFile.html">MergedFile</a>*) const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::shared_ptr&lt;library::XML&gt; override;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    };          </div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div><div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_adb116829c6b41c6d1008b54f66d8b386"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#adb116829c6b41c6d1008b54f66d8b386">hiswill::order::bomtv::BomTVOrder::request</a></div><div class="ttdeci">std::unique_ptr&lt; BomTVRequest &gt; request</div><div class="ttdoc">고객 요청사항 서술 엔티티 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:32</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_aa7f8dc581fed70406d74f5be94cbeee8"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aa7f8dc581fed70406d74f5be94cbeee8">hiswill::order::bomtv::BomTVOrder::deliveryComment</a></div><div class="ttdeci">std::string deliveryComment</div><div class="ttdoc">배송 주석 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:47</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Detail_html"><div class="ttname"><a href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">hiswill::order::Detail</a></div><div class="ttdoc">주문 상세기록 엔티티 </div><div class="ttdef"><b>Definition:</b> Detail.hpp:38</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_a43717ab21c49760d9f0902e6b57e19bd"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a43717ab21c49760d9f0902e6b57e19bd">hiswill::order::bomtv::BomTVOrder::toSurplusXML</a></div><div class="ttdeci">virtual auto toSurplusXML() const  -&gt; std::shared_ptr&lt; library::XML &gt; override</div><div class="ttdoc">계약사 자체적으로 지니는 잉여정보를 XML로 리턴 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.cpp:225</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_ac5c4e995f918e959099fe22c5b18033a"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac5c4e995f918e959099fe22c5b18033a">hiswill::order::bomtv::BomTVOrder::volume</a></div><div class="ttdeci">size_t volume</div><div class="ttdoc">수량 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:52</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_a344b1fcbb6b35e20207d016cb11a28c5"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a344b1fcbb6b35e20207d016cb11a28c5">hiswill::order::bomtv::BomTVOrder::people</a></div><div class="ttdeci">size_t people</div><div class="ttdoc">인원 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:57</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Contractor_html"><div class="ttname"><a href="../../d0/d6b/classhiswill_1_1order_1_1Contractor.html">hiswill::order::Contractor</a></div><div class="ttdoc">외부 계약사 엔티티 </div><div class="ttdef"><b>Definition:</b> Contractor.hpp:34</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">hiswill::order::bomtv::BomTVOrder</a></div><div class="ttdoc">BomTV의 주문기록 엔티티 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:22</div></div>
+<div class="ttc" id="namespacehiswill_html"><div class="ttname"><a href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="ttdef"><b>Definition:</b> Address.hpp:6</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_a6a4b1db3f52e72b762593f0dd185ff1c"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a6a4b1db3f52e72b762593f0dd185ff1c">hiswill::order::bomtv::BomTVOrder::customerDelivery</a></div><div class="ttdeci">std::unique_ptr&lt; BomTVCustomerDelivery &gt; customerDelivery</div><div class="ttdoc">실제 고객의 주소정보 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:37</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1MergedFile_html"><div class="ttname"><a href="../../df/d7a/classhiswill_1_1order_1_1MergedFile.html">hiswill::order::MergedFile</a></div><div class="ttdoc">병합된 파일 </div><div class="ttdef"><b>Definition:</b> MergedFile.hpp:32</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_a82e65634d8b37ffe2cb40c7f856c7f9c"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a82e65634d8b37ffe2cb40c7f856c7f9c">hiswill::order::bomtv::BomTVOrder::paper</a></div><div class="ttdeci">std::string paper</div><div class="ttdoc">용지 이름 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:42</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_af745e0eda39d24f1122c67667238bdb5"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#af745e0eda39d24f1122c67667238bdb5">hiswill::order::bomtv::BomTVOrder::load</a></div><div class="ttdeci">virtual void load() override</div><div class="ttdoc">웹으로부터 현 주문에 대한 상세정보를 불러온다 (크롤링). </div><div class="ttdef"><b>Definition:</b> BomTVOrder.cpp:155</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_a13f952fa74cbdce6686cc64776e6e1a0"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a13f952fa74cbdce6686cc64776e6e1a0">hiswill::order::bomtv::BomTVOrder::prevDatetime</a></div><div class="ttdeci">std::string prevDatetime</div><div class="ttdoc">이전에 파싱했을 때 기록되었던 시각 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:62</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Order_html"><div class="ttname"><a href="../../db/d36/classhiswill_1_1order_1_1Order.html">hiswill::order::Order</a></div><div class="ttdoc">주문기록 엔티티 </div><div class="ttdef"><b>Definition:</b> Order.hpp:44</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_ad5d519efe33646ba6a31e2e0334f2a60"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ad5d519efe33646ba6a31e2e0334f2a60">hiswill::order::bomtv::BomTVOrder::createDelivery</a></div><div class="ttdeci">virtual auto createDelivery() -&gt; Delivery *override</div><div class="ttdoc">Factory method of Delivery. </div><div class="ttdef"><b>Definition:</b> BomTVOrder.cpp:131</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_ac24d85e953e0dd59e2c5913b7328cbf4"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac24d85e953e0dd59e2c5913b7328cbf4">hiswill::order::bomtv::BomTVOrder::BomTVOrder</a></div><div class="ttdeci">BomTVOrder(Contractor *)</div><div class="ttdoc">Constructor from 주문기록 리스트 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.cpp:30</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html_aad7d74d3861606c24e1a76d2bf3a6d17"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aad7d74d3861606c24e1a76d2bf3a6d17">hiswill::order::bomtv::BomTVOrder::needCrawling</a></div><div class="ttdeci">virtual auto needCrawling() const  -&gt; bool override</div><div class="ttdoc">현재의 Order가 크롤링이 필요한 지 여부를 검사. </div><div class="ttdef"><b>Definition:</b> BomTVOrder.cpp:139</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Delivery_html"><div class="ttname"><a href="../../d8/ddc/classhiswill_1_1order_1_1Delivery.html">hiswill::order::Delivery</a></div><div class="ttdoc">배송 정보 엔티티. </div><div class="ttdef"><b>Definition:</b> Delivery.hpp:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="../../dir_1a6c7c321cb8b2a913af464eed3d3ef5.html">hiswill</a></li><li class="navelem"><a class="el" href="../../dir_313578d57a4b57c396b6ce31ef22bae4.html">order</a></li><li class="navelem"><a class="el" href="../../dir_2ddf1e0b6cb4e3cfd6d6707b3f046ed5.html">bomtv</a></li><li class="navelem"><b>BomTVOrder.hpp</b></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

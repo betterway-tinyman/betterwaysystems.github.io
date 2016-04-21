@@ -1,0 +1,4 @@
+<map id="hiswill::order::CornerProcess::toRedXMLList" name="hiswill::order::CornerProcess::toRedXMLList">
+<area shape="rect" id="node2" href="$d9/d37/classhiswill_1_1order_1_1PostProcess.html#a699206939281eee7e88c8a2fc07825e2" title="주문 확정時 사용할 SP의 XML 파라미터(들), XMLList로 변환 " alt="" coords="241,5,419,47"/>
+<area shape="rect" id="node3" href="$d6/d00/classhiswill_1_1order_1_1PostProcessArray.html#aff70f370219f172f6900a5c713746306" title="Get 상위 주문 상세기록 엔티티 " alt="" coords="467,5,644,47"/>
+</map>

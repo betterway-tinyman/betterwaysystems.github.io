@@ -1,0 +1,15 @@
+<map id="hiswill::order::Server::sendData" name="hiswill::order::Server::sendData">
+<area shape="rect" id="node2" href="$d5/d7b/classhiswill_1_1order_1_1Client.html#a9e75aef9c38733e0c77cfda3d310b16c" title="주문을 확정짓는다. " alt="" coords="635,5,770,47"/>
+<area shape="rect" id="node4" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a140616392ee5f8dca1b8dd7a4b68c6a5" title="크롤링 진행상황을 보냄 " alt="" coords="206,195,345,236"/>
+<area shape="rect" id="node12" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a5562a9d7fb4687fa56d817f57f9110ed" title="주문기록을 병합한다. " alt="" coords="206,269,345,311"/>
+<area shape="rect" id="node13" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a0278ca6c7ce10d7d50fc333b7a7e728f" title="확정지었던 주문을 취소한다. " alt="" coords="192,353,359,395"/>
+<area shape="rect" id="node14" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afbd85b50a372ac2c49a0ed2cb135bf0d" title="모든 외부업체 엔티티들을, 모든 클라이언트에 전송한다. " alt="" coords="415,35,565,76"/>
+<area shape="rect" id="node3" href="$d5/d7b/classhiswill_1_1order_1_1Client.html#a6b44d1230597fb79c2e956ab739548b0" title="클라이언트로부터 받은 작업에 대한 전처리 프로세스 메소드 " alt="" coords="1019,104,1153,145"/>
+<area shape="rect" id="node5" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html#a722876e23d6d21a75c63e25f405d7755" title="Get 당 계약사에 허용된 제품 목록 " alt="" coords="407,165,573,207"/>
+<area shape="rect" id="node6" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html#ada4342e2bac846a5d2755ebbf218bd86" title="계약사 홈페이지에서의 크롤링을 통해 주문에 관한 엔티티 일체를 구성한다. " alt="" coords="621,253,784,295"/>
+<area shape="rect" id="node7" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html#a4c3b5859e373d042013e5f8b36132a05" title="주문기록 상세페이지를 불러옴 " alt="" coords="409,283,571,324"/>
+<area shape="rect" id="node8" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afe9f509424f3eb45955c37fb99583396" title="크롤링이 완료되었음을 알림 " alt="" coords="421,100,559,141"/>
+<area shape="rect" id="node9" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a16bbf44df3c566815087fdbd0c0658fe" title="웹 크롤링을 통하여 주문 기록을 불러온다. " alt="" coords="633,100,772,141"/>
+<area shape="rect" id="node10" href="$da/dc1/classhiswill_1_1order_1_1Server.html#ad9280ee91dbb30bb03e8112d72e2b925" title="서버를 연다 " alt="" coords="832,100,971,141"/>
+<area shape="rect" id="node11" href="$da/dc1/classhiswill_1_1order_1_1Server.html#aadf94778f486bfc5fb2022e25fd0b68b" title="서버 단위에서 수행해야 할 작업을 처리한다. " alt="" coords="832,263,971,304"/>
+</map>

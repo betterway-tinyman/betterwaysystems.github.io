@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OrderCrawler: D:/OneDrive/Project/HisWill/OrderCrawler/cpp/hiswill/order/bomtv/BomTVRequest.hpp 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OrderCrawler
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="../../namespaces.html"><span>네임스페이스</span></a></li>
+      <li><a href="../../annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/d36/BomTVRequest_8hpp_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BomTVRequest.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/API.hpp&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;samchon/protocol/Entity.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/IParse.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;samchon/library/Datetime.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>order</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>bomtv</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">class </span>BomTVOrder;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html">BomTVRequest</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        : <span class="keyword">public</span> protocol::Entity,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">public</span> <span class="keyword">virtual</span> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">IParse</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">typedef</span> protocol::Entity super;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">IParse</a> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">interface_super</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a6e41e02de0c54daceb4e20cdcffc9436">   42</a></span>&#160;        <a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">BomTVOrder</a> *<a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a6e41e02de0c54daceb4e20cdcffc9436">order</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#aafa345cb5890675b083d1fe9491a3461">   47</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#aafa345cb5890675b083d1fe9491a3461">management</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9e3b2ae65634201645b96f28a93096b7">   52</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9e3b2ae65634201645b96f28a93096b7">requirement</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a711f54d95b53225972cbd3f05fa0d938">   57</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a711f54d95b53225972cbd3f05fa0d938">customer</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a4ec5bba23aff5a40382b2a3a6584d7b4">   62</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a4ec5bba23aff5a40382b2a3a6584d7b4">red</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a86f6c62c3de558eed70f632a3e37aa08">   67</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a86f6c62c3de558eed70f632a3e37aa08">postProcess</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#abb63165f388370a3cf5c6a2a5ff18cac">   72</a></span>&#160;        std::string <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#abb63165f388370a3cf5c6a2a5ff18cac">complete</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">            CONSTRUCTORS</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9c615ea88376c1bec56aa6f56adb663a">BomTVRequest</a>(<a class="code" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">BomTVOrder</a>*);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html">BomTVRequest</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> construct(std::shared_ptr&lt;library::XML&gt;) <span class="keyword">override</span>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> construct(WeakString) <span class="keyword">override</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">            EXPORTERS</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">auto</span> TAG() const-&gt;<a class="code" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span> override;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        virtual auto toXML() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::shared_ptr&lt;library::XML&gt; override;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        virtual auto <a class="code" href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a0c832cd83a805877cab9e0609788162d">toSQL</a>() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span> override;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    };      </div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div><div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a9c615ea88376c1bec56aa6f56adb663a"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9c615ea88376c1bec56aa6f56adb663a">hiswill::order::bomtv::BomTVRequest::BomTVRequest</a></div><div class="ttdeci">BomTVRequest(BomTVOrder *)</div><div class="ttdoc">Constructor from 주문기록 in BomTV. </div><div class="ttdef"><b>Definition:</b> BomTVRequest.cpp:18</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1IParse_html"><div class="ttname"><a href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">hiswill::order::IParse</a></div><div class="ttdoc">크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 </div><div class="ttdef"><b>Definition:</b> IParse.hpp:15</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_abb63165f388370a3cf5c6a2a5ff18cac"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#abb63165f388370a3cf5c6a2a5ff18cac">hiswill::order::bomtv::BomTVRequest::complete</a></div><div class="ttdeci">std::string complete</div><div class="ttdoc">요청사항에 대한 작업 완료 일자 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:72</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a4ec5bba23aff5a40382b2a3a6584d7b4"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a4ec5bba23aff5a40382b2a3a6584d7b4">hiswill::order::bomtv::BomTVRequest::red</a></div><div class="ttdeci">std::string red</div><div class="ttdoc">레드프린팅의 메모 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:62</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVOrder_html"><div class="ttname"><a href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html">hiswill::order::bomtv::BomTVOrder</a></div><div class="ttdoc">BomTV의 주문기록 엔티티 </div><div class="ttdef"><b>Definition:</b> BomTVOrder.hpp:22</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a6e41e02de0c54daceb4e20cdcffc9436"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a6e41e02de0c54daceb4e20cdcffc9436">hiswill::order::bomtv::BomTVRequest::order</a></div><div class="ttdeci">BomTVOrder * order</div><div class="ttdoc">상위 주문기록 엔티티 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:42</div></div>
+<div class="ttc" id="namespacehiswill_html"><div class="ttname"><a href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="ttdef"><b>Definition:</b> Address.hpp:6</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a9e3b2ae65634201645b96f28a93096b7"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9e3b2ae65634201645b96f28a93096b7">hiswill::order::bomtv::BomTVRequest::requirement</a></div><div class="ttdeci">std::string requirement</div><div class="ttdoc">요청사항 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:52</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a86f6c62c3de558eed70f632a3e37aa08"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a86f6c62c3de558eed70f632a3e37aa08">hiswill::order::bomtv::BomTVRequest::postProcess</a></div><div class="ttdeci">std::string postProcess</div><div class="ttdoc">후가공에 관한 요청글 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:67</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html">hiswill::order::bomtv::BomTVRequest</a></div><div class="ttdoc">고객 요청사항 엔티티 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:31</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_aafa345cb5890675b083d1fe9491a3461"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#aafa345cb5890675b083d1fe9491a3461">hiswill::order::bomtv::BomTVRequest::management</a></div><div class="ttdeci">std::string management</div><div class="ttdoc">관리사항 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:47</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a711f54d95b53225972cbd3f05fa0d938"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a711f54d95b53225972cbd3f05fa0d938">hiswill::order::bomtv::BomTVRequest::customer</a></div><div class="ttdeci">std::string customer</div><div class="ttdoc">고객의 메모 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.hpp:57</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1bomtv_1_1BomTVRequest_html_a0c832cd83a805877cab9e0609788162d"><div class="ttname"><a href="../../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a0c832cd83a805877cab9e0609788162d">hiswill::order::bomtv::BomTVRequest::toSQL</a></div><div class="ttdeci">virtual auto toSQL() const  -&gt; std::string override</div><div class="ttdoc">SP에 사용될 SQL 문장 리턴 </div><div class="ttdef"><b>Definition:</b> BomTVRequest.cpp:96</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="../../dir_1a6c7c321cb8b2a913af464eed3d3ef5.html">hiswill</a></li><li class="navelem"><a class="el" href="../../dir_313578d57a4b57c396b6ce31ef22bae4.html">order</a></li><li class="navelem"><a class="el" href="../../dir_2ddf1e0b6cb4e3cfd6d6707b3f046ed5.html">bomtv</a></li><li class="navelem"><b>BomTVRequest.hpp</b></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

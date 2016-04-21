@@ -1,0 +1,8 @@
+<map id="hiswill::order::IRedOrder" name="hiswill::order::IRedOrder">
+<area shape="rect" id="node2" href="$d8/ddc/classhiswill_1_1order_1_1Delivery.html" title="배송 정보 엔티티. " alt="" coords="19,80,166,107"/>
+<area shape="rect" id="node5" href="$d5/d56/classhiswill_1_1order_1_1Detail.html" title="주문 상세기록 엔티티 " alt="" coords="191,80,325,107"/>
+<area shape="rect" id="node7" href="$df/d7a/classhiswill_1_1order_1_1MergedFile.html" title="병합된 파일 " alt="" coords="349,80,516,107"/>
+<area shape="rect" id="node3" href="$d8/d47/classhiswill_1_1order_1_1bomtv_1_1BomTVDelivery.html" title="BomTV의 배송 엔티티 " alt="" coords="25,155,161,196"/>
+<area shape="rect" id="node4" href="$d8/d31/classhiswill_1_1order_1_1bomtv_1_1BomTVCustomerDelivery.html" title="봄티비 고객주소 엔티티 " alt="" coords="5,244,180,285"/>
+<area shape="rect" id="node6" href="$d0/dd4/classhiswill_1_1order_1_1bomtv_1_1BomTVDetail.html" title="BomTV의 주문 상세기록 엔티티 " alt="" coords="190,155,326,196"/>
+</map>

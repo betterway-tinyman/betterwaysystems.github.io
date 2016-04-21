@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>OrderCrawler: D:/OneDrive/Project/HisWill/OrderCrawler/cpp/hiswill/order/File.hpp 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OrderCrawler
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="../../namespaces.html"><span>네임스페이스</span></a></li>
+      <li><a href="../../annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/d8a/File_8hpp_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">File.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/API.hpp&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/IFile.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;hiswill/order/IParse.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;samchon/ByteArray.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>order</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">class </span>Server;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">class </span>Detail;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/dd8/classhiswill_1_1order_1_1File.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html">File</a></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        : <span class="keyword">public</span> <a class="code" href="../../da/da2/classhiswill_1_1order_1_1IFile.html">IFile</a>,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">public</span> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">IParse</a></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../da/dc1/classhiswill_1_1order_1_1Server.html">Server</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../da/da2/classhiswill_1_1order_1_1IFile.html">IFile</a> <a class="code" href="../../da/da2/classhiswill_1_1order_1_1IFile.html">super</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">IParse</a> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">interface_super</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57">   42</a></span>&#160;        <a class="code" href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">Detail</a> *<a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57">detail</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#ad8070e21ea0ae58a1331d25b3038f01e">   47</a></span>&#160;        std::string <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#ad8070e21ea0ae58a1331d25b3038f01e">url</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a445abbc0e85e20e6fe6a2c59318b946b">   52</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a445abbc0e85e20e6fe6a2c59318b946b">modified</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#af862a43ad8a071b5bb8e94ac119acfb0">   57</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#af862a43ad8a071b5bb8e94ac119acfb0">deleted</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">            CONSTRUCTORS</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a58b9727f82dc1b0e7b8cd3a3ca73785c">File</a>(<a class="code" href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">Detail</a>*);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html">File</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> construct(std::shared_ptr&lt;library::XML&gt;) <span class="keyword">override</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">using</span> <a class="code" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html#aaf5ff284e811c3475ea909d678572dcf">interface_super::construct</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">            GETTERS</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">auto</span> <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a834bdc5e720e51db3c99655bf358123f">getDetail</a>() const -&gt; <a class="code" href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">Detail</a>*;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        virtual auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a19132d13556ea7fc26d42fbc790aa721">getDirectory</a>() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span> override;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a213f5131af3ed65ced021a6be8a4cdb7">isModified</a>() const -&gt; <span class="keywordtype">bool</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#aa6cc3fb54763612b2ce532bf7284c765">isDeleted</a>() const -&gt; <span class="keywordtype">bool</span>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        auto isValid() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">            GETTERS - FILE I/O</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a982973d9f7066aeb13b2f18be20ff39a">hasData</a>() const -&gt; <span class="keywordtype">bool</span>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7fdb8cd5877acff1dc755b99b57034bb">download</a>();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#ad57ff7c0c002e43f52a547b86d6a2c76">getData</a>() const -&gt; ByteArray;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7fd02f771db5b0baf76a47ea982bd7b3">setData</a>(const ByteArray &amp;);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    public:</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">/* -----------------------------------------------------------</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">            EXPORTERS</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">        ----------------------------------------------------------- */</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        virtual auto toXML() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::shared_ptr&lt;library::XML&gt; override;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        virtual auto <a class="code" href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a573bbd94e89a37c161aaca135157973d">toSQL</a>() const -&gt; <a class="code" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span> override;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    };</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div><div class="ttc" id="classhiswill_1_1order_1_1File_html_ad57ff7c0c002e43f52a547b86d6a2c76"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#ad57ff7c0c002e43f52a547b86d6a2c76">hiswill::order::File::getData</a></div><div class="ttdeci">auto getData() const  -&gt; ByteArray</div><div class="ttdoc">Get 파일의 물리적 데이터 (바이너리 데이터) </div><div class="ttdef"><b>Definition:</b> File.cpp:108</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a19132d13556ea7fc26d42fbc790aa721"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a19132d13556ea7fc26d42fbc790aa721">hiswill::order::File::getDirectory</a></div><div class="ttdeci">virtual auto getDirectory() const  -&gt; std::string override</div><div class="ttdoc">Get 파일이 저장될 디렉토리 경로 </div><div class="ttdef"><b>Definition:</b> File.cpp:84</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Detail_html"><div class="ttname"><a href="../../d5/d56/classhiswill_1_1order_1_1Detail.html">hiswill::order::Detail</a></div><div class="ttdoc">주문 상세기록 엔티티 </div><div class="ttdef"><b>Definition:</b> Detail.hpp:38</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html">hiswill::order::File</a></div><div class="ttdoc">파일 엔티티. </div><div class="ttdef"><b>Definition:</b> File.hpp:28</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a213f5131af3ed65ced021a6be8a4cdb7"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a213f5131af3ed65ced021a6be8a4cdb7">hiswill::order::File::isModified</a></div><div class="ttdeci">auto isModified() const  -&gt; bool</div><div class="ttdoc">Get 수정된 지 여부 </div><div class="ttdef"><b>Definition:</b> File.cpp:57</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a7c57a28f807f71418adfc536cce8eb57"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57">hiswill::order::File::detail</a></div><div class="ttdeci">Detail * detail</div><div class="ttdoc">상위 주문 상세기록, 행번 엔티티 </div><div class="ttdef"><b>Definition:</b> File.hpp:42</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a7fd02f771db5b0baf76a47ea982bd7b3"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7fd02f771db5b0baf76a47ea982bd7b3">hiswill::order::File::setData</a></div><div class="ttdeci">void setData(const ByteArray &amp;)</div><div class="ttdoc">파일의 물리적 데이터 (바이너리 데이터) 변경 </div><div class="ttdef"><b>Definition:</b> File.cpp:125</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1IParse_html_aaf5ff284e811c3475ea909d678572dcf"><div class="ttname"><a href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html#aaf5ff284e811c3475ea909d678572dcf">hiswill::order::IParse::construct</a></div><div class="ttdeci">virtual void construct(WeakString)=0</div><div class="ttdoc">현재 엔티티의 멤버를 파싱해 온 문자열을 통해 구성 </div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1IParse_html"><div class="ttname"><a href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html">hiswill::order::IParse</a></div><div class="ttdoc">크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 </div><div class="ttdef"><b>Definition:</b> IParse.hpp:15</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacehiswill_html"><div class="ttname"><a href="../../d6/d04/namespacehiswill.html">hiswill</a></div><div class="ttdef"><b>Definition:</b> Address.hpp:6</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a7fdb8cd5877acff1dc755b99b57034bb"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a7fdb8cd5877acff1dc755b99b57034bb">hiswill::order::File::download</a></div><div class="ttdeci">virtual void download()</div><div class="ttdoc">파일을 다운로드하여 로컬에 저장 </div><div class="ttdef"><b>Definition:</b> File.cpp:94</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_af862a43ad8a071b5bb8e94ac119acfb0"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#af862a43ad8a071b5bb8e94ac119acfb0">hiswill::order::File::deleted</a></div><div class="ttdeci">bool deleted</div><div class="ttdoc">파일이 유저에 의해 삭제되었는지 여부 </div><div class="ttdef"><b>Definition:</b> File.hpp:57</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_aa6cc3fb54763612b2ce532bf7284c765"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#aa6cc3fb54763612b2ce532bf7284c765">hiswill::order::File::isDeleted</a></div><div class="ttdeci">auto isDeleted() const  -&gt; bool</div><div class="ttdoc">Get 삭제된 지 여부 </div><div class="ttdef"><b>Definition:</b> File.cpp:61</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1Server_html"><div class="ttname"><a href="../../da/dc1/classhiswill_1_1order_1_1Server.html">hiswill::order::Server</a></div><div class="ttdoc">주문기록 크롤러 서버. </div><div class="ttdef"><b>Definition:</b> Server.hpp:55</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a982973d9f7066aeb13b2f18be20ff39a"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a982973d9f7066aeb13b2f18be20ff39a">hiswill::order::File::hasData</a></div><div class="ttdeci">auto hasData() const  -&gt; bool</div><div class="ttdoc">파일 (물리적) 데이터가 존재하는 지 확인 </div><div class="ttdef"><b>Definition:</b> File.cpp:79</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1IFile_html"><div class="ttname"><a href="../../da/da2/classhiswill_1_1order_1_1IFile.html">hiswill::order::IFile</a></div><div class="ttdoc">파일 엔티티 인터페이스 </div><div class="ttdef"><b>Definition:</b> IFile.hpp:21</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_ad8070e21ea0ae58a1331d25b3038f01e"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#ad8070e21ea0ae58a1331d25b3038f01e">hiswill::order::File::url</a></div><div class="ttdeci">std::string url</div><div class="ttdoc">파일을 다운로드 받을 수 있는, 외주업체 측의 URL </div><div class="ttdef"><b>Definition:</b> File.hpp:47</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a834bdc5e720e51db3c99655bf358123f"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a834bdc5e720e51db3c99655bf358123f">hiswill::order::File::getDetail</a></div><div class="ttdeci">auto getDetail() const  -&gt; Detail *</div><div class="ttdoc">Get Detail. </div><div class="ttdef"><b>Definition:</b> File.cpp:52</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a445abbc0e85e20e6fe6a2c59318b946b"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a445abbc0e85e20e6fe6a2c59318b946b">hiswill::order::File::modified</a></div><div class="ttdeci">bool modified</div><div class="ttdoc">파일이 유저에 의해 수정되었는 지 여부 </div><div class="ttdef"><b>Definition:</b> File.hpp:52</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a573bbd94e89a37c161aaca135157973d"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a573bbd94e89a37c161aaca135157973d">hiswill::order::File::toSQL</a></div><div class="ttdeci">virtual auto toSQL() const  -&gt; std::string override</div><div class="ttdoc">SP에 사용될 SQL 문장 리턴 </div><div class="ttdef"><b>Definition:</b> File.cpp:152</div></div>
+<div class="ttc" id="classhiswill_1_1order_1_1File_html_a58b9727f82dc1b0e7b8cd3a3ca73785c"><div class="ttname"><a href="../../dd/dd8/classhiswill_1_1order_1_1File.html#a58b9727f82dc1b0e7b8cd3a3ca73785c">hiswill::order::File::File</a></div><div class="ttdeci">File(Detail *)</div><div class="ttdoc">Constructor from 주문상세 </div><div class="ttdef"><b>Definition:</b> File.cpp:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_df511e5bd85cec96854b39d5e1c27aa8.html">cpp</a></li><li class="navelem"><a class="el" href="../../dir_1a6c7c321cb8b2a913af464eed3d3ef5.html">hiswill</a></li><li class="navelem"><a class="el" href="../../dir_313578d57a4b57c396b6ce31ef22bae4.html">order</a></li><li class="navelem"><b>File.hpp</b></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

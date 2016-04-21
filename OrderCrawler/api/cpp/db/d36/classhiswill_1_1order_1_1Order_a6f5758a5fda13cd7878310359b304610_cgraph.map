@@ -1,0 +1,6 @@
+<map id="hiswill::order::Order::setUID" name="hiswill::order::Order::setUID">
+<area shape="rect" id="node2" href="$db/d36/classhiswill_1_1order_1_1Order.html#ae63c5593144b440223af0981697b2f20" title="SP에 사용될 SQL 문장 리턴 " alt="" coords="188,37,323,79"/>
+<area shape="rect" id="node5" href="$db/d36/classhiswill_1_1order_1_1Order.html#abcff851bda198909fde4ae8f3bf3d3e5" title="주문기록 하부 상세정보 엔터티를 SQL문으로 변환 " alt="" coords="188,103,323,144"/>
+<area shape="rect" id="node3" href="$db/d36/classhiswill_1_1order_1_1Order.html#a4284c2fc3c2e4688d76cf9a56026aad4" title="계약사 자체적으로 지니는 잉여정보를 XML로 리턴 " alt="" coords="386,5,521,47"/>
+<area shape="rect" id="node4" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="371,71,536,112"/>
+</map>

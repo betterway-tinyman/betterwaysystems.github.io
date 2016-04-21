@@ -1,0 +1,6 @@
+<map id="hiswill::order::Order::toSurplusXML" name="hiswill::order::Order::toSurplusXML">
+<area shape="rect" id="node2" href="$de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a43717ab21c49760d9f0902e6b57e19bd" title="계약사 자체적으로 지니는 잉여정보를 XML로 리턴 " alt="" coords="188,5,381,47"/>
+<area shape="rect" id="node3" href="$db/d36/classhiswill_1_1order_1_1Order.html#a41884a36720e3a9b976864f72cdcc907" title="현재의 Order가 크롤링된 것인지 여부 " alt="" coords="217,71,352,112"/>
+<area shape="rect" id="node4" href="$db/d36/classhiswill_1_1order_1_1Order.html#ae63c5593144b440223af0981697b2f20" title="SP에 사용될 SQL 문장 리턴 " alt="" coords="217,136,352,177"/>
+<area shape="rect" id="node5" href="$db/d36/classhiswill_1_1order_1_1Order.html#a6f5758a5fda13cd7878310359b304610" title="주문기록의 식별자를 설정 " alt="" coords="429,136,564,177"/>
+</map>

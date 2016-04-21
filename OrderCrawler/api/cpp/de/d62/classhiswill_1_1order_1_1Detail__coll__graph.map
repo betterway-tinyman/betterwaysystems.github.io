@@ -1,0 +1,15 @@
+<map id="hiswill::order::Detail" name="hiswill::order::Detail">
+<area shape="rect" id="node2" href="$d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="548,8,687,34"/>
+<area shape="rect" id="node8" href="$db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 " alt="" coords="1082,58,1217,85"/>
+<area shape="rect" id="node9" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html" title="외부 계약사 엔티티 " alt="" coords="749,58,912,85"/>
+<area shape="rect" id="node3" href="$db/dc5/classhiswill_1_1order_1_1IRedOrder.html" title="RedPrinting에 주문확정 時 기록에 참여하는 엔티티들이 상속하는 인터페이스 " alt="" coords="1069,110,1229,137"/>
+<area shape="rect" id="node4" href="$d8/d0b/classhiswill_1_1order_1_1allowed_1_1Product.html" title="외부 협력사 內 허용 제품 " alt="" coords="1077,164,1222,206"/>
+<area shape="rect" id="node5" href="$df/de9/classhiswill_1_1order_1_1allowed_1_1SizeArray.html" title="미리 정의된 제품 사이즈 템플릿 목록 " alt="" coords="758,110,903,151"/>
+<area shape="rect" id="node6" href="$df/d4f/classhiswill_1_1order_1_1allowed_1_1MaterialArray.html" title="제품 內 허용 자재 목록 " alt="" coords="758,175,903,216"/>
+<area shape="rect" id="node7" href="$df/d56/classhiswill_1_1order_1_1allowed_1_1PostProcessArray.html" title="제품 內 후가공 공정 목록 " alt="" coords="758,240,903,282"/>
+<area shape="rect" id="node13" href="$d8/d37/classhiswill_1_1order_1_1allowed_1_1Material.html" title="제품 내 허용 자재 " alt="" coords="1077,260,1222,302"/>
+<area shape="rect" id="node10" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html" title="계약사 인터페이스 " alt="" coords="535,74,700,101"/>
+<area shape="rect" id="node11" href="$d0/d9e/classhiswill_1_1order_1_1ContractorArray.html" title="계약사 목록 엔티티 " alt="" coords="231,67,393,108"/>
+<area shape="rect" id="node12" href="$da/dc1/classhiswill_1_1order_1_1Server.html" title="주문기록 크롤러 서버. " alt="" coords="5,74,144,101"/>
+<area shape="rect" id="node14" href="$db/dc7/classhiswill_1_1order_1_1allowed_1_1Component.html" title="추상 허용 컴포넌트 클래스 " alt="" coords="758,306,903,347"/>
+</map>

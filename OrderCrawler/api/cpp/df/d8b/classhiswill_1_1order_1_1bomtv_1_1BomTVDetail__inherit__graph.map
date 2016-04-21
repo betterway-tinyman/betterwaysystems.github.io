@@ -1,0 +1,5 @@
+<map id="hiswill::order::bomtv::BomTVDetail" name="hiswill::order::bomtv::BomTVDetail">
+<area shape="rect" id="node2" href="$d5/d56/classhiswill_1_1order_1_1Detail.html" title="주문 상세기록 엔티티 " alt="" coords="94,80,229,107"/>
+<area shape="rect" id="node3" href="$d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node4" href="$db/dc5/classhiswill_1_1order_1_1IRedOrder.html" title="RedPrinting에 주문확정 時 기록에 참여하는 엔티티들이 상속하는 인터페이스 " alt="" coords="168,5,328,32"/>
+</map>

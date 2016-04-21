@@ -1,0 +1,7 @@
+<map id="hiswill::order::Server::load" name="hiswill::order::Server::load">
+<area shape="rect" id="node2" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afbd85b50a372ac2c49a0ed2cb135bf0d" title="모든 외부업체 엔티티들을, 모든 클라이언트에 전송한다. " alt="" coords="379,5,528,47"/>
+<area shape="rect" id="node4" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afe9f509424f3eb45955c37fb99583396" title="크롤링이 완료되었음을 알림 " alt="" coords="192,68,331,109"/>
+<area shape="rect" id="node3" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a63839fedc72a203516f31d181d2a7695" title="서버에 접속해있는 모든 클라이언트에게 메시지를 보냄 " alt="" coords="584,5,723,47"/>
+<area shape="rect" id="node5" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a140616392ee5f8dca1b8dd7a4b68c6a5" title="크롤링 진행상황을 보냄 " alt="" coords="384,71,523,112"/>
+<area shape="rect" id="node6" href="$d4/d5b/classhiswill_1_1order_1_1Progress.html#aaa1754392c1e98e48e5f9a715378f841" title="플렉스에 보낼 Invoke 메시지 구조로 변환함 " alt="" coords="576,71,731,112"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="hiswill::order::bomtv::BomTVOrder" name="hiswill::order::bomtv::BomTVOrder">
+<area shape="rect" id="node2" href="$db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 " alt="" coords="7,80,142,107"/>
+<area shape="rect" id="node3" href="$d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="5,5,144,32"/>
+</map>

@@ -1,6 +1,0 @@
-<map id="changeWrapperOrientation" name="changeWrapperOrientation">
-<area shape="rect" id="node2" href="$classbws_1_1packer_1_1Instance.html#ab3486b5d001f32613702b8bf76d36555" title="Get width, length on the X&#45;axis in 3D. " alt="" coords="229,5,379,47"/>
-<area shape="rect" id="node3" href="$classbws_1_1packer_1_1Instance.html#a707e75f3679bb44d16ead82180b5d1aa" title="Get height, length on the Y&#45;axis in 3D. " alt="" coords="229,71,379,112"/>
-<area shape="rect" id="node4" href="$classbws_1_1packer_1_1Instance.html#a652c69cadc8bfabafd4a48bc5301f2b8" title="bws::packer::Instance\l::getLength" alt="" coords="229,136,379,177"/>
-<area shape="rect" id="node5" href="$classbws_1_1packer_1_1Wrap.html#a819d163ca058b73b3b21b2770de9e7f7" title="Estimate orientation by given size. " alt="" coords="237,202,371,229"/>
-</map>

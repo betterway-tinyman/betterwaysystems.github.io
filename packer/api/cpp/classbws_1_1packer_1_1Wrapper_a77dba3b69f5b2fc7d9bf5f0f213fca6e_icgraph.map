@@ -1,6 +1,0 @@
-<map id="getContainableWidth" name="getContainableWidth">
-<area shape="rect" id="node2" href="$classbws_1_1packer_1_1Wrapper.html#aa2417ba37562e43f9edc9c5da3ebbfb3" title="Get (calculate) containable length, length on the Z&#45;axis in 3D. " alt="" coords="196,5,348,32"/>
-<area shape="rect" id="node5" href="$classbws_1_1packer_1_1Wrapper.html#af1c80ea0890874f0e8f70f7ff646b2a9" title="Wrapper is enough greater? " alt="" coords="229,56,315,83"/>
-<area shape="rect" id="node3" href="$classbws_1_1packer_1_1Wrapper.html#a04fe11919f654841f93ac2e7b6f8a5fa" title="Get utilization ratio of containable volume. " alt="" coords="396,5,493,32"/>
-<area shape="rect" id="node4" href="$classbws_1_1packer_1_1Wrapper.html#a3eb3fc1778feab1e4f4247fbb0b232d0" title="A type, identifier of derived class. " alt="" coords="541,5,597,32"/>
-</map>

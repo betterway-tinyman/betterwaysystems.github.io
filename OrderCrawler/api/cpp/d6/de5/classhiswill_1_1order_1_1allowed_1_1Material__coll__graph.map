@@ -1,0 +1,4 @@
+<map id="hiswill::order::allowed::Material" name="hiswill::order::allowed::Material">
+<area shape="rect" id="node2" href="$db/dc7/classhiswill_1_1order_1_1allowed_1_1Component.html" title="추상 허용 컴포넌트 클래스 " alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node3" href="$df/d56/classhiswill_1_1order_1_1allowed_1_1PostProcessArray.html" title="제품 內 후가공 공정 목록 " alt="" coords="175,5,320,47"/>
+</map>

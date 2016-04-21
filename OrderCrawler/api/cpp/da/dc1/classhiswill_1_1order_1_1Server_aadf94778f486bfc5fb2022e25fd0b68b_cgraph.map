@@ -1,0 +1,12 @@
+<map id="hiswill::order::Server::replyData" name="hiswill::order::Server::replyData">
+<area shape="rect" id="node2" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a16bbf44df3c566815087fdbd0c0658fe" title="웹 크롤링을 통하여 주문 기록을 불러온다. " alt="" coords="206,68,345,109"/>
+<area shape="rect" id="node8" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a5562a9d7fb4687fa56d817f57f9110ed" title="주문기록을 병합한다. " alt="" coords="407,127,545,168"/>
+<area shape="rect" id="node9" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a0278ca6c7ce10d7d50fc333b7a7e728f" title="확정지었던 주문을 취소한다. " alt="" coords="192,185,359,227"/>
+<area shape="rect" id="node10" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a2277b78e91013d440815c428b135f749" title="새 파일을 (데이터만) 추가한다. " alt="" coords="407,244,545,285"/>
+<area shape="rect" id="node11" href="$da/dc1/classhiswill_1_1order_1_1Server.html#aa51bf137b6113455c718a22b92c0c15e" title="파일을 바꾼다. " alt="" coords="206,303,345,344"/>
+<area shape="rect" id="node3" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afbd85b50a372ac2c49a0ed2cb135bf0d" title="모든 외부업체 엔티티들을, 모든 클라이언트에 전송한다. " alt="" coords="593,71,743,112"/>
+<area shape="rect" id="node5" href="$da/dc1/classhiswill_1_1order_1_1Server.html#afe9f509424f3eb45955c37fb99583396" title="크롤링이 완료되었음을 알림 " alt="" coords="407,7,545,48"/>
+<area shape="rect" id="node4" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a63839fedc72a203516f31d181d2a7695" title="서버에 접속해있는 모든 클라이언트에게 메시지를 보냄 " alt="" coords="799,100,937,141"/>
+<area shape="rect" id="node6" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a140616392ee5f8dca1b8dd7a4b68c6a5" title="크롤링 진행상황을 보냄 " alt="" coords="599,5,737,47"/>
+<area shape="rect" id="node7" href="$d4/d5b/classhiswill_1_1order_1_1Progress.html#aaa1754392c1e98e48e5f9a715378f841" title="플렉스에 보낼 Invoke 메시지 구조로 변환함 " alt="" coords="791,5,945,47"/>
+</map>
