@@ -127,8 +127,9 @@ hiswill::order::Order에 대한 상속 다이어그램 : </div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/da8/classhiswill_1_1order_1_1Order__inherit__graph.png" border="0" usemap="#hiswill_1_1order_1_1Order_inherit__map" alt="Inheritance graph"/></div>
 <map name="hiswill_1_1order_1_1Order_inherit__map" id="hiswill_1_1order_1_1Order_inherit__map">
-<area shape="rect" id="node3" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html" title="BomTV의 주문기록 엔티티 " alt="" coords="7,155,143,196"/>
+<area shape="rect" id="node4" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html" title="BomTV의 주문기록 엔티티 " alt="" coords="93,155,229,196"/>
 <area shape="rect" id="node2" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node3" href="../../db/dc5/classhiswill_1_1order_1_1IRedOrder.html" title="RedPrinting에 주문확정 時 기록에 참여하는 엔티티들이 상속하는 인터페이스 " alt="" coords="168,5,328,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">범례</a>]</span></center></div>
 <div class="dynheader">
@@ -137,10 +138,11 @@ hiswill::order::Order에 대한 협력 다이어그램:</div>
 <div class="center"><img src="../../d0/d9c/classhiswill_1_1order_1_1Order__coll__graph.png" border="0" usemap="#hiswill_1_1order_1_1Order_coll__map" alt="Collaboration graph"/></div>
 <map name="hiswill_1_1order_1_1Order_coll__map" id="hiswill_1_1order_1_1Order_coll__map">
 <area shape="rect" id="node2" href="../../d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="5,199,144,225"/>
-<area shape="rect" id="node3" href="../../d0/d6b/classhiswill_1_1order_1_1Contractor.html" title="외부 계약사 엔티티 " alt="" coords="112,275,275,301"/>
-<area shape="rect" id="node4" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html" title="계약사 인터페이스 " alt="" coords="168,199,333,225"/>
-<area shape="rect" id="node5" href="../../d0/d9e/classhiswill_1_1order_1_1ContractorArray.html" title="계약사 목록 엔티티 " alt="" coords="169,95,332,136"/>
-<area shape="rect" id="node6" href="../../da/dc1/classhiswill_1_1order_1_1Server.html" title="주문기록 크롤러 서버. " alt="" coords="181,5,320,32"/>
+<area shape="rect" id="node4" href="../../d0/d6b/classhiswill_1_1order_1_1Contractor.html" title="외부 계약사 엔티티 " alt="" coords="112,275,275,301"/>
+<area shape="rect" id="node3" href="../../db/dc5/classhiswill_1_1order_1_1IRedOrder.html" title="RedPrinting에 주문확정 時 기록에 참여하는 엔티티들이 상속하는 인터페이스 " alt="" coords="299,275,459,301"/>
+<area shape="rect" id="node5" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html" title="계약사 인터페이스 " alt="" coords="168,199,333,225"/>
+<area shape="rect" id="node6" href="../../d0/d9e/classhiswill_1_1order_1_1ContractorArray.html" title="계약사 목록 엔티티 " alt="" coords="169,95,332,136"/>
+<area shape="rect" id="node7" href="../../da/dc1/classhiswill_1_1order_1_1Server.html" title="주문기록 크롤러 서버. " alt="" coords="181,5,320,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">범례</a>]</span></center></div>
 <table class="memberdecls">
@@ -197,6 +199,14 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a41884a36720e3a9b976864f72cdcc907"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a41884a36720e3a9b976864f72cdcc907">isCrawled</a> () const  -&gt; bool</td></tr>
 <tr class="memdesc:a41884a36720e3a9b976864f72cdcc907"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재의 Order가 크롤링된 것인지 여부  <a href="#a41884a36720e3a9b976864f72cdcc907">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:a41884a36720e3a9b976864f72cdcc907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4129908cae812f1e180ce6d892e311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c4129908cae812f1e180ce6d892e311"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a4c4129908cae812f1e180ce6d892e311">isValid</a> () const  -&gt; std::string</td></tr>
+<tr class="memdesc:a4c4129908cae812f1e180ce6d892e311"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재의 주문 기록이 유효한지 검사 <br /></td></tr>
+<tr class="separator:a4c4129908cae812f1e180ce6d892e311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7195dbac335fc9666a14ada62cb3404d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7195dbac335fc9666a14ada62cb3404d"></a>
+virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a7195dbac335fc9666a14ada62cb3404d">toRedXML</a> () const  -&gt; std::shared_ptr&lt; library::XML &gt; override</td></tr>
+<tr class="memdesc:a7195dbac335fc9666a14ada62cb3404d"><td class="mdescLeft">&#160;</td><td class="mdescRight">주문확정 시 사용할 SP의 XML 파라미터로 변환 <br /></td></tr>
+<tr class="separator:a7195dbac335fc9666a14ada62cb3404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c179ae5b90479fcd1480f8f6ba8bdda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a2c179ae5b90479fcd1480f8f6ba8bdda">save</a> ()</td></tr>
 <tr class="memdesc:a2c179ae5b90479fcd1480f8f6ba8bdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재의 주문기록을 한 개의 개별 파일로 저장한다.  <a href="#a2c179ae5b90479fcd1480f8f6ba8bdda">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:a2c179ae5b90479fcd1480f8f6ba8bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,7 +376,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="dyncontent">
 <div class="center"><img src="../../db/d36/classhiswill_1_1order_1_1Order_a470cc3d46781adf00b09b4b9b8fcf44b_cgraph.png" border="0" usemap="#db/d36/classhiswill_1_1order_1_1Order_a470cc3d46781adf00b09b4b9b8fcf44b_cgraph" alt=""/></div>
 <map name="db/d36/classhiswill_1_1order_1_1Order_a470cc3d46781adf00b09b4b9b8fcf44b_cgraph" id="db/d36/classhiswill_1_1order_1_1Order_a470cc3d46781adf00b09b4b9b8fcf44b_cgraph">
-<area shape="rect" id="node2" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="188,5,353,47"/>
+<area shape="rect" id="node2" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a7195dbac335fc9666a14ada62cb3404d" title="주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node4" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="373,5,539,47"/>
+<area shape="rect" id="node3" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html#a671e0f2854caa0803c69911b6e21e936" title="Get 계약사에 할당된 Red&#45;Printing 측의 계정 ID. " alt="" coords="373,71,539,112"/>
+<area shape="rect" id="node5" href="../../de/dce/classhiswill_1_1order_1_1BookInpage.html#a56fea2ad664482a5d3c5a0cd7143754c" title="주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="371,136,541,177"/>
+<area shape="rect" id="node8" href="../../de/dce/classhiswill_1_1order_1_1BookInpage.html#a65e42d81d18e6a28eb5920e49ab9dea2" title="내지의 파일을 주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="371,201,541,243"/>
+<area shape="rect" id="node6" href="../../d5/d56/classhiswill_1_1order_1_1Detail.html#a2275575b711b403bd234202e1ea780dc" title="Get 시퀀스 번호, 행번 " alt="" coords="598,103,733,144"/>
+<area shape="rect" id="node7" href="../../db/dc7/classhiswill_1_1order_1_1allowed_1_1Component.html#a3129ff44829618c28c2838914081210e" title="Get 코드, 식별자 " alt="" coords="589,168,741,209"/>
 </map>
 </div>
 </p>
@@ -388,21 +404,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <p>현재의 Order가 크롤링된 것인지 여부 </p>
 <p>#isCrawled는 현재의 Order가 <a class="el" href="../../d0/d6b/classhiswill_1_1order_1_1Contractor.html#a764a716077662d06b531df716c411e5a" title="주문기록 일람 페이지(들)을 불러옴 ">Contractor::loadPages</a> 로 인하여 새로 생겨난 엔티이인지, 아니면 예전부터 존재하던 (DB에서 불러온, ContractorArray::load(std::shared_ptr&lt;library::SQLStatement&gt;)) 엔티티인지 확인하는 메소드이다. </p>
-
-<p><div class="dynheader">
-이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../db/d36/classhiswill_1_1order_1_1Order_a41884a36720e3a9b976864f72cdcc907_cgraph.png" border="0" usemap="#db/d36/classhiswill_1_1order_1_1Order_a41884a36720e3a9b976864f72cdcc907_cgraph" alt=""/></div>
-<map name="db/d36/classhiswill_1_1order_1_1Order_a41884a36720e3a9b976864f72cdcc907_cgraph" id="db/d36/classhiswill_1_1order_1_1Order_a41884a36720e3a9b976864f72cdcc907_cgraph">
-<area shape="rect" id="node2" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a4284c2fc3c2e4688d76cf9a56026aad4" title="계약사 자체적으로 지니는 잉여정보를 XML로 리턴 " alt="" coords="204,5,339,47"/>
-<area shape="rect" id="node3" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html#a671e0f2854caa0803c69911b6e21e936" title="Get 계약사에 할당된 Red&#45;Printing 측의 계정 ID. " alt="" coords="189,71,354,112"/>
-<area shape="rect" id="node4" href="../../d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="189,136,354,177"/>
-<area shape="rect" id="node5" href="../../df/d7a/classhiswill_1_1order_1_1MergedFile.html#a39a1a3f379def54608a6c3ecf8359e41" title="주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="188,201,355,243"/>
-<area shape="rect" id="node6" href="../../da/da2/classhiswill_1_1order_1_1IFile.html#a9620af1c848dd30aa6f6e3ed3acb6bdc" title="Get 파일이 저장될 경로 (full path) " alt="" coords="403,201,529,243"/>
-<area shape="rect" id="node7" href="../../da/da2/classhiswill_1_1order_1_1IFile.html#a4b3d48c4b917178159af7541da3847d6" title="Get 파일이 저장될 디렉토리 경로 " alt="" coords="577,201,704,243"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -429,7 +430,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 <p><a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 ">Order</a> 내 모든 파일(File)들을 병합함 </p>
 <p>새로이 결정된 업무규칙에 따라, <a class="el" href="../../db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 ">Order</a> 내 모든 파일(File)은 하나로 병합(MergedFile)된다.</p>
-<dl class="section see"><dt>참고</dt><dd><a class="el" href="../../df/d7a/classhiswill_1_1order_1_1MergedFile.html" title="병합된 파일 ">MergedFile</a> </dd></dl>
+<dl class="section see"><dt>참고</dt><dd>MergedFile </dd></dl>
 
 </div>
 </div>
@@ -572,7 +573,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="center"><img src="../../db/d36/classhiswill_1_1order_1_1Order_a4284c2fc3c2e4688d76cf9a56026aad4_icgraph.png" border="0" usemap="#db/d36/classhiswill_1_1order_1_1Order_a4284c2fc3c2e4688d76cf9a56026aad4_icgraph" alt=""/></div>
 <map name="db/d36/classhiswill_1_1order_1_1Order_a4284c2fc3c2e4688d76cf9a56026aad4_icgraph" id="db/d36/classhiswill_1_1order_1_1Order_a4284c2fc3c2e4688d76cf9a56026aad4_icgraph">
 <area shape="rect" id="node2" href="../../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a43717ab21c49760d9f0902e6b57e19bd" title="계약사 자체적으로 지니는 잉여정보를 XML로 리턴 " alt="" coords="188,5,381,47"/>
-<area shape="rect" id="node3" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a41884a36720e3a9b976864f72cdcc907" title="현재의 Order가 크롤링된 것인지 여부 " alt="" coords="217,71,352,112"/>
+<area shape="rect" id="node3" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a4c4129908cae812f1e180ce6d892e311" title="현재의 주문 기록이 유효한지 검사 " alt="" coords="217,71,352,112"/>
 <area shape="rect" id="node4" href="../../db/d36/classhiswill_1_1order_1_1Order.html#ae63c5593144b440223af0981697b2f20" title="SP에 사용될 SQL 문장 리턴 " alt="" coords="217,136,352,177"/>
 <area shape="rect" id="node5" href="../../db/d36/classhiswill_1_1order_1_1Order.html#a6f5758a5fda13cd7878310359b304610" title="주문기록의 식별자를 설정 " alt="" coords="429,136,564,177"/>
 </map>

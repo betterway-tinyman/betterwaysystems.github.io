@@ -1,6 +1,7 @@
 var classhiswill_1_1order_1_1Detail =
 [
     [ "Detail", "d5/d56/classhiswill_1_1order_1_1Detail.html#a9a13b07b5c5f838daee49e1c02b97f37", null ],
+    [ "getInpage", "d5/d56/classhiswill_1_1order_1_1Detail.html#ab0e04ec2958ebe03f8345d15eb01e6c6", null ],
     [ "getMaterial", "d5/d56/classhiswill_1_1order_1_1Detail.html#a3c7113c93b5deb63fade1cb8466a508b", null ],
     [ "getNo", "d5/d56/classhiswill_1_1order_1_1Detail.html#a2275575b711b403bd234202e1ea780dc", null ],
     [ "getOrder", "d5/d56/classhiswill_1_1order_1_1Detail.html#ac188f63c6791bb63ff9990a45ba660c5", null ],
@@ -11,6 +12,7 @@ var classhiswill_1_1order_1_1Detail =
     [ "toSQL", "d5/d56/classhiswill_1_1order_1_1Detail.html#a8b3177cc53fb79eebee40526253d1a46", null ],
     [ "direction", "d5/d56/classhiswill_1_1order_1_1Detail.html#a162688403e860bdc3c206c0f3e3b714f", null ],
     [ "height", "d5/d56/classhiswill_1_1order_1_1Detail.html#ae3fef33e68496214e2b9edb520e7a181", null ],
+    [ "inpage", "d5/d56/classhiswill_1_1order_1_1Detail.html#a0b0202211d6dbc19b269019845112d86", null ],
     [ "material", "d5/d56/classhiswill_1_1order_1_1Detail.html#a872e450aca0a398c6bd9b48fa59120b9", null ],
     [ "no", "d5/d56/classhiswill_1_1order_1_1Detail.html#a715fe15188b67fafeeb90e9a29d8782a", null ],
     [ "order", "d5/d56/classhiswill_1_1order_1_1Detail.html#a24fbdaba35e4976d524a0be7047f5929", null ],

@@ -1,9 +1,7 @@
 var classhiswill_1_1order_1_1Server =
 [
     [ "Server", "da/dc1/classhiswill_1_1order_1_1Server.html#ad5ec9462b520e59f7ea831e157ee5e59", null ],
-    [ "addFile", "da/dc1/classhiswill_1_1order_1_1Server.html#a2277b78e91013d440815c428b135f749", null ],
     [ "cancelDeterminedOrder", "da/dc1/classhiswill_1_1order_1_1Server.html#a0278ca6c7ce10d7d50fc333b7a7e728f", null ],
-    [ "changeFile", "da/dc1/classhiswill_1_1order_1_1Server.html#aa51bf137b6113455c718a22b92c0c15e", null ],
     [ "getClientMutex", "da/dc1/classhiswill_1_1order_1_1Server.html#afab3c007ebec9012f8a80cb69f8678ec", null ],
     [ "getContractorArray", "da/dc1/classhiswill_1_1order_1_1Server.html#a6959e4969b8a05ce9da3cceac5cee56c", null ],
     [ "getEntityMutex", "da/dc1/classhiswill_1_1order_1_1Server.html#aa06d162c89ceb30455e70a8c2cebe642", null ],

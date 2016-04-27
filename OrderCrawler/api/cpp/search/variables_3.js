@@ -10,6 +10,6 @@ var searchData=
   ['delivery',['delivery',['../d6/dbe/classhiswill_1_1order_1_1Invoice.html#a9af23cf0768f1f65e3225a3bac059fb6',1,'hiswill::order::Invoice::delivery()'],['../db/d36/classhiswill_1_1order_1_1Order.html#aa1ac558d273467a4e0f4225898f2dbe1',1,'hiswill::order::Order::delivery()']]],
   ['deliverycomment',['deliveryComment',['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#aa7f8dc581fed70406d74f5be94cbeee8',1,'hiswill::order::bomtv::BomTVOrder']]],
   ['deliverymethodarray',['deliveryMethodArray',['../d8/d9c/classhiswill_1_1order_1_1allowed_1_1Components.html#a22a8f34a94779983582dc6dd62a88f87',1,'hiswill::order::allowed::Components']]],
-  ['detail',['detail',['../dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57',1,'hiswill::order::File::detail()'],['../d6/d00/classhiswill_1_1order_1_1PostProcessArray.html#a637b4c021af7ddd230f290e6b29d9800',1,'hiswill::order::PostProcessArray::detail()']]],
+  ['detail',['detail',['../de/dce/classhiswill_1_1order_1_1BookInpage.html#ad3437a743075fa37bf246b1a84292941',1,'hiswill::order::BookInpage::detail()'],['../dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57',1,'hiswill::order::File::detail()'],['../d6/d00/classhiswill_1_1order_1_1PostProcessArray.html#a637b4c021af7ddd230f290e6b29d9800',1,'hiswill::order::PostProcessArray::detail()']]],
   ['direction',['direction',['../d5/d56/classhiswill_1_1order_1_1Detail.html#a162688403e860bdc3c206c0f3e3b714f',1,'hiswill::order::Detail']]]
 ];

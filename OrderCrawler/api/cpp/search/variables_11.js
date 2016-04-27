@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['width',['width',['../dc/d54/classhiswill_1_1order_1_1allowed_1_1Size.html#ade00d350ba830aa272a7de9f2c58fec4',1,'hiswill::order::allowed::Size::width()'],['../d5/d56/classhiswill_1_1order_1_1Detail.html#a46dcc79fcb67b66e2b755730c48d0179',1,'hiswill::order::Detail::width()']]]
+  ['value',['value',['../d9/d37/classhiswill_1_1order_1_1PostProcess.html#a0fbcc4689c4b0bbda299558a126f804a',1,'hiswill::order::PostProcess']]],
+  ['volume',['volume',['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac5c4e995f918e959099fe22c5b18033a',1,'hiswill::order::bomtv::BomTVOrder']]]
 ];

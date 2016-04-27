@@ -1,5 +1,0 @@
-<map id="hiswill::order::Server::addFile" name="hiswill::order::Server::addFile">
-<area shape="rect" id="node2" href="$da/dc1/classhiswill_1_1order_1_1Server.html#aadf94778f486bfc5fb2022e25fd0b68b" title="서버 단위에서 수행해야 할 작업을 처리한다. " alt="" coords="407,5,545,47"/>
-<area shape="rect" id="node4" href="$da/dc1/classhiswill_1_1order_1_1Server.html#a0278ca6c7ce10d7d50fc333b7a7e728f" title="확정지었던 주문을 취소한다. " alt="" coords="192,35,359,76"/>
-<area shape="rect" id="node3" href="$d5/d7b/classhiswill_1_1order_1_1Client.html#a6b44d1230597fb79c2e956ab739548b0" title="클라이언트로부터 받은 작업에 대한 전처리 프로세스 메소드 " alt="" coords="593,5,728,47"/>
-</map>

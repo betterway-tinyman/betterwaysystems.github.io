@@ -26,12 +26,6 @@ var hierarchy =
       ] ],
       [ "hiswill::order::MasterContractor", "d0/d20/classhiswill_1_1order_1_1MasterContractor.html", null ]
     ] ],
-    [ "hiswill::order::IFile", "da/da2/classhiswill_1_1order_1_1IFile.html", [
-      [ "hiswill::order::File", "dd/dd8/classhiswill_1_1order_1_1File.html", [
-        [ "hiswill::order::bomtv::BomTVFile", "df/d2a/classhiswill_1_1order_1_1bomtv_1_1BomTVFile.html", null ]
-      ] ],
-      [ "hiswill::order::MergedFile", "df/d7a/classhiswill_1_1order_1_1MergedFile.html", null ]
-    ] ],
     [ "hiswill::order::IParse", "d0/dc9/classhiswill_1_1order_1_1IParse.html", [
       [ "hiswill::order::bomtv::BomTVRequest", "d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html", null ],
       [ "hiswill::order::Contractor", "d0/d6b/classhiswill_1_1order_1_1Contractor.html", null ],
@@ -39,7 +33,9 @@ var hierarchy =
       [ "hiswill::order::Detail", "d5/d56/classhiswill_1_1order_1_1Detail.html", [
         [ "hiswill::order::bomtv::BomTVDetail", "d0/dd4/classhiswill_1_1order_1_1bomtv_1_1BomTVDetail.html", null ]
       ] ],
-      [ "hiswill::order::File", "dd/dd8/classhiswill_1_1order_1_1File.html", null ],
+      [ "hiswill::order::File", "dd/dd8/classhiswill_1_1order_1_1File.html", [
+        [ "hiswill::order::bomtv::BomTVFile", "df/d2a/classhiswill_1_1order_1_1bomtv_1_1BomTVFile.html", null ]
+      ] ],
       [ "hiswill::order::Invoice", "d6/dbe/classhiswill_1_1order_1_1Invoice.html", [
         [ "hiswill::order::bomtv::BomTVInvoice", "db/d5d/classhiswill_1_1order_1_1bomtv_1_1BomTVInvoice.html", null ]
       ] ],
@@ -48,17 +44,19 @@ var hierarchy =
       ] ]
     ] ],
     [ "hiswill::order::IRedOrder", "db/dc5/classhiswill_1_1order_1_1IRedOrder.html", [
+      [ "hiswill::order::BookInpage", "de/dce/classhiswill_1_1order_1_1BookInpage.html", null ],
       [ "hiswill::order::Delivery", "d8/ddc/classhiswill_1_1order_1_1Delivery.html", null ],
       [ "hiswill::order::Detail", "d5/d56/classhiswill_1_1order_1_1Detail.html", null ],
-      [ "hiswill::order::MergedFile", "df/d7a/classhiswill_1_1order_1_1MergedFile.html", null ]
+      [ "hiswill::order::File", "dd/dd8/classhiswill_1_1order_1_1File.html", null ],
+      [ "hiswill::order::Order", "db/d36/classhiswill_1_1order_1_1Order.html", null ]
     ] ],
     [ "hiswill::order::allowed::MaterialArray", "df/d4f/classhiswill_1_1order_1_1allowed_1_1MaterialArray.html", null ],
     [ "hiswill::order::PostProcess", "d9/d37/classhiswill_1_1order_1_1PostProcess.html", [
       [ "hiswill::order::CornerProcess", "d3/d78/classhiswill_1_1order_1_1CornerProcess.html", null ],
       [ "hiswill::order::NumberingProcess", "d1/dd8/classhiswill_1_1order_1_1NumberingProcess.html", null ]
     ] ],
-    [ "hiswill::order::PostProcessArray", "d6/d00/classhiswill_1_1order_1_1PostProcessArray.html", null ],
     [ "hiswill::order::allowed::PostProcessArray", "df/d56/classhiswill_1_1order_1_1allowed_1_1PostProcessArray.html", null ],
+    [ "hiswill::order::PostProcessArray", "d6/d00/classhiswill_1_1order_1_1PostProcessArray.html", null ],
     [ "hiswill::order::allowed::Product", "d8/d0b/classhiswill_1_1order_1_1allowed_1_1Product.html", null ],
     [ "hiswill::order::allowed::ProductArray", "d5/d0a/classhiswill_1_1order_1_1allowed_1_1ProductArray.html", null ],
     [ "hiswill::order::Progress", "d4/d5b/classhiswill_1_1order_1_1Progress.html", null ],

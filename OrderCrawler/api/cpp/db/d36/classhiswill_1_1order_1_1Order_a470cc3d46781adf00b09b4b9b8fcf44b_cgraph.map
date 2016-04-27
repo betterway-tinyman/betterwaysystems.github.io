@@ -1,3 +1,9 @@
 <map id="hiswill::order::Order::determine" name="hiswill::order::Order::determine">
-<area shape="rect" id="node2" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="188,5,353,47"/>
+<area shape="rect" id="node2" href="$db/d36/classhiswill_1_1order_1_1Order.html#a7195dbac335fc9666a14ada62cb3404d" title="주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node4" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html#a031a90db077e5fde7bd7d3ab5f7f6e15" title="Get 계약사 코드, 식별자 " alt="" coords="373,5,539,47"/>
+<area shape="rect" id="node3" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html#a671e0f2854caa0803c69911b6e21e936" title="Get 계약사에 할당된 Red&#45;Printing 측의 계정 ID. " alt="" coords="373,71,539,112"/>
+<area shape="rect" id="node5" href="$de/dce/classhiswill_1_1order_1_1BookInpage.html#a56fea2ad664482a5d3c5a0cd7143754c" title="주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="371,136,541,177"/>
+<area shape="rect" id="node8" href="$de/dce/classhiswill_1_1order_1_1BookInpage.html#a65e42d81d18e6a28eb5920e49ab9dea2" title="내지의 파일을 주문확정 시 사용할 SP의 XML 파라미터로 변환 " alt="" coords="371,201,541,243"/>
+<area shape="rect" id="node6" href="$d5/d56/classhiswill_1_1order_1_1Detail.html#a2275575b711b403bd234202e1ea780dc" title="Get 시퀀스 번호, 행번 " alt="" coords="598,103,733,144"/>
+<area shape="rect" id="node7" href="$db/dc7/classhiswill_1_1order_1_1allowed_1_1Component.html#a3129ff44829618c28c2838914081210e" title="Get 코드, 식별자 " alt="" coords="589,168,741,209"/>
 </map>

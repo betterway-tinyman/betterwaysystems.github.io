@@ -9,5 +9,6 @@ var searchData=
   ['bomtvinvoice',['BomTVInvoice',['../db/d5d/classhiswill_1_1order_1_1bomtv_1_1BomTVInvoice.html',1,'hiswill::order::bomtv']]],
   ['bomtvorder',['BomTVOrder',['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html',1,'hiswill::order::bomtv']]],
   ['bomtvorderarray',['BomTVOrderArray',['../d2/dcf/classhiswill_1_1order_1_1bomtv_1_1BomTVOrderArray.html',1,'hiswill::order::bomtv']]],
-  ['bomtvrequest',['BomTVRequest',['../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html',1,'hiswill::order::bomtv']]]
+  ['bomtvrequest',['BomTVRequest',['../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html',1,'hiswill::order::bomtv']]],
+  ['bookinpage',['BookInpage',['../de/dce/classhiswill_1_1order_1_1BookInpage.html',1,'hiswill::order']]]
 ];

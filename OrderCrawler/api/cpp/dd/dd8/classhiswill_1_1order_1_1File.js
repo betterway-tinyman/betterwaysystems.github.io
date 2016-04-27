@@ -1,17 +1,25 @@
 var classhiswill_1_1order_1_1File =
 [
     [ "File", "dd/dd8/classhiswill_1_1order_1_1File.html#a58b9727f82dc1b0e7b8cd3a3ca73785c", null ],
+    [ "copyToRed", "dd/dd8/classhiswill_1_1order_1_1File.html#a5e9ea21809cf44949f258988391de27f", null ],
     [ "download", "dd/dd8/classhiswill_1_1order_1_1File.html#a7fdb8cd5877acff1dc755b99b57034bb", null ],
     [ "getData", "dd/dd8/classhiswill_1_1order_1_1File.html#ad57ff7c0c002e43f52a547b86d6a2c76", null ],
     [ "getDetail", "dd/dd8/classhiswill_1_1order_1_1File.html#a834bdc5e720e51db3c99655bf358123f", null ],
-    [ "getDirectory", "dd/dd8/classhiswill_1_1order_1_1File.html#a19132d13556ea7fc26d42fbc790aa721", null ],
+    [ "getDirectory", "dd/dd8/classhiswill_1_1order_1_1File.html#acac85eda12a57a8eeeb3e539d22b01a1", null ],
+    [ "getExtension", "dd/dd8/classhiswill_1_1order_1_1File.html#a8fad28b2b1beb64ebf4acd54361a85aa", null ],
+    [ "getName", "dd/dd8/classhiswill_1_1order_1_1File.html#aaf4778b0f8ed8d76a171065ddc881d46", null ],
+    [ "getPath", "dd/dd8/classhiswill_1_1order_1_1File.html#a5ae64a65f2e234c53e87de39a6ad6192", null ],
     [ "hasData", "dd/dd8/classhiswill_1_1order_1_1File.html#a982973d9f7066aeb13b2f18be20ff39a", null ],
     [ "isDeleted", "dd/dd8/classhiswill_1_1order_1_1File.html#aa6cc3fb54763612b2ce532bf7284c765", null ],
     [ "isModified", "dd/dd8/classhiswill_1_1order_1_1File.html#a213f5131af3ed65ced021a6be8a4cdb7", null ],
+    [ "isValid", "dd/dd8/classhiswill_1_1order_1_1File.html#ab3e23b13cf7a11e5f99559eb376fb035", null ],
     [ "setData", "dd/dd8/classhiswill_1_1order_1_1File.html#a7fd02f771db5b0baf76a47ea982bd7b3", null ],
+    [ "toRedXML", "dd/dd8/classhiswill_1_1order_1_1File.html#aeb150c280fcecf6232ac53a94cbff77a", null ],
     [ "toSQL", "dd/dd8/classhiswill_1_1order_1_1File.html#a573bbd94e89a37c161aaca135157973d", null ],
     [ "deleted", "dd/dd8/classhiswill_1_1order_1_1File.html#af862a43ad8a071b5bb8e94ac119acfb0", null ],
     [ "detail", "dd/dd8/classhiswill_1_1order_1_1File.html#a7c57a28f807f71418adfc536cce8eb57", null ],
+    [ "extension", "dd/dd8/classhiswill_1_1order_1_1File.html#aec434bd41464970e0604750a372e15d6", null ],
     [ "modified", "dd/dd8/classhiswill_1_1order_1_1File.html#a445abbc0e85e20e6fe6a2c59318b946b", null ],
+    [ "name", "dd/dd8/classhiswill_1_1order_1_1File.html#a72f8e71b1d35034e3a9d3a83820338ac", null ],
     [ "url", "dd/dd8/classhiswill_1_1order_1_1File.html#ad8070e21ea0ae58a1331d25b3038f01e", null ]
 ];

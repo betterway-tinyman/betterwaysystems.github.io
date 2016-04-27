@@ -2,7 +2,6 @@ var searchData=
 [
   ['canceldetermined',['cancelDetermined',['../db/d36/classhiswill_1_1order_1_1Order.html#a877e57a1a43e14cfef88f1670d2587b3',1,'hiswill::order::Order']]],
   ['canceldeterminedorder',['cancelDeterminedOrder',['../da/dc1/classhiswill_1_1order_1_1Server.html#a0278ca6c7ce10d7d50fc333b7a7e728f',1,'hiswill::order::Server']]],
-  ['changefile',['changeFile',['../da/dc1/classhiswill_1_1order_1_1Server.html#aa51bf137b6113455c718a22b92c0c15e',1,'hiswill::order::Server']]],
   ['clear',['clear',['../d8/d9c/classhiswill_1_1order_1_1allowed_1_1Components.html#a8070c2e2265b5528020d2207af4eb8f8',1,'hiswill::order::allowed::Components']]],
   ['client',['Client',['../d5/d7b/classhiswill_1_1order_1_1Client.html#aca5d102916993874b44c5193b856e7ed',1,'hiswill::order::Client']]],
   ['component',['Component',['../db/dc7/classhiswill_1_1order_1_1allowed_1_1Component.html#abd06789d16514582e93543b93b8ea470',1,'hiswill::order::allowed::Component']]],
@@ -10,7 +9,7 @@ var searchData=
   ['construct',['construct',['../d5/da2/classhiswill_1_1order_1_1bomtv_1_1BomTVContractor.html#ae352a6a998338bfd1a6906e4dd7b768c',1,'hiswill::order::bomtv::BomTVContractor::construct()'],['../d8/d47/classhiswill_1_1order_1_1bomtv_1_1BomTVDelivery.html#a2b53c932b199dc43790883a516387b7c',1,'hiswill::order::bomtv::BomTVDelivery::construct()'],['../d0/dd4/classhiswill_1_1order_1_1bomtv_1_1BomTVDetail.html#aac346673975b998ceb3484a49e00a6d3',1,'hiswill::order::bomtv::BomTVDetail::construct()'],['../df/d2a/classhiswill_1_1order_1_1bomtv_1_1BomTVFile.html#ac1c1bc5096edd1a0bb0af0e04a8f86db',1,'hiswill::order::bomtv::BomTVFile::construct()'],['../db/d5d/classhiswill_1_1order_1_1bomtv_1_1BomTVInvoice.html#a3d6fb498ce3fef4fa8b9f6ae3881ccad',1,'hiswill::order::bomtv::BomTVInvoice::construct()'],['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#a5d0cef54e4c174074d82faa021bd5f98',1,'hiswill::order::bomtv::BomTVOrder::construct()'],['../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a578c92f9f2dd0539ef68d7e5bfa46a46',1,'hiswill::order::bomtv::BomTVRequest::construct()'],['../d0/dc9/classhiswill_1_1order_1_1IParse.html#aaf5ff284e811c3475ea909d678572dcf',1,'hiswill::order::IParse::construct()']]],
   ['contractor',['Contractor',['../d0/d6b/classhiswill_1_1order_1_1Contractor.html#a9d6002ed2c51dd481f9582189a51658e',1,'hiswill::order::Contractor']]],
   ['contractorarray',['ContractorArray',['../d0/d9e/classhiswill_1_1order_1_1ContractorArray.html#a7dd855afc914fbc2febfcc9f1c03fdb2',1,'hiswill::order::ContractorArray']]],
-  ['copytored',['copyToRed',['../df/d7a/classhiswill_1_1order_1_1MergedFile.html#a3531fc43ce82289522293af922396adc',1,'hiswill::order::MergedFile']]],
+  ['copytored',['copyToRed',['../dd/dd8/classhiswill_1_1order_1_1File.html#a5e9ea21809cf44949f258988391de27f',1,'hiswill::order::File']]],
   ['cornerprocess',['CornerProcess',['../d3/d78/classhiswill_1_1order_1_1CornerProcess.html#a9b2bf9b9ecc26712b1e04abb2ccde37f',1,'hiswill::order::CornerProcess']]],
   ['createdelivery',['createDelivery',['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ad5d519efe33646ba6a31e2e0334f2a60',1,'hiswill::order::bomtv::BomTVOrder::createDelivery()'],['../db/d36/classhiswill_1_1order_1_1Order.html#a2cab9dfc4a263660637408370980e0c0',1,'hiswill::order::Order::createDelivery()']]]
 ];

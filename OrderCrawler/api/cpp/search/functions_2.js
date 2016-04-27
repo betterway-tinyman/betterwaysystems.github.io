@@ -8,5 +8,6 @@ var searchData=
   ['bomtvinvoice',['BomTVInvoice',['../db/d5d/classhiswill_1_1order_1_1bomtv_1_1BomTVInvoice.html#a4956008ce37b1d768e97971103cf82c2',1,'hiswill::order::bomtv::BomTVInvoice::BomTVInvoice(Delivery *)'],['../db/d5d/classhiswill_1_1order_1_1bomtv_1_1BomTVInvoice.html#aa9a3ae04a01ffb58938631f597257201',1,'hiswill::order::bomtv::BomTVInvoice::BomTVInvoice(Delivery *, const std::string &amp;uid, const std::string &amp;corporation, const std::string &amp;method, const std::string &amp;release, const std::string &amp;arrive)']]],
   ['bomtvorder',['BomTVOrder',['../de/d13/classhiswill_1_1order_1_1bomtv_1_1BomTVOrder.html#ac24d85e953e0dd59e2c5913b7328cbf4',1,'hiswill::order::bomtv::BomTVOrder']]],
   ['bomtvorderarray',['BomTVOrderArray',['../d2/dcf/classhiswill_1_1order_1_1bomtv_1_1BomTVOrderArray.html#a0c0f1f7eeb55034366b777f6cae1bf27',1,'hiswill::order::bomtv::BomTVOrderArray']]],
-  ['bomtvrequest',['BomTVRequest',['../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9c615ea88376c1bec56aa6f56adb663a',1,'hiswill::order::bomtv::BomTVRequest']]]
+  ['bomtvrequest',['BomTVRequest',['../d5/d04/classhiswill_1_1order_1_1bomtv_1_1BomTVRequest.html#a9c615ea88376c1bec56aa6f56adb663a',1,'hiswill::order::bomtv::BomTVRequest']]],
+  ['bookinpage',['BookInpage',['../de/dce/classhiswill_1_1order_1_1BookInpage.html#a311bc2db91b05412821f8ed72e65413a',1,'hiswill::order::BookInpage']]]
 ];

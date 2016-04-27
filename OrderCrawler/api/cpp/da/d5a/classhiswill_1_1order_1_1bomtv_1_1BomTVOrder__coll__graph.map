@@ -1,8 +1,9 @@
 <map id="hiswill::order::bomtv::BomTVOrder" name="hiswill::order::bomtv::BomTVOrder">
-<area shape="rect" id="node2" href="$db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 " alt="" coords="47,364,182,391"/>
+<area shape="rect" id="node2" href="$db/d36/classhiswill_1_1order_1_1Order.html" title="주문기록 엔티티 " alt="" coords="126,364,261,391"/>
 <area shape="rect" id="node3" href="$d0/dc9/classhiswill_1_1order_1_1IParse.html" title="크롤링을 통해 구성되는 엔티티 객체들이 상속할 인터페이스 " alt="" coords="5,199,144,225"/>
-<area shape="rect" id="node4" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html" title="외부 계약사 엔티티 " alt="" coords="112,275,275,301"/>
-<area shape="rect" id="node5" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html" title="계약사 인터페이스 " alt="" coords="168,199,333,225"/>
-<area shape="rect" id="node6" href="$d0/d9e/classhiswill_1_1order_1_1ContractorArray.html" title="계약사 목록 엔티티 " alt="" coords="169,95,332,136"/>
-<area shape="rect" id="node7" href="$da/dc1/classhiswill_1_1order_1_1Server.html" title="주문기록 크롤러 서버. " alt="" coords="181,5,320,32"/>
+<area shape="rect" id="node5" href="$d0/d6b/classhiswill_1_1order_1_1Contractor.html" title="외부 계약사 엔티티 " alt="" coords="112,275,275,301"/>
+<area shape="rect" id="node4" href="$db/dc5/classhiswill_1_1order_1_1IRedOrder.html" title="RedPrinting에 주문확정 時 기록에 참여하는 엔티티들이 상속하는 인터페이스 " alt="" coords="299,275,459,301"/>
+<area shape="rect" id="node6" href="$d7/db3/classhiswill_1_1order_1_1IContractor.html" title="계약사 인터페이스 " alt="" coords="168,199,333,225"/>
+<area shape="rect" id="node7" href="$d0/d9e/classhiswill_1_1order_1_1ContractorArray.html" title="계약사 목록 엔티티 " alt="" coords="169,95,332,136"/>
+<area shape="rect" id="node8" href="$da/dc1/classhiswill_1_1order_1_1Server.html" title="주문기록 크롤러 서버. " alt="" coords="181,5,320,32"/>
 </map>
