@@ -1075,7 +1075,7 @@ declare namespace bws.packer {
          * @return utilization ratio.
          */
         getUtilization(): number;
-        equals(obj: Wrapper): boolean;
+        equal_to(obj: Wrapper): boolean;
         /**
          * <p> Wrapper is enough greater? </p>
          *

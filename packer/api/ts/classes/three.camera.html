@@ -1,0 +1,2209 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Camera | </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/three.html">THREE</a>
+				</li>
+				<li>
+					<a href="three.camera.html">Camera</a>
+				</li>
+			</ul>
+			<h1>Class Camera</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Abstract base class for cameras. This class should always be inherited when you build a new camera.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="three.object3d.html" class="tsd-signature-type">Object3D</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Camera</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="three.orthographiccamera.html" class="tsd-signature-type">OrthographicCamera</a>
+									</li>
+									<li>
+										<a href="three.perspectivecamera.html" class="tsd-signature-type">PerspectiveCamera</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="three.camera.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#castshadow" class="tsd-kind-icon">cast<wbr>Shadow</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#channels" class="tsd-kind-icon">channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#frustumculled" class="tsd-kind-icon">frustum<wbr>Culled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#matrix" class="tsd-kind-icon">matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#matrixautoupdate" class="tsd-kind-icon">matrix<wbr>Auto<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#matrixworld" class="tsd-kind-icon">matrix<wbr>World</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="three.camera.html#matrixworldinverse" class="tsd-kind-icon">matrix<wbr>World<wbr>Inverse</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#matrixworldneedsupdate" class="tsd-kind-icon">matrix<wbr>World<wbr>Needs<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#modelviewmatrix" class="tsd-kind-icon">model<wbr>View<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#normalmatrix" class="tsd-kind-icon">normal<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#position" class="tsd-kind-icon">position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="three.camera.html#projectionmatrix" class="tsd-kind-icon">projection<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#quaternion" class="tsd-kind-icon">quaternion</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#receiveshadow" class="tsd-kind-icon">receive<wbr>Shadow</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#renderorder" class="tsd-kind-icon">render<wbr>Order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotation" class="tsd-kind-icon">rotation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotationautoupdate" class="tsd-kind-icon">rotation<wbr>Auto<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#scale" class="tsd-kind-icon">scale</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#up" class="tsd-kind-icon">up</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#userdata" class="tsd-kind-icon">user<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#uuid" class="tsd-kind-icon">uuid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#visible" class="tsd-kind-icon">visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="three.camera.html#defaultmatrixautoupdate" class="tsd-kind-icon">Default<wbr>Matrix<wbr>Auto<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="three.camera.html#defaultup" class="tsd-kind-icon">Default<wbr>Up</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#applymatrix" class="tsd-kind-icon">apply<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.camera.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.camera.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getchildbyname" class="tsd-kind-icon">get<wbr>Child<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getobjectbyid" class="tsd-kind-icon">get<wbr>Object<wbr>ById</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getobjectbyname" class="tsd-kind-icon">get<wbr>Object<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getobjectbyproperty" class="tsd-kind-icon">get<wbr>Object<wbr>ByProperty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.camera.html#getworlddirection" class="tsd-kind-icon">get<wbr>World<wbr>Direction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getworldposition" class="tsd-kind-icon">get<wbr>World<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getworldquaternion" class="tsd-kind-icon">get<wbr>World<wbr>Quaternion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getworldrotation" class="tsd-kind-icon">get<wbr>World<wbr>Rotation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#getworldscale" class="tsd-kind-icon">get<wbr>World<wbr>Scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#localtoworld" class="tsd-kind-icon">local<wbr>ToWorld</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.camera.html#lookat" class="tsd-kind-icon">look<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#raycast" class="tsd-kind-icon">raycast</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotateonaxis" class="tsd-kind-icon">rotate<wbr>OnAxis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotatex" class="tsd-kind-icon">rotateX</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotatey" class="tsd-kind-icon">rotateY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#rotatez" class="tsd-kind-icon">rotateZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#setrotationfromaxisangle" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Axis<wbr>Angle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#setrotationfromeuler" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Euler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#setrotationfrommatrix" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#setrotationfromquaternion" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Quaternion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#translate" class="tsd-kind-icon">translate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#translateonaxis" class="tsd-kind-icon">translate<wbr>OnAxis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#translatex" class="tsd-kind-icon">translateX</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#translatey" class="tsd-kind-icon">translateY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#translatez" class="tsd-kind-icon">translateZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#traverse" class="tsd-kind-icon">traverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#traverseancestors" class="tsd-kind-icon">traverse<wbr>Ancestors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#traversevisible" class="tsd-kind-icon">traverse<wbr>Visible</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#updatematrix" class="tsd-kind-icon">update<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#updatematrixworld" class="tsd-kind-icon">update<wbr>Matrix<wbr>World</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.camera.html#worldtolocal" class="tsd-kind-icon">world<wbr>ToLocal</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Camera<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.camera.html" class="tsd-signature-type">Camera</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L368">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:368</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="three.camera.html" class="tsd-signature-type">Camera</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="castshadow" class="tsd-anchor"></a>
+					<h3>cast<wbr>Shadow</h3>
+					<div class="tsd-signature tsd-kind-icon">cast<wbr>Shadow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#castshadow">castShadow</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1438">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1438</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets rendered into shadow map.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="channels" class="tsd-anchor"></a>
+					<h3>channels</h3>
+					<div class="tsd-signature tsd-kind-icon">channels<span class="tsd-signature-symbol">:</span> <a href="three.channels.html" class="tsd-signature-type">Channels</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#channels">channels</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1369">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1369</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
+					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#children">children</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1374">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1374</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Array with object&#39;s children.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="frustumculled" class="tsd-anchor"></a>
+					<h3>frustum<wbr>Culled</h3>
+					<div class="tsd-signature tsd-kind-icon">frustum<wbr>Culled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#frustumculled">frustumCulled</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1448">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1448</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When this is set, it checks every frame if the object is in the frustum of the camera. Otherwise the object gets drawn every frame even if it isn&#39;t visible.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#id">id</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1350">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1350</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unique number of this object instance.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="matrix" class="tsd-anchor"></a>
+					<h3>matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<span class="tsd-signature-symbol">:</span> <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#matrix">matrix</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1413">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1413</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Local transform.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="matrixautoupdate" class="tsd-anchor"></a>
+					<h3>matrix<wbr>Auto<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<wbr>Auto<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#matrixautoupdate">matrixAutoUpdate</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1423">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1423</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When this is set, it calculates the matrix of position, (rotation or quaternion) and scale every frame and also recalculates the matrixWorld property.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="matrixworld" class="tsd-anchor"></a>
+					<h3>matrix<wbr>World</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<wbr>World<span class="tsd-signature-symbol">:</span> <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#matrixworld">matrixWorld</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1418">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1418</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The global transform of the object. If the Object3d has no parent, then it&#39;s identical to the local transform.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="matrixworldinverse" class="tsd-anchor"></a>
+					<h3>matrix<wbr>World<wbr>Inverse</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<wbr>World<wbr>Inverse<span class="tsd-signature-symbol">:</span> <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L377">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:377</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This is the inverse of matrixWorld. MatrixWorld contains the Matrix which has the world transform of the Camera.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="matrixworldneedsupdate" class="tsd-anchor"></a>
+					<h3>matrix<wbr>World<wbr>Needs<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<wbr>World<wbr>Needs<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#matrixworldneedsupdate">matrixWorldNeedsUpdate</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1428">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1428</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When this is set, it calculates the matrixWorld in that frame and resets this property to false.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="modelviewmatrix" class="tsd-anchor"></a>
+					<h3>model<wbr>View<wbr>Matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">model<wbr>View<wbr>Matrix<span class="tsd-signature-symbol">:</span> <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#modelviewmatrix">modelViewMatrix</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1401">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1401</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#name">name</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1360">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1360</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Optional name of the object (doesn&#39;t need to be unique).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="normalmatrix" class="tsd-anchor"></a>
+					<h3>normal<wbr>Matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">normal<wbr>Matrix<span class="tsd-signature-symbol">:</span> <a href="three.matrix3.html" class="tsd-signature-type">Matrix3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#normalmatrix">normalMatrix</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1403">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1403</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#parent">parent</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1367">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1367</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Object&#39;s parent in the scene graph.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="position" class="tsd-anchor"></a>
+					<h3>position</h3>
+					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#position">position</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1384">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1384</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Object&#39;s local position.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="projectionmatrix" class="tsd-anchor"></a>
+					<h3>projection<wbr>Matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">projection<wbr>Matrix<span class="tsd-signature-symbol">:</span> <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L382">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:382</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This is the matrix which contains the projection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="quaternion" class="tsd-anchor"></a>
+					<h3>quaternion</h3>
+					<div class="tsd-signature tsd-kind-icon">quaternion<span class="tsd-signature-symbol">:</span> <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#quaternion">quaternion</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1394">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1394</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Global rotation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="receiveshadow" class="tsd-anchor"></a>
+					<h3>receive<wbr>Shadow</h3>
+					<div class="tsd-signature tsd-kind-icon">receive<wbr>Shadow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#receiveshadow">receiveShadow</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1443">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1443</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Material gets baked in shadow receiving.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="renderorder" class="tsd-anchor"></a>
+					<h3>render<wbr>Order</h3>
+					<div class="tsd-signature tsd-kind-icon">render<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#renderorder">renderOrder</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1450">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1450</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotation" class="tsd-anchor"></a>
+					<h3>rotation</h3>
+					<div class="tsd-signature tsd-kind-icon">rotation<span class="tsd-signature-symbol">:</span> <a href="three.euler.html" class="tsd-signature-type">Euler</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotation">rotation</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1389">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1389</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Object&#39;s local rotation (Euler angles), in radians.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotationautoupdate" class="tsd-anchor"></a>
+					<h3>rotation<wbr>Auto<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">rotation<wbr>Auto<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotationautoupdate">rotationAutoUpdate</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1408">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1408</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When this is set, then the rotationMatrix gets calculated every frame.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="scale" class="tsd-anchor"></a>
+					<h3>scale</h3>
+					<div class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">:</span> <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#scale">scale</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1399">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1399</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Object&#39;s local scale.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1362">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1362</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="up" class="tsd-anchor"></a>
+					<h3>up</h3>
+					<div class="tsd-signature tsd-kind-icon">up<span class="tsd-signature-symbol">:</span> <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#up">up</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1379">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1379</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Up direction.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="userdata" class="tsd-anchor"></a>
+					<h3>user<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">user<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#userdata">userData</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1455">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1455</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An object that can be used to store custom data about the Object3d. It should not hold references to functions as these will not be cloned.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="uuid" class="tsd-anchor"></a>
+					<h3>uuid</h3>
+					<div class="tsd-signature tsd-kind-icon">uuid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#uuid">uuid</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1355">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1355</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="visible" class="tsd-anchor"></a>
+					<h3>visible</h3>
+					<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#visible">visible</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1433">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1433</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Object gets rendered if true.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultmatrixautoupdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Default<wbr>Matrix<wbr>Auto<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Matrix<wbr>Auto<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#defaultmatrixautoupdate">DefaultMatrixAutoUpdate</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1461">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1461</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Default<wbr>Up</h3>
+					<div class="tsd-signature tsd-kind-icon">Default<wbr>Up<span class="tsd-signature-symbol">:</span> <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#defaultup">DefaultUp</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1460">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1460</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#add">add</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1565">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1565</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds object as child of this object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1625">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1625</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="applymatrix" class="tsd-anchor"></a>
+					<h3>apply<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Matrix<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#applymatrix">applyMatrix</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1466">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1466</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This updates the position, rotation and scale with the matrix.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.camera.html" class="tsd-signature-type">Camera</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#clone">clone</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L392">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:392</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="three.camera.html" class="tsd-signature-type">Camera</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>camera<span class="tsd-signature-symbol">?: </span><a href="three.camera.html" class="tsd-signature-type">Camera</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.camera.html" class="tsd-signature-type">Camera</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#copy">copy</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L393">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:393</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> camera: <a href="three.camera.html" class="tsd-signature-type">Camera</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.camera.html" class="tsd-signature-type">Camera</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#dispatchevent">dispatchEvent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1628">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1628</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getchildbyname" class="tsd-anchor"></a>
+					<h3>get<wbr>Child<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getchildbyname">getChildByName</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1573">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1573</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getobjectbyid" class="tsd-anchor"></a>
+					<h3>get<wbr>Object<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Object<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getobjectbyid">getObjectById</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1579">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1579</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Searches through the object&#39;s children and returns the first with a matching id, optionally recursive.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Unique number of the object instance</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getobjectbyname" class="tsd-anchor"></a>
+					<h3>get<wbr>Object<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Object<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getobjectbyname">getObjectByName</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1585">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1585</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Searches through the object&#39;s children and returns the first with a matching name, optionally recursive.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>String to match to the children&#39;s Object3d.name property.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getobjectbyproperty" class="tsd-anchor"></a>
+					<h3>get<wbr>Object<wbr>ByProperty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Object<wbr>ByProperty<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getobjectbyproperty">getObjectByProperty</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1587">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1587</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getworlddirection" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Direction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Direction<span class="tsd-signature-symbol">(</span>optionalTarget<span class="tsd-signature-symbol">?: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getworlddirection">getWorldDirection</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L384">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:384</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> optionalTarget: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getworldposition" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Position<span class="tsd-signature-symbol">(</span>optionalTarget<span class="tsd-signature-symbol">?: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getworldposition">getWorldPosition</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1589">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1589</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> optionalTarget: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getworldquaternion" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Quaternion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Quaternion<span class="tsd-signature-symbol">(</span>optionalTarget<span class="tsd-signature-symbol">?: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getworldquaternion">getWorldQuaternion</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1590">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1590</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> optionalTarget: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getworldrotation" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Rotation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Rotation<span class="tsd-signature-symbol">(</span>optionalTarget<span class="tsd-signature-symbol">?: </span><a href="three.euler.html" class="tsd-signature-type">Euler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.euler.html" class="tsd-signature-type">Euler</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getworldrotation">getWorldRotation</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1591">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1591</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> optionalTarget: <a href="three.euler.html" class="tsd-signature-type">Euler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.euler.html" class="tsd-signature-type">Euler</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getworldscale" class="tsd-anchor"></a>
+					<h3>get<wbr>World<wbr>Scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>World<wbr>Scale<span class="tsd-signature-symbol">(</span>optionalTarget<span class="tsd-signature-symbol">?: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#getworldscale">getWorldScale</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1592">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1592</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> optionalTarget: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="haseventlistener" class="tsd-anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#haseventlistener">hasEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1626">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1626</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="localtoworld" class="tsd-anchor"></a>
+					<h3>local<wbr>ToWorld</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">local<wbr>ToWorld<span class="tsd-signature-symbol">(</span>vector<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#localtoworld">localToWorld</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1548">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1548</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the vector from local space to world space.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vector: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A local vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="lookat" class="tsd-anchor"></a>
+					<h3>look<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">look<wbr>At<span class="tsd-signature-symbol">(</span>vector<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#lookat">lookAt</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L390">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:390</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This make the camera look at the vector position in local space.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vector: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>point to look at</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="raycast" class="tsd-anchor"></a>
+					<h3>raycast</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">raycast<span class="tsd-signature-symbol">(</span>raycaster<span class="tsd-signature-symbol">: </span><a href="three.raycaster.html" class="tsd-signature-type">Raycaster</a>, intersects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#raycast">raycast</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1595">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1595</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>raycaster: <a href="three.raycaster.html" class="tsd-signature-type">Raycaster</a></h5>
+								</li>
+								<li>
+									<h5>intersects: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#remove">remove</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1570">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1570</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes object as child of this object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeeventlistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1627">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1627</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotateonaxis" class="tsd-anchor"></a>
+					<h3>rotate<wbr>OnAxis</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotate<wbr>OnAxis<span class="tsd-signature-symbol">(</span>axis<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotateonaxis">rotateOnAxis</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1493">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1493</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate an object along an axis in object space. The axis is assumed to be normalized.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>axis: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A normalized vector in object space.</p>
+									</div>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The angle in radians.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatex" class="tsd-anchor"></a>
+					<h3>rotateX</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateX<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotatex">rotateX</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1499">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1499</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatey" class="tsd-anchor"></a>
+					<h3>rotateY</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateY<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotatey">rotateY</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1505">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1505</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatez" class="tsd-anchor"></a>
+					<h3>rotateZ</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateZ<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#rotatez">rotateZ</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1511">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1511</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setrotationfromaxisangle" class="tsd-anchor"></a>
+					<h3>set<wbr>Rotation<wbr>From<wbr>Axis<wbr>Angle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Axis<wbr>Angle<span class="tsd-signature-symbol">(</span>axis<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#setrotationfromaxisangle">setRotationFromAxisAngle</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1471">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1471</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>axis: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setrotationfromeuler" class="tsd-anchor"></a>
+					<h3>set<wbr>Rotation<wbr>From<wbr>Euler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Euler<span class="tsd-signature-symbol">(</span>euler<span class="tsd-signature-symbol">: </span><a href="three.euler.html" class="tsd-signature-type">Euler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#setrotationfromeuler">setRotationFromEuler</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1476">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1476</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>euler: <a href="three.euler.html" class="tsd-signature-type">Euler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setrotationfrommatrix" class="tsd-anchor"></a>
+					<h3>set<wbr>Rotation<wbr>From<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Matrix<span class="tsd-signature-symbol">(</span>m<span class="tsd-signature-symbol">: </span><a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#setrotationfrommatrix">setRotationFromMatrix</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1481">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1481</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m: <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setrotationfromquaternion" class="tsd-anchor"></a>
+					<h3>set<wbr>Rotation<wbr>From<wbr>Quaternion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Quaternion<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#setrotationfromquaternion">setRotationFromQuaternion</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1486">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1486</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>q: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span>meta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#tojson">toJSON</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1613">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1613</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> meta: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translate" class="tsd-anchor"></a>
+					<h3>translate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translate<span class="tsd-signature-symbol">(</span>distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, axis<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#translate">translate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1524">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1524</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>axis: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translateonaxis" class="tsd-anchor"></a>
+					<h3>translate<wbr>OnAxis</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translate<wbr>OnAxis<span class="tsd-signature-symbol">(</span>axis<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#translateonaxis">translateOnAxis</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1517">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1517</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>axis: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A normalized vector in object space.</p>
+									</div>
+								</li>
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The distance to translate.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translatex" class="tsd-anchor"></a>
+					<h3>translateX</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translateX<span class="tsd-signature-symbol">(</span>distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#translatex">translateX</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1530">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1530</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Translates object along x axis by distance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Distance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translatey" class="tsd-anchor"></a>
+					<h3>translateY</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translateY<span class="tsd-signature-symbol">(</span>distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#translatey">translateY</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1536">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1536</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Translates object along y axis by distance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Distance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translatez" class="tsd-anchor"></a>
+					<h3>translateZ</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translateZ<span class="tsd-signature-symbol">(</span>distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#translatez">translateZ</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1542">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1542</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Translates object along z axis by distance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Distance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="traverse" class="tsd-anchor"></a>
+					<h3>traverse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">traverse<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#traverse">traverse</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1597">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1597</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="traverseancestors" class="tsd-anchor"></a>
+					<h3>traverse<wbr>Ancestors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">traverse<wbr>Ancestors<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#traverseancestors">traverseAncestors</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1601">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1601</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="traversevisible" class="tsd-anchor"></a>
+					<h3>traverse<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">traverse<wbr>Visible<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#traversevisible">traverseVisible</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1599">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1599</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="updatematrix" class="tsd-anchor"></a>
+					<h3>update<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Matrix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#updatematrix">updateMatrix</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1606">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1606</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates local transform.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="updatematrixworld" class="tsd-anchor"></a>
+					<h3>update<wbr>Matrix<wbr>World</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Matrix<wbr>World<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#updatematrixworld">updateMatrixWorld</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1611">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1611</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates global transform of the object and its children.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>force: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="worldtolocal" class="tsd-anchor"></a>
+					<h3>world<wbr>ToLocal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">world<wbr>ToLocal<span class="tsd-signature-symbol">(</span>vector<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.object3d.html">Object3D</a>.<a href="three.object3d.html#worldtolocal">worldToLocal</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1554">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1554</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the vector from world space to local space.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vector: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A world vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_three_.html">"three"</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/three.html">THREE</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/boxologic.html">boxologic</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.html">samchon</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/std.html">std</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="three.camera.html" class="tsd-kind-icon">Camera</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.camera.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#castshadow" class="tsd-kind-icon">cast<wbr>Shadow</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#channels" class="tsd-kind-icon">channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#children" class="tsd-kind-icon">children</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#frustumculled" class="tsd-kind-icon">frustum<wbr>Culled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#matrix" class="tsd-kind-icon">matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#matrixautoupdate" class="tsd-kind-icon">matrix<wbr>Auto<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#matrixworld" class="tsd-kind-icon">matrix<wbr>World</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="three.camera.html#matrixworldinverse" class="tsd-kind-icon">matrix<wbr>World<wbr>Inverse</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#matrixworldneedsupdate" class="tsd-kind-icon">matrix<wbr>World<wbr>Needs<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#modelviewmatrix" class="tsd-kind-icon">model<wbr>View<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#normalmatrix" class="tsd-kind-icon">normal<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#position" class="tsd-kind-icon">position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="three.camera.html#projectionmatrix" class="tsd-kind-icon">projection<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#quaternion" class="tsd-kind-icon">quaternion</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#receiveshadow" class="tsd-kind-icon">receive<wbr>Shadow</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#renderorder" class="tsd-kind-icon">render<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotation" class="tsd-kind-icon">rotation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotationautoupdate" class="tsd-kind-icon">rotation<wbr>Auto<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#scale" class="tsd-kind-icon">scale</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#up" class="tsd-kind-icon">up</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#userdata" class="tsd-kind-icon">user<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#uuid" class="tsd-kind-icon">uuid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#visible" class="tsd-kind-icon">visible</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="three.camera.html#defaultmatrixautoupdate" class="tsd-kind-icon">Default<wbr>Matrix<wbr>Auto<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="three.camera.html#defaultup" class="tsd-kind-icon">Default<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#add" class="tsd-kind-icon">add</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#applymatrix" class="tsd-kind-icon">apply<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.camera.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.camera.html#copy" class="tsd-kind-icon">copy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getchildbyname" class="tsd-kind-icon">get<wbr>Child<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getobjectbyid" class="tsd-kind-icon">get<wbr>Object<wbr>ById</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getobjectbyname" class="tsd-kind-icon">get<wbr>Object<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getobjectbyproperty" class="tsd-kind-icon">get<wbr>Object<wbr>ByProperty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.camera.html#getworlddirection" class="tsd-kind-icon">get<wbr>World<wbr>Direction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getworldposition" class="tsd-kind-icon">get<wbr>World<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getworldquaternion" class="tsd-kind-icon">get<wbr>World<wbr>Quaternion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getworldrotation" class="tsd-kind-icon">get<wbr>World<wbr>Rotation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#getworldscale" class="tsd-kind-icon">get<wbr>World<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#localtoworld" class="tsd-kind-icon">local<wbr>ToWorld</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.camera.html#lookat" class="tsd-kind-icon">look<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#raycast" class="tsd-kind-icon">raycast</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#remove" class="tsd-kind-icon">remove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotateonaxis" class="tsd-kind-icon">rotate<wbr>OnAxis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotatex" class="tsd-kind-icon">rotateX</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotatey" class="tsd-kind-icon">rotateY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#rotatez" class="tsd-kind-icon">rotateZ</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#setrotationfromaxisangle" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Axis<wbr>Angle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#setrotationfromeuler" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Euler</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#setrotationfrommatrix" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#setrotationfromquaternion" class="tsd-kind-icon">set<wbr>Rotation<wbr>From<wbr>Quaternion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#translate" class="tsd-kind-icon">translate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#translateonaxis" class="tsd-kind-icon">translate<wbr>OnAxis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#translatex" class="tsd-kind-icon">translateX</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#translatey" class="tsd-kind-icon">translateY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#translatez" class="tsd-kind-icon">translateZ</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#traverse" class="tsd-kind-icon">traverse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#traverseancestors" class="tsd-kind-icon">traverse<wbr>Ancestors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#traversevisible" class="tsd-kind-icon">traverse<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#updatematrix" class="tsd-kind-icon">update<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#updatematrixworld" class="tsd-kind-icon">update<wbr>Matrix<wbr>World</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.camera.html#worldtolocal" class="tsd-kind-icon">world<wbr>ToLocal</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

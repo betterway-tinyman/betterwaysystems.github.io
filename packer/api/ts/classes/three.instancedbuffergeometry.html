@@ -1,0 +1,1693 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>InstancedBufferGeometry | </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/three.html">THREE</a>
+				</li>
+				<li>
+					<a href="three.instancedbuffergeometry.html">InstancedBufferGeometry</a>
+				</li>
+			</ul>
+			<h1>Class InstancedBufferGeometry</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://github.com/mrdoob/three.js/blob/master/src/core/InstancedBufferGeometry.js">src/core/InstancedBufferGeometry.js</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">InstancedBufferGeometry</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="three.instancedbuffergeometry.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#attributes" class="tsd-kind-icon">attributes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#boundingsphere" class="tsd-kind-icon">bounding<wbr>Sphere</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#drawrange" class="tsd-kind-icon">draw<wbr>Range</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="three.instancedbuffergeometry.html#groups" class="tsd-kind-icon">groups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#morphattributes" class="tsd-kind-icon">morph<wbr>Attributes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#uuid" class="tsd-kind-icon">uuid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="three.instancedbuffergeometry.html#maxindex" class="tsd-kind-icon">Max<wbr>Index</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#addattribute" class="tsd-kind-icon">add<wbr>Attribute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#adddrawcall" class="tsd-kind-icon">add<wbr>Draw<wbr>Call</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.instancedbuffergeometry.html#addgroup" class="tsd-kind-icon">add<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#addindex" class="tsd-kind-icon">add<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#applymatrix" class="tsd-kind-icon">apply<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#center" class="tsd-kind-icon">center</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#cleardrawcalls" class="tsd-kind-icon">clear<wbr>Draw<wbr>Calls</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#cleargroups" class="tsd-kind-icon">clear<wbr>Groups</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.instancedbuffergeometry.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#computeboundingbox" class="tsd-kind-icon">compute<wbr>Bounding<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#computeboundingsphere" class="tsd-kind-icon">compute<wbr>Bounding<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#computefacenormals" class="tsd-kind-icon">compute<wbr>Face<wbr>Normals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#computeoffsets" class="tsd-kind-icon">compute<wbr>Offsets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#computevertexnormals" class="tsd-kind-icon">compute<wbr>Vertex<wbr>Normals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="three.instancedbuffergeometry.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#drawcalls" class="tsd-kind-icon">drawcalls</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#fromdirectgeometry" class="tsd-kind-icon">from<wbr>Direct<wbr>Geometry</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#fromgeometry" class="tsd-kind-icon">from<wbr>Geometry</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#getindex" class="tsd-kind-icon">get<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#lookat" class="tsd-kind-icon">look<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#merge" class="tsd-kind-icon">merge</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#normalizenormals" class="tsd-kind-icon">normalize<wbr>Normals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#offsets" class="tsd-kind-icon">offsets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#removeattribute" class="tsd-kind-icon">remove<wbr>Attribute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#rotatex" class="tsd-kind-icon">rotateX</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#rotatey" class="tsd-kind-icon">rotateY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#rotatez" class="tsd-kind-icon">rotateZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#scale" class="tsd-kind-icon">scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#setdrawrange" class="tsd-kind-icon">set<wbr>Draw<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#setfromobject" class="tsd-kind-icon">set<wbr>From<wbr>Object</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#setindex" class="tsd-kind-icon">set<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#translate" class="tsd-kind-icon">translate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="three.instancedbuffergeometry.html#updatefromobject" class="tsd-kind-icon">update<wbr>From<wbr>Object</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Instanced<wbr>Buffer<wbr>Geometry<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1272">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1272</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="attributes" class="tsd-anchor"></a>
+					<h3>attributes</h3>
+					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol"> | </span><a href="three.interleavedbufferattribute.html" class="tsd-signature-type">InterleavedBufferAttribute</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#attributes">attributes</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L675">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:675</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="boundingbox" class="tsd-anchor"></a>
+					<h3>bounding<wbr>Box</h3>
+					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="three.box3.html" class="tsd-signature-type">Box3</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#boundingbox">boundingBox</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L678">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:678</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="boundingsphere" class="tsd-anchor"></a>
+					<h3>bounding<wbr>Sphere</h3>
+					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Sphere<span class="tsd-signature-symbol">:</span> <a href="../interfaces/three.boundingsphere.html" class="tsd-signature-type">BoundingSphere</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#boundingsphere">boundingSphere</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L679">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:679</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="drawrange" class="tsd-anchor"></a>
+					<h3>draw<wbr>Range</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#drawrange">drawRange</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L680">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:680</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="groups" class="tsd-anchor"></a>
+					<h3>groups</h3>
+					<div class="tsd-signature tsd-kind-icon">groups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Overwrites <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#groups">groups</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1274">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1274</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>instances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#id">id</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L670">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:670</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unique number of this buffergeometry instance</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="index" class="tsd-anchor"></a>
+					<h3>index</h3>
+					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#index">index</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L674">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:674</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="morphattributes" class="tsd-anchor"></a>
+					<h3>morph<wbr>Attributes</h3>
+					<div class="tsd-signature tsd-kind-icon">morph<wbr>Attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#morphattributes">morphAttributes</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L676">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:676</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#name">name</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L672">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:672</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L673">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:673</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="uuid" class="tsd-anchor"></a>
+					<h3>uuid</h3>
+					<div class="tsd-signature tsd-kind-icon">uuid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#uuid">uuid</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L671">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:671</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="maxindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Max<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">Max<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#maxindex">MaxIndex</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L665">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:665</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addattribute" class="tsd-anchor"></a>
+					<h3>add<wbr>Attribute</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Attribute<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, itemSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Attribute<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attribute<span class="tsd-signature-symbol">: </span><a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol"> | </span><a href="three.interleavedbufferattribute.html" class="tsd-signature-type">InterleavedBufferAttribute</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#addattribute">addAttribute</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L689">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:689</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated. This overloaded method is deprecated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>array: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>itemSize: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#addattribute">addAttribute</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L690">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:690</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>attribute: <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol"> | </span><a href="three.interleavedbufferattribute.html" class="tsd-signature-type">InterleavedBufferAttribute</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="adddrawcall" class="tsd-anchor"></a>
+					<h3>add<wbr>Draw<wbr>Call</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Draw<wbr>Call<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, index<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#adddrawcall">addDrawCall</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L700">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:700</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated. Use addGroup</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L764">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:764</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="addgroup" class="tsd-anchor"></a>
+					<h3>add<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Group<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, instances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#addgroup">addGroup</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1275">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1275</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>instances: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addindex" class="tsd-anchor"></a>
+					<h3>add<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Index<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#addindex">addIndex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L683">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:683</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="applymatrix" class="tsd-anchor"></a>
+					<h3>apply<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Matrix<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#applymatrix">applyMatrix</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L711">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:711</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Bakes matrix transform directly into vertex coordinates.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="center" class="tsd-anchor"></a>
+					<h3>center</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">center<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#center">center</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L720">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:720</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cleardrawcalls" class="tsd-anchor"></a>
+					<h3>clear<wbr>Draw<wbr>Calls</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Draw<wbr>Calls<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#cleardrawcalls">clearDrawCalls</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L702">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:702</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cleargroups" class="tsd-anchor"></a>
+					<h3>clear<wbr>Groups</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Groups<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#cleargroups">clearGroups</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L704">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:704</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#clone">clone</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1277">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1277</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="computeboundingbox" class="tsd-anchor"></a>
+					<h3>compute<wbr>Bounding<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Bounding<wbr>Box<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#computeboundingbox">computeBoundingBox</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L733">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:733</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Computes bounding box of the geometry, updating Geometry.boundingBox attribute.
+									Bounding boxes aren&#39;t computed by default. They need to be explicitly computed, otherwise they are null.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="computeboundingsphere" class="tsd-anchor"></a>
+					<h3>compute<wbr>Bounding<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Bounding<wbr>Sphere<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#computeboundingsphere">computeBoundingSphere</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L739">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:739</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Computes bounding sphere of the geometry, updating Geometry.boundingSphere attribute.
+									Bounding spheres aren&#39;t&#39; computed by default. They need to be explicitly computed, otherwise they are null.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="computefacenormals" class="tsd-anchor"></a>
+					<h3>compute<wbr>Face<wbr>Normals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Face<wbr>Normals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#computefacenormals">computeFaceNormals</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L742">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:742</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="computeoffsets" class="tsd-anchor"></a>
+					<h3>compute<wbr>Offsets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Offsets<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#computeoffsets">computeOffsets</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L749">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:749</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>size: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="computevertexnormals" class="tsd-anchor"></a>
+					<h3>compute<wbr>Vertex<wbr>Normals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Vertex<wbr>Normals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#computevertexnormals">computeVertexNormals</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L747">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:747</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Computes vertex normals by averaging face normals.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#copy">copy</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L1278">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:1278</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.instancedbuffergeometry.html" class="tsd-signature-type">InstancedBufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#dispatchevent">dispatchEvent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L767">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:767</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L760">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:760</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disposes the object from memory.
+									You need to call this when you want the bufferGeometry removed while the application is running.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="drawcalls" class="tsd-anchor"></a>
+					<h3>drawcalls</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">drawcalls<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#drawcalls">drawcalls</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L695">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:695</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fromdirectgeometry" class="tsd-anchor"></a>
+					<h3>from<wbr>Direct<wbr>Geometry</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Direct<wbr>Geometry<span class="tsd-signature-symbol">(</span>geometry<span class="tsd-signature-symbol">: </span><a href="three.directgeometry.html" class="tsd-signature-type">DirectGeometry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#fromdirectgeometry">fromDirectGeometry</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L727">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:727</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>geometry: <a href="three.directgeometry.html" class="tsd-signature-type">DirectGeometry</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fromgeometry" class="tsd-anchor"></a>
+					<h3>from<wbr>Geometry</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Geometry<span class="tsd-signature-symbol">(</span>geometry<span class="tsd-signature-symbol">: </span><a href="three.geometry.html" class="tsd-signature-type">Geometry</a>, settings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#fromgeometry">fromGeometry</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L725">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:725</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>geometry: <a href="three.geometry.html" class="tsd-signature-type">Geometry</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> settings: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getattribute" class="tsd-anchor"></a>
+					<h3>get<wbr>Attribute</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attribute<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol"> | </span><a href="three.interleavedbufferattribute.html" class="tsd-signature-type">InterleavedBufferAttribute</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#getattribute">getAttribute</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L691">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:691</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<a href="three.interleavedbufferattribute.html" class="tsd-signature-type">InterleavedBufferAttribute</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getindex" class="tsd-anchor"></a>
+					<h3>get<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#getindex">getIndex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L685">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:685</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="haseventlistener" class="tsd-anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#haseventlistener">hasEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L765">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:765</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="lookat" class="tsd-anchor"></a>
+					<h3>look<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">look<wbr>At<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#lookat">lookAt</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L718">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:718</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>geometry<span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a>, offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#merge">merge</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L750">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:750</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>geometry: <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h5>
+								</li>
+								<li>
+									<h5>offset: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="normalizenormals" class="tsd-anchor"></a>
+					<h3>normalize<wbr>Normals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Normals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#normalizenormals">normalizeNormals</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L751">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:751</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="offsets" class="tsd-anchor"></a>
+					<h3>offsets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">offsets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#offsets">offsets</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L697">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:697</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeattribute" class="tsd-anchor"></a>
+					<h3>remove<wbr>Attribute</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Attribute<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#removeattribute">removeAttribute</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L692">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:692</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeeventlistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L766">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:766</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>event: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatex" class="tsd-anchor"></a>
+					<h3>rotateX</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateX<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#rotatex">rotateX</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L713">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:713</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatey" class="tsd-anchor"></a>
+					<h3>rotateY</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateY<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#rotatey">rotateY</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L714">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:714</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="rotatez" class="tsd-anchor"></a>
+					<h3>rotateZ</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rotateZ<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#rotatez">rotateZ</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L715">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:715</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="scale" class="tsd-anchor"></a>
+					<h3>scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#scale">scale</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L717">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:717</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setdrawrange" class="tsd-anchor"></a>
+					<h3>set<wbr>Draw<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Draw<wbr>Range<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#setdrawrange">setDrawRange</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L706">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:706</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setfromobject" class="tsd-anchor"></a>
+					<h3>set<wbr>From<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>From<wbr>Object<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#setfromobject">setFromObject</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L722">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:722</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setindex" class="tsd-anchor"></a>
+					<h3>set<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Index<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#setindex">setIndex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L686">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:686</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <a href="three.bufferattribute.html" class="tsd-signature-type">BufferAttribute</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#tojson">toJSON</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L752">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:752</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="translate" class="tsd-anchor"></a>
+					<h3>translate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">translate<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#translate">translate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L716">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:716</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="three.buffergeometry.html" class="tsd-signature-type">BufferGeometry</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="updatefromobject" class="tsd-anchor"></a>
+					<h3>update<wbr>From<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>From<wbr>Object<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="three.object3d.html" class="tsd-signature-type">Object3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="three.buffergeometry.html">BufferGeometry</a>.<a href="three.buffergeometry.html#updatefromobject">updateFromObject</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts#L723">packages/threejs.TypeScript.DefinitelyTyped.3.1.4/Content/Scripts/typings/threejs/three.d.ts:723</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="three.object3d.html" class="tsd-signature-type">Object3D</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_three_.html">"three"</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/three.html">THREE</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/boxologic.html">boxologic</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.html">samchon</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/std.html">std</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="three.instancedbuffergeometry.html" class="tsd-kind-icon">Instanced<wbr>Buffer<wbr>Geometry</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.instancedbuffergeometry.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#attributes" class="tsd-kind-icon">attributes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#boundingsphere" class="tsd-kind-icon">bounding<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#drawrange" class="tsd-kind-icon">draw<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.instancedbuffergeometry.html#groups" class="tsd-kind-icon">groups</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#index" class="tsd-kind-icon">index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#morphattributes" class="tsd-kind-icon">morph<wbr>Attributes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#uuid" class="tsd-kind-icon">uuid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="three.instancedbuffergeometry.html#maxindex" class="tsd-kind-icon">Max<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#addattribute" class="tsd-kind-icon">add<wbr>Attribute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#adddrawcall" class="tsd-kind-icon">add<wbr>Draw<wbr>Call</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.instancedbuffergeometry.html#addgroup" class="tsd-kind-icon">add<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#addindex" class="tsd-kind-icon">add<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#applymatrix" class="tsd-kind-icon">apply<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#center" class="tsd-kind-icon">center</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#cleardrawcalls" class="tsd-kind-icon">clear<wbr>Draw<wbr>Calls</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#cleargroups" class="tsd-kind-icon">clear<wbr>Groups</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.instancedbuffergeometry.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#computeboundingbox" class="tsd-kind-icon">compute<wbr>Bounding<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#computeboundingsphere" class="tsd-kind-icon">compute<wbr>Bounding<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#computefacenormals" class="tsd-kind-icon">compute<wbr>Face<wbr>Normals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#computeoffsets" class="tsd-kind-icon">compute<wbr>Offsets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#computevertexnormals" class="tsd-kind-icon">compute<wbr>Vertex<wbr>Normals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="three.instancedbuffergeometry.html#copy" class="tsd-kind-icon">copy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#drawcalls" class="tsd-kind-icon">drawcalls</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#fromdirectgeometry" class="tsd-kind-icon">from<wbr>Direct<wbr>Geometry</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#fromgeometry" class="tsd-kind-icon">from<wbr>Geometry</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#getindex" class="tsd-kind-icon">get<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#lookat" class="tsd-kind-icon">look<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#merge" class="tsd-kind-icon">merge</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#normalizenormals" class="tsd-kind-icon">normalize<wbr>Normals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#offsets" class="tsd-kind-icon">offsets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#removeattribute" class="tsd-kind-icon">remove<wbr>Attribute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#rotatex" class="tsd-kind-icon">rotateX</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#rotatey" class="tsd-kind-icon">rotateY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#rotatez" class="tsd-kind-icon">rotateZ</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#scale" class="tsd-kind-icon">scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#setdrawrange" class="tsd-kind-icon">set<wbr>Draw<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#setfromobject" class="tsd-kind-icon">set<wbr>From<wbr>Object</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#setindex" class="tsd-kind-icon">set<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#translate" class="tsd-kind-icon">translate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="three.instancedbuffergeometry.html#updatefromobject" class="tsd-kind-icon">update<wbr>From<wbr>Object</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
