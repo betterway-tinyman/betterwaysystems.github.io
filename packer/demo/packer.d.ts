@@ -78,15 +78,15 @@ declare namespace boxologic {
     }
 }
 /**
-* <p> A set of programs that calculate the best fit for boxes on a pallet migrated from language C. </p>
-*
-* <ul>
-*	<li> Original Boxologic: https://github.com/exad/boxologic </li>
-* </ul>
-*
-* @author Bill Knechtel, <br>
-*		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
-*/
+ * <p> A set of programs that calculate the best fit for boxes on a pallet migrated from language C. </p>
+ *
+ * <ul>
+ *	<li> Original Boxologic: https://github.com/exad/boxologic </li>
+ * </ul>
+ *
+ * @author Bill Knechtel, <br>
+ *		   Migrated and Refactored by Jeongho Nam <http://samchon.org>
+ */
 declare namespace boxologic {
     /**
      * <p> A facade class of boxologic. </p>
@@ -454,7 +454,7 @@ declare namespace bws.packer {
         /**
          * @inheritdoc
          */
-        protected createChild(xml: samchon.library.XML): Wrapper;
+        createChild(xml: samchon.library.XML): Wrapper;
         /**
          * Get (calculate) price.
          */
@@ -557,7 +557,7 @@ declare namespace bws.packer {
         /**
          * @inheritdoc
          */
-        protected createChild(xml: samchon.library.XML): Instance;
+        createChild(xml: samchon.library.XML): Instance;
         /**
          * @inheritdoc
          */
@@ -568,12 +568,6 @@ declare namespace bws.packer {
         CHILD_TAG(): string;
     }
 }
-declare namespace bws.packer {
-    function main(str: string): void;
-    function setWrapperArray(str: string): void;
-    function drawWrapper(wrapperIndex: number, size: number): void;
-}
-declare function main(): void;
 declare namespace bws.packer {
     /**
      * @brief Packer, a solver of 3d bin packing with multiple wrappers.
@@ -873,7 +867,7 @@ declare namespace bws.packer {
          *
          * @details orientation Packer's new orientation.
          */
-        changeWrapperOrientation(orietation: number): void;
+        changeWrapperOrientation(orientation: number): void;
         /**
          * Get wrapper.
          */
@@ -998,7 +992,7 @@ declare namespace bws.packer {
         /**
          * @inheritdoc
          */
-        protected createChild(xml: samchon.library.XML): Wrap;
+        createChild(xml: samchon.library.XML): Wrap;
         /**
          * Key of a Wrapper is its name.
          */
@@ -1241,3 +1235,9 @@ declare namespace bws.packer {
         TAG(): string;
     }
 }
+declare namespace bws.packer {
+    function main(str: string): void;
+    function setWrapperArray(str: string): void;
+    function drawWrapper(wrapperIndex: number, size: number): void;
+}
+declare function main(): void;
