@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -75,6 +73,7 @@
 					<div class="lead">
 						<p> A reverse-iterator of List. </p>
 					</div>
+					<p> <img src="../assets/images/design/linear_containers.png" width="100%" /> </p>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
@@ -99,7 +98,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="std.base.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="std.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ListReverseIterator</span>
@@ -121,7 +120,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.listreverseiterator.html#iterator_" class="tsd-kind-icon">iterator_</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.listreverseiterator.html#base_" class="tsd-kind-icon">base_</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.listreverseiterator.html#source_" class="tsd-kind-icon">source_</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.listreverseiterator.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
@@ -129,11 +128,13 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.listreverseiterator.html#advance" class="tsd-kind-icon">advance</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#advance" class="tsd-kind-icon">advance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#base" class="tsd-kind-icon">base</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="std.listreverseiterator.html#create_neighbor" class="tsd-kind-icon">create_<wbr>neighbor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#get_source" class="tsd-kind-icon">get_<wbr>source</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.listreverseiterator.html#next" class="tsd-kind-icon">next</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.listreverseiterator.html#prev" class="tsd-kind-icon">prev</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#next" class="tsd-kind-icon">next</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#prev" class="tsd-kind-icon">prev</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.listreverseiterator.html#swap" class="tsd-kind-icon">swap</a></li>
 							</ul>
 						</section>
@@ -146,20 +147,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>List<wbr>Reverse<wbr>Iterator<span class="tsd-signature-symbol">(</span>iterator<span class="tsd-signature-symbol">: </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>List<wbr>Reverse<wbr>Iterator<span class="tsd-signature-symbol">(</span>base<span class="tsd-signature-symbol">: </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#constructor">constructor</a></p>
+								<p>Overwrites <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1506">src/std/typescript-stl.d.ts:1506</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2155">typings/typescript-stl/typescript-stl.d.ts:2155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>iterator: <a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>base: <a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a></h4>
@@ -170,13 +171,13 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="iterator_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> iterator_</h3>
-					<div class="tsd-signature tsd-kind-icon">iterator_<span class="tsd-signature-symbol">:</span> <a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="base_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> base_</h3>
+					<div class="tsd-signature tsd-kind-icon">base_<span class="tsd-signature-symbol">:</span> <a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#iterator_">iterator_</a></p>
+						<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#base_">base_</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L89">src/std/typescript-stl.d.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L279">typings/typescript-stl/typescript-stl.d.ts:279</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,9 +186,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> source_</h3>
 					<div class="tsd-signature tsd-kind-icon">source_<span class="tsd-signature-symbol">:</span> <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#source_">source_</a></p>
+						<p>Inherited from <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#source_">source_</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L24">src/std/typescript-stl.d.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L200">typings/typescript-stl/typescript-stl.d.ts:200</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,27 +202,34 @@
 					<h3>value</h3>
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
-						<p>Overwrites <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#value">value</a></p>
+						<p>Overwrites <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#value">value</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1512">src/std/typescript-stl.d.ts:1512</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2164">typings/typescript-stl/typescript-stl.d.ts:2164</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>inheritdoc</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="advance" class="tsd-anchor"></a>
 					<h3>advance</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">advance<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#advance">advance</a></p>
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#advance">advance</a></p>
+								<p>Overwrites <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#advance">advance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1524">src/std/typescript-stl.d.ts:1524</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L295">typings/typescript-stl/typescript-stl.d.ts:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,95 +248,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-					<a name="equal_to" class="tsd-anchor"></a>
-					<h3>equal_<wbr>to</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">equal_<wbr>to&lt;U&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon">equal_<wbr>to&lt;U&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#equal_to">equal_to</a></p>
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#equal_to">equal_to</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L91">src/std/typescript-stl.d.ts:91</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>obj: <a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#equal_to">equal_to</a></p>
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#equal_to">equal_to</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L92">src/std/typescript-stl.d.ts:92</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>obj: <a href="std.base.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="get_source" class="tsd-anchor"></a>
-					<h3>get_<wbr>source</h3>
+					<a name="base" class="tsd-anchor"></a>
+					<h3>base</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get_<wbr>source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">base<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#get_source">get_source</a></p>
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#base">base</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L56">src/std/typescript-stl.d.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L281">typings/typescript-stl/typescript-stl.d.ts:281</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get source</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-					<a name="next" class="tsd-anchor"></a>
-					<h3>next</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+					<a name="create_neighbor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create_<wbr>neighbor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create_<wbr>neighbor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#next">next</a></p>
+								<p>Overwrites <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#create_neighbor">create_neighbor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1520">src/std/typescript-stl.d.ts:1520</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2160">typings/typescript-stl/typescript-stl.d.ts:2160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,18 +290,98 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="equal_to" class="tsd-anchor"></a>
+					<h3>equal_<wbr>to</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">equal_<wbr>to<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#equal_to">equal_to</a></p>
+								<p>Overwrites <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#equal_to">equal_to</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L299">typings/typescript-stl/typescript-stl.d.ts:299</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="get_source" class="tsd-anchor"></a>
+					<h3>get_<wbr>source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#get_source">get_source</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L232">typings/typescript-stl/typescript-stl.d.ts:232</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get source</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="next" class="tsd-anchor"></a>
+					<h3>next</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#next">next</a></p>
+								<p>Overwrites <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#next">next</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L291">typings/typescript-stl/typescript-stl.d.ts:291</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="prev" class="tsd-anchor"></a>
 					<h3>prev</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">prev<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#prev">prev</a></p>
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#prev">prev</a></p>
+								<p>Overwrites <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#prev">prev</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1516">src/std/typescript-stl.d.ts:1516</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L287">typings/typescript-stl/typescript-stl.d.ts:287</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -369,38 +398,27 @@
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#swap">swap</a></p>
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#swap">swap</a></p>
+								<p>Inherited from <a href="std.reverseiterator.html">ReverseIterator</a>.<a href="std.reverseiterator.html#swap">swap</a></p>
+								<p>Overwrites <a href="std.iterator.html">Iterator</a>.<a href="std.iterator.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L97">src/std/typescript-stl.d.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L303">typings/typescript-stl/typescript-stl.d.ts:303</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.reverseiterator.html">ReverseIterator</a>.<a href="std.base.reverseiterator.html#swap">swap</a></p>
-								<p>Overwrites <a href="std.base.iterator.html">Iterator</a>.<a href="std.base.iterator.html#swap">swap</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L98">src/std/typescript-stl.d.ts:98</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>obj: <a href="std.base.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -426,6 +444,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
@@ -457,7 +478,7 @@
 								<a href="std.listreverseiterator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="std.listreverseiterator.html#iterator_" class="tsd-kind-icon">iterator_</a>
+								<a href="std.listreverseiterator.html#base_" class="tsd-kind-icon">base_</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#source_" class="tsd-kind-icon">source_</a>
@@ -465,19 +486,25 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#value" class="tsd-kind-icon">value</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#advance" class="tsd-kind-icon">advance</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="std.listreverseiterator.html#base" class="tsd-kind-icon">base</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+								<a href="std.listreverseiterator.html#create_neighbor" class="tsd-kind-icon">create_<wbr>neighbor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#get_source" class="tsd-kind-icon">get_<wbr>source</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#next" class="tsd-kind-icon">next</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.listreverseiterator.html#prev" class="tsd-kind-icon">prev</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">

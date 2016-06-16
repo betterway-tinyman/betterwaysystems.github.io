@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -114,7 +112,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/std.base.iarray.html" class="tsd-signature-type">IArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/samchon.protocol.ientitygroup.html" class="tsd-signature-type">IEntityGroup</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-signature-type">IProtocol</a></li>
 				</ul>
 			</section>
@@ -170,10 +169,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#erase" class="tsd-kind-icon">erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#erase_by_range" class="tsd-kind-icon">erase_<wbr>by_<wbr>range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#find" class="tsd-kind-icon">find</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#front" class="tsd-kind-icon">front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.externalsystemarray.html#getrole" class="tsd-kind-icon">get<wbr>Role</a></li>
@@ -230,9 +231,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#constructor">constructor</a></p>
+								<p>Overwrites <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L678">src/samchon/SamchonFramework.d.ts:678</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2810">typings/samchon-framework/samchon-framework.d.ts:2810</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,12 +255,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#iterator">iterator</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L160">src/std/typescript-stl.d.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L531">typings/typescript-stl/typescript-stl.d.ts:531</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Type definition of <a href="std.vector.html">Vector</a>&#39;s <a href="std.vectoriterator.html">iterator</a>.</p>
+							<p>Type definition of <a href="../interfaces/three.vector.html">Vector</a>&#39;s <a href="std.vectoriterator.html">iterator</a>.</p>
 						</div>
 					</div>
 				</section>
@@ -291,9 +292,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#child_tag">CHILD_TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#child_tag">CHILD_TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L710">src/samchon/SamchonFramework.d.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2842">typings/samchon-framework/samchon-framework.d.ts:2842</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -309,9 +311,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#tag">TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L709">src/samchon/SamchonFramework.d.ts:709</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2841">typings/samchon-framework/samchon-framework.d.ts:2841</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -328,17 +331,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#assign">assign</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#assign">assign</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L211">src/std/typescript-stl.d.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L582">typings/typescript-stl/typescript-stl.d.ts:582</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> Assign new content to content. </p>
+								</div>
+								<p> Assigns new contents to the container, replacing its current contents, and modifying its
+								<a href="samchon.protocol.externalsystemarray.html#size">size</a> accordingly. </p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -346,7 +350,7 @@
 									<h4>U<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h4>
 								</li>
 								<li>
-									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +368,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L215">src/std/typescript-stl.d.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L586">typings/typescript-stl/typescript-stl.d.ts:586</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,19 +399,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#at">at</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#at">at</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#at">at</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L255">src/std/typescript-stl.d.ts:255</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L626">typings/typescript-stl/typescript-stl.d.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Access element. </p>
-									<p> Returns a value to the element at position <i>index</i> in the <a href="../interfaces/std.base.iarray.html">container</a>.</p>
+									<p> Returns a value to the element at position <i>index</i> in the {@link IArray container}.</p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the <a href="../interfaces/std.base.iarray.html">container</a>, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
+									in the {@link IArray container}, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
 								if <i>index</i> is greater or equal than its <a href="samchon.protocol.externalsystemarray.html#size">size</a>). </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -430,10 +434,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#back">back</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#back">back</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#back">back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L267">src/std/typescript-stl.d.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L638">typings/typescript-stl/typescript-stl.d.ts:638</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,10 +463,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#begin">begin</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#begin">begin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L227">src/std/typescript-stl.d.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L598">typings/typescript-stl/typescript-stl.d.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,31 +491,31 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#capacity">capacity</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#capacity">capacity</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#capacity">capacity</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L247">src/std/typescript-stl.d.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L618">typings/typescript-stl/typescript-stl.d.ts:618</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Return size of allocated storage capacity. </p>
 								</div>
-								<p> Returns the size of the storage space currently allocated for the <a href="../interfaces/std.base.iarray.html">container</a>,
+								<p> Returns the size of the storage space currently allocated for the {@link IArray container},
 								expressed in terms of elements. </p>
-								<p> This <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is not necessarily equal to the <a href="../interfaces/std.base.iarray.html">container</a> <a href="samchon.protocol.externalsystemarray.html#size">size</a>.
+								<p> This <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is not necessarily equal to the {@link IArray container} <a href="samchon.protocol.externalsystemarray.html#size">size</a>.
 									It can be equal or greater, with the extra space allowing to accommodate for growth without the
 								need to reallocate on each insertion. </p>
 								<p> Notice that this <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> does not suppose a limit on the <a href="samchon.protocol.externalsystemarray.html#size">size</a> of the
-									<a href="../interfaces/std.base.iarray.html">container</a>. When this <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is exhausted and more is needed, it is
-									automatically expanded by the <a href="../interfaces/std.base.iarray.html">container</a> (reallocating it storage space).
-									The theoretical limit on the <a href="samchon.protocol.externalsystemarray.html#size">size</a> of a <a href="../interfaces/std.base.iarray.html">container</a> is given by member
+									{@link IArray container}. When this <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is exhausted and more is needed, it is
+									automatically expanded by the {@link IArray container} (reallocating it storage space).
+									The theoretical limit on the <a href="samchon.protocol.externalsystemarray.html#size">size</a> of a {@link IArray container} is given by member
 								{@link max_size}. </p>
-								<p> The <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> of a <a href="../interfaces/std.base.iarray.html">container</a> can be explicitly altered by calling member
-								<a href="../interfaces/std.base.iarray.html#reserve">IArray.reserve</a>. </p>
+								<p> The <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> of a {@link IArray container} can be explicitly altered by calling member
+								{@link IArray.reserve}. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the currently allocated storage capacity in the <a href="../interfaces/std.base.iarray.html">container</a>,
+							<p>The size of the currently allocated storage capacity in the {@link IArray container},
 							measured in terms of the number elements it can hold.</p>
 						</li>
 					</ul>
@@ -525,10 +529,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#clear">clear</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#clear">clear</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L223">src/std/typescript-stl.d.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L594">typings/typescript-stl/typescript-stl.d.ts:594</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,9 +554,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#construct">construct</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L64">src/samchon/SamchonFramework.d.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2434">typings/samchon-framework/samchon-framework.d.ts:2434</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,10 +569,6 @@
 									Those children Entity objects&#39; data will constructed by their own construct() method. Even insertion
 								of XML objects representing children are done by abstract method of EntityArray::toXML(). </p>
 								<p> Constructs only data of EntityArray&#39;s own. </p>
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -588,9 +589,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#count">count</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L98">src/samchon/SamchonFramework.d.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2454">typings/samchon-framework/samchon-framework.d.ts:2454</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -603,9 +605,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value to be searched for.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -613,18 +612,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="createchild" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<h3>create<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#createchild">createChild</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#createchild">createChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L74">src/samchon/SamchonFramework.d.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2438">typings/samchon-framework/samchon-framework.d.ts:2438</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -655,10 +655,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#empty">empty</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L251">src/std/typescript-stl.d.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L622">typings/typescript-stl/typescript-stl.d.ts:622</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,10 +683,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#end">end</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#end">end</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L231">src/std/typescript-stl.d.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L602">typings/typescript-stl/typescript-stl.d.ts:602</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -715,24 +715,26 @@
 					<h3>erase</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#erase">erase</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L363">src/std/typescript-stl.d.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L815">typings/typescript-stl/typescript-stl.d.ts:815</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Erase element. </p>
 								</div>
-								<p> Removes from the <a href="std.vector.html">Vector</a> either a single element; <i>position</i>. </p>
+								<p> Removes from the <a href="../interfaces/three.vector.html">Vector</a> either a single element; <i>position</i>. </p>
 								<p> This effectively reduces the container size by the number of element removed. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
 									position other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements after the
 									segment erased to their new positions. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -742,7 +744,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Iterator pointing to a single element to be removed from the <a href="std.vector.html">Vector</a>.</p>
+										<p>Iterator pointing to a single element to be removed from the <a href="../interfaces/three.vector.html">Vector</a>.</p>
 									</div>
 								</li>
 							</ul>
@@ -753,10 +755,10 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#erase">erase</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L383">src/std/typescript-stl.d.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L835">typings/typescript-stl/typescript-stl.d.ts:835</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -765,7 +767,7 @@
 								</div>
 								<p> Removes from the <ode>Vector</code> either a single element; <i>position</i>. </p>
 								<p> This effectively reduces the container size by the number of elements removed. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
 									position other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements after the
 									segment erased to their new positions. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -773,22 +775,153 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>begin: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An iterator specifying a range of beginning to erase.</p>
-									</div>
+									<h5>first: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>end: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An iterator specifying a range of end to erase.</p>
-									</div>
+									<h5>last: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An iterator pointing to the new location of the element that followed the last element erased by
+								the function call. This is the <a href="samchon.protocol.externalsystemarray.html#rend">rend()</a> if the operation erased the last element in the
+							sequence.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#erase">erase</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L854">typings/typescript-stl/typescript-stl.d.ts:854</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Erase element. </p>
+								</div>
+								<p> Removes from the <a href="../interfaces/three.vector.html">Vector</a> either a single element; <i>position</i>. </p>
+								<p> This effectively reduces the container size by the number of element removed. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
+									position other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements after the
+									segment erased to their new positions. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Iterator pointing to a single element to be removed from the <a href="../interfaces/three.vector.html">Vector</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to the new location of the element that followed the last element erased by
+								the function call. This is the <a href="samchon.protocol.externalsystemarray.html#rend">rend()</a> if the operation erased the last element in the
+							sequence.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#erase">erase</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L874">typings/typescript-stl/typescript-stl.d.ts:874</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Erase element. </p>
+								</div>
+								<p> Removes from the <ode>Vector</code> either a single element; <i>position</i>. </p>
+								<p> This effectively reduces the container size by the number of elements removed. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
+									position other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements after the
+									segment erased to their new positions. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>last: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to the new location of the element that followed the last element erased by
 								the function call. This is the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> if the operation erased the last element in the
 							sequence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="erase_by_range" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> erase_<wbr>by_<wbr>range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>by_<wbr>range<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase_by_range">erase_by_range</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L878">typings/typescript-stl/typescript-stl.d.ts:878</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>hiddde</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>last: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#find">find</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#find">find</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2446">typings/samchon-framework/samchon-framework.d.ts:2446</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Get iterator to element. </p>
+								</div>
+								<p> Searches the container for an element with a identifier equivalent to <i>key</i> and returns an
+								iterator to it if found, otherwise it returns an iterator to <a href="samchon.protocol.externalsystemarray.html#end">end()</a>. </p>
+								<p> Two keys are considered equivalent if the container&#39;s comparison object returns false reflexively
+								(i.e., no matter the order in which the elements are passed as arguments). </p>
+								<p> Another member functions, <a href="samchon.protocol.externalsystemarray.html#has">has()</a> and <a href="samchon.protocol.externalsystemarray.html#count">count()</a>, can be used to just check
+								whether a particular <i>key</i> exists. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator to the element, if an element with specified <i>key</i> is found, or
+							<a href="samchon.protocol.externalsystemarray.html#end">end()</a> otherwise.</p>
 						</li>
 					</ul>
 				</section>
@@ -801,10 +934,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#front">front</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#front">front</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#front">front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L263">src/std/typescript-stl.d.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L634">typings/typescript-stl/typescript-stl.d.ts:634</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -825,14 +958,15 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#get">get</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L110">src/samchon/SamchonFramework.d.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2458">typings/samchon-framework/samchon-framework.d.ts:2458</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -849,10 +983,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value of the element whose mapped value is accessed.</p>
-									</div>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h4>
@@ -870,7 +1001,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L706">src/samchon/SamchonFramework.d.ts:706</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2838">typings/samchon-framework/samchon-framework.d.ts:2838</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -898,9 +1029,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#has">has</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L88">src/samchon/SamchonFramework.d.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2450">typings/samchon-framework/samchon-framework.d.ts:2450</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -913,9 +1045,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value of the element whose mapped value is accessed.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -933,7 +1062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L699">src/samchon/SamchonFramework.d.ts:699</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2831">typings/samchon-framework/samchon-framework.d.ts:2831</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -959,24 +1088,27 @@
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L297">src/std/typescript-stl.d.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L664">typings/typescript-stl/typescript-stl.d.ts:664</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert an element. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new element before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new element before the element at the specified
 								<i>position</i>, effectively increasing the container size by one. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
 									positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
 									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -986,7 +1118,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new element is inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new element is inserted.
 											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -1005,18 +1137,18 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L320">src/std/typescript-stl.d.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L687">typings/typescript-stl/typescript-stl.d.ts:687</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert elements by repeated filling. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
-								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
 									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
@@ -1026,7 +1158,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new elements are inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
 											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -1049,22 +1181,22 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#insert">insert</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#insert">insert</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L344">src/std/typescript-stl.d.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L711">typings/typescript-stl/typescript-stl.d.ts:711</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert elements by range iterators. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
 								iterators. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
-								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
 									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
@@ -1075,7 +1207,7 @@
 									<h4>U<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h4>
 								</li>
 								<li>
-									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1083,7 +1215,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new elements are inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
 											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -1104,6 +1236,149 @@
 							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An iterator that points to the first of the newly inserted elements.</p>
 						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L733">typings/typescript-stl/typescript-stl.d.ts:733</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert an element. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new element before the element at the specified
+								<i>position</i>, effectively increasing the container size by one. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
+									positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
+									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new element is inserted.
+											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to be copied to the inserted element.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the newly inserted element.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L756">typings/typescript-stl/typescript-stl.d.ts:756</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert elements by repeated filling. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+										positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
+										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
+									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
+											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of elements to insert. Each element is initialized to a copy of <i>val</i>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to be copied (or moved) to the inserted elements.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the first of the newly inserted elements.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#insert">insert</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L780">typings/typescript-stl/typescript-stl.d.ts:780</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert elements by range iterators. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
+								iterators. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="samchon.protocol.externalsystemarray.html#size">size</a> surpasses the current <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>. </p>
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+										positions other than the <a href="samchon.protocol.externalsystemarray.html#end">end()</a> causes the container to relocate all the elements that were
+										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
+									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h4>
+								</li>
+								<li>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
+											<a href="samchon.protocol.externalsystemarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>begin: <span class="tsd-signature-type">InputIterator</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input interator of the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>end: <span class="tsd-signature-type">InputIterator</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input interator of the final position in a sequence.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the first of the newly inserted elements.</p>
+						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -1115,16 +1390,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#key">key</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L78">src/samchon/SamchonFramework.d.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2442">typings/samchon-framework/samchon-framework.d.ts:2442</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> Get a key that can identify the Entity uniquely. </p>
+								</div>
+								<p> If identifier of the Entity is not atomic value, returns a string or paired object
+								that can represents the composite identifier. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
@@ -1139,10 +1416,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#pop_back">pop_back</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#pop_back">pop_back</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L275">src/std/typescript-stl.d.ts:275</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L796">typings/typescript-stl/typescript-stl.d.ts:796</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,7 +1444,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L271">src/std/typescript-stl.d.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L642">typings/typescript-stl/typescript-stl.d.ts:642</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1195,25 +1472,25 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#rbegin">rbegin</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#rbegin">rbegin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L235">src/std/typescript-stl.d.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L606">typings/typescript-stl/typescript-stl.d.ts:606</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Return <a href="std.base.reverseiterator.html">reverse iterator</a> to <i>reverse beginning</i>. </p>
+									<p> Return <a href="std.reverseiterator.html">reverse iterator</a> to <i>reverse beginning</i>. </p>
 								</div>
-								<p> Returns a <a href="std.base.reverseiterator.html">reverse iterator</a> pointing to the last element in the container (i.e.,
+								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the last element in the container (i.e.,
 								its <i>reverse beginning</i>). </p>
-								<p> <a href="std.base.reverseiterator.html">reverse iterators</a> iterate backwards: increasing them moves them towards the
+								<p> <a href="std.reverseiterator.html">reverse iterators</a> iterate backwards: increasing them moves them towards the
 								beginning of the  </p>
 								<p> <a href="samchon.protocol.externalsystemarray.html#rbegin">rbegin</a> points to the element right before the one that would be pointed to by member <a href="samchon.protocol.externalsystemarray.html#end">end</a>.
 								</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A <a href="std.base.reverseiterator.html">reverse iterator</a> to the <i>reverse beginning</i> of the sequence</p>
+							<p>A <a href="std.reverseiterator.html">reverse iterator</a> to the <i>reverse beginning</i> of the sequence</p>
 						</li>
 					</ul>
 				</section>
@@ -1226,23 +1503,23 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#rend">rend</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#rend">rend</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L239">src/std/typescript-stl.d.ts:239</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L610">typings/typescript-stl/typescript-stl.d.ts:610</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Return <a href="std.base.reverseiterator.html">reverse iterator</a> to <i>reverse end</i>. </p>
+									<p> Return <a href="std.reverseiterator.html">reverse iterator</a> to <i>reverse end</i>. </p>
 								</div>
-								<p> Returns a <a href="std.base.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
+								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
 								first element in the container (which is considered its <i>reverse end</i>). </p>
 								<p><p> The range between <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="samchon.protocol.externalsystemarray.html#rbegin">rbegin</a> and <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="samchon.protocol.externalsystemarray.html#rend">rend</a> contains all
 									the elements of the container (in reverse order).</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.protocol.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A <a href="std.base.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
+							<p>A <a href="std.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
 						</li>
 					</ul>
 				</section>
@@ -1257,7 +1534,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.iprotocol.html">IProtocol</a>.<a href="../interfaces/samchon.protocol.iprotocol.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L708">src/samchon/SamchonFramework.d.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2840">typings/samchon-framework/samchon-framework.d.ts:2840</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1279,24 +1556,24 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#reserve">reserve</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#reserve">reserve</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#reserve">reserve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L219">src/std/typescript-stl.d.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L590">typings/typescript-stl/typescript-stl.d.ts:590</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Request a change in capacity. </p>
 								</div>
-								<p> Requests that the <a href="../interfaces/std.base.iarray.html">container</a> <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> be at least enough to contain
+								<p> Requests that the {@link IArray container} <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> be at least enough to contain
 								<i>n</i> elements. </p>
-								<p> If <i>n</i> is greater than the current <a href="../interfaces/std.base.iarray.html">container</a> <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>, the
-									function causes the <a href="../interfaces/std.base.iarray.html">container</a> to reallocate its storage increasing its
+								<p> If <i>n</i> is greater than the current {@link IArray container} <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a>, the
+									function causes the {@link IArray container} to reallocate its storage increasing its
 								<a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> to <i>n</i> (or greater). </p>
 								<p> In all other cases, the function call does not cause a reallocation and the
-								<a href="../interfaces/std.base.iarray.html">container</a> <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is not affected. </p>
-								<p> This function has no effect on the <a href="../interfaces/std.base.iarray.html">container</a> <a href="samchon.protocol.externalsystemarray.html#size">size</a> and cannot alter
+								{@link IArray container} <a href="samchon.protocol.externalsystemarray.html#capacity">capacity</a> is not affected. </p>
+								<p> This function has no effect on the {@link IArray container} <a href="samchon.protocol.externalsystemarray.html#size">size</a> and cannot alter
 								its elements. </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1320,7 +1597,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.iprotocol.html">IProtocol</a>.<a href="../interfaces/samchon.protocol.iprotocol.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L707">src/samchon/SamchonFramework.d.ts:707</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2839">typings/samchon-framework/samchon-framework.d.ts:2839</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1344,7 +1621,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L259">src/std/typescript-stl.d.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L630">typings/typescript-stl/typescript-stl.d.ts:630</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1375,10 +1652,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#size">size</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#size">size</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L243">src/std/typescript-stl.d.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L614">typings/typescript-stl/typescript-stl.d.ts:614</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1401,7 +1678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L692">src/samchon/SamchonFramework.d.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2824">typings/samchon-framework/samchon-framework.d.ts:2824</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1427,10 +1704,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#swap">swap</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#swap">swap</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L387">src/std/typescript-stl.d.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L882">typings/typescript-stl/typescript-stl.d.ts:882</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1464,9 +1741,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitygroup.html">IEntityGroup</a>.<a href="../interfaces/samchon.protocol.ientitygroup.html#toxml">toXML</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L133">src/samchon/SamchonFramework.d.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2470">typings/samchon-framework/samchon-framework.d.ts:2470</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1479,10 +1757,6 @@
 									insertion of XML objects representing children are done by abstract method of
 								EntityArray::toXML(). </p>
 								<p> Archives only data of EntityArray&#39;s own. </p>
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
 						</li>
@@ -2583,9 +2857,15 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/bws.html">bws</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.collection.html">collection</a>
+							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.example.html">example</a>
 							</li>
@@ -2595,6 +2875,9 @@
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.protocol.html">protocol</a>
 								<ul>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.master.html">master</a>
+									</li>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.service.html">service</a>
 									</li>
@@ -2617,6 +2900,21 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.protocol.entityarray.html" class="tsd-kind-icon">Entity<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entityarraycollection.html" class="tsd-kind-icon">Entity<wbr>Array<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydeque.html" class="tsd-kind-icon">Entity<wbr>Deque</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydequecollection.html" class="tsd-kind-icon">Entity<wbr>Deque<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylist.html" class="tsd-kind-icon">Entity<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylistcollection.html" class="tsd-kind-icon">Entity<wbr>List<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.protocol.externalsystem.html" class="tsd-kind-icon">External<wbr>System</a>
@@ -2665,7 +2963,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.protocol.externalsystemarray.html#count" class="tsd-kind-icon">count</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.protocol.externalsystemarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -2676,6 +2974,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.protocol.externalsystemarray.html#erase" class="tsd-kind-icon">erase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="samchon.protocol.externalsystemarray.html#erase_by_range" class="tsd-kind-icon">erase_<wbr>by_<wbr>range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.protocol.externalsystemarray.html#find" class="tsd-kind-icon">find</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.protocol.externalsystemarray.html#front" class="tsd-kind-icon">front</a>
@@ -2818,6 +3122,12 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/samchon.protocol.ientity.html" class="tsd-kind-icon">IEntity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-kind-icon">IEntity<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.ientitygroup.html" class="tsd-kind-icon">IEntity<wbr>Group</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-kind-icon">IProtocol</a>

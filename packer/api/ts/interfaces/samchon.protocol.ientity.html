@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -110,7 +108,7 @@
 								<a href="bws.packer.instance.html" class="tsd-signature-type">Instance</a>
 							</li>
 							<li>
-								<a href="samchon.example.packer.instance.html" class="tsd-signature-type">Instance</a>
+								<a href="samchon.protocol.ientitygroup.html" class="tsd-signature-type">IEntityGroup</a>
 							</li>
 						</ul>
 					</li>
@@ -127,7 +125,6 @@
 					<li><a href="../classes/bws.packer.packer.html" class="tsd-signature-type">Packer</a></li>
 					<li><a href="../classes/bws.packer.packerform.html" class="tsd-signature-type">PackerForm</a></li>
 					<li><a href="../classes/bws.packer.product.html" class="tsd-signature-type">Product</a></li>
-					<li><a href="../classes/samchon.example.packer.product.html" class="tsd-signature-type">Product</a></li>
 					<li><a href="../classes/bws.packer.wrap.html" class="tsd-signature-type">Wrap</a></li>
 				</ul>
 			</section>
@@ -159,7 +156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1758">src/samchon/SamchonFramework.d.ts:1758</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L529">typings/samchon-framework/samchon-framework.d.ts:529</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -167,7 +164,7 @@
 									<p> A tag name when represented by XML. </p>
 								</div>
 								<ul>
-									<li> &lt;TAG {...properties} /&gt; </li>
+									<li> <TAG {...properties} /> </li>
 								</ul>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -184,7 +181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1743">src/samchon/SamchonFramework.d.ts:1743</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L514">typings/samchon-framework/samchon-framework.d.ts:514</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1750">src/samchon/SamchonFramework.d.ts:1750</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L521">typings/samchon-framework/samchon-framework.d.ts:521</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1795">src/samchon/SamchonFramework.d.ts:1795</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L566">typings/samchon-framework/samchon-framework.d.ts:566</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,27 +253,26 @@
 								<p> Don&#39;t archive the member variable of atomic value to XML::value causing enormouse creation
 									of XML objects to number of member variables. An Entity must be represented by only a XML
 								instance (tag). </p>
-								<table>
-									<tr>
-										<th> Standard Usage </th>
-										<th> Non-standard usage abusing value </th>
-									</tr>
-									<tr>
-										<td>
-											&lt;memberList&gt; <br>
-											&lt;member id=&#39;jhnam88&#39; name=&#39;Jeongho+Nam&#39; birthdate=&#39;1988-03-11&#39; /&gt; <br>
-											&lt;member id=&#39;master&#39; name=&#39;Administartor&#39; birthdate=&#39;2011-07-28&#39; /&gt; <br>
-											&lt;/memberList&gt;
-										</td>
-										<td>
-											&lt;member&gt;
-											&lt;id&gt;jhnam88&lt;/id&gt;
-											&lt;name&gt;Jeongho+Nam&lt;name&gt;
-											&lt;birthdate&gt;1988-03-11&lt;/birthdate&gt;
-											&lt;/member&gt;
-										</td>
-									</tr>
-								</table>
+								<p><h4> Standard Usage. </h4>
+									<code></p>
+<p><memberList>
+    <member id='jhnam88' name='Jeongho Nam' birthdate='1988-03-11' />
+    <member id='master' name='Administartor' birthdate='2011-07-28' />
+</memberList>
+</code></p>
+								<p><h4> Non-standard usage abusing value. </h4>
+									<code></p>
+<p><member>
+    <id>jhnam88</id>
+    <name>Jeongho Nam</name>
+    <birthdate>1988-03-11</birthdate>
+</member></p>
+<p><member>
+    <id>master</id>
+    <name>Administartor</name>
+    <birthdate>2011-07-28</birthdate>
+</member>
+</code></p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
 							<p>An XML object representing the Entity.</p>
@@ -303,9 +299,15 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/bws.html">bws</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.collection.html">collection</a>
+							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.example.html">example</a>
 							</li>
@@ -315,6 +317,9 @@
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.protocol.html">protocol</a>
 								<ul>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.master.html">master</a>
+									</li>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.service.html">service</a>
 									</li>
@@ -337,6 +342,21 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.protocol.entityarray.html" class="tsd-kind-icon">Entity<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.protocol.entityarraycollection.html" class="tsd-kind-icon">Entity<wbr>Array<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.protocol.entitydeque.html" class="tsd-kind-icon">Entity<wbr>Deque</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.protocol.entitydequecollection.html" class="tsd-kind-icon">Entity<wbr>Deque<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.protocol.entitylist.html" class="tsd-kind-icon">Entity<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.protocol.entitylistcollection.html" class="tsd-kind-icon">Entity<wbr>List<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.protocol.externalsystem.html" class="tsd-kind-icon">External<wbr>System</a>
@@ -380,6 +400,12 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.ientitycollection.html" class="tsd-kind-icon">IEntity<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.ientitygroup.html" class="tsd-kind-icon">IEntity<wbr>Group</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.protocol.iprotocol.html" class="tsd-kind-icon">IProtocol</a>
 					</li>

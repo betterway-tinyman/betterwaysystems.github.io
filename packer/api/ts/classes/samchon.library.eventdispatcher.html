@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -121,6 +119,14 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">EventDispatcher</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="samchon.library.filereference.html" class="tsd-signature-type">FileReference</a>
+							</li>
+							<li>
+								<a href="samchon.library.filereferencelist.html" class="tsd-signature-type">FileReferenceList</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -172,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1087">src/samchon/SamchonFramework.d.ts:1087</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1924">typings/samchon-framework/samchon-framework.d.ts:1924</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1091">src/samchon/SamchonFramework.d.ts:1091</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1928">typings/samchon-framework/samchon-framework.d.ts:1928</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">:</span> <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="std.hashset.html" class="tsd-signature-type">HashSet</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1087">src/samchon/SamchonFramework.d.ts:1087</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1924">typings/samchon-framework/samchon-framework.d.ts:1924</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="../interfaces/samchon.library.ieventdispatcher.html" class="tsd-signature-type">IEventDispatcher</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1083">src/samchon/SamchonFramework.d.ts:1083</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1920">typings/samchon-framework/samchon-framework.d.ts:1920</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,14 +254,66 @@
 					<a name="addeventlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1109">src/samchon/SamchonFramework.d.ts:1109</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1946">typings/samchon-framework/samchon-framework.d.ts:1946</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
+											receives notification of an event. You can register event listeners on all nodes in the display
+										list for a specific type of event, phase, and priority.</p>
+								</div>
+								<p> After you successfully register an event listener, you cannot change its priority through
+									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
+								removeEventListener(). Then you can register the listener again with the new priority level. </p>
+								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
+									with a different type or useCapture value result in the creation of a separate listener
+									registration. For example, if you first register a listener with useCapture set to true,
+									it listens only during the capture phase. If you call addEventListener() again using the same
+									listener object, but with useCapture set to false, you have two separate listeners: one that
+								listens during the capture phase and another that listens during the target and bubbling phases. </p>
+								<p> You cannot register an event listener for only the target phase or the bubbling phase.
+									Those phases are coupled during registration because bubbling applies only to the ancestors of
+								the target node. </p>
+								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
+									memory problems could result. Event listeners are not automatically removed from memory because
+									the garbage collector does not remove the listener as long as the dispatching object exists
+								(unless the useWeakReference parameter is set to true). </p>
+								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
+									your newly created node needs an event listener, you must attach the listener after creating
+									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
+								it move along with it. </p>
+								<p> If the event listener is being registered on a node while an event is also being processed
+									on this node, the event listener is not triggered during the current phase but may be triggered
+								during a later phase in the event flow, such as the bubbling phase. </p>
+								<p> If an event listener is removed from a node while an event is being processed on the node,
+									it is still triggered by the current actions. After it is removed, the event listener is never
+								invoked again (unless it is registered again for future processing). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1950">typings/samchon-framework/samchon-framework.d.ts:1950</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,7 +358,7 @@
 									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">Object</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -316,16 +374,15 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#dispatchevent">dispatchEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1105">src/samchon/SamchonFramework.d.ts:1105</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1942">typings/samchon-framework/samchon-framework.d.ts:1942</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Dispatches an event into the event flow. </p>
-									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -348,7 +405,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#haseventlistener">hasEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1101">src/samchon/SamchonFramework.d.ts:1101</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1938">typings/samchon-framework/samchon-framework.d.ts:1938</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -376,14 +433,39 @@
 					<a name="removeeventlistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L1113">src/samchon/SamchonFramework.d.ts:1113</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1954">typings/samchon-framework/samchon-framework.d.ts:1954</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
+									with the EventDispatcher object, a call to this method has no effect.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1958">typings/samchon-framework/samchon-framework.d.ts:1958</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +483,7 @@
 									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">Object</span></h5>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -428,9 +510,15 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/bws.html">bws</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.collection.html">collection</a>
+							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.example.html">example</a>
 							</li>
@@ -490,6 +578,12 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.library.factorialgenerator.html" class="tsd-kind-icon">Factorial<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.library.filereference.html" class="tsd-kind-icon">File<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.library.filereferencelist.html" class="tsd-kind-icon">File<wbr>Reference<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.library.permuationgenerator.html" class="tsd-kind-icon">Permuation<wbr>Generator</a>

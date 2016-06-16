@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -67,6 +65,18 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Samchon Framework, A SDN framework.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -74,63 +84,13 @@
 						<section class="tsd-index-section ">
 							<h3>Modules</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-module tsd-parent-kind-module"><a href="samchon.collection.html" class="tsd-kind-icon">collection</a></li>
 								<li class="tsd-kind-module tsd-parent-kind-module"><a href="samchon.example.html" class="tsd-kind-icon">example</a></li>
 								<li class="tsd-kind-module tsd-parent-kind-module"><a href="samchon.library.html" class="tsd-kind-icon">library</a></li>
 								<li class="tsd-kind-module tsd-parent-kind-module"><a href="samchon.protocol.html" class="tsd-kind-icon">protocol</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="samchon.html#trace" class="tsd-kind-icon">trace</a></li>
-							</ul>
-						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="trace" class="tsd-anchor"></a>
-					<h3>trace</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L17">src/samchon/SamchonFramework.d.ts:17</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Trace arguments on screen. </p>
-									<p> Displays arguments on screen by <i>document.write</i>. </p>
-								</div>
-								<p> If any argument in a trace statement includes a data type other than a string, the trace function
-									invokes the associated toString() method for that data type. If the argument which is not a string
-								doesn&#39;t have <i>toString()</i> method, only &quot;[object Object]&quot; words will be traced. </p>
-								<p> Trace prints words in web page direclty. It can harm ordinary layout of the page. </p>
-								<dl class="tsd-comment-tags">
-									<dt>author</dt>
-									<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>One or more (comma separated) expressions to evaluate.
-										For multiple expressions, a space is inserted between each expression in the output.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -152,9 +112,15 @@
 					<li class=" tsd-kind-module">
 						<a href="bws.html">bws</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="flex.html">flex</a>
+					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="samchon.html">samchon</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="samchon.collection.html">collection</a>
+							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="samchon.example.html">example</a>
 							</li>
@@ -173,9 +139,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.html#trace" class="tsd-kind-icon">trace</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

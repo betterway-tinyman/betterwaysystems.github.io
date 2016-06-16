@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -79,9 +77,9 @@
 				</ul>
 				<h2 id="references">References</h2>
 				<h5 id="demo">Demo</h5>
-				<p><img src="http://betterwaysystems.github.io/packer/demo/packer.gif" alt="alt text" title="Packer"></p>
+				<p><img src="http://betterwaysystems.github.io/packer/demo/packer.gif" alt="Packer"></p>
 				<ul>
-					<li>Web: <a href="http://betterwaysystems.github.io/packer/demo/">http://betterwaysystems.github.io/packer/demo/</a></li>
+					<li>Web: <a href="http://betterwaysystems.github.io/packer/demo">http://betterwaysystems.github.io/packer/demo</a></li>
 					<li>Video: <a href="http://betterwaysystems.github.io/packer/demo/packer.mp4">http://betterwaysystems.github.io/packer/demo/packer.mp4</a></li>
 				</ul>
 				<h5 id="programming">Programming</h5>
@@ -150,7 +148,9 @@
 					<li>TypeScript (JavaScript)<ul>
 							<li>STL for TypeScript (STL containers for TypeScript) - <a href="https://github.com/samchon/stl">https://github.com/samchon/stl</a></li>
 							<li>Samchon Framework (SDN Framework) - <a href="https://github.com/samchon/framework">https://github.com/samchon/framework</a></li>
-							<li>Three.js (JavaScript library handling 3-D objects) - <a href="http://threejs.org/">http://threejs.org/</a></li>
+							<li>Three.js (JavaScript library handling 3-D objects) - <a href="http://threejs.org">http://threejs.org</a></li>
+							<li>React - <a href="https://facebook.github.io/react">https://facebook.github.io/react</a></li>
+							<li>React-Data-Grid - <a href="https://github.com/adazzle/react-data-grid">https://github.com/adazzle/react-data-grid</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -208,8 +208,8 @@
 
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bws/packer/WrapperArray.hpp&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bws/packer/InstanceArray.hpp&gt;</span></span>
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bws/packer/Product.hpp&gt;</span></span>
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bws/packer/Wrapper.hpp&gt;</span></span>
+# include &lt;bws/packer/Product.hpp&gt;
+# include &lt;bws/packer/Wrapper.hpp&gt;
 
 <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
 <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> samchon::library;
@@ -220,13 +220,13 @@
     <span class="hljs-comment">///////////////////////////</span>
     <span class="hljs-comment">// CONSTRUCT OBJECTS</span>
     <span class="hljs-comment">///////////////////////////</span>
-    <span class="hljs-built_in">shared_ptr</span>&lt;WrapperArray&gt; wrapperArray(new WrapperArray());
-    <span class="hljs-built_in">shared_ptr</span>&lt;InstanceArray&gt; instanceArray(new InstanceArray());
+    <span class="hljs-built_in">shared_ptr</span>&lt;WrapperArray&gt; wrapperArray(<span class="hljs-keyword">new</span> WrapperArray());
+    <span class="hljs-built_in">shared_ptr</span>&lt;InstanceArray&gt; instanceArray(<span class="hljs-keyword">new</span> InstanceArray());
 
     <span class="hljs-comment">// Wrappers</span>
-    wrapperArray-&gt;emplace_back(new bws.packer.Wrapper(<span class="hljs-string">"Large"</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">40</span>, <span class="hljs-number">40</span>, <span class="hljs-number">15</span>, <span class="hljs-number">0</span>));
-    wrapperArray-&gt;emplace_back(new Wrapper(<span class="hljs-string">"Medium"</span>, <span class="hljs-number">700</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>));
-    wrapperArray-&gt;emplace_back(new Wrapper(<span class="hljs-string">"Small"</span>, <span class="hljs-number">500</span>, <span class="hljs-number">15</span>, <span class="hljs-number">15</span>, <span class="hljs-number">8</span>, <span class="hljs-number">0</span>));
+    wrapperArray-&gt;emplace_back(<span class="hljs-keyword">new</span> bws.packer.Wrapper(<span class="hljs-string">"Large"</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">40</span>, <span class="hljs-number">40</span>, <span class="hljs-number">15</span>, <span class="hljs-number">0</span>));
+    wrapperArray-&gt;emplace_back(<span class="hljs-keyword">new</span> Wrapper(<span class="hljs-string">"Medium"</span>, <span class="hljs-number">700</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>));
+    wrapperArray-&gt;emplace_back(<span class="hljs-keyword">new</span> Wrapper(<span class="hljs-string">"Small"</span>, <span class="hljs-number">500</span>, <span class="hljs-number">15</span>, <span class="hljs-number">15</span>, <span class="hljs-number">8</span>, <span class="hljs-number">0</span>));
 
     <span class="hljs-comment">///////</span>
     <span class="hljs-comment">// Each Instance is repeated #15</span>
@@ -258,7 +258,7 @@
     <span class="hljs-built_in">shared_ptr</span>&lt;XML&gt; xml = result-&gt;toXML();
     <span class="hljs-built_in">cout</span> &lt;&lt; xml-&gt;toString() &lt;&lt; <span class="hljs-built_in">endl</span>;
 
-    return <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
 				<h2 id="license">License</h2>
@@ -310,6 +310,9 @@
 					<li class=" tsd-kind-module">
 						<a href="modules/bws.html">bws</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/flex.html">flex</a>
+					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="modules/samchon.html">samchon</a>
 					</li>
@@ -325,9 +328,6 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#detector" class="tsd-kind-icon">Detector</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
-						<a href="globals.html#main" class="tsd-kind-icon">main</a>
 					</li>
 				</ul>
 			</nav>

@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -77,7 +75,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="samchon.protocol.entityarraycollection.html" class="tsd-signature-type">EntityArrayCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">WrapperArray</span>
@@ -97,7 +95,9 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/std.base.iarray.html" class="tsd-signature-type">IArray</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/samchon.collection.icollection.html" class="tsd-signature-type">ICollection</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-signature-type">IEntityCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-kind-class tsd-parent-kind-module">
@@ -126,6 +126,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.packer.wrapperarray.html#child_tag" class="tsd-kind-icon">CHILD_<wbr>TAG</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.packer.wrapperarray.html#tag" class="tsd-kind-icon">TAG</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.packer.wrapperarray.html#assign" class="tsd-kind-icon">assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#at" class="tsd-kind-icon">at</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#back" class="tsd-kind-icon">back</a></li>
@@ -134,26 +135,34 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="bws.packer.wrapperarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.packer.wrapperarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#erase" class="tsd-kind-icon">erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#find" class="tsd-kind-icon">find</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#front" class="tsd-kind-icon">front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.packer.wrapperarray.html#getprice" class="tsd-kind-icon">get<wbr>Price</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.packer.wrapperarray.html#getutilization" class="tsd-kind-icon">get<wbr>Utilization</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.packer.wrapperarray.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#key" class="tsd-kind-icon">key</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#pop" class="tsd-kind-icon">pop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="bws.packer.wrapperarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.packer.wrapperarray.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="bws.packer.wrapperarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#rend" class="tsd-kind-icon">rend</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#reserve" class="tsd-kind-icon">reserve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#set" class="tsd-kind-icon">set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#splice" class="tsd-kind-icon">splice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#swap" class="tsd-kind-icon">swap</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.packer.wrapperarray.html#toxml" class="tsd-kind-icon">toXML</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.packer.wrapperarray.html#unshift" class="tsd-kind-icon">unshift</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#concat" class="tsd-kind-icon">concat</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#every" class="tsd-kind-icon">every</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#filter" class="tsd-kind-icon">filter</a></li>
@@ -162,8 +171,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#join" class="tsd-kind-icon">join</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#map" class="tsd-kind-icon">map</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#pop" class="tsd-kind-icon">pop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#pop-1" class="tsd-kind-icon">pop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#push-1" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#reduce" class="tsd-kind-icon">reduce</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#reduceright" class="tsd-kind-icon">reduce<wbr>Right</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#reverse" class="tsd-kind-icon">reverse</a></li>
@@ -171,10 +180,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#slice" class="tsd-kind-icon">slice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#some" class="tsd-kind-icon">some</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#sort" class="tsd-kind-icon">sort</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#splice" class="tsd-kind-icon">splice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#splice-1" class="tsd-kind-icon">splice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#unshift" class="tsd-kind-icon">unshift</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="bws.packer.wrapperarray.html#unshift-1" class="tsd-kind-icon">unshift</a></li>
 							</ul>
 						</section>
 					</div>
@@ -191,9 +200,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#constructor">constructor</a></p>
+								<p>Overwrites <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L5">src/bws/packer/WrapperArray.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L5">bws/packer/WrapperArray.ts:5</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,12 +224,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#iterator">iterator</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L160">src/std/typescript-stl.d.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L531">typings/typescript-stl/typescript-stl.d.ts:531</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Type definition of <a href="std.vector.html">Vector</a>&#39;s <a href="std.vectoriterator.html">iterator</a>.</p>
+							<p>Type definition of <a href="../interfaces/three.vector.html">Vector</a>&#39;s <a href="std.vectoriterator.html">iterator</a>.</p>
 						</div>
 					</div>
 				</section>
@@ -252,16 +261,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#child_tag">CHILD_TAG</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#child_tag">CHILD_TAG</a></p>
+								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#child_tag">CHILD_TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L77">src/bws/packer/WrapperArray.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L77">bws/packer/WrapperArray.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> A tag name of children objects. </p>
+								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
@@ -276,9 +285,40 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#tag">TAG</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#tag">TAG</a></p>
+								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L69">src/bws/packer/WrapperArray.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L69">bws/packer/WrapperArray.ts:69</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> A tag name when represented by XML. </p>
+								</div>
+								<ul>
+									<li> <TAG {...properties} /> </li>
+								</ul>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L431">typings/samchon-framework/samchon-framework.d.ts:431</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -287,7 +327,151 @@
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L435">typings/samchon-framework/samchon-framework.d.ts:435</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L439">typings/samchon-framework/samchon-framework.d.ts:439</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
+											receives notification of an event. You can register event listeners on all nodes in the display
+										list for a specific type of event, phase, and priority.</p>
+								</div>
+								<p> After you successfully register an event listener, you cannot change its priority through
+									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
+								removeEventListener(). Then you can register the listener again with the new priority level. </p>
+								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
+									with a different type or useCapture value result in the creation of a separate listener
+									registration. For example, if you first register a listener with useCapture set to true,
+									it listens only during the capture phase. If you call addEventListener() again using the same
+									listener object, but with useCapture set to false, you have two separate listeners: one that
+								listens during the capture phase and another that listens during the target and bubbling phases. </p>
+								<p> You cannot register an event listener for only the target phase or the bubbling phase.
+									Those phases are coupled during registration because bubbling applies only to the ancestors of
+								the target node. </p>
+								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
+									memory problems could result. Event listeners are not automatically removed from memory because
+									the garbage collector does not remove the listener as long as the dispatching object exists
+								(unless the useWeakReference parameter is set to true). </p>
+								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
+									your newly created node needs an event listener, you must attach the listener after creating
+									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
+								it move along with it. </p>
+								<p> If the event listener is being registered on a node while an event is also being processed
+									on this node, the event listener is not triggered during the current phase but may be triggered
+								during a later phase in the event flow, such as the bubbling phase. </p>
+								<p> If an event listener is removed from a node while an event is being processed on the node,
+									it is still triggered by the current actions. After it is removed, the event listener is never
+								invoked again (unless it is registered again for future processing). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L443">typings/samchon-framework/samchon-framework.d.ts:443</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
+											receives notification of an event. You can register event listeners on all nodes in the display
+										list for a specific type of event, phase, and priority.</p>
+								</div>
+								<p> After you successfully register an event listener, you cannot change its priority through
+									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
+								removeEventListener(). Then you can register the listener again with the new priority level. </p>
+								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
+									with a different type or useCapture value result in the creation of a separate listener
+									registration. For example, if you first register a listener with useCapture set to true,
+									it listens only during the capture phase. If you call addEventListener() again using the same
+									listener object, but with useCapture set to false, you have two separate listeners: one that
+								listens during the capture phase and another that listens during the target and bubbling phases. </p>
+								<p> You cannot register an event listener for only the target phase or the bubbling phase.
+									Those phases are coupled during registration because bubbling applies only to the ancestors of
+								the target node. </p>
+								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
+									memory problems could result. Event listeners are not automatically removed from memory because
+									the garbage collector does not remove the listener as long as the dispatching object exists
+								(unless the useWeakReference parameter is set to true). </p>
+								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
+									your newly created node needs an event listener, you must attach the listener after creating
+									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
+								it move along with it. </p>
+								<p> If the event listener is being registered on a node while an event is also being processed
+									on this node, the event listener is not triggered during the current phase but may be triggered
+								during a later phase in the event flow, such as the bubbling phase. </p>
+								<p> If an event listener is removed from a node while an event is being processed on the node,
+									it is still triggered by the current actions. After it is removed, the event listener is never
+								invoked again (unless it is registered again for future processing). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -301,17 +485,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#assign">assign</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#assign">assign</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L211">src/std/typescript-stl.d.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L582">typings/typescript-stl/typescript-stl.d.ts:582</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> Assign new content to content. </p>
+								</div>
+								<p> Assigns new contents to the container, replacing its current contents, and modifying its
+								<a href="bws.packer.wrapperarray.html#size">size</a> accordingly. </p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -319,7 +504,7 @@
 									<h4>U<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
 								</li>
 								<li>
-									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -337,7 +522,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L215">src/std/typescript-stl.d.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L586">typings/typescript-stl/typescript-stl.d.ts:586</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,19 +553,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#at">at</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#at">at</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#at">at</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L255">src/std/typescript-stl.d.ts:255</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L626">typings/typescript-stl/typescript-stl.d.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Access element. </p>
-									<p> Returns a value to the element at position <i>index</i> in the <a href="../interfaces/std.base.iarray.html">container</a>.</p>
+									<p> Returns a value to the element at position <i>index</i> in the {@link IArray container}.</p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the <a href="../interfaces/std.base.iarray.html">container</a>, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
+									in the {@link IArray container}, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
 								if <i>index</i> is greater or equal than its <a href="bws.packer.wrapperarray.html#size">size</a>). </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -403,10 +588,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#back">back</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#back">back</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#back">back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L267">src/std/typescript-stl.d.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L638">typings/typescript-stl/typescript-stl.d.ts:638</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,10 +617,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#begin">begin</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#begin">begin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L227">src/std/typescript-stl.d.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L598">typings/typescript-stl/typescript-stl.d.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,31 +645,31 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#capacity">capacity</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#capacity">capacity</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#capacity">capacity</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L247">src/std/typescript-stl.d.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L618">typings/typescript-stl/typescript-stl.d.ts:618</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Return size of allocated storage capacity. </p>
 								</div>
-								<p> Returns the size of the storage space currently allocated for the <a href="../interfaces/std.base.iarray.html">container</a>,
+								<p> Returns the size of the storage space currently allocated for the {@link IArray container},
 								expressed in terms of elements. </p>
-								<p> This <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is not necessarily equal to the <a href="../interfaces/std.base.iarray.html">container</a> <a href="bws.packer.wrapperarray.html#size">size</a>.
+								<p> This <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is not necessarily equal to the {@link IArray container} <a href="bws.packer.wrapperarray.html#size">size</a>.
 									It can be equal or greater, with the extra space allowing to accommodate for growth without the
 								need to reallocate on each insertion. </p>
 								<p> Notice that this <a href="bws.packer.wrapperarray.html#capacity">capacity</a> does not suppose a limit on the <a href="bws.packer.wrapperarray.html#size">size</a> of the
-									<a href="../interfaces/std.base.iarray.html">container</a>. When this <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is exhausted and more is needed, it is
-									automatically expanded by the <a href="../interfaces/std.base.iarray.html">container</a> (reallocating it storage space).
-									The theoretical limit on the <a href="bws.packer.wrapperarray.html#size">size</a> of a <a href="../interfaces/std.base.iarray.html">container</a> is given by member
+									{@link IArray container}. When this <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is exhausted and more is needed, it is
+									automatically expanded by the {@link IArray container} (reallocating it storage space).
+									The theoretical limit on the <a href="bws.packer.wrapperarray.html#size">size</a> of a {@link IArray container} is given by member
 								{@link max_size}. </p>
-								<p> The <a href="bws.packer.wrapperarray.html#capacity">capacity</a> of a <a href="../interfaces/std.base.iarray.html">container</a> can be explicitly altered by calling member
-								<a href="../interfaces/std.base.iarray.html#reserve">IArray.reserve</a>. </p>
+								<p> The <a href="bws.packer.wrapperarray.html#capacity">capacity</a> of a {@link IArray container} can be explicitly altered by calling member
+								{@link IArray.reserve}. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the currently allocated storage capacity in the <a href="../interfaces/std.base.iarray.html">container</a>,
+							<p>The size of the currently allocated storage capacity in the {@link IArray container},
 							measured in terms of the number elements it can hold.</p>
 						</li>
 					</ul>
@@ -498,10 +683,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#clear">clear</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#clear">clear</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L223">src/std/typescript-stl.d.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L594">typings/typescript-stl/typescript-stl.d.ts:594</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,9 +708,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#construct">construct</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#construct">construct</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L64">src/samchon/SamchonFramework.d.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2576">typings/samchon-framework/samchon-framework.d.ts:2576</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,10 +723,6 @@
 									Those children Entity objects&#39; data will constructed by their own construct() method. Even insertion
 								of XML objects representing children are done by abstract method of EntityArray::toXML(). </p>
 								<p> Constructs only data of EntityArray&#39;s own. </p>
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -561,9 +743,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#count">count</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#count">count</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L98">src/samchon/SamchonFramework.d.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2596">typings/samchon-framework/samchon-framework.d.ts:2596</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -576,9 +759,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value to be searched for.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -586,25 +766,28 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="createchild" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<h3>create<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#createchild">createChild</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#createchild">createChild</a></p>
+								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#createchild">createChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L20">src/bws/packer/WrapperArray.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L20">bws/packer/WrapperArray.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> Factory method of a child Entity. </p>
+								</div>
+								<p> EntityArray::createChild() is a factory method creating a new child Entity which is belonged
+									to the EntityArray. This method is called by EntityArray::construct(). The children construction
+								methods Entity::construct() will be called by abstract method of the EntityArray::construct(). </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -613,6 +796,38 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
+							<p>A new child Entity belongs to EntityArray.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#dispatchevent">dispatchEvent</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#dispatchevent">dispatchEvent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L427">typings/samchon-framework/samchon-framework.d.ts:427</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Dispatches an event into the event flow. </p>
+									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -625,10 +840,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#empty">empty</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L251">src/std/typescript-stl.d.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L622">typings/typescript-stl/typescript-stl.d.ts:622</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -653,10 +868,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#end">end</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#end">end</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L231">src/std/typescript-stl.d.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L602">typings/typescript-stl/typescript-stl.d.ts:602</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -685,24 +900,26 @@
 					<h3>erase</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#erase">erase</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L363">src/std/typescript-stl.d.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L815">typings/typescript-stl/typescript-stl.d.ts:815</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Erase element. </p>
 								</div>
-								<p> Removes from the <a href="std.vector.html">Vector</a> either a single element; <i>position</i>. </p>
+								<p> Removes from the <a href="../interfaces/three.vector.html">Vector</a> either a single element; <i>position</i>. </p>
 								<p> This effectively reduces the container size by the number of element removed. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
 									position other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements after the
 									segment erased to their new positions. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -712,7 +929,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Iterator pointing to a single element to be removed from the <a href="std.vector.html">Vector</a>.</p>
+										<p>Iterator pointing to a single element to be removed from the <a href="../interfaces/three.vector.html">Vector</a>.</p>
 									</div>
 								</li>
 							</ul>
@@ -723,10 +940,10 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#erase">erase</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L383">src/std/typescript-stl.d.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L835">typings/typescript-stl/typescript-stl.d.ts:835</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -735,7 +952,7 @@
 								</div>
 								<p> Removes from the <ode>Vector</code> either a single element; <i>position</i>. </p>
 								<p> This effectively reduces the container size by the number of elements removed. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
 									position other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements after the
 									segment erased to their new positions. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -743,22 +960,120 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>begin: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An iterator specifying a range of beginning to erase.</p>
-									</div>
+									<h5>first: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>end: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An iterator specifying a range of end to erase.</p>
-									</div>
+									<h5>last: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An iterator pointing to the new location of the element that followed the last element erased by
+								the function call. This is the <a href="bws.packer.wrapperarray.html#rend">rend()</a> if the operation erased the last element in the
+							sequence.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#erase">erase</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L854">typings/typescript-stl/typescript-stl.d.ts:854</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Erase element. </p>
+								</div>
+								<p> Removes from the <a href="../interfaces/three.vector.html">Vector</a> either a single element; <i>position</i>. </p>
+								<p> This effectively reduces the container size by the number of element removed. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing an element in
+									position other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements after the
+									segment erased to their new positions. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Iterator pointing to a single element to be removed from the <a href="../interfaces/three.vector.html">Vector</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to the new location of the element that followed the last element erased by
+								the function call. This is the <a href="bws.packer.wrapperarray.html#rend">rend()</a> if the operation erased the last element in the
+							sequence.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#erase">erase</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L874">typings/typescript-stl/typescript-stl.d.ts:874</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Erase element. </p>
+								</div>
+								<p> Removes from the <ode>Vector</code> either a single element; <i>position</i>. </p>
+								<p> This effectively reduces the container size by the number of elements removed. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, erasing elements in
+									position other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements after the
+									segment erased to their new positions. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>last: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to the new location of the element that followed the last element erased by
 								the function call. This is the <a href="bws.packer.wrapperarray.html#end">end()</a> if the operation erased the last element in the
 							sequence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#find">find</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#find">find</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2588">typings/samchon-framework/samchon-framework.d.ts:2588</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Get iterator to element. </p>
+								</div>
+								<p> Searches the container for an element with a identifier equivalent to <i>key</i> and returns an
+								iterator to it if found, otherwise it returns an iterator to <a href="bws.packer.wrapperarray.html#end">end()</a>. </p>
+								<p> Two keys are considered equivalent if the container&#39;s comparison object returns false reflexively
+								(i.e., no matter the order in which the elements are passed as arguments). </p>
+								<p> Another member functions, <a href="bws.packer.wrapperarray.html#has">has()</a> and <a href="bws.packer.wrapperarray.html#count">count()</a>, can be used to just check
+								whether a particular <i>key</i> exists. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator to the element, if an element with specified <i>key</i> is found, or
+							<a href="bws.packer.wrapperarray.html#end">end()</a> otherwise.</p>
 						</li>
 					</ul>
 				</section>
@@ -771,10 +1086,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#front">front</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#front">front</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#front">front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L263">src/std/typescript-stl.d.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L634">typings/typescript-stl/typescript-stl.d.ts:634</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -795,14 +1110,15 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#get">get</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#get">get</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L110">src/samchon/SamchonFramework.d.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2600">typings/samchon-framework/samchon-framework.d.ts:2600</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -819,10 +1135,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value of the element whose mapped value is accessed.</p>
-									</div>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
@@ -840,7 +1153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L31">src/bws/packer/WrapperArray.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L31">bws/packer/WrapperArray.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -862,7 +1175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/bws/packer/WrapperArray.ts#L43">src/bws/packer/WrapperArray.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/bws/packer/WrapperArray.ts#L43">bws/packer/WrapperArray.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -883,9 +1196,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#has">has</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#has">has</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L88">src/samchon/SamchonFramework.d.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2592">typings/samchon-framework/samchon-framework.d.ts:2592</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -898,13 +1212,46 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Key value of the element whose mapped value is accessed.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>Whether the map has an item having the specified identifier.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="haseventlistener" class="tsd-anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#haseventlistener">hasEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#haseventlistener">hasEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L423">typings/samchon-framework/samchon-framework.d.ts:423</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Checks whether the EventDispatcher object has any listeners registered for a specific type
+										of event. This allows you to determine where an EventDispatcher object has altered handling of
+										an event type in the event flow hierarchy. To determine whether a specific event type actually
+									triggers an event listener, use willTrigger(). </p>
+								</div>
+								<p> The difference between hasEventListener() and willTrigger() is that hasEventListener()
+									examines only the object to which it belongs, whereas willTrigger() examines the entire event
+								flow for the event specified by the type parameter. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -915,24 +1262,27 @@
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, val<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, val<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L297">src/std/typescript-stl.d.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L664">typings/typescript-stl/typescript-stl.d.ts:664</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert an element. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new element before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new element before the element at the specified
 								<i>position</i>, effectively increasing the container size by one. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
-								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
 									positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
 									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
 								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
@@ -942,7 +1292,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new element is inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new element is inserted.
 											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -961,18 +1311,18 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L320">src/std/typescript-stl.d.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L687">typings/typescript-stl/typescript-stl.d.ts:687</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert elements by repeated filling. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
-								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
 									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
@@ -982,7 +1332,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new elements are inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
 											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -1005,22 +1355,22 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#insert">insert</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#insert">insert</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L344">src/std/typescript-stl.d.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L711">typings/typescript-stl/typescript-stl.d.ts:711</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Insert elements by range iterators. </p>
 								</div>
-								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
 								iterators. </p>
 								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
 								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
-								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
 									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
@@ -1031,7 +1381,7 @@
 									<h4>U<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
 								</li>
 								<li>
-									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.base.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1039,7 +1389,7 @@
 								<li>
 									<h5>position: <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Position in the <a href="std.vector.html">Vector</a> where the new elements are inserted.
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
 											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
 										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
 									</div>
@@ -1060,6 +1410,149 @@
 							<h4 class="tsd-returns-title">Returns <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An iterator that points to the first of the newly inserted elements.</p>
 						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L733">typings/typescript-stl/typescript-stl.d.ts:733</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert an element. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new element before the element at the specified
+								<i>position</i>, effectively increasing the container size by one. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
+								<p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
+									positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
+									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
+								performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new element is inserted.
+											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to be copied to the inserted element.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the newly inserted element.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L756">typings/typescript-stl/typescript-stl.d.ts:756</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert elements by repeated filling. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+										positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
+										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
+									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
+											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of elements to insert. Each element is initialized to a copy of <i>val</i>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to be copied (or moved) to the inserted elements.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the first of the newly inserted elements.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#insert">insert</a></p>
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L780">typings/typescript-stl/typescript-stl.d.ts:780</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert elements by range iterators. </p>
+								</div>
+								<p> The <a href="../interfaces/three.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
+									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
+								iterators. </p>
+								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
+								<a href="bws.packer.wrapperarray.html#size">size</a> surpasses the current <a href="bws.packer.wrapperarray.html#capacity">capacity</a>. </p>
+								<p><p> Because <a href="../interfaces/three.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
+										positions other than the <a href="bws.packer.wrapperarray.html#end">end()</a> causes the container to relocate all the elements that were
+										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
+									one performed for the same operation by other kinds of sequence containers (such as <a href="std.list.html">List</a>).</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
+								</li>
+								<li>
+									<h4>InputIterator<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position in the <a href="../interfaces/three.vector.html">Vector</a> where the new elements are inserted.
+											<a href="bws.packer.wrapperarray.html#iterator">iterator</a> is a member type, defined as a
+										<a href="std.vectoriterator.html">random access iterator</a> type that points to elements.</p>
+									</div>
+								</li>
+								<li>
+									<h5>begin: <span class="tsd-signature-type">InputIterator</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input interator of the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>end: <span class="tsd-signature-type">InputIterator</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input interator of the final position in a sequence.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator that points to the first of the newly inserted elements.</p>
+						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -1071,9 +1564,35 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#key">key</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#key">key</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L78">src/samchon/SamchonFramework.d.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2584">typings/samchon-framework/samchon-framework.d.ts:2584</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Get a key that can identify the Entity uniquely. </p>
+								</div>
+								<p> If identifier of the Entity is not atomic value, returns a string or paired object
+								that can represents the composite identifier. </p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="pop" class="tsd-anchor"></a>
+					<h3>pop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">pop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#pop">pop</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L467">typings/samchon-framework/samchon-framework.d.ts:467</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1082,23 +1601,24 @@
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="pop_back" class="tsd-anchor"></a>
 					<h3>pop_<wbr>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">pop_<wbr>back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#pop_back">pop_back</a></p>
-								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#pop_back">pop_back</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#pop_back">pop_back</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#pop_back">pop_back</a></p>
+								<p>Overwrites <a href="std.vector.html">Vector</a>.<a href="std.vector.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L275">src/std/typescript-stl.d.ts:275</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L407">typings/samchon-framework/samchon-framework.d.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1112,18 +1632,55 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="push" class="tsd-anchor"></a>
+					<h3>push</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">push&lt;U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#push">push</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L391">typings/samchon-framework/samchon-framework.d.ts:391</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="push_back" class="tsd-anchor"></a>
 					<h3>push_<wbr>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">push_<wbr>back<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#push_back">push_back</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#push_back">push_back</a></p>
+								<p>Overwrites <a href="std.vector.html">Vector</a>.<a href="std.vector.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L271">src/std/typescript-stl.d.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L395">typings/samchon-framework/samchon-framework.d.ts:395</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1151,25 +1708,143 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#rbegin">rbegin</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#rbegin">rbegin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L235">src/std/typescript-stl.d.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L606">typings/typescript-stl/typescript-stl.d.ts:606</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Return <a href="std.base.reverseiterator.html">reverse iterator</a> to <i>reverse beginning</i>. </p>
+									<p> Return <a href="std.reverseiterator.html">reverse iterator</a> to <i>reverse beginning</i>. </p>
 								</div>
-								<p> Returns a <a href="std.base.reverseiterator.html">reverse iterator</a> pointing to the last element in the container (i.e.,
+								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the last element in the container (i.e.,
 								its <i>reverse beginning</i>). </p>
-								<p> <a href="std.base.reverseiterator.html">reverse iterators</a> iterate backwards: increasing them moves them towards the
+								<p> <a href="std.reverseiterator.html">reverse iterators</a> iterate backwards: increasing them moves them towards the
 								beginning of the  </p>
 								<p> <a href="bws.packer.wrapperarray.html#rbegin">rbegin</a> points to the element right before the one that would be pointed to by member <a href="bws.packer.wrapperarray.html#end">end</a>.
 								</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A <a href="std.base.reverseiterator.html">reverse iterator</a> to the <i>reverse beginning</i> of the sequence</p>
+							<p>A <a href="std.reverseiterator.html">reverse iterator</a> to the <i>reverse beginning</i> of the sequence</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeeventlistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L447">typings/samchon-framework/samchon-framework.d.ts:447</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L451">typings/samchon-framework/samchon-framework.d.ts:451</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L455">typings/samchon-framework/samchon-framework.d.ts:455</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
+									with the EventDispatcher object, a call to this method has no effect.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L459">typings/samchon-framework/samchon-framework.d.ts:459</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
+									with the EventDispatcher object, a call to this method has no effect.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1182,23 +1857,23 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#rend">rend</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#rend">rend</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L239">src/std/typescript-stl.d.ts:239</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L610">typings/typescript-stl/typescript-stl.d.ts:610</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Return <a href="std.base.reverseiterator.html">reverse iterator</a> to <i>reverse end</i>. </p>
+									<p> Return <a href="std.reverseiterator.html">reverse iterator</a> to <i>reverse end</i>. </p>
 								</div>
-								<p> Returns a <a href="std.base.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
+								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
 								first element in the container (which is considered its <i>reverse end</i>). </p>
 								<p><p> The range between <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="bws.packer.wrapperarray.html#rbegin">rbegin</a> and <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="bws.packer.wrapperarray.html#rend">rend</a> contains all
 									the elements of the container (in reverse order).</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A <a href="std.base.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
+							<p>A <a href="std.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
 						</li>
 					</ul>
 				</section>
@@ -1211,24 +1886,24 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#reserve">reserve</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#reserve">reserve</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#reserve">reserve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L219">src/std/typescript-stl.d.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L590">typings/typescript-stl/typescript-stl.d.ts:590</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Request a change in capacity. </p>
 								</div>
-								<p> Requests that the <a href="../interfaces/std.base.iarray.html">container</a> <a href="bws.packer.wrapperarray.html#capacity">capacity</a> be at least enough to contain
+								<p> Requests that the {@link IArray container} <a href="bws.packer.wrapperarray.html#capacity">capacity</a> be at least enough to contain
 								<i>n</i> elements. </p>
-								<p> If <i>n</i> is greater than the current <a href="../interfaces/std.base.iarray.html">container</a> <a href="bws.packer.wrapperarray.html#capacity">capacity</a>, the
-									function causes the <a href="../interfaces/std.base.iarray.html">container</a> to reallocate its storage increasing its
+								<p> If <i>n</i> is greater than the current {@link IArray container} <a href="bws.packer.wrapperarray.html#capacity">capacity</a>, the
+									function causes the {@link IArray container} to reallocate its storage increasing its
 								<a href="bws.packer.wrapperarray.html#capacity">capacity</a> to <i>n</i> (or greater). </p>
 								<p> In all other cases, the function call does not cause a reallocation and the
-								<a href="../interfaces/std.base.iarray.html">container</a> <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is not affected. </p>
-								<p> This function has no effect on the <a href="../interfaces/std.base.iarray.html">container</a> <a href="bws.packer.wrapperarray.html#size">size</a> and cannot alter
+								{@link IArray container} <a href="bws.packer.wrapperarray.html#capacity">capacity</a> is not affected. </p>
+								<p> This function has no effect on the {@link IArray container} <a href="bws.packer.wrapperarray.html#size">size</a> and cannot alter
 								its elements. </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1252,7 +1927,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L259">src/std/typescript-stl.d.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L630">typings/typescript-stl/typescript-stl.d.ts:630</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1283,10 +1958,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#size">size</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#size">size</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L243">src/std/typescript-stl.d.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L614">typings/typescript-stl/typescript-stl.d.ts:614</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1300,6 +1975,64 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="splice" class="tsd-anchor"></a>
+					<h3>splice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deleteCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#splice">splice</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L471">typings/samchon-framework/samchon-framework.d.ts:471</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#splice">splice</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L475">typings/samchon-framework/samchon-framework.d.ts:475</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>deleteCount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -1308,10 +2041,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarray.html">IArray</a>.<a href="../interfaces/std.base.iarray.html#swap">swap</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#swap">swap</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L387">src/std/typescript-stl.d.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L882">typings/typescript-stl/typescript-stl.d.ts:882</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1345,9 +2078,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#toxml">toXML</a></p>
+								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#toxml">toXML</a></p>
+								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/samchon/SamchonFramework.d.ts#L133">src/samchon/SamchonFramework.d.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2612">typings/samchon-framework/samchon-framework.d.ts:2612</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1360,12 +2094,44 @@
 									insertion of XML objects representing children are done by abstract method of
 								EntityArray::toXML(). </p>
 								<p> Archives only data of EntityArray&#39;s own. </p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="unshift" class="tsd-anchor"></a>
+					<h3>unshift</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unshift&lt;U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#unshift">unshift</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/samchon-framework/samchon-framework.d.ts#L463">typings/samchon-framework/samchon-framework.d.ts:463</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
 									<dt>inheritdoc</dt>
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1794,7 +2560,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="pop" class="tsd-anchor"></a>
+					<a name="pop-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> pop</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">pop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a></li>
@@ -1817,7 +2583,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="push" class="tsd-anchor"></a>
+					<a name="push-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> push</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -2303,17 +3069,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="splice" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+					<a name="splice-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> splice</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deleteCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Array.splice</p>
+								<p>Overwrites Array.splice</p>
 								<ul>
 									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1066</li>
 								</ul>
@@ -2329,41 +3095,6 @@
 									<h5>start: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The zero-based location in the array from which to start removing elements.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.splice</p>
-								<ul>
-									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1074</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The zero-based location in the array from which to start removing elements.</p>
-									</div>
-								</li>
-								<li>
-									<h5>deleteCount: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of elements to remove.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Elements to insert into the array in place of the deleted elements.</p>
 									</div>
 								</li>
 							</ul>
@@ -2413,7 +3144,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="unshift" class="tsd-anchor"></a>
+					<a name="unshift-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> unshift</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">unshift<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><a href="bws.packer.wrapper.html" class="tsd-signature-type">Wrapper</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
@@ -2469,6 +3200,9 @@
 							</li>
 						</ul>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
 					</li>
@@ -2479,20 +3213,32 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="bws.packer.editor.html" class="tsd-kind-icon">Editor</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.gawrapperarray.html" class="tsd-kind-icon">GAWrapper<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.instancearray.html" class="tsd-kind-icon">Instance<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.packer.instanceeditor.html" class="tsd-kind-icon">Instance<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.instanceform.html" class="tsd-kind-icon">Instance<wbr>Form</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.instanceformarray.html" class="tsd-kind-icon">Instance<wbr>Form<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.packer.itemeditor.html" class="tsd-kind-icon">Item<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.packer.html" class="tsd-kind-icon">Packer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.packer.packerapplication.html" class="tsd-kind-icon">Packer<wbr>Application</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.packerform.html" class="tsd-kind-icon">Packer<wbr>Form</a>
@@ -2501,7 +3247,13 @@
 						<a href="bws.packer.product.html" class="tsd-kind-icon">Product</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.packer.resultviewer.html" class="tsd-kind-icon">Result<wbr>Viewer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.wrap.html" class="tsd-kind-icon">Wrap</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="bws.packer.wrapgrid.html" class="tsd-kind-icon">Wrap<wbr>Grid</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.wrapper.html" class="tsd-kind-icon">Wrapper</a>
@@ -2525,6 +3277,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="bws.packer.wrapperarray.html#tag" class="tsd-kind-icon">TAG</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#assign" class="tsd-kind-icon">assign</a>
@@ -2550,8 +3305,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#count" class="tsd-kind-icon">count</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="bws.packer.wrapperarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#empty" class="tsd-kind-icon">empty</a>
@@ -2561,6 +3319,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#erase" class="tsd-kind-icon">erase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#find" class="tsd-kind-icon">find</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#front" class="tsd-kind-icon">front</a>
@@ -2577,6 +3338,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#has" class="tsd-kind-icon">has</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#insert" class="tsd-kind-icon">insert</a>
 							</li>
@@ -2584,13 +3348,22 @@
 								<a href="bws.packer.wrapperarray.html#key" class="tsd-kind-icon">key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#pop" class="tsd-kind-icon">pop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#push" class="tsd-kind-icon">push</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#rbegin" class="tsd-kind-icon">rbegin</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#rend" class="tsd-kind-icon">rend</a>
@@ -2605,10 +3378,16 @@
 								<a href="bws.packer.wrapperarray.html#size" class="tsd-kind-icon">size</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#splice" class="tsd-kind-icon">splice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#swap" class="tsd-kind-icon">swap</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.packer.wrapperarray.html#toxml" class="tsd-kind-icon">toXML</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="bws.packer.wrapperarray.html#unshift" class="tsd-kind-icon">unshift</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
 								<a href="bws.packer.wrapperarray.html#concat" class="tsd-kind-icon">concat</a>
@@ -2635,10 +3414,10 @@
 								<a href="bws.packer.wrapperarray.html#map" class="tsd-kind-icon">map</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="bws.packer.wrapperarray.html#pop" class="tsd-kind-icon">pop</a>
+								<a href="bws.packer.wrapperarray.html#pop-1" class="tsd-kind-icon">pop</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="bws.packer.wrapperarray.html#push" class="tsd-kind-icon">push</a>
+								<a href="bws.packer.wrapperarray.html#push-1" class="tsd-kind-icon">push</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
 								<a href="bws.packer.wrapperarray.html#reduce" class="tsd-kind-icon">reduce</a>
@@ -2661,8 +3440,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="bws.packer.wrapperarray.html#sort" class="tsd-kind-icon">sort</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="bws.packer.wrapperarray.html#splice" class="tsd-kind-icon">splice</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="bws.packer.wrapperarray.html#splice-1" class="tsd-kind-icon">splice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="bws.packer.wrapperarray.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a>
@@ -2671,29 +3450,35 @@
 								<a href="bws.packer.wrapperarray.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="bws.packer.wrapperarray.html#unshift" class="tsd-kind-icon">unshift</a>
+								<a href="bws.packer.wrapperarray.html#unshift-1" class="tsd-kind-icon">unshift</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.packer.wrappereditor.html" class="tsd-kind-icon">Wrapper<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="bws.packer.wrappergrid.html" class="tsd-kind-icon">Wrapper<wbr>Grid</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.packer.wrappergroup.html" class="tsd-kind-icon">Wrapper<wbr>Group</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/bws.packer.instance.html" class="tsd-kind-icon">Instance</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/bws.packer.html#wrapperarray-1" class="tsd-kind-icon">wrapper<wbr>Array</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/bws.packer.itemeditorprops.html" class="tsd-kind-icon">Item<wbr>Editor<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/bws.packer.html#drawwrapper" class="tsd-kind-icon">draw<wbr>Wrapper</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/bws.packer.wrapgridprops.html" class="tsd-kind-icon">Wrap<wbr>Grid<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/bws.packer.html#main" class="tsd-kind-icon">main</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/bws.packer.wrappergridprops.html" class="tsd-kind-icon">Wrapper<wbr>Grid<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/bws.packer.html#setwrapperarray" class="tsd-kind-icon">set<wbr>Wrapper<wbr>Array</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/bws.packer.wrapperviewerprops.html" class="tsd-kind-icon">Wrapper<wbr>Viewer<wbr>Props</a>
 					</li>
 				</ul>
 			</nav>

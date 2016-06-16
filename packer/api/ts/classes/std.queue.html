@@ -39,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -80,8 +78,8 @@
 					</p>
 					<p> <a href="std.queue.html">Queue</a>s are implemented as containers adaptors, which are classes that use an encapsulated object of
 						a specific container class as its underlying container, providing a specific set of member functions to access
-						its elements. Elements are pushed into the <a href="../interfaces/std.base.ideque.html#back">back()</a> of the specific container and popped from
-					its <a href="../interfaces/std.base.ideque.html#front">front()</a>. </p>
+						its elements. Elements are pushed into the {@link IDeque.back back()} of the specific container and popped from
+					its {@link IDeque.front front()}. </p>
 					<p> <a href="std.queue.html#container_">The underlying container</a> may be one of the standard container class template or some
 						other specifically designed container class. This underlying container shall support at least the following
 					operations: </p>
@@ -96,10 +94,11 @@
 					<p> The standard container classes <a href="std.deque.html">Deque</a> and <a href="std.list.html">List</a> fulfill these requirements.
 						By default, if no container class is specified for a particular <a href="std.queue.html">Queue</a> class instantiation, the standard
 					container <a href="std.list.html">List</a> is used. </p>
-					<ul>
-						<li> Reference: <a href="http://www.cplusplus.com/reference/queue/queue/">http://www.cplusplus.com/reference/queue/queue/</a> </li>
-					</ul>
+					<p> <img src="../assets/images/design/linear_containers.png" width="100%" /> </p>
 					<dl class="tsd-comment-tags">
+						<dt>reference</dt>
+						<dd><p><a href="http://www.cplusplus.com/reference/queue/queue">http://www.cplusplus.com/reference/queue/queue</a></p>
+						</dd>
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
 						</dd>
@@ -171,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1569">src/std/typescript-stl.d.ts:1569</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2208">typings/typescript-stl/typescript-stl.d.ts:2208</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1573">src/std/typescript-stl.d.ts:1573</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2212">typings/typescript-stl/typescript-stl.d.ts:2212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">container_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1569">src/std/typescript-stl.d.ts:1569</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2208">typings/typescript-stl/typescript-stl.d.ts:2208</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1623">src/std/typescript-stl.d.ts:1623</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2262">typings/typescript-stl/typescript-stl.d.ts:2262</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +241,7 @@
 								</div>
 								<p> Returns a vaue of the last element in the queue. This is the &quot;newest&quot; element in the queue (i.e. the
 								last element pushed into the queue). </p>
-								<p> This member function effectively calls the member function <a href="../interfaces/std.base.ideque.html#back">back()</a> of the
+								<p> This member function effectively calls the member function {@link IDeque.back back()} of the
 								<a href="std.queue.html#container_">underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
@@ -260,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1598">src/std/typescript-stl.d.ts:1598</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2237">typings/typescript-stl/typescript-stl.d.ts:2237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,7 +267,7 @@
 									<p> Test whether container is empty. </p>
 									<p> returns whether the <a href="std.queue.html">Queue</a> is empty: i.e. whether its <i>size</i> is zero. </p>
 								</div>
-								<p> This member function efeectively calls member <a href="../interfaces/std.base.ideque.html#empty">empty()</a> of the
+								<p> This member function efeectively calls member {@link IDeque.empty empty()} of the
 								<a href="std.queue.html#container_">underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -287,7 +286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1611">src/std/typescript-stl.d.ts:1611</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2250">typings/typescript-stl/typescript-stl.d.ts:2250</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +296,7 @@
 								</div>
 								<p> The next element is the &quot;oldest&quot; element in the <a href="std.queue.html">Queue</a> and the same element that is popped out
 								from the queue when <a href="std.queue.html#pop">Queue.pop()</a> is called. </p>
-								<p> This member function effectively calls member <a href="../interfaces/std.base.ideque.html#front">front()</a> of the
+								<p> This member function effectively calls member {@link IDeque.front front()} of the
 								<a href="std.queue.html#container_">underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
@@ -315,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1647">src/std/typescript-stl.d.ts:1647</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2286">typings/typescript-stl/typescript-stl.d.ts:2286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +324,7 @@
 								<p> Removes the next element in the <a href="std.queue.html">Queue</a>, effectively reducing its size by one. </p>
 								<p> The element removed is the &quot;oldest&quot; element in the <a href="std.queue.html">Queue</a> whose value can be retrieved by calling
 								member <a href="std.queue.html#front">Queue.front()</a> </p>.
-								<p> This member function effectively calls the member function <a href="../interfaces/std.base.ideque.html#pop_front">pop<em>front()</a> of the
+								<p> This member function effectively calls the member function {@link IDeque.pop_front pop<em>front()} of the
 								&lt;a href=&quot;std.queue.html#container</em>&quot;&gt;underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -342,7 +341,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1635">src/std/typescript-stl.d.ts:1635</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2274">typings/typescript-stl/typescript-stl.d.ts:2274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -351,7 +350,7 @@
 								</div>
 								<p> Inserts a new element at the end of the <a href="std.queue.html">Queue</a>, after its current last element.
 								The content of this new element is initialized to <i>val</i>. </p>
-								<p> This member function effectively calls the member function <a href="../interfaces/std.base.ideque.html#push_back">push<em>back()</a> of the
+								<p> This member function effectively calls the member function {@link IDeque.push_back push<em>back()} of the
 								&lt;a href=&quot;std.queue.html#container</em>&quot;&gt;underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,7 +376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1587">src/std/typescript-stl.d.ts:1587</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2226">typings/typescript-stl/typescript-stl.d.ts:2226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,7 +384,7 @@
 									<p> Return size. </p>
 									<p> Returns the number of elements in the <a href="std.queue.html">Queue</a>. </p>
 								</div>
-								<p> This member function effectively calls member <a href="../interfaces/std.base.ideque.html#size">size()</a> of the
+								<p> This member function effectively calls member {@link IDeque.size size()} of the
 								<a href="std.queue.html#container_">underlying container</a> object. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -403,7 +402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/master/ts/src/std/typescript-stl.d.ts#L1659">src/std/typescript-stl.d.ts:1659</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/packer/blob/421d24e/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2298">typings/typescript-stl/typescript-stl.d.ts:2298</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,6 +446,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/samchon.html">samchon</a>
