@@ -1,0 +1,6 @@
+<map id="getUtilization" name="getUtilization">
+<area shape="rect" id="node2" href="$classbws_1_1packer_1_1Wrapper.html#aa2417ba37562e43f9edc9c5da3ebbfb3" title="Get (calculate) containable length, length on the Z&#45;axis in 3D. " alt="" coords="151,56,303,83"/>
+<area shape="rect" id="node3" href="$classbws_1_1packer_1_1Wrapper.html#a77dba3b69f5b2fc7d9bf5f0f213fca6e" title="Get (calculate) containable width, length on the X&#45;axis in 3D. " alt="" coords="353,5,495,32"/>
+<area shape="rect" id="node4" href="$classbws_1_1packer_1_1Wrapper.html#a36f94758097968bf63a44f855e0912ab" title="Get (calculate) containable width, length on the X&#45;axis in 3D. " alt="" coords="351,56,497,83"/>
+<area shape="rect" id="node5" href="$classbws_1_1packer_1_1Wrapper.html#abfe7aa924cc54153f5d1c2488c159947" title="Get (calculate) containable height, length on the Y&#45;axis in 3D. " alt="" coords="351,107,497,133"/>
+</map>
