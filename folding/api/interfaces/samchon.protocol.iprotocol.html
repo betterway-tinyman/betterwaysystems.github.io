@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IProtocol | </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/samchon.html">samchon</a>
+				</li>
+				<li>
+					<a href="../modules/samchon.protocol.html">protocol</a>
+				</li>
+				<li>
+					<a href="samchon.protocol.iprotocol.html">IProtocol</a>
+				</li>
+			</ul>
+			<h1>Interface IProtocol</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p> An interface for <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message chain. </p>
+					</div>
+					<p> <a href="samchon.protocol.iprotocol.html">IProtocol</a> is an interface for <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message, which is standard message of network I/O in
+						<i>Samchon Framework</i>, chain. The <a href="samchon.protocol.iprotocol.html">IProtocol</a> interface is used to network drivers and some classes
+					which are in a relationship of <i>Chain of Responsibility Pattern</i> with those network drivers. </p>
+					<p> Implements <a href="samchon.protocol.iprotocol.html">IProtocol</a> if the class sends and handles <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message. Looking around source
+						codes of <i>Samchon Framework</i>, especially <i>System Templates</i>, you can find out that all the classes and
+						modules handling <a href="../classes/samchon.protocol.invoke.html">Invoke</a> messages are always implementing this <a href="samchon.protocol.iprotocol.html">IProtocol</a> . Yes, <a href="samchon.protocol.iprotocol.html">IProtocol</a>,
+					this is the main role you&#39;ve to follow in this <i>Samchon Framework</i>. </p>
+					<p> <a href="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_basic_components.png"
+						target="_blank">
+						<img src="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_basic_components.png"
+						style="max-width: 100%" />
+					</a> </p>
+					<p><h2> Utilization Case </h2></p>
+					<p> Below pseudo code and class diagram represents <a href="../modules/samchon.protocol.service.html">Service Module</a>, who can build a cloud server.
+						All the classes in the pseudo code are implementing the <a href="samchon.protocol.iprotocol.html">IProtocol</a> because all of them are handling
+					<a href="../classes/samchon.protocol.invoke.html">Invoke</a> message. </p>
+					<ul>
+						<li> Server: Represents a server literally </li>
+						<li> User: Represents an user being identified by its session id. User contains multiple Client objects. </li>
+						<ul>
+							<li> In browser, an user can open multiple windows.
+								<ul>
+									<li> User: A browser (like IE, Chrome and Safari).
+										<li> Client: An internet browser window
+								</ul>
+							</li>
+						</ul>
+						<li> Client: Represents a browser window and it takes role of network communication with it. </li>
+						<li> Service: Represents a service, domain logic. </li>
+					</ul>
+					<p> <a href="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_service.png"
+						target="_blank">
+						<img src="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_service.png"
+						style="max-width: 100%" />
+					</a> </p>
+					<p><code>
+/// <reference path="../typings/typescript-stl/typescript-stl.d.ts" />
+/// <reference path="../typings/samchon-framework/samchon-framework.d.ts" /></p>
+<p>// IMPORTS
+import std = require(&quot;typescript-stl&quot;);
+import samchon = require(&quot;samchon-framework&quot;);</p>
+<p>// SHORTCUTS
+import library = samchon.library;
+import collection = samchon.collection;
+import protocol = samchon.protocol;</p>
+<p>namespace service
+{
+export class Server extends protocol.WebServer implements IProtocol
+{
+// SERVER HAS MULTIPLE USER OBJECTS
+private session_map: std.HashMap<string, User>;</p>
+<p>//------------------------
+// MESSAGE CHAIN
+//------------------------
+public sendData(invoke: protocol.Invoke): void
+{
+// SEND INVOKE MESSAGE TO ALL USER OBJECTS
+for (let it = this.session_map.begin(); !it.equal_to(this.session_map.end()); it = it.next())
+it.second.sendData(invoke);
+}
+public replyData(invoke: protocol.Invoke): void
+{
+invoke.apply(this); // HANDLE INVOKE MESSAGE BY ITSELF
+}
+}</p>
+<p>export class User extends
+collection.HashMapCollection<number, Client> // USER HAS MULTIPLE CLIENT OBJECTS
+implements IProtocol
+{
+private server: Server; // USER REFRES SERVER</p>
+<p>//------------------------
+// MESSAGE CHAIN
+//------------------------
+public sendData(invoke: protocol.Invoke): void
+{
+// SEND INVOKE MESSAGE TO ALL CLIENT OBJECTS
+for (let it = this.begin(); !it.equal_to(this.end()); it = it.next())
+it.second.sendData(invoke);
+}
+public replyData(invoke: protocol.Invoke): void
+{
+invoke.apply(this); // HANDLE INOVKE MESSAGE BY ITSELF
+this.server.replyData(invoke); // OR VIA SERVER
+}
+}</p>
+<p>export class Client implements IProtocol
+{
+private user: User; // CLIENT REFERS USER
+private service: Service; // CLIENT HAS A SERVICE OBJECT</p>
+<p>private driver: WebClientDriver;</p>
+<p>//------------------------
+// MESSAGE CHAIN
+//------------------------
+public sendData(invoke: protocol.Invoke): void
+{
+// SEND INVOKE MESSAGE VIA driver: WebClientDriver
+this.driver.sendData(invoke);
+}
+public replyData(invoke: protocol.Invoke): void
+{
+invoke.apply(this); // HANDLE INOVKE MEESAGE BY ITSELF
+this.user.replyData(invoke); // OR VIA USER</p>
+<p>if (this.service != null) // OR VIA SERVICE
+this.service.replyData(invoke);
+}
+}</p>
+<p>export class Service implements IProtocol
+{
+private client: Client; // SERVICE REFRES CLIENT</p>
+<p>//------------------------
+// MESSAGE CHAIN
+//------------------------
+public sendData(invoke: protocol.Invoke): void
+{
+// SEND INVOKE MESSAGE VIA CLIENT
+return this.client.sendData(invoke);
+}
+public replyData(invoke: protocol.Invoke): void
+{
+invoke.apply(this); // HANDLE INVOKE MESSAGE BY ITSELF
+}
+}
+}
+</code></p>
+					<p><h2> Basic Components </h2></p>
+					<p><h4> What Basic Components are </h4></p>
+					<p> <b>Basic Components</b> are the smallest unit of network communication in this <i>Samchon Framework</i>. With
+						<b>Basic Components</b>, you can construct any type of network system, even how the network system is enormously
+					scaled and complicated, by just combinating the <b>Basic Components</b>. </p>
+					<p> All the system templates in this framework are also being implemented by utilization of the
+					<b>Basic Compoonents</b>. </p>
+					<ul>
+						<li> <a href="../modules/samchon.protocol.service.html">Service</a> </il>
+							<li> <a href="../modules/samchon.protocol.external.html">External System</a> </il>
+								<li> <a href="../modules/samchon.protocol.parallel.html">Parallel System</a> </il>
+									<li> <a href="../modules/samchon.protocol.distributed.html">Distributed System</a> </il>
+					</ul>
+					<p> Note that, whatever the network system what you&#39;ve to construct is, just concentrate on role of each system
+						and attach matched <b>Basic Components</b> to the role, within framework of the <b>Object-Oriented Design</b>.
+					Then construction of the network system will be much easier. </p>
+					<ul>
+						<li> A system is a server, then use <a href="samchon.protocol.iserver.html">IServer</a> or <a href="samchon.protocol.iserverbase.html">IServerBase</a>. </li>
+						<li> A server wants to handle a client has connected, then use <a href="samchon.protocol.iclientdriver.html">IClientDriver</a>. </li>
+						<li> A system is a client connecting to an external server, then use <a href="samchon.protocol.iserverconnector.html">IServerConnector</a>. </li>
+						<li> </li>
+					</ul>
+					<p><h4> Example - System Templates </h4></p>
+					<p> Learning and understanding <i>Basic Components</i> of Samchon Framework, reading source codes and design of
+					<b>System Templates</b>&#39; modules will be very helpful. </p>
+					<table>
+						<tr>
+							<th> Name </th>
+							<th> Source </th>
+							<th> API Documents </th>
+						</tr>
+						<tr>
+							<td> Cloud Service </td>
+							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/service"
+							target="_blank"> protocol/service </a> </td>
+							<td> <a href="../modules/samchon.protocol.service.html">protocol.service</a> </td>
+						</tr>
+						<tr>
+							<td> External System </td>
+							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/external"
+							target="_blank"> protocol/external </a> </td>
+							<td> <a href="../modules/samchon.protocol.external.html">protocol.external</a> </td>
+						</tr>
+						<tr>
+							<td> Parallel System </td>
+							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/parallel"
+							target="_blank"> protocol/parallel </a> </td>
+							<td> <a href="../modules/samchon.protocol.parallel.html">protocol.parallel</a> </td>
+						</tr>
+						<tr>
+							<td> Distributed System </td>
+							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/distributed"
+							target="_blank"> protocol/distributed </a> </td>
+							<td> <a href="../modules/samchon.protocol.distributed.html">protocol.distributed</a> </td>
+						</tr>
+						<tr>
+							<td> Slave System </td>
+							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/slave"
+							target="_blank"> protocol/slave </a> </td>
+							<td> <a href="../modules/samchon.protocol.slave.html">protocol.slave</a> </td>
+						</tr>
+					</table>
+					<p><h4> Example - Projects </h4></p>
+					<ul>
+						<li>
+							<a href="https://github.com/samchon/framework/wiki/Examples-Calculator" target="_blank"> Calculator </a>
+						</li>
+						<li>
+							<a href="https://github.com/samchon/framework/wiki/Examples-Chatting" target="_blank"> Chatting </a>
+						</li>
+						<li>
+							<a href="https://github.com/samchon/framework/wiki/Examples-Interaction" target="_blank"> Interaction </a>
+						</li>
+					</ul>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="../classes/samchon.protocol.invoke.html">Invoke</a></p>
+						</dd>
+						<dt>handbook</dt>
+						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Protocol-Basic_Components#iprotocol"
+							target="_blank"> Basic Components - IProtocol </a></p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IProtocol</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="samchon.protocol.icommunicator.html" class="tsd-signature-type">ICommunicator</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/samchon.protocol.service.client.html" class="tsd-signature-type">Client</a></li>
+					<li><a href="../classes/samchon.protocol.dedicatedworker.html" class="tsd-signature-type">DedicatedWorker</a></li>
+					<li><a href="../classes/samchon.protocol.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
+					<li><a href="../classes/samchon.protocol.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a></li>
+					<li><a href="../classes/samchon.protocol.distributed.distributedsystemrole.html" class="tsd-signature-type">DistributedSystemRole</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalclientarray.html" class="tsd-signature-type">ExternalClientArray</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalserver.html" class="tsd-signature-type">ExternalServer</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalserverarray.html" class="tsd-signature-type">ExternalServerArray</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalserverclientarray.html" class="tsd-signature-type">ExternalServerClientArray</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalsystemarray.html" class="tsd-signature-type">ExternalSystemArray</a></li>
+					<li><a href="../classes/samchon.protocol.external.externalsystemrole.html" class="tsd-signature-type">ExternalSystemRole</a></li>
+					<li><a href="samchon.protocol.external.iexternalclientarray.html" class="tsd-signature-type">IExternalClientArray</a></li>
+					<li><a href="samchon.protocol.external.iexternalserver.html" class="tsd-signature-type">IExternalServer</a></li>
+					<li><a href="samchon.protocol.external.iexternalserverarray.html" class="tsd-signature-type">IExternalServerArray</a></li>
+					<li><a href="samchon.protocol.external.iexternalserverclientarray.html" class="tsd-signature-type">IExternalServerClientArray</a></li>
+					<li><a href="samchon.protocol.external.iexternalserverclientarray.html" class="tsd-signature-type">IExternalServerClientArray</a></li>
+					<li><a href="samchon.protocol.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
+					<li><a href="samchon.protocol.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorclient.html" class="tsd-signature-type">MediatorClient</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorserver.html" class="tsd-signature-type">MediatorServer</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorsharedworkerclient.html" class="tsd-signature-type">MediatorSharedWorkerClient</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorsharedworkerserver.html" class="tsd-signature-type">MediatorSharedWorkerServer</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorsystem.html" class="tsd-signature-type">MediatorSystem</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorwebclient.html" class="tsd-signature-type">MediatorWebClient</a></li>
+					<li><a href="../classes/samchon.protocol.external.mediatorwebserver.html" class="tsd-signature-type">MediatorWebServer</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelclientarray.html" class="tsd-signature-type">ParallelClientArray</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelclientarraymediator.html" class="tsd-signature-type">ParallelClientArrayMediator</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelserver.html" class="tsd-signature-type">ParallelServer</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelserverarray.html" class="tsd-signature-type">ParallelServerArray</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelserverarraymediator.html" class="tsd-signature-type">ParallelServerArrayMediator</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelserverclientarray.html" class="tsd-signature-type">ParallelServerClientArray</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelserverclientarraymediator.html" class="tsd-signature-type">ParallelServerClientArrayMediator</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a></li>
+					<li><a href="../classes/samchon.protocol.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a></li>
+					<li><a href="../classes/samchon.protocol.service.server.html" class="tsd-signature-type">Server</a></li>
+					<li><a href="../classes/samchon.protocol.service.service.html" class="tsd-signature-type">Service</a></li>
+					<li><a href="../classes/samchon.protocol.slave.slaveclient.html" class="tsd-signature-type">SlaveClient</a></li>
+					<li><a href="../classes/samchon.protocol.slave.slaveserver.html" class="tsd-signature-type">SlaveServer</a></li>
+					<li><a href="../classes/samchon.protocol.slave.slavesystem.html" class="tsd-signature-type">SlaveSystem</a></li>
+					<li><a href="../classes/samchon.protocol.service.user.html" class="tsd-signature-type">User</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="samchon.protocol.iprotocol.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="samchon.protocol.iprotocol.html#senddata" class="tsd-kind-icon">send<wbr>Data</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="replydata" class="tsd-anchor"></a>
+					<h3>reply<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reply<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L4214">typings/samchon-framework/samchon-framework.d.ts:4214</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Sending message. </p>
+									<p> Sends message to related system or shifts the responsibility to chain. </p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Invoke message to send</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="senddata" class="tsd-anchor"></a>
+					<h3>send<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L4221">typings/samchon-framework/samchon-framework.d.ts:4221</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Handling replied message. </p>
+									<p> Handles replied message or shifts the responsibility to chain. </p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message has received.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.html">samchon</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.collection.html">collection</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.library.html">library</a>
+							</li>
+							<li class="current tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.protocol.html">protocol</a>
+								<ul>
+									<li class=" tsd-kind-module tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+										<a href="../modules/samchon.protocol.ientitygroup.html">IEntity<wbr>Group</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.distributed.html">distributed</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.external.html">external</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.parallel.html">parallel</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.service.html">service</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.slave.html">slave</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+										<a href="../modules/samchon.protocol.socket.html">socket</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+										<a href="../modules/samchon.protocol.websocket.html">websocket</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/std.html">std</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.iprotocol.html" class="tsd-kind-icon">IProtocol</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="samchon.protocol.iprotocol.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="samchon.protocol.iprotocol.html#senddata" class="tsd-kind-icon">send<wbr>Data</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,1559 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XTree | </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/std.html">std</a>
+				</li>
+				<li>
+					<a href="../modules/std.base.html">base</a>
+				</li>
+				<li>
+					<a href="std.base.xtree.html">XTree</a>
+				</li>
+			</ul>
+			<h1>Class XTree&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p> Red-black Tree. </p>
+					</div>
+					<p> A red-black tree is a kind of self-balancing
+						binary search tree. Each node of the binary tree has an extra bit, and that bit is often interpreted as the
+						color (<font color='red'>red</font> or <font color='darkBlue'>black</font>) of the node. These color bits
+					are used to ensure the tree remains approximately balanced during insertions and deletions. </p>
+					<p> Balance is preserved by painting each node of the tree with one of two colors (typically called
+						&#39;<font color='red'>red</font>&#39; and &#39;<font color='darkBlue'>black</font>&#39;) in a way that satisfies certain
+						properties, which collectively constrain how unbalanced the tree can become in the worst case. When the tree
+						is modified, the new tree is subsequently rearranged and repainted to restore the coloring properties. The
+					properties are designed in such a way that this rearranging and recoloring can be performed efficiently. </p>
+					<p> The balancing of the tree is not perfect but it is good enough to allow it to guarantee searching in
+						O(log n) time, where n is the total number of elements in the tree. The insertion and deletion operations,
+					along with the tree rearrangement and recoloring, are also performed in O(log n) time. </p>
+					<p> Tracking the color of each node requires only 1 bit of information per node because there are only two
+						colors. The tree does not contain any other data specific to its being a
+						red-black tree so its memory footprint is almost
+						identical to a classic (uncolored) binary search tree. In many cases the additional bit of information can
+					be stored at no additional memory cost. </p>
+					<p><h4> Properties </h4></p>
+					<p> In addition to the requirements imposed on a binary search tree the following must be satisfied by a
+					red-black tree: </p>
+					<ol>
+						<li> A node is either <font color='red'>red</font> or <font color='darkBlue'>black</font>. </li>
+						<li>
+							The root is <font color='darkBlue'>black</font>. This rule is sometimes omitted. Since the root can
+							always be changed from <font color='red'>red</font> to <font color='darkBlue'>black</font>, but not
+							necessarily vice versa, this rule has little effect on analysis.
+						</li>
+						<li> All leaves (NIL; <code>null</code>) are <font color='darkBlue'>black</font>. </li>
+						<li>
+							If a node is <font color='red'>red</font>, then both its children are
+							<font color='darkBlue'>black</font>.
+						</li>
+						<li>
+							Every path from a given node to any of its descendant NIL nodes contains the same number of
+							<font color='darkBlue'>black</font> nodes. Some definitions: the number of
+							<font color='darkBlue'>black</font> nodes from the root to a node is the node&#39;s
+							<font color='darkBlue'>black</font> depth; the uniform number of <font color='darkBlue'>black</font>
+							nodes in all paths from root to the leaves is called the <font color='darkBlue'>black</font>-height of
+							the red-black tree.
+						</li>
+					</ol>
+					<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_example.svg"
+					style="max-width: 100%" /> </p>
+					<p> These constraints enforce a critical property of red-black trees: the path from the root to the farthest
+						leaf is no more than twice as long as the path from the root to the nearest leaf. The result is that the tree
+						is roughly height-balanced. Since operations such as inserting, deleting, and finding values require
+						worst-case time proportional to the height of the tree, this theoretical upper bound on the height allows
+					red-black trees to be efficient in the worst case, unlike ordinary binary search trees. </p>
+					<p> To see why this is guaranteed, it suffices to consider the effect of properties 4 and 5 together. For a
+						red-black tree T, let B be the number of <font color='darkBlue'>black</font> nodes in property 5. Let the
+						shortest possible path from the root of T to any leaf consist of B <font color='darkBlue'>black</font> nodes.
+						Longer possible paths may be constructed by inserting <font color='red'>red</font> nodes. However, property 4
+						makes it impossible to insert more than one consecutive <font color='red'>red</font> node. Therefore,
+						ignoring any <font color='darkBlue'>black</font> NIL leaves, the longest possible path consists of 2<em>B nodes,
+							alternating <font color='darkBlue'>black</font> and <font color='red'>red</font> (this is the worst case).
+						Counting the <font color='darkBlue'>black</font> NIL leaves, the longest possible path consists of 2</em>B-1
+					nodes. </p>
+					<p> The shortest possible path has all <font color='darkBlue'>black</font> nodes, and the longest possible
+						path alternates between <font color='red'>red</font> and <font color='darkBlue'>black</font> nodes. Since all
+						maximal paths have the same number of <font color='darkBlue'>black</font> nodes, by property 5, this shows
+					that no path is more than twice as long as any other path. </p>
+					<dl class="tsd-comment-tags">
+						<dt>reference</dt>
+						<dd><p><a href="https://en.wikipedia.org/w/index.php?title=Red%E2%80%93black_tree">https://en.wikipedia.org/w/index.php?title=Red%E2%80%93black_tree</a></p>
+						</dd>
+						<dt>inventor</dt>
+						<dd><p>Rudolf Bayer</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Migrated by Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Type of elements.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">XTree</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="std.base.pairtree.html" class="tsd-signature-type">PairTree</a>
+							</li>
+							<li>
+								<a href="std.base.atomictree.html" class="tsd-signature-type">AtomicTree</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private-protected tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.xtree.html#root_" class="tsd-kind-icon">root_</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#erase" class="tsd-kind-icon">erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case1" class="tsd-kind-icon">erase_<wbr>case1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case2" class="tsd-kind-icon">erase_<wbr>case2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case3" class="tsd-kind-icon">erase_<wbr>case3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case4" class="tsd-kind-icon">erase_<wbr>case4</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case5" class="tsd-kind-icon">erase_<wbr>case5</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#erase_case6" class="tsd-kind-icon">erase_<wbr>case6</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#fetch_color" class="tsd-kind-icon">fetch_<wbr>color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.xtree.html#fetch_maximum" class="tsd-kind-icon">fetch_<wbr>maximum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#find" class="tsd-kind-icon">find</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#insert" class="tsd-kind-icon">insert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#insert_case1" class="tsd-kind-icon">insert_<wbr>case1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#insert_case2" class="tsd-kind-icon">insert_<wbr>case2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#insert_case3" class="tsd-kind-icon">insert_<wbr>case3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#insert_case4" class="tsd-kind-icon">insert_<wbr>case4</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.xtree.html#insert_case5" class="tsd-kind-icon">insert_<wbr>case5</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#is_equal_to" class="tsd-kind-icon">is_<wbr>equal_<wbr>to</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.xtree.html#is_less" class="tsd-kind-icon">is_<wbr>less</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.xtree.html#replace_node" class="tsd-kind-icon">replace_<wbr>node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.xtree.html#rotate_left" class="tsd-kind-icon">rotate_<wbr>left</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.xtree.html#rotate_right" class="tsd-kind-icon">rotate_<wbr>right</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new XTree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.xtree.html" class="tsd-signature-type">XTree</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10604">typings/typescript-stl/typescript-stl.d.ts:10604</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default Constructor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.base.xtree.html" class="tsd-signature-type">XTree</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="root_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> root_</h3>
+					<div class="tsd-signature tsd-kind-icon">root_<span class="tsd-signature-symbol">:</span> <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10604">typings/typescript-stl/typescript-stl.d.ts:10604</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Root node.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10609">typings/typescript-stl/typescript-stl.d.ts:10609</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="erase" class="tsd-anchor"></a>
+					<h3>erase</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10966">typings/typescript-stl/typescript-stl.d.ts:10966</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Erase an element with its node. </p>
+								</div>
+								<p> In a regular binary search tree when deleting a node with two non-leaf children, we find either the
+									maximum element in its left subtree (which is the in-order predecessor) or the minimum element in its
+									right subtree (which is the in-order successor) and move its value into the node being deleted (as shown
+									here). We then delete the node we copied the value from, which must have fewer than two non-leaf children.
+									(Non-leaf children, rather than all children, are specified here because unlike normal binary search
+									trees, red-black trees can have leaf nodes anywhere, so that all nodes are either internal nodes with
+									two children or leaf nodes with, by definition, zero children. In effect, internal nodes having two leaf
+									children in a red-black tree are like the leaf nodes in a regular binary search tree.) Because merely
+									copying a value does not violate any red-black properties, this reduces to the problem of deleting a node
+									with at most one non-leaf child. Once we have solved that problem, the solution applies equally to the
+									case where the node we originally want to delete has at most one non-leaf child as to the case just
+								considered where it has two non-leaf children. </p>
+								<p> Therefore, for the remainder of this discussion we address the deletion of a node with at most one
+									non-leaf child. We use the label <b>M</b> to denote the node to be deleted; <b>C</b> will denote a
+									selected child of <b>M</b>, which we will also call &quot;its child&quot;. If <b>M</b> does have a non-leaf child,
+								call that its child, <b>C</b>; otherwise, choose either leaf as its child, <b>C</b>. </p>
+								<p> If <b>M</b> is a <font color='red'>red</font> node, we simply replace it with its child <b>C</b>,
+									which must be <font color='darkBlue'>black</font> by property 4. (This can only occur when <b>M</b> has
+									two leaf children, because if the <font color='red'>red</font> node <b>M</b> had a
+									<font color='darkBlue'>black</font> non-leaf child on one side but just a leaf child on the other side,
+									then the count of <font color='darkBlue'>black</font> nodes on both sides would be different, thus the
+									tree would violate property 5.) All paths through the deleted node will simply pass through one fewer
+									<font color='red'>red</font> node, and both the deleted node&#39;s parent and child must be
+									<font color='darkBlue'>black</font>, so property 3 (all leaves are <font color='darkBlue'>black</font>)
+									and property 4 (both children of every <font color='red'>red</font> node are
+								<font color='darkBlue'>black</font>) still hold. </p>
+								<p> Another simple case is when <b>M</b> is <font color='darkBlue'>black</font> and <b>C</b> is
+									<font color='red'>red</font>. Simply removing a <font color='darkBlue'>black</font> node could break
+									Properties 4 (“Both children of every <font color='red'>red</font> node are
+									<font color='darkBlue'>black</font>”) and 5 (“All paths from any given node to its leaf nodes contain the
+									same number of <font color='darkBlue'>black</font> nodes”), but if we repaint <b>C</b>
+								<font color='darkBlue'>black</font>, both of these properties are preserved. </p>
+								<p> The complex case is when both <b>M</b> and <b>C</b> are <font color='darkBlue'>black</font>. (This
+									can only occur when deleting a <font color='darkBlue'>black</font> node which has two leaf children,
+									because if the <font color='darkBlue'>black</font> node <b>M</b> had a <font color='darkBlue'>black</font>
+									non-leaf child on one side but just a leaf child on the other side, then the count of
+									<font color='darkBlue'>black</font> nodes on both sides would be different, thus the tree would have been
+									an invalid red-black tree by violation of property 5.) We begin by replacing <b>M</b> with its child
+									<b>C</b>. We will relabel this child <b>C</b> (in its new position) <i><b>N</b></i>, and its sibling (its
+									new parent&#39;s other child) <a href="std.base.xtreenode.html#sibling"><b>S</b></a>. (<a href="std.base.xtreenode.html#sibling"><b>S</b></a> was
+								previously the sibling of <b>M</b>.) </p>
+								<p> In the diagrams below, we will also use <a href="std.base.xtreenode.html#parent"><b>P</b></a> for <i><b>N</b></i>&#39;s new
+									parent (<b>M</b>&#39;s old parent), <b>SL</b> for <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s left child, and
+									<b>SR</b> for <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child (<a href="std.base.xtreenode.html#sibling"><b>S</b></a> cannot
+									be a leaf because if <b>M</b> and <b>C</b> were <font color='darkBlue'>black</font>, then
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a>&#39;s one subtree which included <b>M</b> counted two
+									<font color='darkBlue'>black</font>-height and thus <a href="std.base.xtreenode.html#parent"><b>P</b></a>&#39;s other subtree
+									which includes <a href="std.base.xtreenode.html#sibling"><b>S</b></a> must also count two
+									<font color='darkBlue'>black</font>-height, which cannot be the case if <a href="std.base.xtreenode.html#sibling"><b>S</b></a>
+								is a leaf node). </p>
+								<p><h4> Notes </h4></p>
+								<ol>
+									<li>
+										The label <i><b>N</b></i> will be used to denote the current node (colored
+										<font color='darkBlue'>black</font>). In the diagrams <i><b>N</b></i> carries a blue contour. At the
+										beginning, this is the replacement node and a leaf, but the entire procedure may also be applied
+										recursively to other nodes (see case 3). In between some cases, the roles and labels of the nodes
+										are exchanged, but in each case, every label continues to represent the same node it represented at
+										the beginning of the case.
+									</li>
+									<li>
+										If a node in the right (target) half of a diagram carries a blue contour it will become the current
+										node in the next iteration and there the other nodes will be newly assigned relative to it. Any
+										color shown in the diagram is either assumed in its case or implied by those assumptions.
+										White represents an arbitrary color (either <font color='red'>red</font> or
+										<font color='darkBlue'>black</font>), but the same in both halves of the diagram.
+									</li>
+									<li>
+										A numbered triangle represents a subtree of unspecified depth. A <font color='darkBlue'>black</font>
+										circle atop a triangle means that <font color='darkBlue'>black</font>-height of subtree is greater
+										by one compared to subtree without this circle.
+									</li>
+								</ol>
+								<p> If both <i><b>N</b></i> and its original parent are <font color='darkBlue'>black</font>, then
+									deleting this original parent causes paths which proceed through <i><b>N</b></i> to have one fewer
+									<font color='darkBlue'>black</font> node than paths that do not. As this violates property 5 (all paths
+									from any given node to its leaf nodes contain the same number of <font color='darkBlue'>black</font>
+								nodes), the tree must be rebalanced. There are several cases to consider: </p>
+								<ol>
+									<li> <i><b>N</b></i> is the new root. </li>
+									<li> <a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='red'>red</font>. </li>
+									<li>
+										<a href="std.base.xtreenode.html#parent"><b>P</b></a>, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, and
+									<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s children are <font color='darkBlue'>black</font>. </li>
+									<li>
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a> and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s children are
+										<font color='darkBlue'>black</font>, but <a href="std.base.xtreenode.html#parent"><b>P</b></a> is
+										<font color='red'>red</font>.
+									</li>
+									<li>
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='darkBlue'>black</font>,
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s left child is <font color='red'>red</font>,
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child is <font color='darkBlue'>black</font>, and
+										<i><b>N</b></i> is the left child of its parent.
+									</li>
+									<li>
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='darkBlue'>black</font>,
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child is <font color='red'>red</font>, and
+										<i><b>N</b></i> is the left child of its parent <a href="std.base.xtreenode.html#parent"><b>P</b></a>.
+									</li>
+								</ol>
+								<p> Again, the function calls all use tail recursion, so the algorithm is in-place. </p>
+								<p> In the algorithm above, all cases are chained in order, except in delete case 3 where it can recurse
+									to case 1 back to the parent node: this is the only case where an iterative implementation will
+									effectively loop. No more than h loops back to case 1 will occur (where h is the height of the tree).
+									And because the probability for escalation decreases exponentially with each iteration the average
+								removal cost is constant. </p>
+								<p> Additionally, no tail recursion ever occurs on a child node, so the tail recursion loop can only
+									move from a child back to its successive ancestors. If a rotation occurs in case 2 (which is the only
+									possibility of rotation within the loop of cases 1–3), then the parent of the node <i><b>N</b></i>
+									becomes <font color='red'>red</font> after the rotation and we will exit the loop. Therefore, at most one
+									rotation will occur within this loop. Since no more than two additional rotations will occur after
+								exiting the loop, at most three rotations occur in total. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An element to erase.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case1<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10980">typings/typescript-stl/typescript-stl.d.ts:10980</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i> is the new root. </p>
+								</div>
+								<p> In this case, we are done. We removed one <font color='darkBlue'>black</font> node from every path,
+								and the new root is <font color='darkBlue'>black</font>, so the properties are preserved. </p>
+								<p><h4> Note </h4></p>
+								<p> In cases 2, 5, and 6, we assume <i><b>N</b></i> is the left child of its parent
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a>. If it is the right child, left and right should be reversed throughout
+								these three cases. Again, the code examples take both cases into account. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be erased or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case2<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11001">typings/typescript-stl/typescript-stl.d.ts:11001</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='red'>red</font>. </p>
+								</div>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_delete_case_2.svg"
+								style="max-width: 100%" /> </p>
+								<p> In this case we reverse the colors of <a href="std.base.xtreenode.html#parent"><b>P</b></a> and
+									<a href="std.base.xtreenode.html#sibling"><b>S</b></a>, and then rotate left at <a href="std.base.xtreenode.html#parent"><b>P</b></a>, turning
+								<a href="std.base.xtreenode.html#sibling"><b>S</b></a> into <i><b>N</b></i>&#39;s grandparent. </p>
+								<p> Note that <a href="std.base.xtreenode.html#parent"><b>P</b></a> has to be <font color='darkBlue'>black</font> as it had a
+									<font color='red'>red</font> child. The resulting subtree has a path short one
+									<font color='darkBlue'>black</font> node so we are not done. Now <i><b>N</b></i> has a
+									<font color='darkBlue'>black</font> sibling and a <font color='red'>red</font> parent, so we can proceed
+									to step 4, 5, or 6. (Its new sibling is <font color='darkBlue'>black</font> because it was once the child
+									of the <font color='red'>red</font> <a href="std.base.xtreenode.html#sibling"><b>S</b></a>.) In later cases, we will re-label
+								<i><b>N</b></i>&#39;s new sibling as <a href="std.base.xtreenode.html#sibling"><b>S</b></a>. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be erased or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case3<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11025">typings/typescript-stl/typescript-stl.d.ts:11025</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <a href="std.base.xtreenode.html#parent"><b>P</b></a>, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s children are <font color='darkBlue'>black</font>. </p>
+								</div>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_delete_case_3.svg"
+								style="max-width: 100%" /> </p>
+								<p> In this case, we simply repaint <a href="std.base.xtreenode.html#sibling"><b>S</b></a> <font color='red'>red</font>. The
+									result is that all paths passing through <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, which are precisely those
+									paths not passing through <i><b>N</b></i>, have one less <font color='darkBlue'>black</font> node.
+									Because deleting <i><b>N</b></i>&#39;s original parent made all paths passing through <i><b>N</b></i> have
+								one less <font color='darkBlue'>black</font> node, this evens things up. </p>
+								<p> However, all paths through <a href="std.base.xtreenode.html#parent"><b>P</b></a> now have one fewer
+									<font color='darkBlue'>black</font> node than paths that do not pass through
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a>, so property 5 (all paths from any given node to its leaf nodes contain
+								the same number of <font color='darkBlue'>black</font> nodes) is still violated. </p>
+								<p> To correct this, we perform the rebalancing procedure on <a href="std.base.xtreenode.html#parent"><b>P</b></a>, starting
+								at case 1. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be erased or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case4</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case4<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11041">typings/typescript-stl/typescript-stl.d.ts:11041</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <a href="std.base.xtreenode.html#sibling"><b>S</b></a> and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s children are
+									<font color='darkBlue'>black</font>, but <a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font>. </p>
+								</div>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_delete_case_4.svg"
+								style="max-width: 100%" /> </p>
+								<p> In this case, we simply exchange the colors of <a href="std.base.xtreenode.html#sibling"><b>S</b></a> and
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a>. This does not affect the number of <font color='darkBlue'>black</font>
+									nodes on paths going through <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, but it does add one to the number of
+									<font color='darkBlue'>black</font> nodes on paths going through <i><b>N</b></i>, making up for the
+								deleted <font color='darkBlue'>black</font> node on those paths. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be erased or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case5" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case5</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case5<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11063">typings/typescript-stl/typescript-stl.d.ts:11063</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='darkBlue'>black</font>, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s
+										left child is <font color='red'>red</font>, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child is
+									<font color='darkBlue'>black</font>, and <i><b>N</b></i> is the left child of its parent. </p>
+								</div>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_delete_case_5.svg"
+								style="max-width: 100%" /> </p>
+								<p> In this case we rotate right at <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, so that
+									<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s left child becomes <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s parent and
+									<i><b>N</b></i>&#39;s new sibling. We then exchange the colors of <a href="std.base.xtreenode.html#sibling"><b>S</b></a> and its
+								new parent. </p>
+								<p> All paths still have the same number of <font color='darkBlue'>black</font> nodes, but now
+									<i><b>N</b></i> has a <font color='darkBlue'>black</font> sibling whose right child is
+									<font color='red'>red</font>, so we fall into case 6. Neither <i><b>N</b></i> nor its parent are affected
+									by this transformation. (Again, for case 6, we relabel <i><b>N</b></i>&#39;s new sibling as
+								<a href="std.base.xtreenode.html#sibling"><b>S</b></a>.) </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be erased or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="erase_case6" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> erase_<wbr>case6</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase_<wbr>case6<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11118">typings/typescript-stl/typescript-stl.d.ts:11118</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <a href="std.base.xtreenode.html#sibling"><b>S</b></a> is <font color='darkBlue'>black</font>,
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child is <font color='red'>red</font>, and <i><b>N</b></i> is
+									the left child of its parent <a href="std.base.xtreenode.html#parent"><b>P</b></a>. </p>
+								</div>
+								<p> In this case we rotate left at <a href="std.base.xtreenode.html#parent"><b>P</b></a>, so that
+									<a href="std.base.xtreenode.html#sibling"><b>S</b></a> becomes the parent of <a href="std.base.xtreenode.html#parent"><b>P</b></a> and
+									<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child. We then exchange the colors of
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a> and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, and make
+								<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child <font color='darkBlue'>black</font>. </p>
+								<p> The subtree still has the same color at its root, so Properties 4 (Both children of every
+									<font color='red'>red</font> node are <font color='darkBlue'>black</font>) and 5 (All paths from any
+									given node to its leaf nodes contain the same number of <font color='darkBlue'>black</font> nodes) are
+									not violated. However, <i><b>N</b></i> now has one additional <font color='darkBlue'>black</font>
+									ancestor: either <a href="std.base.xtreenode.html#parent"><b>P</b></a> has become <font color='darkBlue'>black</font>, or it
+									was <font color='darkBlue'>black</font> and <a href="std.base.xtreenode.html#sibling"><b>S</b></a> was added as a
+								<font color='darkBlue'>black</font> grandparent. </p>
+								<p> Thus, the paths passing through <i><b>N</b></i> pass through one additional
+								<font color='darkBlue'>black</font> node. </p>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_delete_case_6.svg"
+								style="max-width: 100%" /> </p>
+								<p> Meanwhile, if a path does not go through <i><b>N</b></i>, then there are two possibilities: </p>
+								<ol>
+									<li>
+										It goes through <i><b>N</b></i>&#39;s new sibling <b>SL</b>, a node with arbitrary color and the root of
+										the subtree labeled 3 (s. diagram). Then, it must go through <a href="std.base.xtreenode.html#sibling"><b>S</b></a> and
+										<a href="std.base.xtreenode.html#parent"><b>P</b></a>, both formerly and currently, as they have only exchanged colors
+										and places. Thus the path contains the same number of <font color='darkBlue'>black</font> nodes.
+									</li>
+									<li>
+										It goes through <i><b>N</b></i>&#39;s new uncle, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child. Then,
+										it formerly went through <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s
+										parent, and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child <b>SR</b> (which was
+										<font color='red'>red</font>), but now only goes through <a href="std.base.xtreenode.html#sibling"><b>S</b></a>, which
+										has assumed the color of its former parent, and <a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s right child,
+										which has changed from <font color='red'>red</font> to <font color='darkBlue'>black</font> (assuming
+										<a href="std.base.xtreenode.html#sibling"><b>S</b></a>&#39;s color: <font color='darkBlue'>black</font>). The net effect is
+										that this path goes through the same number of <font color='darkBlue'>black</font> nodes.
+									</li>
+								</ol>
+								<p> Either way, the number of <font color='darkBlue'>black</font> nodes on these paths does not change.
+									Thus, we have restored Properties 4 (Both children of every <font color='red'>red</font> node are
+									<font color='darkBlue'>black</font>) and 5 (All paths from any given node to its leaf nodes contain the
+									same number of <font color='darkBlue'>black</font> nodes). The white node in the diagram can be either
+									<font color='red'>red</font> or <font color='darkBlue'>black</font>, but must refer to the same color
+								both before and after the transformation. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="fetch_color" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fetch_<wbr>color</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">fetch_<wbr>color<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11144">typings/typescript-stl/typescript-stl.d.ts:11144</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetch color from a node.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>retur</dt>
+									<dd><p>color.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to fetch color.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="fetch_maximum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fetch_<wbr>maximum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">fetch_<wbr>maximum<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10622">typings/typescript-stl/typescript-stl.d.ts:10622</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetch maximum (the rightes?) node from one.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to fetch its maximum node.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The maximum node.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10615">typings/typescript-stl/typescript-stl.d.ts:10615</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find a node from its contained value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to find.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="insert" class="tsd-anchor"></a>
+					<h3>insert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10710">typings/typescript-stl/typescript-stl.d.ts:10710</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert an element with a new node. </p>
+								</div>
+								<p> Insertion begins by adding the node as any binary search tree insertion does and by coloring it
+									<font color='red'>red</font>. Whereas in the binary search tree, we always add a leaf, in the red-black
+									tree, leaves contain no information, so instead we add a <font color='red'>red</font> interior node, with
+									two <font color='darkBlue'>black</font> leaves, in place of an existing
+								<font color='darkBlue'>black</font> leaf. </p>
+								<p> What happens next depends on the color of other nearby nodes. The term uncle node will be used to
+								refer to the sibling of a node&#39;s parent, as in human family trees. Note that: </p>
+								<ul>
+									<li> property 3 (all leaves are <font color='darkBlue'>black</font>) always holds. </li>
+									<li>
+										property 4 (both children of every <font color='red'>red</font> node are
+										<font color='darkBlue'>black</font>) is threatened only by adding a <font color='red'>red</font>
+										node, repainting a <font color='darkBlue'>black</font> node <font color='red'>red</font>, or a
+										rotation.
+									</li>
+									<li>
+										property 5 (all paths from any given node to its leaf nodes contain the same number of
+										<font color='darkBlue'>black</font> nodes) is threatened only by adding a
+										<font color='darkBlue'>black</font> node, repainting a <font color='red'>red</font> node
+										<font color='darkBlue'>black</font> (or vice versa), or a rotation.
+									</li>
+								</ul>
+								<p><h4> Notes </h4></p>
+								<ol>
+									<li>
+										The label <i><b>N</b></i> will be used to denote the current node (colored
+										<font color='red'>red</font>). In the diagrams <i><b>N</b></i> carries a blue contour. At the
+										beginning, this is the new node being inserted, but the entire procedure may also be applied
+										recursively to other nodes (see case 3). <a href="std.base.xtreenode.html#parent"><b>P</b></a> will denote
+										<i><b>N</b></i>&#39;s parent node, <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> will denote <i><b>N</b></i>&#39;s
+										grandparent, and <a href="std.base.xtreenode.html#uncle"><b>U</b></a> will denote <i><b>N</b></i>&#39;s uncle. In between
+										some cases, the roles and labels of the nodes are exchanged, but in each case, every label continues
+										to represent the same node it represented at the beginning of the case.
+									</li>
+									<li>
+										If a node in the right (target) half of a diagram carries a blue contour it will become the current
+										node in the next iteration and there the other nodes will be newly assigned relative to it. Any
+										color shown in the diagram is either assumed in its case or implied by those assumptions.
+									</li>
+									<li>
+										A numbered triangle represents a subtree of unspecified depth. A <font color='darkBlue'>black</font>
+										circle atop a triangle means that <font color='darkBlue'>black</font>-height of subtree is greater
+									by one compared to subtree without this circle. </li>
+								</ol>
+								<p> There are several cases of red-black tree insertion to handle: </p>
+								<ul>
+									<li> <i><b>N</b></i> is the root node, i.e., first node of red-black tree. </li>
+									<li>
+										<i><b>N</b></i>&#39;s parent (<a href="std.base.xtreenode.html#parent"><b>P</b></a>) is <font color='darkBlue'>black</font>.
+									</li>
+									<li>
+										<i><b>N</b></i>&#39;s parent (<a href="std.base.xtreenode.html#parent"><b>P</b></a>) and uncle
+										(<a href="std.base.xtreenode.html#uncle"><b>U</b></a>) are <font color='red'>red</font>.
+									</li>
+									<li>
+										<i><b>N</b></i> is added to right of left child of grandparent, or <i><b>N</b></i> is added to left
+										of right child of grandparent (<a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> and
+										<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>).
+									</li>
+									<li>
+										<i><b>N</b></i> is added to left of left child of grandparent, or <i><b>N</b></i> is added to right
+										of right child of grandparent (<a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> and
+										<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>).
+									</li>
+								</ul>
+								<p><h4> Note </h4></p>
+								<p> Note that inserting is actually in-place, since all the calls above use tail recursion. </p>
+								<p> In the algorithm above, all cases are chained in order, except in insert case 3 where it can recurse
+									to case 1 back to the grandparent node: this is the only case where an iterative implementation will
+									effectively loop. Because the problem of repair is escalated to the next higher level but one, it takes
+									maximally h⁄2 iterations to repair the tree (where h is the height of the tree). Because the probability
+								for escalation decreases exponentially with each iteration the average insertion cost is constant. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An element to insert.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="insert_case1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> insert_<wbr>case1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert_<wbr>case1<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10723">typings/typescript-stl/typescript-stl.d.ts:10723</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i> is the root node, i.e., first node of red-black tree. </p>
+								</div>
+								<p> The current node <i><b>N</b></i> is at the <a href="std.base.xtree.html#root_">root</a> of the tree. </p>
+								<p> In this case, it is repainted <font color='darkBlue'>black</font> to satisfy property 2 (the root is
+									<font color='darkBlue'>black</font>). Since this adds one <font color='darkBlue'>black</font> node to
+									every path at once, property 5 (all paths from any given node to its leaf nodes contain the same number
+								of <font color='darkBlue'>black</font> nodes) is not violated. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be inserted or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="insert_case2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> insert_<wbr>case2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert_<wbr>case2<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10740">typings/typescript-stl/typescript-stl.d.ts:10740</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i>&#39;s parent (<a href="std.base.xtreenode.html#parent"><b>P</b></a>) is <font color='darkBlue'>black</font>. </p>
+								</div>
+								<p> The current node&#39;s parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='darkBlue'>black</font>,
+									so property 4 (both children of every <font color='red'>red</font> node are
+								<font color='darkBlue'>black</font>) is not invalidated. </p>
+								<p> In this case, the tree is still valid. Property 5 (all paths from any given node to its leaf nodes
+									contain the same number of <font color='darkBlue'>black</font> nodes) is not threatened, because the
+									current node <i><b>N</b></i> has two <font color='darkBlue'>black</font> leaf children, but because
+									<i><b>N</b></i> is <font color='red'>red</font>, the paths through each of its children have the same
+									number of <font color='darkBlue'>black</font> nodes as the path through the leaf it replaced, which was
+								<font color='darkBlue'>black</font>, and so this property remains satisfied. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be inserted or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="insert_case3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> insert_<wbr>case3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert_<wbr>case3<span class="tsd-signature-symbol">(</span>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10770">typings/typescript-stl/typescript-stl.d.ts:10770</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i>&#39;s parent (<a href="std.base.xtreenode.html#parent"><b>P</b></a>) and uncle
+									(<i><a href="std.base.xtreenode.html#uncle"><b>U</b></a></i>) are <font color='red'>red</font>. </p>
+								</div>
+								<p> If both the parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> and the uncle <a href="std.base.xtreenode.html#uncle"><b>U</b></a>
+									are <font color='red'>red</font>, then both of them can be repainted <font color='darkBlue'>black</font>
+									and the grandparent <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> becomes <font color='red'>red</font> (to
+									maintain property 5 (all paths from any given node to its leaf nodes contain the same number of
+								<font color='darkBlue'>black</font> nodes)). </p>
+								<p> Now, the current <font color='red'>red</font> node <i><b>N</b></i> has a
+									<font color='darkBlue'>black</font> parent. Since any path through the parent or uncle must pass through
+									the grandparent, the number of <font color='darkBlue'>black</font> nodes on these paths has not changed.
+									<p> However, the grandparent <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> may now violate properties 2 (The
+										root is <font color='darkBlue'>black</font>) or 4 (Both children of every <font color='red'>red</font>
+										node are <font color='darkBlue'>black</font>) (property 4 possibly being violated since
+									<a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> may have a <font color='red'>red</font> parent). </p>
+									<p> To fix this, the entire procedure is recursively performed on <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a>
+										from case 1. Note that this is a tail-recursive call, so it could be rewritten as a loop; since this is
+										the only loop, and any rotations occur after this loop, this proves that a constant number of rotations
+									occur. </p>
+									<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_insert_case_3.svg"
+									style="max-width: 100%" /> </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>N: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to be inserted or swapped.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="insert_case4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> insert_<wbr>case4</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert_<wbr>case4<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10804">typings/typescript-stl/typescript-stl.d.ts:10804</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i> is added to right of left child of grandparent, or <i><b>N</b></i> is added to left
+										of right child of grandparent (<a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> and
+									<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>). </p>
+								</div>
+								<p> The parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> but the uncle
+									<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>; also, the current node
+									<i><b>N</b></i> is the right child of <a href="std.base.xtreenode.html#parent"><b>P</b></a>, and
+									<a href="std.base.xtreenode.html#parent"><b>P</b></a> in turn is the left child of its parent
+								<a href="std.base.xtreenode.html#grand_parent"><b>G</b></a>. </p>
+								<p> In this case, a left rotation on <a href="std.base.xtreenode.html#parent"><b>P</b></a> that switches the roles of the
+									current node <i><b>N</b></i> and its parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> can be performed; then,
+									the former parent node <a href="std.base.xtreenode.html#parent"><b>P</b></a> is dealt with using case 5
+									(relabeling <i><b>N</b></i> and <a href="std.base.xtreenode.html#parent"><b>P</b></a>) because property 4 (both children of
+								every <font color='red'>red</font> node are <font color='darkBlue'>black</font>) is still violated. </p>
+								<p> The rotation causes some paths (those in the sub-tree labelled &quot;1&quot;) to pass through the node
+									<i><b>N</b></i> where they did not before. It also causes some paths (those in the sub-tree labelled &quot;3&quot;)
+									not to pass through the node <a href="std.base.xtreenode.html#parent"><b>P</b></a> where they did before. However, both of
+									these nodes are <font color='red'>red</font>, so property 5 (all paths from any given node to its leaf
+									nodes contain the same number of <font color='darkBlue'>black</font> nodes) is not violated by the
+								rotation. </p>
+								<p> After this case has been completed, property 4 (both children of every <font color='red'>red</font>
+									node are <font color='darkBlue'>black</font>) is still violated, but now we can resolve this by
+								continuing to case 5. </p>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_insert_case_4.svg"
+								style="max-width: 100%" /> </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="insert_case5" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> insert_<wbr>case5</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert_<wbr>case5<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10835">typings/typescript-stl/typescript-stl.d.ts:10835</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> <i><b>N</b></i> is added to left of left child of grandparent, or <i><b>N</b></i> is added to right
+										of right child of grandparent (<a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> and
+									<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>). </p>
+								</div>
+								<p> The parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> is <font color='red'>red</font> but the uncle
+									<a href="std.base.xtreenode.html#uncle"><b>U</b></a> is <font color='darkBlue'>black</font>, the current node <i><b>N</b></i>
+									is the left child of <a href="std.base.xtreenode.html#parent"><b>P</b></a>, and <a href="std.base.xtreenode.html#parent"><b>P</b></a> is the left
+								child of its parent <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a>. </p>
+								<p>In this case, a right rotation on <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> is performed; the result is a
+									tree where the former parent <a href="std.base.xtreenode.html#parent"><b>P</b></a> is now the parent of both the current node
+								<i><b>N</b></i> and the former grandparent <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a>. </p>
+								<p> <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> is known to be <font color='darkBlue'>black</font>, since its
+									former child <a href="std.base.xtreenode.html#parent"><b>P</b></a> could not have been <font color='red'>red</font> otherwise
+									(without violating property 4). Then, the colors of <a href="std.base.xtreenode.html#parent"><b>P</b></a> and
+									<a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> are switched, and the resulting tree satisfies property 4 (both
+									children of every <font color='red'>red</font> node are <font color='darkBlue'>black</font>). Property 5
+									(all paths from any given node to its leaf nodes contain the same number of
+									<font color='darkBlue'>black</font> nodes) also remains satisfied, since all paths that went through any
+									of these three nodes went through <a href="std.base.xtreenode.html#grand_parent"><b>G</b></a> before, and now they all go
+									through <a href="std.base.xtreenode.html#parent"><b>P</b></a>. In each case, this is the only
+								<font color='darkBlue'>black</font> node of the three. </p>
+								<p> <img src="http://samchon.github.io/typescript-stl/images/design/conceptual_diagram/Red-black_tree_insert_case_5.svg"
+								style="max-width: 100%" /> </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="is_equal_to" class="tsd-anchor"></a>
+					<h3>is_<wbr>equal_<wbr>to</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is_<wbr>equal_<wbr>to<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10624">typings/typescript-stl/typescript-stl.d.ts:10624</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>right: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="is_less" class="tsd-anchor"></a>
+					<h3>is_<wbr>less</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is_<wbr>less<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L10623">typings/typescript-stl/typescript-stl.d.ts:10623</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>right: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="replace_node" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> replace_<wbr>node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">replace_<wbr>node<span class="tsd-signature-symbol">(</span>oldNode<span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, newNode<span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11137">typings/typescript-stl/typescript-stl.d.ts:11137</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Replace a node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldNode: <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Ordinary node to be replaced.</p>
+									</div>
+								</li>
+								<li>
+									<h5>newNode: <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target node to replace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="rotate_left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> rotate_<wbr>left</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rotate_<wbr>left<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11124">typings/typescript-stl/typescript-stl.d.ts:11124</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate a node left.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Node to rotate left.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="rotate_right" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> rotate_<wbr>right</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rotate_<wbr>right<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/typescript-stl/typescript-stl.d.ts#L11130">typings/typescript-stl/typescript-stl.d.ts:11130</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate a node to right.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <a href="std.base.xtreenode.html" class="tsd-signature-type">XTreeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node to rotate right.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.html">samchon</a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/std.html">std</a>
+						<ul>
+							<li class="current tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/std.base.html">base</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/std.placeholders.html">placeholders</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/std.base.color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/std.base.hash.html" class="tsd-kind-icon">Hash</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.atomictree.html" class="tsd-kind-icon">Atomic<wbr>Tree</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.container.html" class="tsd-kind-icon">Container</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="std.base.errorinstance.html" class="tsd-kind-icon">Error<wbr>Instance</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.hashbuckets.html" class="tsd-kind-icon">Hash<wbr>Buckets</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.mapcontainer.html" class="tsd-kind-icon">Map<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.maphashbuckets.html" class="tsd-kind-icon">Map<wbr>Hash<wbr>Buckets</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.multimap.html" class="tsd-kind-icon">Multi<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.multiset.html" class="tsd-kind-icon">Multi<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.pairtree.html" class="tsd-kind-icon">Pair<wbr>Tree</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.setcontainer.html" class="tsd-kind-icon">Set<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.sethashbuckets.html" class="tsd-kind-icon">Set<wbr>Hash<wbr>Buckets</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.uniquemap.html" class="tsd-kind-icon">Unique<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.uniqueset.html" class="tsd-kind-icon">Unique<wbr>Set</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.xtree.html" class="tsd-kind-icon">XTree</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.xtree.html#root_" class="tsd-kind-icon">root_</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase" class="tsd-kind-icon">erase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case1" class="tsd-kind-icon">erase_<wbr>case1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case2" class="tsd-kind-icon">erase_<wbr>case2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case3" class="tsd-kind-icon">erase_<wbr>case3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case4" class="tsd-kind-icon">erase_<wbr>case4</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case5" class="tsd-kind-icon">erase_<wbr>case5</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#erase_case6" class="tsd-kind-icon">erase_<wbr>case6</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#fetch_color" class="tsd-kind-icon">fetch_<wbr>color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.xtree.html#fetch_maximum" class="tsd-kind-icon">fetch_<wbr>maximum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#find" class="tsd-kind-icon">find</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert" class="tsd-kind-icon">insert</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert_case1" class="tsd-kind-icon">insert_<wbr>case1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert_case2" class="tsd-kind-icon">insert_<wbr>case2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert_case3" class="tsd-kind-icon">insert_<wbr>case3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert_case4" class="tsd-kind-icon">insert_<wbr>case4</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="std.base.xtree.html#insert_case5" class="tsd-kind-icon">insert_<wbr>case5</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#is_equal_to" class="tsd-kind-icon">is_<wbr>equal_<wbr>to</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.base.xtree.html#is_less" class="tsd-kind-icon">is_<wbr>less</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.xtree.html#replace_node" class="tsd-kind-icon">replace_<wbr>node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.xtree.html#rotate_left" class="tsd-kind-icon">rotate_<wbr>left</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.xtree.html#rotate_right" class="tsd-kind-icon">rotate_<wbr>right</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="std.base.xtreenode.html" class="tsd-kind-icon">XTree<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.iarraycontainer.html" class="tsd-kind-icon">IArray<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.iarrayiterator.html" class="tsd-kind-icon">IArray<wbr>Iterator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.icontainer.html" class="tsd-kind-icon">IContainer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.idequecontainer.html" class="tsd-kind-icon">IDeque<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.ihashmap.html" class="tsd-kind-icon">IHash<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.ihashset.html" class="tsd-kind-icon">IHash<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.ilinearcontainer.html" class="tsd-kind-icon">ILinear<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.ireverseiterator.html" class="tsd-kind-icon">IReverse<wbr>Iterator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.itreemap.html" class="tsd-kind-icon">ITree<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/std.base.itreeset.html" class="tsd-kind-icon">ITree<wbr>Set</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
