@@ -123,6 +123,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-module tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.ientitygroup.html#erase" class="tsd-kind-icon">erase</a></li>
@@ -153,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3632">typings/samchon-framework/samchon-framework.d.ts:3632</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3633">typings/samchon-framework/samchon-framework.d.ts:3633</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3648">typings/samchon-framework/samchon-framework.d.ts:3648</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3649">typings/samchon-framework/samchon-framework.d.ts:3649</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -357,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3616">typings/samchon-framework/samchon-framework.d.ts:3616</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3617">typings/samchon-framework/samchon-framework.d.ts:3617</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,6 +378,38 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>The number of elements in the container with a <i>key</i>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-module tsd-is-not-exported">
+					<a name="createchild" class="tsd-anchor"></a>
+					<h3>create<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3581">typings/samchon-framework/samchon-framework.d.ts:3581</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Factory method of a child Entity. </p>
+								</div>
+								<p> EntityArray::createChild() is a factory method creating a new child Entity which is belonged
+									to the EntityArray. This method is called by EntityArray::construct(). The children construction
+								methods Entity::construct() will be called by abstract method of the EntityArray::construct(). </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xml: <a href="../classes/samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>A new child Entity belongs to EntityArray.</p>
 						</li>
 					</ul>
 				</section>
@@ -524,7 +557,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3628">typings/samchon-framework/samchon-framework.d.ts:3628</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3629">typings/samchon-framework/samchon-framework.d.ts:3629</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -562,7 +595,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3606">typings/samchon-framework/samchon-framework.d.ts:3606</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3607">typings/samchon-framework/samchon-framework.d.ts:3607</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -840,7 +873,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="../interfaces/samchon.protocol.ientity.html">IEntity</a>.<a href="../interfaces/samchon.protocol.ientity.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3645">typings/samchon-framework/samchon-framework.d.ts:3645</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3646">typings/samchon-framework/samchon-framework.d.ts:3646</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -859,7 +892,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3649">typings/samchon-framework/samchon-framework.d.ts:3649</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3650">typings/samchon-framework/samchon-framework.d.ts:3650</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -965,6 +998,9 @@ class Point extends Entity
 					</li>
 					<li class=" tsd-kind-method tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.protocol.ientitygroup.html#count" class="tsd-kind-icon">count</a>
+					</li>
+					<li class=" tsd-kind-method tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.ientitygroup.html#createchild" class="tsd-kind-icon">create<wbr>Child</a>
 					</li>
 					<li class=" tsd-kind-method tsd-parent-kind-module tsd-is-inherited tsd-is-not-exported">
 						<a href="samchon.protocol.ientitygroup.html#empty" class="tsd-kind-icon">empty</a>

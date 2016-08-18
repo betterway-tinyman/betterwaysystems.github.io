@@ -71,6 +71,37 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p> 스코딕스 모형. </p>
+					</div>
+					<ol>
+						<li> 작업비: 25,000 원 / 1,000 면 </li>
+						<li> 동판비 (도장): 200 원 / cm<sup>2</sup> </li>
+						<li> 박비 (잉크): 1,300 원 / m<sup>2</sup> </li>
+					</ol>
+					<p><h3> 비고 </h3></p>
+					<ul>
+						<li> 양/단면 선택 가능 </li>
+						<li> 여유 용지: 각 판면당 30 매 </li>
+						<li>
+							<b>비확정 - 할증률</b> <br/><br/>
+							스코딕스 공정이 적용되는 면수에 따라 스코딕스 가격에 할증률이 적용된다. 할증률은 출력면수에
+							반비례하여 스코딕스 공정이 적용되는 면수가 적으면 적을수록 할증률은 높으며, 면수가 많을수록 할증률은
+							작아진다. 이 할증률을 실제로 적용할 지 어떨 지는 아직 확정되지 않았다. <br/><br/>
+							추후 할증률을 사용하기로 결정되거든, <i>extra_charge_map</i> 에 달린 주석을 지우고, 스코딕스
+							수량을 키값으로, <a href="std.treemap.html#upper_bound">extra_charge_map.upper_bound()</a> 함수를
+							호출하여 할증률 값을 받은 후, 이를 최종 가격에 곱해주면 된다.
+						</li>
+					</ul>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -155,7 +186,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L15">bws/folding/price/ScodixModel.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L61">bws/folding/price/ScodixModel.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -176,9 +207,17 @@
 					<div class="tsd-signature tsd-kind-icon">___ink<wbr>Area<wbr>Percentage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L15">bws/folding/price/ScodixModel.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L61">bws/folding/price/ScodixModel.ts:61</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p> (임시 변수) 이미지 면적 대비 스코딕스 사용률. </p>
+						</div>
+						<p> 본래는 외부 프로그램과 연동하여, 실제 스코딕스를 행하는 면적을 계산하여야 한다. 하지만, 현재는
+							이미지 면적 대비 스코딕스가 찍히는 비율을 입력받아, 이를 기초로 스코딕스 면적을 계산하고 있다.
+						{@link __inkAreaPercentage} 는 그 비율을 설정할 수 있는 변수이다. </p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="inkprice" class="tsd-anchor"></a>
@@ -186,9 +225,14 @@
 					<div class="tsd-signature tsd-kind-icon">ink<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L11">bws/folding/price/ScodixModel.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L46">bws/folding/price/ScodixModel.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>잉크비: 12.474cm<sup>2</sup> (A3 1% 면적) 당 가격</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="side" class="tsd-anchor"></a>
@@ -248,9 +292,14 @@
 					<div class="tsd-signature tsd-kind-icon">work<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L10">bws/folding/price/ScodixModel.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L41">bws/folding/price/ScodixModel.ts:41</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>작업비: 1,247.4 c,<sup>2</sup> (A3 면적) 당 가격</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -265,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L179">bws/folding/price/ScodixModel.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L225">bws/folding/price/ScodixModel.ts:225</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -282,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L196">bws/folding/price/ScodixModel.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L242">bws/folding/price/ScodixModel.ts:242</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -307,9 +356,15 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#tag">TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L204">bws/folding/price/ScodixModel.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L253">bws/folding/price/ScodixModel.ts:253</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> A tag name when represented by XML. </p>
+								</div>
+								<p><code> <TAG {...properties} /> </code></p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -326,7 +381,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#computeprice">computePrice</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#computeprice">computePrice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L124">bws/folding/price/ScodixModel.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L170">bws/folding/price/ScodixModel.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -354,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L153">bws/folding/price/ScodixModel.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L199">bws/folding/price/ScodixModel.ts:199</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -378,13 +433,23 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#compute_spare_area">compute_spare_area</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L58">bws/folding/price/OptionalModel.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L70">bws/folding/price/OptionalModel.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>현 공정을 적용함에 있어 필요한 여분지, 여분지의 총 면적을 계산한다.</p>
+									<p> 현 공정을 적용함에 있어 필요한 여분지, 여분지의 총 면적을 계산한다. </p>
 								</div>
+								<p> 각 공정마다 조판면을 구성함에 있어 각기 필요한 여분지 매수가 있다. 이렇게 필요한 모든 여분지의
+									전체 면적을 계산한다. 보통은 각 조판면의 면적에 대하여 여분지 매수를 곱하고, 이들을 합하여 총 면적을
+								구한다. <a href="bws.folding.optionalmodel.html#compute_spare_area">OptionalModel.compute_spare_area</a> 에서는, 이 보통의 경우를 계산한다. </p>
+								<ul>
+									<li>
+										라미네이팅 코팅은, 각 조판면마다 여분용지가 필요한 게 아니고, 사용케 되는 용지 크기에 따라
+										여분 용지를 필요로 하게 된다. 때문에, <a href="bws.folding.laminatingmodel.html">LaminatingModel</a> 은 별도의 여분용지면적 계산
+										메소드가 따로이 정의되어있다.
+									</li>
+								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -410,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L132">bws/folding/price/ScodixModel.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L178">bws/folding/price/ScodixModel.ts:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -458,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L174">bws/folding/price/ScodixModel.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L220">bws/folding/price/ScodixModel.ts:220</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -494,7 +559,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#getsparepapers">getSparePapers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L77">bws/folding/price/OptionalModel.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L89">bws/folding/price/OptionalModel.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -511,7 +576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L170">bws/folding/price/ScodixModel.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L216">bws/folding/price/ScodixModel.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -530,7 +595,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#init">init</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L35">bws/folding/price/ScodixModel.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L81">bws/folding/price/ScodixModel.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,7 +618,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#isused">isUsed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L76">bws/folding/price/OptionalModel.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L88">bws/folding/price/OptionalModel.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -607,7 +672,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L191">bws/folding/price/ScodixModel.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L237">bws/folding/price/ScodixModel.ts:237</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -655,7 +720,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#setsparepapers">setSparePapers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L80">bws/folding/price/OptionalModel.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L92">bws/folding/price/OptionalModel.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -679,7 +744,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#setused">setUsed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L79">bws/folding/price/OptionalModel.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L91">bws/folding/price/OptionalModel.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -702,7 +767,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L187">bws/folding/price/ScodixModel.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L233">bws/folding/price/ScodixModel.ts:233</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -727,9 +792,14 @@ class Point extends Entity
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#togridrows">toGridRows</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#togridrows">toGridRows</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L209">bws/folding/price/ScodixModel.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/ScodixModel.ts#L261">bws/folding/price/ScodixModel.ts:261</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>견적 상세내역 테이블에 출력될 행 리스트를 출력.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

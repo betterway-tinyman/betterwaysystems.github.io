@@ -276,13 +276,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L58">bws/folding/price/OptionalModel.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L70">bws/folding/price/OptionalModel.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>현 공정을 적용함에 있어 필요한 여분지, 여분지의 총 면적을 계산한다.</p>
+									<p> 현 공정을 적용함에 있어 필요한 여분지, 여분지의 총 면적을 계산한다. </p>
 								</div>
+								<p> 각 공정마다 조판면을 구성함에 있어 각기 필요한 여분지 매수가 있다. 이렇게 필요한 모든 여분지의
+									전체 면적을 계산한다. 보통은 각 조판면의 면적에 대하여 여분지 매수를 곱하고, 이들을 합하여 총 면적을
+								구한다. <a href="bws.folding.optionalmodel.html#compute_spare_area">OptionalModel.compute_spare_area</a> 에서는, 이 보통의 경우를 계산한다. </p>
+								<ul>
+									<li>
+										라미네이팅 코팅은, 각 조판면마다 여분용지가 필요한 게 아니고, 사용케 되는 용지 크기에 따라
+										여분 용지를 필요로 하게 된다. 때문에, <a href="bws.folding.laminatingmodel.html">LaminatingModel</a> 은 별도의 여분용지면적 계산
+										메소드가 따로이 정의되어있다.
+									</li>
+								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -333,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L77">bws/folding/price/OptionalModel.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L89">bws/folding/price/OptionalModel.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -373,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L76">bws/folding/price/OptionalModel.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L88">bws/folding/price/OptionalModel.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -427,7 +437,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L80">bws/folding/price/OptionalModel.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L92">bws/folding/price/OptionalModel.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -450,7 +460,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L79">bws/folding/price/OptionalModel.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L91">bws/folding/price/OptionalModel.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -474,7 +484,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#togridrows">toGridRows</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L88">bws/folding/price/OptionalModel.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/09ffbc3/ts/src/bws/folding/price/OptionalModel.ts#L100">bws/folding/price/OptionalModel.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
