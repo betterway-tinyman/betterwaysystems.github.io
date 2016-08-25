@@ -1,0 +1,45 @@
+﻿body 
+{
+	font-size: 12;
+}
+
+tr.title_row
+{
+    font-size: 13px;
+    color: white;
+    background-color: black;
+}
+
+tr.sum_row
+{
+    font-size: 12;
+    text-decoration: underline;
+    background-color: khaki;
+}
+tr.price_row
+{
+    text-decoration: underline;
+    background-color: antiquewhite;
+}
+tr.sub_price_row
+{
+    background-color: whitesmoke;
+}
+tr.comment_row
+{
+}
+
+tr.title_row:hover, 
+    tr.sum_row:hover, 
+    tr.price_row:hover, 
+    tr.sub_price_row:hover,
+    tr.comment_row:hover
+{
+    font-weight: bold;
+}
+
+td.border
+{
+    border: 1px solid gray;
+    padding: 2px;
+}
