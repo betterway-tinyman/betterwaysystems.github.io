@@ -132,10 +132,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.laminatingmodel.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="bws.folding.laminatingmodel.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
@@ -147,6 +147,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="bws.folding.laminatingmodel.html#side" class="tsd-kind-icon">side</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="bws.folding.laminatingmodel.html#sparepapers" class="tsd-kind-icon">spare<wbr>Papers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="bws.folding.laminatingmodel.html#used" class="tsd-kind-icon">used</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="bws.folding.laminatingmodel.html#process" class="tsd-kind-icon">process</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -175,26 +181,28 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.laminatingmodel.html#setsparepapers" class="tsd-kind-icon">set<wbr>Spare<wbr>Papers</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.laminatingmodel.html#setused" class="tsd-kind-icon">set<wbr>Used</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.laminatingmodel.html#togridrows" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="bws.folding.laminatingmodel.html#togridrows_area" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.laminatingmodel.html#toxml" class="tsd-kind-icon">toXML</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Laminating<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.laminatingmodel.html" class="tsd-signature-type">LaminatingModel</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Laminating<wbr>Model<span class="tsd-signature-symbol">(</span>priceModels<span class="tsd-signature-symbol">: </span><a href="bws.folding.pricemodels.html" class="tsd-signature-type">PriceModels</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.laminatingmodel.html" class="tsd-signature-type">LaminatingModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#constructor">constructor</a></p>
+								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#constructor">constructor</a></p>
+								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L58">bws/folding/price/LaminatingModel.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L33">bws/folding/process/price/OptionalModel.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,6 +210,12 @@
 									<p>Default Constructor.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>priceModels: <a href="bws.folding.pricemodels.html" class="tsd-signature-type">PriceModels</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.laminatingmodel.html" class="tsd-signature-type">LaminatingModel</a></h4>
 						</li>
 					</ul>
@@ -215,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Faces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L51">bws/folding/price/LaminatingModel.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L51">bws/folding/process/price/LaminatingModel.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,7 +245,7 @@
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L44">bws/folding/price/LaminatingModel.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L44">bws/folding/process/price/LaminatingModel.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +260,7 @@
 					<div class="tsd-signature tsd-kind-icon">film<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L58">bws/folding/price/LaminatingModel.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L58">bws/folding/process/price/LaminatingModel.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -263,7 +277,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="bws.folding.sideoptionalmodel.html">SideOptionalModel</a>.<a href="bws.folding.sideoptionalmodel.html#side">side</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/SideOptionalModel.ts#L27">bws/folding/price/SideOptionalModel.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/SideOptionalModel.ts#L27">bws/folding/process/price/SideOptionalModel.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,7 +297,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#sparepapers">sparePapers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L24">bws/folding/price/OptionalModel.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L33">bws/folding/process/price/OptionalModel.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,7 +313,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#used">used</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L19">bws/folding/price/OptionalModel.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L28">bws/folding/process/price/OptionalModel.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -307,6 +321,27 @@
 							<p>해당 모형이 현재 인쇄작업에서 사용되는 있는가.</p>
 						</div>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="process" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> process<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#process">process</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L20">bws/folding/process/price/OptionalModel.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -323,7 +358,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#tag">TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L275">bws/folding/price/LaminatingModel.ts:275</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L267">bws/folding/process/price/LaminatingModel.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -340,7 +375,7 @@
 					<a name="computeprice" class="tsd-anchor"></a>
 					<h3>compute<wbr>Price</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Price<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Price<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -348,7 +383,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#computeprice">computePrice</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#computeprice">computePrice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L101">bws/folding/price/LaminatingModel.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L93">bws/folding/process/price/LaminatingModel.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,12 +391,6 @@
 									<p>가격을 계산함.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -370,13 +399,13 @@
 					<a name="compute_base_price" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>base_<wbr>price</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>base_<wbr>price<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>base_<wbr>price<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L176">bws/folding/price/LaminatingModel.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L168">bws/folding/process/price/LaminatingModel.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -384,15 +413,6 @@
 									<p>기본가격을 계산함.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>접지행위자</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>기본가격</p>
 						</li>
@@ -402,13 +422,13 @@
 					<a name="compute_over_area" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>over_<wbr>area</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>over_<wbr>area<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>over_<wbr>area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L200">bws/folding/price/LaminatingModel.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L192">bws/folding/process/price/LaminatingModel.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -416,15 +436,6 @@
 									<p>기본요금구간 면수를 벗어난, 초과면의 면적을 계산한다.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>접지행위자</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>초과면적 총합</p>
 						</li>
@@ -434,13 +445,13 @@
 					<a name="compute_over_price" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>over_<wbr>price</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>over_<wbr>price<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>over_<wbr>price<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L188">bws/folding/price/LaminatingModel.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L180">bws/folding/process/price/LaminatingModel.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -448,15 +459,6 @@
 									<p>기본요금구간을 벗어난, 추가비용을 계산한다.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>접지행위자.</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>초과요금</p>
 						</li>
@@ -466,14 +468,14 @@
 					<a name="compute_spare_area" class="tsd-anchor"></a>
 					<h3>compute_<wbr>spare_<wbr>area</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>spare_<wbr>area<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>spare_<wbr>area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#compute_spare_area">compute_spare_area</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L219">bws/folding/price/LaminatingModel.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L211">bws/folding/process/price/LaminatingModel.ts:211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -482,12 +484,6 @@
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -496,13 +492,13 @@
 					<a name="compute_units" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>units</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>units<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>units<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L123">bws/folding/price/LaminatingModel.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L115">bws/folding/process/price/LaminatingModel.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,15 +511,6 @@
 									양면일 경우, 라미네이팅 용지는 총 면수의 2배수를 필요로 하게 된다 (50장을 단면으로 썼는데, 코팅이 양면이면
 								100면의 코팅이 필요하기 때문임). 그리고 이 때, 리턴되는 해쉬맵의 value 값에는 전부 2가 곱해지게 된다. </p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>접지 행위자</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>각 유닛에 대한 컨테이너 (key: 종이 크기, value: 사용된 면 수)</p>
 						</li>
@@ -541,7 +528,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#construct">construct</a></p>
 								<p>Inherited from <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2956">typings/samchon-framework/samchon-framework.d.ts:2956</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2967">typings/samchon-framework/samchon-framework.d.ts:2967</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -564,7 +551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L244">bws/folding/price/LaminatingModel.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L236">bws/folding/process/price/LaminatingModel.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -581,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L240">bws/folding/price/LaminatingModel.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L232">bws/folding/process/price/LaminatingModel.ts:232</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -598,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L248">bws/folding/price/LaminatingModel.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L240">bws/folding/process/price/LaminatingModel.ts:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -616,7 +603,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.sideoptionalmodel.html">SideOptionalModel</a>.<a href="bws.folding.sideoptionalmodel.html#getside">getSide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/SideOptionalModel.ts#L31">bws/folding/price/SideOptionalModel.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/SideOptionalModel.ts#L31">bws/folding/process/price/SideOptionalModel.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -634,7 +621,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#getsparepapers">getSparePapers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L89">bws/folding/price/OptionalModel.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L99">bws/folding/process/price/OptionalModel.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -653,7 +640,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#init">init</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L76">bws/folding/price/LaminatingModel.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L68">bws/folding/process/price/LaminatingModel.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -676,7 +663,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#isused">isUsed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L88">bws/folding/price/OptionalModel.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L98">bws/folding/process/price/OptionalModel.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -695,7 +682,7 @@
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#key">key</a></p>
 								<p>Inherited from <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2960">typings/samchon-framework/samchon-framework.d.ts:2960</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2971">typings/samchon-framework/samchon-framework.d.ts:2971</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -730,7 +717,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L260">bws/folding/price/LaminatingModel.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L252">bws/folding/process/price/LaminatingModel.ts:252</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -753,7 +740,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L256">bws/folding/price/LaminatingModel.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L248">bws/folding/process/price/LaminatingModel.ts:248</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -776,7 +763,7 @@ class Point extends Entity
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L264">bws/folding/price/LaminatingModel.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L256">bws/folding/process/price/LaminatingModel.ts:256</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -800,7 +787,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.sideoptionalmodel.html">SideOptionalModel</a>.<a href="bws.folding.sideoptionalmodel.html#setside">setSide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/SideOptionalModel.ts#L36">bws/folding/price/SideOptionalModel.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/SideOptionalModel.ts#L36">bws/folding/process/price/SideOptionalModel.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -824,7 +811,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#setsparepapers">setSparePapers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L92">bws/folding/price/OptionalModel.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L102">bws/folding/process/price/OptionalModel.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -848,7 +835,7 @@ class Point extends Entity
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#setused">setUsed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/OptionalModel.ts#L91">bws/folding/price/OptionalModel.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/OptionalModel.ts#L101">bws/folding/process/price/OptionalModel.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -865,7 +852,7 @@ class Point extends Entity
 					<a name="togridrows" class="tsd-anchor"></a>
 					<h3>to<wbr>Grid<wbr>Rows</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Grid<wbr>Rows<span class="tsd-signature-symbol">(</span>folder<span class="tsd-signature-symbol">: </span><a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Grid<wbr>Rows<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -873,7 +860,7 @@ class Point extends Entity
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#togridrows">toGridRows</a></p>
 								<p>Overwrites <a href="bws.folding.optionalmodel.html">OptionalModel</a>.<a href="bws.folding.optionalmodel.html#togridrows">toGridRows</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/bws/folding/price/LaminatingModel.ts#L283">bws/folding/price/LaminatingModel.ts:283</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L275">bws/folding/process/price/LaminatingModel.ts:275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -881,12 +868,23 @@ class Point extends Entity
 									<p>견적 상세내역 테이블에 출력될 행 리스트를 출력.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>folder: <a href="bws.folding.folder.html" class="tsd-signature-type">Folder</a></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="togridrows_area" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> to<wbr>Grid<wbr>Rows_<wbr>area</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/price/LaminatingModel.ts#L329">bws/folding/process/price/LaminatingModel.ts:329</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -903,7 +901,7 @@ class Point extends Entity
 								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#toxml">toXML</a></p>
 								<p>Inherited from <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/4dc2eb9/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2968">typings/samchon-framework/samchon-framework.d.ts:2968</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2979">typings/samchon-framework/samchon-framework.d.ts:2979</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -979,16 +977,13 @@ class Point extends Entity
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.application.html" class="tsd-kind-icon">Application</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.folding.device.html" class="tsd-kind-icon">Device</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.folding.foilmodel.html" class="tsd-kind-icon">Foil<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.folder.html" class="tsd-kind-icon">Folder</a>
+						<a href="bws.folding.foldingapplication.html" class="tsd-kind-icon">Folding<wbr>Application</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.folding.image.html" class="tsd-kind-icon">Image</a>
@@ -1001,7 +996,7 @@ class Point extends Entity
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.folding.laminatingmodel.html" class="tsd-kind-icon">Laminating<wbr>Model</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="bws.folding.laminatingmodel.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -1021,6 +1016,9 @@ class Point extends Entity
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="bws.folding.laminatingmodel.html#used" class="tsd-kind-icon">used</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="bws.folding.laminatingmodel.html#process" class="tsd-kind-icon">process</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="bws.folding.laminatingmodel.html#tag" class="tsd-kind-icon">TAG</a>
@@ -1091,6 +1089,9 @@ class Point extends Entity
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="bws.folding.laminatingmodel.html#togridrows" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="bws.folding.laminatingmodel.html#togridrows_area" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.folding.laminatingmodel.html#toxml" class="tsd-kind-icon">toXML</a>
 							</li>
@@ -1126,7 +1127,22 @@ class Point extends Entity
 						<a href="bws.folding.printmodel.html" class="tsd-kind-icon">Print<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.resultviewer.html" class="tsd-kind-icon">Result<wbr>Viewer</a>
+						<a href="bws.folding.process.html" class="tsd-kind-icon">Process</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.folding.processarray.html" class="tsd-kind-icon">Process<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.folding.processarrayeditor.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.folding.processarrayviewer.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Viewer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.folding.processeditor.html" class="tsd-kind-icon">Process<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="bws.folding.processviewer.html" class="tsd-kind-icon">Process<wbr>Viewer</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="bws.folding.scodixmodel.html" class="tsd-kind-icon">Scodix<wbr>Model</a>
@@ -1159,10 +1175,19 @@ class Point extends Entity
 						<a href="../interfaces/bws.folding.ipricerow.html" class="tsd-kind-icon">IPrice<wbr>Row</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.irectangle.html" class="tsd-kind-icon">IRectangle</a>
+						<a href="../interfaces/bws.folding.iprocessarrayeditorprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Editor<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iresultviewerprops.html" class="tsd-kind-icon">IResult<wbr>Viewer<wbr>Props</a>
+						<a href="../interfaces/bws.folding.iprocessarrayviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Viewer<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/bws.folding.iprocesseditorprops.html" class="tsd-kind-icon">IProcess<wbr>Editor<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/bws.folding.iprocessviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Viewer<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/bws.folding.irectangle.html" class="tsd-kind-icon">IRectangle</a>
 					</li>
 				</ul>
 			</nav>
