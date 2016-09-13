@@ -76,7 +76,7 @@
 					<div class="lead">
 						<p> 종이 모형 엔티티. </p>
 					</div>
-					<p> <a href="bws.folding.papermodel.html#name">지류</a>와 <a href="bws.folding.papermodel.html#price">단위면적당 가격</a>을 속성으로 갖으며, 해당 종이 모형이 가질 수 있는
+					<p> <a href="bws.folding.papermodel.html#name">지류</a>와 <a href="../interfaces/bws.folding.ipricerow.html#price">단위면적당 가격</a>을 속성으로 갖으며, 해당 종이 모형이 가질 수 있는
 					<a href="bws.folding.papersize.html">크기</a>들을 자식 객체로 지니고 있다. </p>
 					<p> 용지비: 매수 x 용지면적 / cm<sup>2</sup> </p>
 					<dl class="tsd-comment-tags">
@@ -102,8 +102,9 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/samchon.collection.icollection.html" class="tsd-signature-type">ICollection</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">ICollection</span><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-signature-type">IEntityCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/bws.folding.ipricemodel.html" class="tsd-signature-type">IPriceModel</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -125,8 +126,8 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#areaprice" class="tsd-kind-icon">area<wbr>Price</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#price" class="tsd-kind-icon">price</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -143,8 +144,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.papermodel.html#tag" class="tsd-kind-icon">TAG</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.papermodel.html#computeprice" class="tsd-kind-icon">compute<wbr>Price</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#compute_area" class="tsd-kind-icon">compute_<wbr>area</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#compute_main_area" class="tsd-kind-icon">compute_<wbr>main_<wbr>area</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#compute_spare_area" class="tsd-kind-icon">compute_<wbr>spare_<wbr>area</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.papermodel.html#compute_units" class="tsd-kind-icon">compute_<wbr>units</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#count" class="tsd-kind-icon">count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.papermodel.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
@@ -157,13 +159,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.papermodel.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.papermodel.html#key" class="tsd-kind-icon">key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#pop" class="tsd-kind-icon">pop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.folding.papermodel.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#refresh" class="tsd-kind-icon">refresh</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#splice" class="tsd-kind-icon">splice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.papermodel.html#togridrows" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="bws.folding.papermodel.html#togridrows_area" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="bws.folding.papermodel.html#toxml" class="tsd-kind-icon">toXML</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="bws.folding.papermodel.html#unshift" class="tsd-kind-icon">unshift</a></li>
 							</ul>
@@ -183,7 +185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L26">bws/folding/process/paper/PaperModel.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L27">bws/folding/process/paper/PaperModel.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,32 +201,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="areaprice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> area<wbr>Price</h3>
+					<div class="tsd-signature tsd-kind-icon">area<wbr>Price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L27">bws/folding/process/paper/PaperModel.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>단위면적당 종이 가격 ($price / m²).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L21">bws/folding/process/paper/PaperModel.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L22">bws/folding/process/paper/PaperModel.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>지류. 종이종류.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="price" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> price</h3>
-					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L26">bws/folding/process/paper/PaperModel.ts:26</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>단위면적당 종이 가격 ($price / m^2).</p>
 						</div>
 					</div>
 				</section>
@@ -242,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L213">bws/folding/process/paper/PaperModel.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L213">bws/folding/process/paper/PaperModel.ts:213</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -250,7 +252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L216">bws/folding/process/paper/PaperModel.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L216">bws/folding/process/paper/PaperModel.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -274,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L214">bws/folding/process/paper/PaperModel.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L214">bws/folding/process/paper/PaperModel.ts:214</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -282,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L217">bws/folding/process/paper/PaperModel.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L217">bws/folding/process/paper/PaperModel.ts:217</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -310,7 +312,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#child_tag">CHILD_TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#child_tag">CHILD_TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L233">bws/folding/process/paper/PaperModel.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L233">bws/folding/process/paper/PaperModel.ts:233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,10 +333,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#tag">TAG</a></p>
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#tag">TAG</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L225">bws/folding/process/paper/PaperModel.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L225">bws/folding/process/paper/PaperModel.ts:225</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -351,14 +353,14 @@
 					<a name="addeventlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -366,7 +368,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L129">typings/samchon-framework/samchon-framework.d.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L125">typings/samchon-framework/samchon-framework.d.ts:125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +383,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -391,7 +393,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L130">typings/samchon-framework/samchon-framework.d.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L126">typings/samchon-framework/samchon-framework.d.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -400,7 +402,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -410,7 +412,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L131">typings/samchon-framework/samchon-framework.d.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L127">typings/samchon-framework/samchon-framework.d.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -419,7 +421,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -429,7 +431,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L132">typings/samchon-framework/samchon-framework.d.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L128">typings/samchon-framework/samchon-framework.d.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -438,7 +440,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -448,7 +450,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L136">typings/samchon-framework/samchon-framework.d.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L132">typings/samchon-framework/samchon-framework.d.ts:132</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -463,7 +465,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -476,7 +478,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L137">typings/samchon-framework/samchon-framework.d.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L133">typings/samchon-framework/samchon-framework.d.ts:133</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -485,7 +487,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -498,7 +500,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L138">typings/samchon-framework/samchon-framework.d.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L134">typings/samchon-framework/samchon-framework.d.ts:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -507,7 +509,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -520,7 +522,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L139">typings/samchon-framework/samchon-framework.d.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L135">typings/samchon-framework/samchon-framework.d.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -529,7 +531,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -548,15 +550,15 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#computeprice">computePrice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L111">bws/folding/process/paper/PaperModel.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L112">bws/folding/process/paper/PaperModel.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p>가격을 계산함.</p>
+								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -569,29 +571,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="compute_area" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>area</h3>
+					<a name="compute_main_area" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compute_<wbr>main_<wbr>area</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">compute_<wbr>area<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>main_<wbr>area<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L123">bws/folding/process/paper/PaperModel.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L128">bws/folding/process/paper/PaperModel.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>조판에 사용케되는 용지의 총 면적을 계산함</p>
+									<p>조판에 사용케되는 용지의 총 면적 (장수 기준) 을 계산함.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="bws.folding.papermodel.html#compute_units">compute_units</a></p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>process: <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>접지행위자</p>
+										<p>개별 공정</p>
 									</div>
 								</li>
 							</ul>
@@ -610,7 +617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L183">bws/folding/process/paper/PaperModel.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L152">bws/folding/process/paper/PaperModel.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,6 +639,42 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compute_units" class="tsd-anchor"></a>
+					<h3>compute_<wbr>units</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compute_<wbr>units<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L183">bws/folding/process/paper/PaperModel.ts:183</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> 각 용지사이즈 별로 사용된 장수를 계산한다. </p>
+								</div>
+								<p> 개별 공정 <a href="bws.folding.process.html">Process</a> 내에 들은 조판면 정보 <a href="bws.folding.placement.html">Placement</a> 객체들은, 각기 사용한 용지
+									<a href="bws.folding.papersize.html">PaperSize</a>의 장수가 아닌, 면수 (@link Placement.face_count) 를 기록하고 있다. 이 함수
+									<a href="bws.folding.papermodel.html#compute_units">compute_units()</a> 에서는, 각 용지크기 (<a href="bws.folding.papersize.html">PaperSize</a>) 별로 사용된 장수를,
+								양단면 인쇄를 고려하여 계산하여 해쉬맵의 형태로 리턴한다. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>개별 공정 엔티티.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>각 용지사이즈 및 사용된 장수에 대한 해쉬맵.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="construct" class="tsd-anchor"></a>
 					<h3>construct</h3>
@@ -641,10 +684,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#construct">construct</a></p>
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#construct">construct</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3831">typings/samchon-framework/samchon-framework.d.ts:3831</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3875">typings/samchon-framework/samchon-framework.d.ts:3875</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,7 +722,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#count">count</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3850">typings/samchon-framework/samchon-framework.d.ts:3850</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3891">typings/samchon-framework/samchon-framework.d.ts:3891</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,7 +754,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#createchild">createChild</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#createchild">createChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L44">bws/folding/process/paper/PaperModel.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L45">bws/folding/process/paper/PaperModel.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -737,7 +780,7 @@
 					<a name="dispatchevent" class="tsd-anchor"></a>
 					<h3>dispatch<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -745,7 +788,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#dispatchevent">dispatchEvent</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#dispatchevent">dispatchEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L113">typings/samchon-framework/samchon-framework.d.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L109">typings/samchon-framework/samchon-framework.d.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -757,7 +800,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+									<h5>event: <a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -776,7 +819,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#get">get</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3854">typings/samchon-framework/samchon-framework.d.ts:3854</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3895">typings/samchon-framework/samchon-framework.d.ts:3895</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -811,7 +854,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L203">bws/folding/process/paper/PaperModel.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L203">bws/folding/process/paper/PaperModel.ts:203</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -828,7 +871,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L208">bws/folding/process/paper/PaperModel.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L208">bws/folding/process/paper/PaperModel.ts:208</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -847,7 +890,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#has">has</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3846">typings/samchon-framework/samchon-framework.d.ts:3846</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3887">typings/samchon-framework/samchon-framework.d.ts:3887</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -879,7 +922,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#haseventlistener">hasEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#haseventlistener">hasEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L109">typings/samchon-framework/samchon-framework.d.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L105">typings/samchon-framework/samchon-framework.d.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -912,8 +955,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L52">bws/folding/process/paper/PaperModel.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L53">bws/folding/process/paper/PaperModel.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,10 +978,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#key">key</a></p>
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#key">key</a></p>
 								<p>Overwrites <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L103">bws/folding/process/paper/PaperModel.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L104">bws/folding/process/paper/PaperModel.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -960,7 +1004,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#pop">pop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L161">typings/samchon-framework/samchon-framework.d.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L157">typings/samchon-framework/samchon-framework.d.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -970,30 +1014,6 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="pop_back" class="tsd-anchor"></a>
-					<h3>pop_<wbr>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">pop_<wbr>back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#pop_back">pop_back</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L93">typings/samchon-framework/samchon-framework.d.ts:93</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1008,7 +1028,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L77">typings/samchon-framework/samchon-framework.d.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L77">typings/samchon-framework/samchon-framework.d.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1044,7 +1064,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L81">typings/samchon-framework/samchon-framework.d.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L81">typings/samchon-framework/samchon-framework.d.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1077,22 +1097,22 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#refresh">refresh</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L117">typings/samchon-framework/samchon-framework.d.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L113">typings/samchon-framework/samchon-framework.d.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
+									<p> Dispatch a {@link CollectionEvent} with <i>refresh</i> typed. </p>
 								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
+								<p> {@link ICollection} dispatches {@link CollectionEvent} typed <i>insert</i> or <i>erase</i> whenever
 									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
 								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
 								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
 									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="bws.folding.papermodel.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
+									iterators who&#39;re pointing the elements whose content have changed. Then a {@link CollectionEvent} with
 								<i>refresh</i> typed will be dispatched. </p>
 								<p> If you don&#39;t specify any iterator, then the range of the <i>refresh<i> event will be all elements in this
-								<a href="../interfaces/samchon.collection.icollection.html">collection</a>; {@link begin begin()} to {@link end end()}. </p>
+								{@link ICollection collection}; {@link begin begin()} to {@link end end()}. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -1101,19 +1121,19 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#refresh">refresh</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L121">typings/samchon-framework/samchon-framework.d.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L117">typings/samchon-framework/samchon-framework.d.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
+									<p> Dispatch a {@link CollectionEvent} with <i>refresh</i> typed. </p>
 								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
+								<p> {@link ICollection} dispatches {@link CollectionEvent} typed <i>insert</i> or <i>erase</i> whenever
 									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
 								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
 								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
 									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="bws.folding.papermodel.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
+									iterators who&#39;re pointing the elements whose content have changed. Then a {@link CollectionEvent} with
 								<i>refresh</i> typed will be dispatched. </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1129,19 +1149,19 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#refresh">refresh</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L125">typings/samchon-framework/samchon-framework.d.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L121">typings/samchon-framework/samchon-framework.d.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
+									<p> Dispatch a {@link CollectionEvent} with <i>refresh</i> typed. </p>
 								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
+								<p> {@link ICollection} dispatches {@link CollectionEvent} typed <i>insert</i> or <i>erase</i> whenever
 									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
 								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
 								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
 									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="bws.folding.papermodel.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
+									iterators who&#39;re pointing the elements whose content have changed. Then a {@link CollectionEvent} with
 								<i>refresh</i> typed will be dispatched. </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1161,14 +1181,14 @@
 					<a name="removeeventlistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1176,7 +1196,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L143">typings/samchon-framework/samchon-framework.d.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L139">typings/samchon-framework/samchon-framework.d.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1191,7 +1211,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1201,7 +1221,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L144">typings/samchon-framework/samchon-framework.d.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L140">typings/samchon-framework/samchon-framework.d.ts:140</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1210,7 +1230,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1220,7 +1240,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L145">typings/samchon-framework/samchon-framework.d.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L141">typings/samchon-framework/samchon-framework.d.ts:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1229,7 +1249,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1239,7 +1259,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L146">typings/samchon-framework/samchon-framework.d.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L142">typings/samchon-framework/samchon-framework.d.ts:142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1248,7 +1268,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1258,7 +1278,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L150">typings/samchon-framework/samchon-framework.d.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L146">typings/samchon-framework/samchon-framework.d.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1273,7 +1293,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1286,7 +1306,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L151">typings/samchon-framework/samchon-framework.d.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L147">typings/samchon-framework/samchon-framework.d.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1295,7 +1315,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1308,7 +1328,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L152">typings/samchon-framework/samchon-framework.d.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L148">typings/samchon-framework/samchon-framework.d.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1317,7 +1337,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1330,7 +1350,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L153">typings/samchon-framework/samchon-framework.d.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L149">typings/samchon-framework/samchon-framework.d.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1339,7 +1359,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><a href="bws.folding.papersize.html" class="tsd-signature-type">PaperSize</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1361,7 +1381,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#splice">splice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L165">typings/samchon-framework/samchon-framework.d.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L161">typings/samchon-framework/samchon-framework.d.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1382,7 +1402,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#splice">splice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L169">typings/samchon-framework/samchon-framework.d.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L165">typings/samchon-framework/samchon-framework.d.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1416,16 +1436,39 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#togridrows">toGridRows</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/paper/PaperModel.ts#L241">bws/folding/process/paper/PaperModel.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L241">bws/folding/process/paper/PaperModel.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p>견적 상세내역 테이블에 출력될 행 리스트를 출력.</p>
+								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="togridrows_area" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> to<wbr>Grid<wbr>Rows_<wbr>area</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/bws.folding.ipricerow.html" class="tsd-signature-type">IPriceRow</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/paper/PaperModel.ts#L280">bws/folding/process/paper/PaperModel.ts:280</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1445,10 +1488,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.protocol.ientitycollection.html">IEntityCollection</a>.<a href="../interfaces/samchon.protocol.ientitycollection.html#toxml">toXML</a></p>
+								<p>Implementation of <a href="../interfaces/bws.folding.ipricemodel.html">IPriceModel</a>.<a href="../interfaces/bws.folding.ipricemodel.html#toxml">toXML</a></p>
 								<p>Inherited from <a href="samchon.protocol.entityarraycollection.html">EntityArrayCollection</a>.<a href="samchon.protocol.entityarraycollection.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3866">typings/samchon-framework/samchon-framework.d.ts:3866</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3907">typings/samchon-framework/samchon-framework.d.ts:3907</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1477,7 +1520,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.collection.arraycollection.html">ArrayCollection</a>.<a href="samchon.collection.arraycollection.html#unshift">unshift</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L157">typings/samchon-framework/samchon-framework.d.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L153">typings/samchon-framework/samchon-framework.d.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1537,27 +1580,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.device.html" class="tsd-kind-icon">Device</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.foilmodel.html" class="tsd-kind-icon">Foil<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.foldingapplication.html" class="tsd-kind-icon">Folding<wbr>Application</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.image.html" class="tsd-kind-icon">Image</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.itemeditor.html" class="tsd-kind-icon">Item<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.laminatingmodel.html" class="tsd-kind-icon">Laminating<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.optionalmodel.html" class="tsd-kind-icon">Optional<wbr>Model</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -1567,10 +1589,10 @@
 								<a href="bws.folding.papermodel.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="bws.folding.papermodel.html#name" class="tsd-kind-icon">name</a>
+								<a href="bws.folding.papermodel.html#areaprice" class="tsd-kind-icon">area<wbr>Price</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="bws.folding.papermodel.html#price" class="tsd-kind-icon">price</a>
+								<a href="bws.folding.papermodel.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="bws.folding.papermodel.html#_name" class="tsd-kind-icon">$name</a>
@@ -1591,10 +1613,13 @@
 								<a href="bws.folding.papermodel.html#computeprice" class="tsd-kind-icon">compute<wbr>Price</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="bws.folding.papermodel.html#compute_area" class="tsd-kind-icon">compute_<wbr>area</a>
+								<a href="bws.folding.papermodel.html#compute_main_area" class="tsd-kind-icon">compute_<wbr>main_<wbr>area</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="bws.folding.papermodel.html#compute_spare_area" class="tsd-kind-icon">compute_<wbr>spare_<wbr>area</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="bws.folding.papermodel.html#compute_units" class="tsd-kind-icon">compute_<wbr>units</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.folding.papermodel.html#construct" class="tsd-kind-icon">construct</a>
@@ -1632,9 +1657,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.folding.papermodel.html#pop" class="tsd-kind-icon">pop</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="bws.folding.papermodel.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="bws.folding.papermodel.html#push" class="tsd-kind-icon">push</a>
 							</li>
@@ -1653,6 +1675,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="bws.folding.papermodel.html#togridrows" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="bws.folding.papermodel.html#togridrows_area" class="tsd-kind-icon">to<wbr>Grid<wbr>Rows_<wbr>area</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="bws.folding.papermodel.html#toxml" class="tsd-kind-icon">toXML</a>
 							</li>
@@ -1663,90 +1688,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.papermodelarray.html" class="tsd-kind-icon">Paper<wbr>Model<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.papersize.html" class="tsd-kind-icon">Paper<wbr>Size</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.placement.html" class="tsd-kind-icon">Placement</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.placementmovie.html" class="tsd-kind-icon">Placement<wbr>Movie</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.pricemodeleditor.html" class="tsd-kind-icon">Price<wbr>Model<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.pricemodels.html" class="tsd-kind-icon">Price<wbr>Models</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.printmodel.html" class="tsd-kind-icon">Print<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.process.html" class="tsd-kind-icon">Process</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarray.html" class="tsd-kind-icon">Process<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarrayeditor.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarrayviewer.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Viewer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processeditor.html" class="tsd-kind-icon">Process<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processviewer.html" class="tsd-kind-icon">Process<wbr>Viewer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.scodixmodel.html" class="tsd-kind-icon">Scodix<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.sideoptionalmodel.html" class="tsd-kind-icon">Side<wbr>Optional<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.thomsonmodel.html" class="tsd-kind-icon">Thomson<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.wrap.html" class="tsd-kind-icon">Wrap</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iitemeditorprops.html" class="tsd-kind-icon">IItem<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iplacementmovieprops.html" class="tsd-kind-icon">IPlacement<wbr>Movie<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipoint.html" class="tsd-kind-icon">IPoint</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricemodel.html" class="tsd-kind-icon">IPrice<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricemodeleditorprops.html" class="tsd-kind-icon">IPrice<wbr>Model<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricerow.html" class="tsd-kind-icon">IPrice<wbr>Row</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessarrayeditorprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessarrayviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Viewer<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocesseditorprops.html" class="tsd-kind-icon">IProcess<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Viewer<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.irectangle.html" class="tsd-kind-icon">IRectangle</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

@@ -76,13 +76,13 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.arraycollection.html" class="tsd-kind-icon">Array<wbr>Collection</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.collectionevent.html" class="tsd-kind-icon">Collection<wbr>Event</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.dequecollection.html" class="tsd-kind-icon">Deque<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.hashmapcollection.html" class="tsd-kind-icon">Hash<wbr>Map<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.hashmultimapcollection.html" class="tsd-kind-icon">Hash<wbr>Multi<wbr>Map<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.hashmultisetcollection.html" class="tsd-kind-icon">Hash<wbr>Multi<wbr>Set<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.hashsetcollection.html" class="tsd-kind-icon">Hash<wbr>Set<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.listcollection.html" class="tsd-kind-icon">List<wbr>Collection</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.mapcollectionevent.html" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.treemapcollection.html" class="tsd-kind-icon">Tree<wbr>Map<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.treemultimapcollection.html" class="tsd-kind-icon">Tree<wbr>Multi<wbr>Map<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/samchon.collection.treemultisetcollection.html" class="tsd-kind-icon">Tree<wbr>Multi<wbr>Set<wbr>Collection</a></li>
@@ -91,12 +91,82 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Interfaces</h3>
+							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/samchon.collection.icollection.html" class="tsd-kind-icon">ICollection</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="samchon.collection.html#collectioneventlistener" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="samchon.collection.html#mapcollectioneventlistener" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event<wbr>Listener</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+					<a name="collectioneventlistener" class="tsd-anchor"></a>
+					<h3>Collection<wbr>Event<wbr>Listener</h3>
+					<div class="tsd-signature tsd-kind-icon">Collection<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L255">typings/samchon-framework/samchon-framework.d.ts:255</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type of function pointer for listener of {@link CollectionEvent CollectionEvents}.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CollectionEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">CollectionEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+					<a name="mapcollectioneventlistener" class="tsd-anchor"></a>
+					<h3>Map<wbr>Collection<wbr>Event<wbr>Listener</h3>
+					<div class="tsd-signature tsd-kind-icon">Map<wbr>Collection<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L992">typings/samchon-framework/samchon-framework.d.ts:992</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.collection.mapcollectionevent.html" class="tsd-signature-type">MapCollectionEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../classes/samchon.collection.mapcollectionevent.html" class="tsd-signature-type">MapCollectionEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -131,6 +201,9 @@
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="samchon.protocol.html">protocol</a>
 							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="samchon.test.html">test</a>
+							</li>
 						</ul>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -142,9 +215,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.collection.arraycollection.html" class="tsd-kind-icon">Array<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/samchon.collection.collectionevent.html" class="tsd-kind-icon">Collection<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.collection.dequecollection.html" class="tsd-kind-icon">Deque<wbr>Collection</a>
@@ -165,6 +235,9 @@
 						<a href="../classes/samchon.collection.listcollection.html" class="tsd-kind-icon">List<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/samchon.collection.mapcollectionevent.html" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.collection.treemapcollection.html" class="tsd-kind-icon">Tree<wbr>Map<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
@@ -179,11 +252,11 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.collection.xmllistcollection.html" class="tsd-kind-icon">XMLList<wbr>Collection</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.collection.html#collectioneventlistener" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../interfaces/samchon.collection.icollection.html" class="tsd-kind-icon">ICollection</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.collection.html#mapcollectioneventlistener" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event<wbr>Listener</a>
 					</li>
 				</ul>
 			</nav>

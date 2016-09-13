@@ -112,6 +112,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#connected_" class="tsd-kind-icon">connected_</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
 							</ul>
 						</section>
@@ -121,6 +122,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#handle_binary" class="tsd-kind-icon">handle_<wbr>binary</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#handle_string" class="tsd-kind-icon">handle_<wbr>string</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#is_binary_invoke" class="tsd-kind-icon">is_<wbr>binary_<wbr>invoke</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.communicatorbase.html#senddata" class="tsd-kind-icon">send<wbr>Data</a></li>
@@ -142,7 +144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3144">typings/samchon-framework/samchon-framework.d.ts:3144</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3185">typings/samchon-framework/samchon-framework.d.ts:3185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,18 +157,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3148">typings/samchon-framework/samchon-framework.d.ts:3148</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3189">typings/samchon-framework/samchon-framework.d.ts:3189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Default Constructor.</p>
+									<p>Construct from <i>listener</i>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>listener: <a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-signature-type">IProtocol</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An <a href="../interfaces/samchon.protocol.iprotocol.html">IProtocol</a> object to listen <a href="samchon.protocol.invoke.html">Invoke</a> messages.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="samchon.protocol.communicatorbase.html" class="tsd-signature-type">CommunicatorBase</a></h4>
@@ -176,6 +183,16 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="connected_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> connected_</h3>
+					<div class="tsd-signature tsd-kind-icon">connected_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3173">typings/samchon-framework/samchon-framework.d.ts:3173</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="onclose" class="tsd-anchor"></a>
 					<h3>on<wbr>Close</h3>
@@ -183,7 +200,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/samchon.protocol.icommunicator.html">ICommunicator</a>.<a href="../interfaces/samchon.protocol.icommunicator.html#onclose">onClose</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3132">typings/samchon-framework/samchon-framework.d.ts:3132</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3172">typings/samchon-framework/samchon-framework.d.ts:3172</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +223,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.icommunicator.html">ICommunicator</a>.<a href="../interfaces/samchon.protocol.icommunicator.html#close">close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3153">typings/samchon-framework/samchon-framework.d.ts:3153</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3199">typings/samchon-framework/samchon-framework.d.ts:3199</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3158">typings/samchon-framework/samchon-framework.d.ts:3158</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3208">typings/samchon-framework/samchon-framework.d.ts:3208</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -251,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3157">typings/samchon-framework/samchon-framework.d.ts:3157</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3207">typings/samchon-framework/samchon-framework.d.ts:3207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,6 +278,30 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="isconnected" class="tsd-anchor"></a>
+					<h3>is<wbr>Connected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Connected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.protocol.icommunicator.html">ICommunicator</a>.<a href="../interfaces/samchon.protocol.icommunicator.html#isconnected">isConnected</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3203">typings/samchon-framework/samchon-framework.d.ts:3203</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -274,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3154">typings/samchon-framework/samchon-framework.d.ts:3154</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3204">typings/samchon-framework/samchon-framework.d.ts:3204</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -292,7 +333,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.icommunicator.html">ICommunicator</a>.<a href="../interfaces/samchon.protocol.icommunicator.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3156">typings/samchon-framework/samchon-framework.d.ts:3156</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3206">typings/samchon-framework/samchon-framework.d.ts:3206</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -316,7 +357,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.icommunicator.html">ICommunicator</a>.<a href="../interfaces/samchon.protocol.icommunicator.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3155">typings/samchon-framework/samchon-framework.d.ts:3155</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3205">typings/samchon-framework/samchon-framework.d.ts:3205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -362,6 +403,9 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 								<ul>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.distributed.html">distributed</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.external.html">external</a>
 									</li>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -373,13 +417,10 @@
 									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.slave.html">slave</a>
 									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-										<a href="../modules/samchon.protocol.socket.html">socket</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-										<a href="../modules/samchon.protocol.websocket.html">websocket</a>
-									</li>
 								</ul>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.test.html">test</a>
 							</li>
 						</ul>
 					</li>
@@ -390,6 +431,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.clientdriver.html" class="tsd-kind-icon">Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.communicator.html" class="tsd-kind-icon">Communicator</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
@@ -397,6 +444,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.protocol.communicatorbase.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="samchon.protocol.communicatorbase.html#connected_" class="tsd-kind-icon">connected_</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.protocol.communicatorbase.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
@@ -409,6 +459,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 								<a href="samchon.protocol.communicatorbase.html#handle_string" class="tsd-kind-icon">handle_<wbr>string</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.protocol.communicatorbase.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 								<a href="samchon.protocol.communicatorbase.html#is_binary_invoke" class="tsd-kind-icon">is_<wbr>binary_<wbr>invoke</a>
@@ -423,6 +476,102 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworker.html" class="tsd-kind-icon">Dedicated<wbr>Worker</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworkerconnector.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entityarray.html" class="tsd-kind-icon">Entity<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entityarraycollection.html" class="tsd-kind-icon">Entity<wbr>Array<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydeque.html" class="tsd-kind-icon">Entity<wbr>Deque</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydequecollection.html" class="tsd-kind-icon">Entity<wbr>Deque<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylist.html" class="tsd-kind-icon">Entity<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylistcollection.html" class="tsd-kind-icon">Entity<wbr>List<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invoke.html" class="tsd-kind-icon">Invoke</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invokehistory.html" class="tsd-kind-icon">Invoke<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invokeparameter.html" class="tsd-kind-icon">Invoke<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.server.html" class="tsd-kind-icon">Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.serverbase.html" class="tsd-kind-icon">Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.serverconnector.html" class="tsd-kind-icon">Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerclientdriver.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkercommunicator.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserver.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserverbase.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserverconnector.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webclientdriver.html" class="tsd-kind-icon">Web<wbr>Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webcommunicator.html" class="tsd-kind-icon">Web<wbr>Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserver.html" class="tsd-kind-icon">Web<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserverbase.html" class="tsd-kind-icon">Web<wbr>Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserverconnector.html" class="tsd-kind-icon">Web<wbr>Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-kind-icon">IClient<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.icommunicator.html" class="tsd-kind-icon">ICommunicator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-kind-icon">IEntity<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-kind-icon">IProtocol</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserver.html" class="tsd-kind-icon">IServer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserverbase.html" class="tsd-kind-icon">IServer<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserverconnector.html" class="tsd-kind-icon">IServer<wbr>Connector</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

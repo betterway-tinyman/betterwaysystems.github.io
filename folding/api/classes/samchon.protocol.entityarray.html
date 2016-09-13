@@ -83,7 +83,7 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.protocol.ientity.html" class="tsd-signature-type">IEntity</a></h4>
+						<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IEntity</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -96,9 +96,6 @@
 							<li>
 								<span class="target">EntityArray</span>
 								<ul class="tsd-hierarchy">
-									<li>
-										<a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a>
-									</li>
 									<li>
 										<a href="bws.folding.process.html" class="tsd-signature-type">Process</a>
 									</li>
@@ -114,6 +111,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><span class="tsd-signature-type">IEntityGroup</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
@@ -166,6 +164,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#obj" class="tsd-kind-icon">obj</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.protocol.entityarray.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
@@ -211,7 +210,7 @@
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Entity<wbr>Array<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.entityarray.html" class="tsd-signature-type">EntityArray</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
@@ -219,7 +218,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8875">typings/typescript-stl/typescript-stl.d.ts:8875</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8974">typings/typescript-stl/typescript-stl.d.ts:8974</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,7 +233,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8881">typings/typescript-stl/typescript-stl.d.ts:8881</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8980">typings/typescript-stl/typescript-stl.d.ts:8980</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -273,7 +272,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8885">typings/typescript-stl/typescript-stl.d.ts:8885</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8984">typings/typescript-stl/typescript-stl.d.ts:8984</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,7 +298,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8893">typings/typescript-stl/typescript-stl.d.ts:8893</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8992">typings/typescript-stl/typescript-stl.d.ts:8992</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -334,7 +333,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8903">typings/typescript-stl/typescript-stl.d.ts:8903</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9002">typings/typescript-stl/typescript-stl.d.ts:9002</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,7 +345,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>container: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>container: <a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Another container object of the same type (with the same class template
@@ -361,7 +360,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8912">typings/typescript-stl/typescript-stl.d.ts:8912</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9011">typings/typescript-stl/typescript-stl.d.ts:9011</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +425,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3717">typings/samchon-framework/samchon-framework.d.ts:3717</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3767">typings/samchon-framework/samchon-framework.d.ts:3767</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3713">typings/samchon-framework/samchon-framework.d.ts:3713</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3763">typings/samchon-framework/samchon-framework.d.ts:3763</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,14 +474,15 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#assign">assign</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8926">typings/typescript-stl/typescript-stl.d.ts:8926</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9025">typings/typescript-stl/typescript-stl.d.ts:9025</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p> Assign new content to content. </p>
+								</div>
+								<p> Assigns new contents to the container, replacing its current contents, and modifying its
+								<a href="samchon.protocol.entityarray.html#size">size</a> accordingly. </p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -508,7 +508,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8930">typings/typescript-stl/typescript-stl.d.ts:8930</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9029">typings/typescript-stl/typescript-stl.d.ts:9029</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -542,7 +542,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#at">at</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#at">at</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8970">typings/typescript-stl/typescript-stl.d.ts:8970</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9069">typings/typescript-stl/typescript-stl.d.ts:9069</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -577,7 +577,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#back">back</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#back">back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8982">typings/typescript-stl/typescript-stl.d.ts:8982</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9081">typings/typescript-stl/typescript-stl.d.ts:9081</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -606,7 +606,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#begin">begin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8942">typings/typescript-stl/typescript-stl.d.ts:8942</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9041">typings/typescript-stl/typescript-stl.d.ts:9041</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,7 +634,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#capacity">capacity</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#capacity">capacity</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8962">typings/typescript-stl/typescript-stl.d.ts:8962</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9061">typings/typescript-stl/typescript-stl.d.ts:9061</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,7 +672,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#clear">clear</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8938">typings/typescript-stl/typescript-stl.d.ts:8938</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9037">typings/typescript-stl/typescript-stl.d.ts:9037</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +695,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3686">typings/samchon-framework/samchon-framework.d.ts:3686</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3739">typings/samchon-framework/samchon-framework.d.ts:3739</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -724,7 +724,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3705">typings/samchon-framework/samchon-framework.d.ts:3705</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3755">typings/samchon-framework/samchon-framework.d.ts:3755</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,7 +753,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3690">typings/samchon-framework/samchon-framework.d.ts:3690</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3743">typings/samchon-framework/samchon-framework.d.ts:3743</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -784,7 +784,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8966">typings/typescript-stl/typescript-stl.d.ts:8966</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9065">typings/typescript-stl/typescript-stl.d.ts:9065</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -812,7 +812,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#end">end</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8946">typings/typescript-stl/typescript-stl.d.ts:8946</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9045">typings/typescript-stl/typescript-stl.d.ts:9045</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,7 +850,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9159">typings/typescript-stl/typescript-stl.d.ts:9159</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9258">typings/typescript-stl/typescript-stl.d.ts:9258</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -882,7 +882,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9179">typings/typescript-stl/typescript-stl.d.ts:9179</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9278">typings/typescript-stl/typescript-stl.d.ts:9278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -914,7 +914,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9198">typings/typescript-stl/typescript-stl.d.ts:9198</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9297">typings/typescript-stl/typescript-stl.d.ts:9297</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -946,7 +946,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9218">typings/typescript-stl/typescript-stl.d.ts:9218</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9317">typings/typescript-stl/typescript-stl.d.ts:9317</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -988,7 +988,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#front">front</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#front">front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8978">typings/typescript-stl/typescript-stl.d.ts:8978</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9077">typings/typescript-stl/typescript-stl.d.ts:9077</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1015,7 +1015,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3709">typings/samchon-framework/samchon-framework.d.ts:3709</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3759">typings/samchon-framework/samchon-framework.d.ts:3759</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1044,7 +1044,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3701">typings/samchon-framework/samchon-framework.d.ts:3701</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3751">typings/samchon-framework/samchon-framework.d.ts:3751</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1079,7 +1079,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9008">typings/typescript-stl/typescript-stl.d.ts:9008</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9107">typings/typescript-stl/typescript-stl.d.ts:9107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1119,7 +1119,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9031">typings/typescript-stl/typescript-stl.d.ts:9031</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9130">typings/typescript-stl/typescript-stl.d.ts:9130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1165,7 +1165,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9055">typings/typescript-stl/typescript-stl.d.ts:9055</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9154">typings/typescript-stl/typescript-stl.d.ts:9154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1221,7 +1221,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9077">typings/typescript-stl/typescript-stl.d.ts:9077</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9176">typings/typescript-stl/typescript-stl.d.ts:9176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1261,7 +1261,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9100">typings/typescript-stl/typescript-stl.d.ts:9100</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9199">typings/typescript-stl/typescript-stl.d.ts:9199</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1307,7 +1307,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9124">typings/typescript-stl/typescript-stl.d.ts:9124</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9223">typings/typescript-stl/typescript-stl.d.ts:9223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1371,7 +1371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3694">typings/samchon-framework/samchon-framework.d.ts:3694</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3747">typings/samchon-framework/samchon-framework.d.ts:3747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1381,6 +1381,47 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="obj" class="tsd-anchor"></a>
+					<h3>obj</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">obj<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#obj">obj</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9339">typings/typescript-stl/typescript-stl.d.ts:9339</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Swap content. </p>
+								</div>
+								<p> Exchanges the content of the container by the content of <i>obj</i>, which is another
+								<a href="../modules/samchon.protocol.entityarray.vector.html">container</a> object with same type of elements. Sizes and container type may differ. </p>
+								<p> After the call to this member function, the elements in this container are those which were in <i>obj</i>
+									before the call, and the elements of <i>obj</i> are those which were in this. All iterators, references and
+								pointers remain valid for the swapped objects. </p>
+								<p> Notice that a non-member function exists with the same name, <a href="../modules/std.html#swap">swap</a>, overloading that
+								algorithm with an optimization that behaves like this member function. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Another <a href="../modules/samchon.protocol.entityarray.vector.html">container</a> of the same type of elements (i.e., instantiated
+											with the same template parameter, <b>T</b>) whose content is swapped with that of this
+										{@link container Vector}.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1396,7 +1437,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#pop_back">pop_back</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9140">typings/typescript-stl/typescript-stl.d.ts:9140</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9239">typings/typescript-stl/typescript-stl.d.ts:9239</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1421,7 +1462,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8986">typings/typescript-stl/typescript-stl.d.ts:8986</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9085">typings/typescript-stl/typescript-stl.d.ts:9085</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1452,7 +1493,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#rbegin">rbegin</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8950">typings/typescript-stl/typescript-stl.d.ts:8950</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9049">typings/typescript-stl/typescript-stl.d.ts:9049</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1483,7 +1524,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#rend">rend</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8954">typings/typescript-stl/typescript-stl.d.ts:8954</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9053">typings/typescript-stl/typescript-stl.d.ts:9053</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1512,7 +1553,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#reserve">reserve</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#reserve">reserve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8934">typings/typescript-stl/typescript-stl.d.ts:8934</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9033">typings/typescript-stl/typescript-stl.d.ts:9033</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1550,7 +1591,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8974">typings/typescript-stl/typescript-stl.d.ts:8974</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9073">typings/typescript-stl/typescript-stl.d.ts:9073</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1584,7 +1625,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#size">size</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L8958">typings/typescript-stl/typescript-stl.d.ts:8958</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9057">typings/typescript-stl/typescript-stl.d.ts:9057</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1609,7 +1650,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#swap">swap</a></p>
 								<p>Inherited from <a href="std.vector.html">Vector</a>.<a href="std.vector.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9226">typings/typescript-stl/typescript-stl.d.ts:9226</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L9343">typings/typescript-stl/typescript-stl.d.ts:9343</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1644,7 +1685,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3721">typings/samchon-framework/samchon-framework.d.ts:3721</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3771">typings/samchon-framework/samchon-framework.d.ts:3771</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2765,6 +2806,9 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 								<ul>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.protocol.distributed.html">distributed</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.external.html">external</a>
 									</li>
 									<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -2776,13 +2820,10 @@
 									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/samchon.protocol.slave.html">slave</a>
 									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-										<a href="../modules/samchon.protocol.socket.html">socket</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-										<a href="../modules/samchon.protocol.websocket.html">websocket</a>
-									</li>
 								</ul>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.test.html">test</a>
 							</li>
 						</ul>
 					</li>
@@ -2793,6 +2834,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.clientdriver.html" class="tsd-kind-icon">Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.communicator.html" class="tsd-kind-icon">Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.communicatorbase.html" class="tsd-kind-icon">Communicator<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworker.html" class="tsd-kind-icon">Dedicated<wbr>Worker</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworkerconnector.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
@@ -2860,6 +2919,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.protocol.entityarray.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.protocol.entityarray.html#obj" class="tsd-kind-icon">obj</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.protocol.entityarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
@@ -2955,6 +3017,90 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entityarraycollection.html" class="tsd-kind-icon">Entity<wbr>Array<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydeque.html" class="tsd-kind-icon">Entity<wbr>Deque</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitydequecollection.html" class="tsd-kind-icon">Entity<wbr>Deque<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylist.html" class="tsd-kind-icon">Entity<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.protocol.entitylistcollection.html" class="tsd-kind-icon">Entity<wbr>List<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invoke.html" class="tsd-kind-icon">Invoke</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invokehistory.html" class="tsd-kind-icon">Invoke<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.invokeparameter.html" class="tsd-kind-icon">Invoke<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.server.html" class="tsd-kind-icon">Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.serverbase.html" class="tsd-kind-icon">Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.serverconnector.html" class="tsd-kind-icon">Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerclientdriver.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkercommunicator.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserver.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserverbase.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.sharedworkerserverconnector.html" class="tsd-kind-icon">Shared<wbr>Worker<wbr>Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webclientdriver.html" class="tsd-kind-icon">Web<wbr>Client<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webcommunicator.html" class="tsd-kind-icon">Web<wbr>Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserver.html" class="tsd-kind-icon">Web<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserverbase.html" class="tsd-kind-icon">Web<wbr>Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.webserverconnector.html" class="tsd-kind-icon">Web<wbr>Server<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-kind-icon">IClient<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.icommunicator.html" class="tsd-kind-icon">ICommunicator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-kind-icon">IEntity<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-kind-icon">IProtocol</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserver.html" class="tsd-kind-icon">IServer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserverbase.html" class="tsd-kind-icon">IServer<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.protocol.iserverconnector.html" class="tsd-kind-icon">IServer<wbr>Connector</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

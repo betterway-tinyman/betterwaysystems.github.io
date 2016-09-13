@@ -78,7 +78,8 @@
 					</div>
 					<p> Process는 개별 공정에 관한 모든 정보를 지니는 Facade 클래스이다. </p>
 					<p> 현 공정이 사용하는 장비 Device 와, 조판에 사용될 Image 및 가격모형 PriceModels 객체를 직접 지닌다.
-					더불어 조판 배치정보 Placement 객체들을 Composition 관계로 지니고 있다. </p>
+						더불어 조판 배치정보 Placement 객체들을 Composition 관계로 지니고 있다. 또한, 최적의 조판 배치를 탐색하는
+					최적화 함수 <a href="bws.folding.folder.html#fold">fold</a> 또한 가지고 있다. </p>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
@@ -169,7 +170,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.process.html#optimize" class="tsd-kind-icon">optimize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.process.html#setpaper" class="tsd-kind-icon">set<wbr>Paper</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="bws.folding.process.html#toxml" class="tsd-kind-icon">toXML</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.process.html#validate" class="tsd-kind-icon">validate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.process.html#validate_optimization" class="tsd-kind-icon">validate_<wbr>optimization</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="bws.folding.process.html#validate_parameters" class="tsd-kind-icon">validate_<wbr>parameters</a></li>
 							</ul>
 						</section>
 					</div>
@@ -188,18 +190,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L42">bws/folding/process/Process.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L46">bws/folding/process/Process.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Copy Constructor.</p>
+									<p>Construct from 공정 리스트.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>processArray: <a href="bws.folding.processarray.html" class="tsd-signature-type">ProcessArray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>공정 리스트.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
@@ -207,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L51">bws/folding/process/Process.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L60">bws/folding/process/Process.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">device<span class="tsd-signature-symbol">:</span> <a href="bws.folding.device.html" class="tsd-signature-type">Device</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L27">bws/folding/process/Process.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L31">bws/folding/process/Process.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <a href="bws.folding.image.html" class="tsd-signature-type">Image</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L32">bws/folding/process/Process.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L36">bws/folding/process/Process.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L22">bws/folding/process/Process.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L26">bws/folding/process/Process.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -284,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">paper<span class="tsd-signature-symbol">:</span> <a href="bws.folding.papermodel.html" class="tsd-signature-type">PaperModel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L37">bws/folding/process/Process.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L41">bws/folding/process/Process.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,7 +306,7 @@
 					<div class="tsd-signature tsd-kind-icon">price_<wbr>models<span class="tsd-signature-symbol">:</span> <a href="bws.folding.pricemodels.html" class="tsd-signature-type">PriceModels</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L42">bws/folding/process/Process.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L46">bws/folding/process/Process.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -314,9 +321,14 @@
 					<div class="tsd-signature tsd-kind-icon">process_<wbr>array<span class="tsd-signature-symbol">:</span> <a href="bws.folding.processarray.html" class="tsd-signature-type">ProcessArray</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L17">bws/folding/process/Process.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L21">bws/folding/process/Process.ts:21</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>공정 리스트.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -331,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L688">bws/folding/process/Process.ts:688</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L836">bws/folding/process/Process.ts:836</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -349,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L675">bws/folding/process/Process.ts:675</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L823">bws/folding/process/Process.ts:823</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -357,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L679">bws/folding/process/Process.ts:679</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L827">bws/folding/process/Process.ts:827</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -380,7 +392,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L684">bws/folding/process/Process.ts:684</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L832">bws/folding/process/Process.ts:832</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -397,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L692">bws/folding/process/Process.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L840">bws/folding/process/Process.ts:840</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -418,7 +430,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#child_tag">CHILD_TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L711">bws/folding/process/Process.ts:711</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L859">bws/folding/process/Process.ts:859</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,7 +454,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L703">bws/folding/process/Process.ts:703</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L851">bws/folding/process/Process.ts:851</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -465,7 +477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L663">bws/folding/process/Process.ts:663</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L811">bws/folding/process/Process.ts:811</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -489,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L652">bws/folding/process/Process.ts:652</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L800">bws/folding/process/Process.ts:800</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,22 +517,22 @@
 					<a name="computeside" class="tsd-anchor"></a>
 					<h3>compute<wbr>Side</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Side<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Side<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L630">bws/folding/process/Process.ts:630</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L790">bws/folding/process/Process.ts:790</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> 현 조판 공정의 양-단면 여부를 계산함. </p>
 								</div>
-								<p> 적용하는 모든 공정이 양면이어야 양면으로 간주된다. 단 하나라도 단면이면, 단면 공정으로 간주. </p>
+								<p> 인쇄 공정을 기준으로 하여 양-단면 여부를 판별한다. </p>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a></h4>
 							<p>양단면 코드.</p>
 						</li>
 					</ul>
@@ -535,16 +547,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L578">bws/folding/process/Process.ts:578</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L704">bws/folding/process/Process.ts:704</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>배치 방법을 계산함.</p>
+									<p>최적의 공간활용도를 보이는 조판면들을 구함.</p>
 								</div>
+								<p>조판면으로 사용할 수 있는 각 용지의 크기에 따라 담을 수 있는 이미지의 수량이 달라진다. 또한,
+									같은 수의 이미지를 담을 수 있는 용지더라도, 공간활용률에서 차이를 보일 수 있다.
+									<a href="bws.folding.process.html#compute_placements">compute_placements</a> 는 같은 이미지를 담을 수 있는 조판면들 중, 최고의 공간활용도를
+								보이는 조판면만을 <a href="std.treemap.html">TreeMap</a>에 담아 리턴하는, 최적의 조판면을 구해주는 함수이다.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.treemap.html" class="tsd-signature-type">TreeMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>같은 이미지 수를 가지는 각 판의 배치방법 중 최고 면적활용도를 지닌 배치방법의 리스트.</p>
+							<p>최적의 조판면과 그 조판면이 담을 수 있는 이미지 수량을 담은 <a href="std.treemap.html">TreeMap</a> 객체.</p>
 						</li>
 					</ul>
 				</section>
@@ -559,7 +575,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L105">bws/folding/process/Process.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L114">bws/folding/process/Process.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,7 +605,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3705">typings/samchon-framework/samchon-framework.d.ts:3705</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3755">typings/samchon-framework/samchon-framework.d.ts:3755</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,7 +635,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#createchild">createChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L129">bws/folding/process/Process.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L138">bws/folding/process/Process.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,14 +664,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L505">bws/folding/process/Process.ts:505</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L623">bws/folding/process/Process.ts:623</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>이미지 배치가 없는 조판을 지움.</p>
 								</div>
-								<p>대개 하나의 이미지도 올리지 않는 빈 조판은 생기지 않는다.
+								<p>아직까지 하나의 이미지도 올리지 않는 빈 조판은 생긴 적이 없다. <a href="bws.folding.process.html#erase_empty_placements">erase_empty_placements</a> 는
 								다만, 계산의 안정성을 위해서 추가된 메소드임.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -672,7 +688,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L380">bws/folding/process/Process.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L475">bws/folding/process/Process.ts:475</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,7 +713,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
-							<p>최소비용을 지니는 Folder 모형</p>
+							<p>최소비용을 지니는 <a href="bws.folding.process.html">Process</a> 객체.</p>
 						</li>
 					</ul>
 				</section>
@@ -705,19 +721,47 @@
 					<a name="explore_placements" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> explore_<wbr>placements</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">explore_<wbr>placements<span class="tsd-signature-symbol">(</span>placements<span class="tsd-signature-symbol">: </span><a href="std.treemap.html" class="tsd-signature-type">TreeMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span>, side<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, left_pages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, first<span class="tsd-signature-symbol">?: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a></li>
+						<li class="tsd-signature tsd-kind-icon">explore_<wbr>placements<span class="tsd-signature-symbol">(</span>placements<span class="tsd-signature-symbol">: </span><a href="std.treemap.html" class="tsd-signature-type">TreeMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span>, side<span class="tsd-signature-symbol">: </span><a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a>, left_pages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, first<span class="tsd-signature-symbol">?: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L173">bws/folding/process/Process.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L221">bws/folding/process/Process.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>최적의 배치를 탐색함.</p>
 								</div>
+								<p>최적화는 다음과 같은 순서로 행해진다.</p>
+								<ul>
+									<li>최적의 공간활용률을 보이는 조판면 리스트를 산출</li>
+									<li>다음 과정을 반복<ul>
+											<li>남은 페이지를 담을 수 있는, 가장 큰 조판을 사용하여 배치를 수행<ul>
+													<li>나누어 떨어지어, 더 이상 남은 페이지가 없는 경우, 탐색을 종료</li>
+													<li>나누어 떨어지지 않아, 남은 페이지가 발생<ul>
+															<li>올림하여 조판.</li>
+															<li>남은 페이지에 대하여 첫 과정으로 돌아감 (추가 탐색)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>위의 전 과정에서, 상시로 대안 탐색. 위 과정에 의해 탐색이 종료되어도, 아래의 대안 탐색은 계속 이루어진다.<ul>
+													<li>양면 조판이며 홀수 개의 조판면을 가질 때, 마지막 판면을 차감한 후, 추가 탐색</li>
+													<li>판걸이 탐색</li>
+													<li>돈땡 탐색<ul>
+															<li>양면 조판일 때만 가능</li>
+															<li>돈땡 탐색 후에 판걸이 탐색을 추가적으로 행함</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<p>위 과정이 한 차례 돌 때마다 새로운 (복제된) <a href="bws.folding.process.html">Process</a> 객체가 생성되고,
+								이렇게 새로 생겨난 <a href="bws.folding.process.html">Process</a> 객체가 다음 과정의 최적화를 수행하게 된다.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -728,7 +772,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>side: <span class="tsd-signature-type">number</span></h5>
+									<h5>side: <a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>양단면 코드</p>
 									</div>
@@ -747,7 +791,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
-							<p>최소비용을 지니는 Folder 모형</p>
+							<p>최소비용을 지니는 <a href="bws.folding.process.html">Process</a> 객체</p>
 						</li>
 					</ul>
 				</section>
@@ -755,21 +799,20 @@
 					<a name="explore_plaste_placements" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> explore_<wbr>plaste_<wbr>placements</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">explore_<wbr>plaste_<wbr>placements<span class="tsd-signature-symbol">(</span>placements<span class="tsd-signature-symbol">: </span><a href="std.treemap.html" class="tsd-signature-type">TreeMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span>, side<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, left_pages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a></li>
+						<li class="tsd-signature tsd-kind-icon">explore_<wbr>plaste_<wbr>placements<span class="tsd-signature-symbol">(</span>placements<span class="tsd-signature-symbol">: </span><a href="std.treemap.html" class="tsd-signature-type">TreeMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="bws.folding.placement.html" class="tsd-signature-type">Placement</a><span class="tsd-signature-symbol">&gt;</span>, side<span class="tsd-signature-symbol">: </span><a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a>, left_pages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bws.folding.process.html" class="tsd-signature-type">Process</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L452">bws/folding/process/Process.ts:452</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L546">bws/folding/process/Process.ts:546</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> 대안 탐색 - 판걸이. </p>
+									<p>대안 탐색 - 판걸이.</p>
 								</div>
-								<p> 판걸이가 가능한 지 검사하고, 가능시 기존의 조판을 판걸이로 바꾼 후, 추가적인 탐색을 수행한다.
-								</p>
+								<p>판걸이가 가능한 지 검사하고, 가능시 기존의 조판을 판걸이로 바꾼 후, 추가적인 탐색을 수행한다.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -780,7 +823,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>side: <span class="tsd-signature-type">number</span></h5>
+									<h5>side: <a href="../enums/bws.folding.side.html" class="tsd-signature-type">Side</a></h5>
 								</li>
 								<li>
 									<h5>left_pages: <span class="tsd-signature-type">number</span></h5>
@@ -790,7 +833,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
-							<p>최소비용을 지니는 Folder 모형</p>
+							<p>최소비용을 지니는 <a href="bws.folding.process.html">Process</a> 객체.</p>
 						</li>
 					</ul>
 				</section>
@@ -804,7 +847,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L338">bws/folding/process/Process.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L433">bws/folding/process/Process.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +871,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.process.html" class="tsd-signature-type">Process</a></h4>
-							<p>최소비용을 지니는 Folder 모형</p>
+							<p>최소비용을 지니는 <a href="bws.folding.process.html">Process</a> 객체.</p>
 						</li>
 					</ul>
 				</section>
@@ -843,7 +886,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3709">typings/samchon-framework/samchon-framework.d.ts:3709</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3759">typings/samchon-framework/samchon-framework.d.ts:3759</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,7 +915,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L533">bws/folding/process/Process.ts:533</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L654">bws/folding/process/Process.ts:654</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -894,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L541">bws/folding/process/Process.ts:541</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L662">bws/folding/process/Process.ts:662</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -916,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L549">bws/folding/process/Process.ts:549</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L670">bws/folding/process/Process.ts:670</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -938,7 +981,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L557">bws/folding/process/Process.ts:557</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L678">bws/folding/process/Process.ts:678</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -960,9 +1003,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L525">bws/folding/process/Process.ts:525</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L646">bws/folding/process/Process.ts:646</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get 공정 리스트.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="bws.folding.processarray.html" class="tsd-signature-type">ProcessArray</a></h4>
 						</li>
 					</ul>
@@ -978,7 +1026,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3701">typings/samchon-framework/samchon-framework.d.ts:3701</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3751">typings/samchon-framework/samchon-framework.d.ts:3751</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1008,7 +1056,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#key">key</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3694">typings/samchon-framework/samchon-framework.d.ts:3694</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3747">typings/samchon-framework/samchon-framework.d.ts:3747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1031,13 +1079,43 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L140">bws/folding/process/Process.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L170">bws/folding/process/Process.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>최적화를 행함.</p>
 								</div>
+								<p>다양한 배치안을 시도하여, 최적의 조판면 배치안을 찾아낸다. <a href="bws.folding.process.html#optimize">optimize</a> 가 호출된 후,
+								현재의 <a href="bws.folding.process.html">Process</a> 객체는 최적의 조판면 <a href="bws.folding.placement.html">Placement</a> 객체들을 자식으로 채워지게 된다.</p>
+								<p>최적화는 다음과 같은 순서로 행해진다.</p>
+								<ul>
+									<li>최적의 공간활용률을 보이는 조판면 리스트를 산출</li>
+									<li>다음 과정을 반복<ul>
+											<li>남은 페이지를 담을 수 있는, 가장 큰 조판을 사용하여 배치를 수행<ul>
+													<li>나누어 떨어지어, 더 이상 남은 페이지가 없는 경우, 탐색을 종료</li>
+													<li>나누어 떨어지지 않아, 남은 페이지가 발생<ul>
+															<li>올림하여 조판.</li>
+															<li>남은 페이지에 대하여 첫 과정으로 돌아감 (추가 탐색)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>위의 전 과정에서, 상시로 대안 탐색. 위 과정에 의해 탐색이 종료되어도, 아래의 대안 탐색은 계속 이루어진다.<ul>
+													<li>양면 조판이며 홀수 개의 조판면을 가질 때, 마지막 판면을 차감한 후, 추가 탐색</li>
+													<li>판걸이 탐색</li>
+													<li>돈땡 탐색<ul>
+															<li>양면 조판일 때만 가능</li>
+															<li>돈땡 탐색 후에 판걸이 탐색을 추가적으로 행함</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<p>최적화가 끝난 후, 산출된 최적의 조판을 대표하는 <a href="bws.folding.placement.html">Placement</a> 객체들은, 현 객체
+								<a href="bws.folding.process.html">Process</a> 의 자식으로 할당된다.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -1053,7 +1131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L565">bws/folding/process/Process.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L686">bws/folding/process/Process.ts:686</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1082,7 +1160,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.entityarray.html">EntityArray</a>.<a href="samchon.protocol.entityarray.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L719">bws/folding/process/Process.ts:719</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L867">bws/folding/process/Process.ts:867</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1096,24 +1174,55 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="validate" class="tsd-anchor"></a>
-					<h3>validate</h3>
+					<a name="validate_optimization" class="tsd-anchor"></a>
+					<h3>validate_<wbr>optimization</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">validate_<wbr>optimization<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/bws/folding/process/Process.ts#L607">bws/folding/process/Process.ts:607</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L767">bws/folding/process/Process.ts:767</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>유효성 검증.</p>
+									<p>최적화에 대한 유효성 검증.</p>
 								</div>
+								<p>공정 최적화를 행하는 동안, 다양한 배치안을 탐색하게 된다. 그리고 그 다양한 배치안 중에는,
+									필연적으로 유효하지 않은 (존재할 수 없는) 배치안 또한 생성되기 마련이다.
+								<a href="bws.folding.process.html#validate_optimization">validate_optimization</a> 은 이런 무효한 공정을 거르기 위한, 유효성 검증 함수이다.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>유효 여부</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="validate_parameters" class="tsd-anchor"></a>
+					<h3>validate_<wbr>parameters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">validate_<wbr>parameters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/bws/folding/process/Process.ts#L740">bws/folding/process/Process.ts:740</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>파라미터 (공정 조건) 에 대한 유효성 검증.</p>
+								</div>
+								<p>사용자는 공정에 대한 각종 조건 (파라미터) 들을 입력하고, 프로그램에 조판 최적화를 명령하게 된다.
+									이 때, 모종의 이유로 사용자가 입력한 조건 (파라미터) 에 논리적인 오류가 있을 수 있다.
+									<a href="bws.folding.process.html#validate_parameters">validate_parameters</a> 는 이러한 논리적 오류를 찾아내고, 이 오류에 대한 이유를 메시지
+								리스트에 담아 리턴하는, 유효성 검증 함수이다.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>파라미터가 유효하지 않을 때, 어떻게 유효하지 않은 지 그 이유를 담은 메시지 리스트.</p>
 						</li>
 					</ul>
 				</section>
@@ -1152,51 +1261,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.device.html" class="tsd-kind-icon">Device</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.foilmodel.html" class="tsd-kind-icon">Foil<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.foldingapplication.html" class="tsd-kind-icon">Folding<wbr>Application</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.image.html" class="tsd-kind-icon">Image</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.itemeditor.html" class="tsd-kind-icon">Item<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.laminatingmodel.html" class="tsd-kind-icon">Laminating<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.optionalmodel.html" class="tsd-kind-icon">Optional<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.papermodel.html" class="tsd-kind-icon">Paper<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.papermodelarray.html" class="tsd-kind-icon">Paper<wbr>Model<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.papersize.html" class="tsd-kind-icon">Paper<wbr>Size</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.placement.html" class="tsd-kind-icon">Placement</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.placementmovie.html" class="tsd-kind-icon">Placement<wbr>Movie</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.pricemodeleditor.html" class="tsd-kind-icon">Price<wbr>Model<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.pricemodels.html" class="tsd-kind-icon">Price<wbr>Models</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.printmodel.html" class="tsd-kind-icon">Print<wbr>Model</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -1311,72 +1375,15 @@
 								<a href="bws.folding.process.html#toxml" class="tsd-kind-icon">toXML</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="bws.folding.process.html#validate" class="tsd-kind-icon">validate</a>
+								<a href="bws.folding.process.html#validate_optimization" class="tsd-kind-icon">validate_<wbr>optimization</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="bws.folding.process.html#validate_parameters" class="tsd-kind-icon">validate_<wbr>parameters</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarray.html" class="tsd-kind-icon">Process<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarrayeditor.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processarrayviewer.html" class="tsd-kind-icon">Process<wbr>Array<wbr>Viewer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processeditor.html" class="tsd-kind-icon">Process<wbr>Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.processviewer.html" class="tsd-kind-icon">Process<wbr>Viewer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.scodixmodel.html" class="tsd-kind-icon">Scodix<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.sideoptionalmodel.html" class="tsd-kind-icon">Side<wbr>Optional<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.thomsonmodel.html" class="tsd-kind-icon">Thomson<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="bws.folding.wrap.html" class="tsd-kind-icon">Wrap</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iitemeditorprops.html" class="tsd-kind-icon">IItem<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iplacementmovieprops.html" class="tsd-kind-icon">IPlacement<wbr>Movie<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipoint.html" class="tsd-kind-icon">IPoint</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricemodel.html" class="tsd-kind-icon">IPrice<wbr>Model</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricemodeleditorprops.html" class="tsd-kind-icon">IPrice<wbr>Model<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.ipricerow.html" class="tsd-kind-icon">IPrice<wbr>Row</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessarrayeditorprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessarrayviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Array<wbr>Viewer<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocesseditorprops.html" class="tsd-kind-icon">IProcess<wbr>Editor<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.iprocessviewerprops.html" class="tsd-kind-icon">IProcess<wbr>Viewer<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/bws.folding.irectangle.html" class="tsd-kind-icon">IRectangle</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

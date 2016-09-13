@@ -87,8 +87,8 @@
 					<p> <a href="std.base.mapcontainer.html">MapContainer</a> stores elements, keeps sequence and enables indexing by inserting elements into a
 						<a href="std.list.html">List</a> and registering <a href="std.listiterator.html">iterators</a> of the <a href="std.base.mapcontainer.html#data_">list container</a> to an index
 					table like {@link RBTree tree} or <a href="std.base.hashbuckets.html">hash-table</a>. </p>
-					<p> <a href="http://samchon.github.io/typescript-stl/images/class_diagram/map_containers.png" target="_blank">
-					<img src="http://samchon.github.io/typescript-stl/images/class_diagram/map_containers.png" style="max-width: 100%" /></a> </p>
+					<p> <a href="http://samchon.github.io/typescript-stl/images/design/class_diagram" target="_blank">
+					<img src="http://samchon.github.io/typescript-stl/images/design/class_diagram" style="max-width: 100%" /></a> </p>
 					<p><h3> Container properties </h3></p>
 					<dl>
 						<dt> Associative </dt>
@@ -167,15 +167,18 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private-protected tsd-is-not-exported">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#data_" class="tsd-kind-icon">data_</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="std.base.mapcontainer.html#data_" class="tsd-kind-icon">data_</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#_get_data" class="tsd-kind-icon">_<wbr>Get_<wbr>data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#_handle_insert" class="tsd-kind-icon">_<wbr>Handle_<wbr>insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#assign" class="tsd-kind-icon">assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#begin" class="tsd-kind-icon">begin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#clear" class="tsd-kind-icon">clear</a></li>
@@ -184,8 +187,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#erase" class="tsd-kind-icon">erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.mapcontainer.html#find" class="tsd-kind-icon">find</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#handle_erase" class="tsd-kind-icon">handle_<wbr>erase</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.base.mapcontainer.html#handle_insert" class="tsd-kind-icon">handle_<wbr>insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.mapcontainer.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="std.base.mapcontainer.html#push" class="tsd-kind-icon">push</a></li>
@@ -205,17 +206,13 @@
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Container<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Container<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Container<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Container<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Container<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4450">typings/typescript-stl/typescript-stl.d.ts:4450</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4469">typings/typescript-stl/typescript-stl.d.ts:4469</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,106 +222,18 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></h4>
 						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4454">typings/typescript-stl/typescript-stl.d.ts:4454</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Construct from elements.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>items: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4458">typings/typescript-stl/typescript-stl.d.ts:4458</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Contruct from tuples.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Tuples to be contained.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4464">typings/typescript-stl/typescript-stl.d.ts:4464</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Copy Constructor.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>container: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4468">typings/typescript-stl/typescript-stl.d.ts:4468</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Construct from range iterators.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>begin: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>end: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a></h4>
-						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 					<a name="data_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> data_</h3>
-					<div class="tsd-signature tsd-kind-icon">data_<span class="tsd-signature-symbol">:</span> <a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> data_</h3>
+					<div class="tsd-signature tsd-kind-icon">data_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4450">typings/typescript-stl/typescript-stl.d.ts:4450</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4469">typings/typescript-stl/typescript-stl.d.ts:4469</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -340,6 +249,120 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="_get_data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Get_<wbr>data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Get_<wbr>data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4583">typings/typescript-stl/typescript-stl.d.ts:4583</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="_handle_erase" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Handle_<wbr>erase</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Handle_<wbr>erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4795">typings/typescript-stl/typescript-stl.d.ts:4795</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Abstract method handling deletions for indexing. </p>
+								</div>
+								<p> This method, {@link handle_insert} is designed to unregister the <i>first to last</i> to somewhere storing
+								those <a href="std.mapiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
+								<p> When <a href="std.base.mapcontainer.html#erase">erase</a> is called with <i>first to last</i>, <a href="std.mapiterator.html">iterators</a> positioning somewhere
+									place to be deleted, is memorized and shifted to this method {@link handle_erase} after the deletion process is
+								terminated. </p>
+								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.mapiterator.html">iterators</a>
+									will be unregistered from the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
+									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first to last</i> will be
+								unregistered from the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.mapiterator.html">MapIterator</a> to the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>last: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.mapiterator.html">MapIterator</a> to the final position in a sequence. The range used is
+											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
+										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="_handle_insert" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Handle_<wbr>insert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Handle_<wbr>insert<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4774">typings/typescript-stl/typescript-stl.d.ts:4774</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Abstract method handling insertions for indexing. </p>
+								</div>
+								<p> This method, {@link handle_insert} is designed to register the <i>first to last</i> to somewhere storing
+								those <a href="std.mapiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
+								<p> When <a href="std.base.mapcontainer.html#insert">insert</a> is called, new elements will be inserted into the <a href="std.base.mapcontainer.html#data_">list container</a> and new
+									<a href="std.mapiterator.html">iterators</a> <i>first to last</i>, pointing the inserted elements, will be created and the
+									newly created iterators <i>first to last</i> will be shifted into this method {@link handle_insert} after the
+								insertions. </p>
+								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.mapiterator.html">iterators</a>
+									will be registered into the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
+									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first</i> to <i>last</i> will be
+								registered into the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.mapiterator.html">MapIterator</a> to the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>last: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.mapiterator.html">MapIterator</a> to the final position in a sequence. The range used is
+											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
+										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported">
 					<a name="assign" class="tsd-anchor"></a>
 					<h3>assign</h3>
@@ -352,7 +375,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#assign">assign</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4492">typings/typescript-stl/typescript-stl.d.ts:4492</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4477">typings/typescript-stl/typescript-stl.d.ts:4477</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -399,7 +422,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#begin">begin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4524">typings/typescript-stl/typescript-stl.d.ts:4524</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4509">typings/typescript-stl/typescript-stl.d.ts:4509</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,7 +450,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#clear">clear</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4496">typings/typescript-stl/typescript-stl.d.ts:4496</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4481">typings/typescript-stl/typescript-stl.d.ts:4481</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -450,7 +473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4593">typings/typescript-stl/typescript-stl.d.ts:4593</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4578">typings/typescript-stl/typescript-stl.d.ts:4578</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -485,7 +508,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -513,7 +536,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#end">end</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4544">typings/typescript-stl/typescript-stl.d.ts:4544</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4529">typings/typescript-stl/typescript-stl.d.ts:4529</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +574,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4700">typings/typescript-stl/typescript-stl.d.ts:4700</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4686">typings/typescript-stl/typescript-stl.d.ts:4686</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +601,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4711">typings/typescript-stl/typescript-stl.d.ts:4711</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4697">typings/typescript-stl/typescript-stl.d.ts:4697</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -605,7 +628,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4727">typings/typescript-stl/typescript-stl.d.ts:4727</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4713">typings/typescript-stl/typescript-stl.d.ts:4713</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -642,7 +665,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4738">typings/typescript-stl/typescript-stl.d.ts:4738</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4724">typings/typescript-stl/typescript-stl.d.ts:4724</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -669,7 +692,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4754">typings/typescript-stl/typescript-stl.d.ts:4754</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4740">typings/typescript-stl/typescript-stl.d.ts:4740</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -713,7 +736,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4513">typings/typescript-stl/typescript-stl.d.ts:4513</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4498">typings/typescript-stl/typescript-stl.d.ts:4498</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -742,103 +765,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-					<a name="handle_erase" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle_<wbr>erase</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">handle_<wbr>erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4809">typings/typescript-stl/typescript-stl.d.ts:4809</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Abstract method handling deletions for indexing. </p>
-								</div>
-								<p> This method, <a href="std.base.mapcontainer.html#handle_insert">handle_insert</a> is designed to unregister the <i>first to last</i> to somewhere storing
-								those <a href="std.mapiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
-								<p> When <a href="std.base.mapcontainer.html#erase">erase</a> is called with <i>first to last</i>, <a href="std.mapiterator.html">iterators</a> positioning somewhere
-									place to be deleted, is memorized and shifted to this method <a href="std.base.mapcontainer.html#handle_erase">handle_erase</a> after the deletion process is
-								terminated. </p>
-								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.mapiterator.html">iterators</a>
-									will be unregistered from the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
-									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first to last</i> will be
-								unregistered from the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>first: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.mapiterator.html">MapIterator</a> to the initial position in a sequence.</p>
-									</div>
-								</li>
-								<li>
-									<h5>last: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.mapiterator.html">MapIterator</a> to the final position in a sequence. The range used is
-											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
-										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-					<a name="handle_insert" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle_<wbr>insert</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">handle_<wbr>insert<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4788">typings/typescript-stl/typescript-stl.d.ts:4788</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Abstract method handling insertions for indexing. </p>
-								</div>
-								<p> This method, <a href="std.base.mapcontainer.html#handle_insert">handle_insert</a> is designed to register the <i>first to last</i> to somewhere storing
-								those <a href="std.mapiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
-								<p> When <a href="std.base.mapcontainer.html#insert">insert</a> is called, new elements will be inserted into the <a href="std.base.mapcontainer.html#data_">list container</a> and new
-									<a href="std.mapiterator.html">iterators</a> <i>first to last</i>, pointing the inserted elements, will be created and the
-									newly created iterators <i>first to last</i> will be shifted into this method <a href="std.base.mapcontainer.html#handle_insert">handle_insert</a> after the
-								insertions. </p>
-								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.mapiterator.html">iterators</a>
-									will be registered into the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
-									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first</i> to <i>last</i> will be
-								registered into the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>first: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.mapiterator.html">MapIterator</a> to the initial position in a sequence.</p>
-									</div>
-								</li>
-								<li>
-									<h5>last: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.mapiterator.html">MapIterator</a> to the final position in a sequence. The range used is
-											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
-										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="has" class="tsd-anchor"></a>
 					<h3>has</h3>
@@ -849,7 +775,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4583">typings/typescript-stl/typescript-stl.d.ts:4583</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4568">typings/typescript-stl/typescript-stl.d.ts:4568</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -887,7 +813,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4618">typings/typescript-stl/typescript-stl.d.ts:4618</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4604">typings/typescript-stl/typescript-stl.d.ts:4604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -920,7 +846,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4631">typings/typescript-stl/typescript-stl.d.ts:4631</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4617">typings/typescript-stl/typescript-stl.d.ts:4617</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -953,7 +879,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4644">typings/typescript-stl/typescript-stl.d.ts:4644</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4630">typings/typescript-stl/typescript-stl.d.ts:4630</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -995,7 +921,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4657">typings/typescript-stl/typescript-stl.d.ts:4657</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4643">typings/typescript-stl/typescript-stl.d.ts:4643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1037,7 +963,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4669">typings/typescript-stl/typescript-stl.d.ts:4669</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4655">typings/typescript-stl/typescript-stl.d.ts:4655</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1084,7 +1010,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4601">typings/typescript-stl/typescript-stl.d.ts:4601</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4587">typings/typescript-stl/typescript-stl.d.ts:4587</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1114,7 +1040,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4605">typings/typescript-stl/typescript-stl.d.ts:4605</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4591">typings/typescript-stl/typescript-stl.d.ts:4591</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1154,7 +1080,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#rbegin">rbegin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4560">typings/typescript-stl/typescript-stl.d.ts:4560</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4545">typings/typescript-stl/typescript-stl.d.ts:4545</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1185,7 +1111,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#rend">rend</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4573">typings/typescript-stl/typescript-stl.d.ts:4573</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4558">typings/typescript-stl/typescript-stl.d.ts:4558</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1215,7 +1141,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#size">size</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4597">typings/typescript-stl/typescript-stl.d.ts:4597</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4582">typings/typescript-stl/typescript-stl.d.ts:4582</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1239,7 +1165,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#swap">swap</a></p>
 								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2852">typings/typescript-stl/typescript-stl.d.ts:2852</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2852">typings/typescript-stl/typescript-stl.d.ts:2852</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1328,8 +1254,17 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="std.base.mapcontainer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 								<a href="std.base.mapcontainer.html#data_" class="tsd-kind-icon">data_</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.mapcontainer.html#_get_data" class="tsd-kind-icon">_<wbr>Get_<wbr>data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.mapcontainer.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.mapcontainer.html#_handle_insert" class="tsd-kind-icon">_<wbr>Handle_<wbr>insert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported">
 								<a href="std.base.mapcontainer.html#assign" class="tsd-kind-icon">assign</a>
@@ -1354,12 +1289,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.base.mapcontainer.html#find" class="tsd-kind-icon">find</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-								<a href="std.base.mapcontainer.html#handle_erase" class="tsd-kind-icon">handle_<wbr>erase</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
-								<a href="std.base.mapcontainer.html#handle_insert" class="tsd-kind-icon">handle_<wbr>insert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.base.mapcontainer.html#has" class="tsd-kind-icon">has</a>

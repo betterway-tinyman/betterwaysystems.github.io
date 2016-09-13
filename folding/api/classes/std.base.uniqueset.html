@@ -82,7 +82,7 @@
 						identify it. <i>Keys</i> are immutable, therefore, the elements in an <a href="std.base.setcontainer.html">SetContainer</a> cannot be modified
 					once in the container - they can be inserted and removed, though. </p>
 					<p> <a href="std.base.setcontainer.html">SetContainer</a> stores elements, keeps sequence and enables indexing by inserting elements into a
-						<a href="std.list.html">List</a> and registering <a href="std.listiterator.html">iterators</a> of the <a href="std.base.uniqueset.html#data_">list container</a> to an index
+						<a href="std.list.html">List</a> and registering <a href="std.listiterator.html">iterators</a> of the <a href="std.base.mapcontainer.html#data_">list container</a> to an index
 					table like {@link RBTree tree} or <a href="std.base.hashbuckets.html">hash-table</a>. </p>
 					<p> <a href="http://samchon.github.io/typescript-stl/images/class_diagram/set_containers.png" target="_blank">
 					<img src="http://samchon.github.io/typescript-stl/images/class_diagram/set_containers.png" style="max-width: 100%" /></a> </p>
@@ -156,15 +156,11 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.uniqueset.html#data_" class="tsd-kind-icon">data_</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.uniqueset.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.uniqueset.html#_handle_insert" class="tsd-kind-icon">_<wbr>Handle_<wbr>insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#assign" class="tsd-kind-icon">assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#begin" class="tsd-kind-icon">begin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#clear" class="tsd-kind-icon">clear</a></li>
@@ -174,15 +170,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#erase" class="tsd-kind-icon">erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.base.uniqueset.html#extract" class="tsd-kind-icon">extract</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#find" class="tsd-kind-icon">find</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.uniqueset.html#handle_erase" class="tsd-kind-icon">handle_<wbr>erase</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.uniqueset.html#handle_insert" class="tsd-kind-icon">handle_<wbr>insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="std.base.uniqueset.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#rend" class="tsd-kind-icon">rend</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="std.base.uniqueset.html#swap" class="tsd-kind-icon">swap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="std.base.uniqueset.html#swap" class="tsd-kind-icon">swap</a></li>
 							</ul>
 						</section>
 					</div>
@@ -195,9 +189,6 @@
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Unique<wbr>Set<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Unique<wbr>Set<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Unique<wbr>Set<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Unique<wbr>Set<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -205,7 +196,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5669">typings/typescript-stl/typescript-stl.d.ts:5669</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5679">typings/typescript-stl/typescript-stl.d.ts:5679</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,100 +206,110 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></h4>
 						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5673">typings/typescript-stl/typescript-stl.d.ts:5673</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Construct from elements.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>items: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5677">typings/typescript-stl/typescript-stl.d.ts:5677</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Copy Constructor.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>container: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5681">typings/typescript-stl/typescript-stl.d.ts:5681</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Construct from range iterators.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>begin: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>end: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a></h4>
-						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="data_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> data_</h3>
-					<div class="tsd-signature tsd-kind-icon">data_<span class="tsd-signature-symbol">:</span> <a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#data_">data_</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5669">typings/typescript-stl/typescript-stl.d.ts:5669</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p> <a href="std.list.html">List</a> storing elements. </p>
-						</div>
-						<p> Storing elements and keeping those sequence of the <a href="std.base.setcontainer.html">SetContainer</a> are implemented by
-							<a href="std.base.uniqueset.html#data_">this list container</a>. Implementing index-table is also related with <a href="std.base.uniqueset.html#data_">this list</a>
-							by storing <a href="std.listiterator.html">iterators</a> (<a href="std.setiterator.html">SetIterator</a> references <a href="std.listiterator.html">ListIterator</a>) who are
-						created from <a href="std.base.uniqueset.html#data_">here</a>. </p>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="_handle_erase" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Handle_<wbr>erase</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Handle_<wbr>erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#_handle_erase">_Handle_erase</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5896">typings/typescript-stl/typescript-stl.d.ts:5896</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Abstract method handling deletions for indexing. </p>
+								</div>
+								<p> This method, {@link handle_insert} is designed to unregister the <i>first to last</i> to somewhere storing
+								those <a href="std.setiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
+								<p> When <a href="std.base.uniqueset.html#erase">erase</a> is called with <i>first to last</i>, <a href="std.setiterator.html">iterators</a> positioning somewhere
+									place to be deleted, is memorized and shifted to this method {@link handle_erase} after the deletion process is
+								terminated. </p>
+								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.setiterator.html">iterators</a>
+									will be unregistered from the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
+									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first to last</i> will be
+								unregistered from the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.setiterator.html">SetIterator</a> to the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>last: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.setiterator.html">SetIterator</a> to the final position in a sequence. The range used is
+											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
+										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="_handle_insert" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Handle_<wbr>insert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Handle_<wbr>insert<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#_handle_insert">_Handle_insert</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5875">typings/typescript-stl/typescript-stl.d.ts:5875</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Abstract method handling insertions for indexing. </p>
+								</div>
+								<p> This method, {@link handle_insert} is designed to register the <i>first to last</i> to somewhere storing
+								those <a href="std.setiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
+								<p> When <a href="std.base.uniqueset.html#insert">insert</a> is called, new elements will be inserted into the <a href="std.base.mapcontainer.html#data_">list container</a> and new
+									<a href="std.setiterator.html">iterators</a> <i>first to last</i>, pointing the inserted elements, will be created and the
+									newly created iterators <i>first to last</i> will be shifted into this method {@link handle_insert} after the
+								insertions. </p>
+								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.setiterator.html">iterators</a>
+									will be registered into the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
+									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first</i> to <i>last</i> will be
+								registered into the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.setiterator.html">SetIterator</a> to the initial position in a sequence.</p>
+									</div>
+								</li>
+								<li>
+									<h5>last: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="std.setiterator.html">SetIterator</a> to the final position in a sequence. The range used is
+											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
+										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="assign" class="tsd-anchor"></a>
 					<h3>assign</h3>
@@ -321,7 +322,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#assign">assign</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5705">typings/typescript-stl/typescript-stl.d.ts:5705</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5687">typings/typescript-stl/typescript-stl.d.ts:5687</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,7 +366,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#begin">begin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5728">typings/typescript-stl/typescript-stl.d.ts:5728</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5710">typings/typescript-stl/typescript-stl.d.ts:5710</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -394,7 +395,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#clear">clear</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5709">typings/typescript-stl/typescript-stl.d.ts:5709</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5691">typings/typescript-stl/typescript-stl.d.ts:5691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +419,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6270">typings/typescript-stl/typescript-stl.d.ts:6270</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6278">typings/typescript-stl/typescript-stl.d.ts:6278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +450,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +479,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#end">end</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5732">typings/typescript-stl/typescript-stl.d.ts:5732</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5714">typings/typescript-stl/typescript-stl.d.ts:5714</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,7 +519,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5827">typings/typescript-stl/typescript-stl.d.ts:5827</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5813">typings/typescript-stl/typescript-stl.d.ts:5813</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +544,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5831">typings/typescript-stl/typescript-stl.d.ts:5831</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5817">typings/typescript-stl/typescript-stl.d.ts:5817</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,7 +571,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5841">typings/typescript-stl/typescript-stl.d.ts:5841</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5827">typings/typescript-stl/typescript-stl.d.ts:5827</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -603,7 +604,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5845">typings/typescript-stl/typescript-stl.d.ts:5845</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5831">typings/typescript-stl/typescript-stl.d.ts:5831</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -630,7 +631,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5855">typings/typescript-stl/typescript-stl.d.ts:5855</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5841">typings/typescript-stl/typescript-stl.d.ts:5841</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +672,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6280">typings/typescript-stl/typescript-stl.d.ts:6280</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6288">typings/typescript-stl/typescript-stl.d.ts:6288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +696,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6291">typings/typescript-stl/typescript-stl.d.ts:6291</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6299">typings/typescript-stl/typescript-stl.d.ts:6299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -720,7 +721,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6302">typings/typescript-stl/typescript-stl.d.ts:6302</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6310">typings/typescript-stl/typescript-stl.d.ts:6310</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -755,7 +756,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#find">find</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5724">typings/typescript-stl/typescript-stl.d.ts:5724</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5706">typings/typescript-stl/typescript-stl.d.ts:5706</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -779,105 +780,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="handle_erase" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle_<wbr>erase</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">handle_<wbr>erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#handle_erase">handle_erase</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5910">typings/typescript-stl/typescript-stl.d.ts:5910</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Abstract method handling deletions for indexing. </p>
-								</div>
-								<p> This method, <a href="std.base.uniqueset.html#handle_insert">handle_insert</a> is designed to unregister the <i>first to last</i> to somewhere storing
-								those <a href="std.setiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
-								<p> When <a href="std.base.uniqueset.html#erase">erase</a> is called with <i>first to last</i>, <a href="std.setiterator.html">iterators</a> positioning somewhere
-									place to be deleted, is memorized and shifted to this method <a href="std.base.uniqueset.html#handle_erase">handle_erase</a> after the deletion process is
-								terminated. </p>
-								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.setiterator.html">iterators</a>
-									will be unregistered from the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
-									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first to last</i> will be
-								unregistered from the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>first: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.setiterator.html">SetIterator</a> to the initial position in a sequence.</p>
-									</div>
-								</li>
-								<li>
-									<h5>last: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.setiterator.html">SetIterator</a> to the final position in a sequence. The range used is
-											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
-										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="handle_insert" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle_<wbr>insert</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">handle_<wbr>insert<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#handle_insert">handle_insert</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5889">typings/typescript-stl/typescript-stl.d.ts:5889</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Abstract method handling insertions for indexing. </p>
-								</div>
-								<p> This method, <a href="std.base.uniqueset.html#handle_insert">handle_insert</a> is designed to register the <i>first to last</i> to somewhere storing
-								those <a href="std.setiterator.html">iterators</a> for indexing, fast accessment and retrievalance. </p>
-								<p> When <a href="std.base.uniqueset.html#insert">insert</a> is called, new elements will be inserted into the <a href="std.base.uniqueset.html#data_">list container</a> and new
-									<a href="std.setiterator.html">iterators</a> <i>first to last</i>, pointing the inserted elements, will be created and the
-									newly created iterators <i>first to last</i> will be shifted into this method <a href="std.base.uniqueset.html#handle_insert">handle_insert</a> after the
-								insertions. </p>
-								<p> If the derived one is {@link RBTree tree-based} like <a href="std.treeset.html">TreeSet</a>, the <a href="std.setiterator.html">iterators</a>
-									will be registered into the {@link TreeSet.tree_ tree} as a <a href="std.base.xtreenode.html">tree node item</a>. Else if the
-									derived one is <a href="std.base.hashbuckets.html">hash-based</a> like <a href="std.hashset.html">HashSet</a>, the <i>first</i> to <i>last</i> will be
-								registered into the {@link HashSet.hash<em>buckets</em> hash bucket}. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>first: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.setiterator.html">SetIterator</a> to the initial position in a sequence.</p>
-									</div>
-								</li>
-								<li>
-									<h5>last: <a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An <a href="std.setiterator.html">SetIterator</a> to the final position in a sequence. The range used is
-											[<i>first</i>, <i>last</i>), which contains all the elements between <i>first</i> and <i>last</i>,
-										including the element pointed by <i>first</i> but not the element pointed by <i>last</i>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="has" class="tsd-anchor"></a>
 					<h3>has</h3>
@@ -889,7 +791,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5750">typings/typescript-stl/typescript-stl.d.ts:5750</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5732">typings/typescript-stl/typescript-stl.d.ts:5732</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -923,7 +825,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6334">typings/typescript-stl/typescript-stl.d.ts:6334</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6342">typings/typescript-stl/typescript-stl.d.ts:6342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -954,7 +856,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6338">typings/typescript-stl/typescript-stl.d.ts:6338</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6346">typings/typescript-stl/typescript-stl.d.ts:6346</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +884,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6342">typings/typescript-stl/typescript-stl.d.ts:6342</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6350">typings/typescript-stl/typescript-stl.d.ts:6350</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1009,7 +911,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6346">typings/typescript-stl/typescript-stl.d.ts:6346</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6354">typings/typescript-stl/typescript-stl.d.ts:6354</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1053,7 +955,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#push">push</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5768">typings/typescript-stl/typescript-stl.d.ts:5768</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5754">typings/typescript-stl/typescript-stl.d.ts:5754</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1092,7 +994,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#rbegin">rbegin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5736">typings/typescript-stl/typescript-stl.d.ts:5736</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5718">typings/typescript-stl/typescript-stl.d.ts:5718</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1124,7 +1026,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#rend">rend</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5740">typings/typescript-stl/typescript-stl.d.ts:5740</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5722">typings/typescript-stl/typescript-stl.d.ts:5722</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1154,7 +1056,7 @@
 								<p>Inherited from <a href="std.base.setcontainer.html">SetContainer</a>.<a href="std.base.setcontainer.html#size">size</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5764">typings/typescript-stl/typescript-stl.d.ts:5764</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5746">typings/typescript-stl/typescript-stl.d.ts:5746</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,19 +1069,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#swap">swap</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
+								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L6350">typings/typescript-stl/typescript-stl.d.ts:6350</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2852">typings/typescript-stl/typescript-stl.d.ts:2852</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,7 +1099,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="std.base.uniqueset.html" class="tsd-signature-type">UniqueSet</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1292,8 +1194,11 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="std.base.uniqueset.html#data_" class="tsd-kind-icon">data_</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.uniqueset.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.uniqueset.html#_handle_insert" class="tsd-kind-icon">_<wbr>Handle_<wbr>insert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#assign" class="tsd-kind-icon">assign</a>
@@ -1322,12 +1227,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#find" class="tsd-kind-icon">find</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="std.base.uniqueset.html#handle_erase" class="tsd-kind-icon">handle_<wbr>erase</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="std.base.uniqueset.html#handle_insert" class="tsd-kind-icon">handle_<wbr>insert</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#has" class="tsd-kind-icon">has</a>
 							</li>
@@ -1346,7 +1245,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#size" class="tsd-kind-icon">size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.uniqueset.html#swap" class="tsd-kind-icon">swap</a>
 							</li>
 						</ul>

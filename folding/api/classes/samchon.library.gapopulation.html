@@ -80,9 +80,9 @@
 						of GeneArray as a member. <a href="samchon.library.gapopulation.html">GAPopulation</a> also manages initial set of genes and handles fitting test direclty
 					by the method <a href="samchon.library.gapopulation.html#fittest">fitTest()</a>. </p>
 					<p> The success of evolution of genetic algorithm is depend on the <a href="samchon.library.gapopulation.html">GAPopulation</a>&#39;s initial set and fitting
-					test. (<i>GeneArray</i> and <a href="samchon.library.gapopulation.html#compare">compare</a>.) </p>
+					test. (<i>GeneArray</i> and {@link compare}.) </p>
 					<p><h4> Warning </h4></p>
-					<p> Be careful for the mistakes of direction or position of the <a href="samchon.library.gapopulation.html#compare">compare</a>. </p>
+					<p> Be careful for the mistakes of direction or position of the {@link compare}. </p>
 					<p> Most of logical errors failed to access optimal solution are occured from those mistakes. </p>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
@@ -133,13 +133,14 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.gapopulation.html#children" class="tsd-kind-icon">children</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.gapopulation.html#compare" class="tsd-kind-icon">compare</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.gapopulation.html#children_" class="tsd-kind-icon">children_</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.gapopulation.html#compare_" class="tsd-kind-icon">compare_</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.gapopulation.html#_get_children" class="tsd-kind-icon">_<wbr>Get_<wbr>children</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.gapopulation.html#fittest" class="tsd-kind-icon">fit<wbr>Test</a></li>
 							</ul>
 						</section>
@@ -160,14 +161,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2600">typings/samchon-framework/samchon-framework.d.ts:2600</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2631">typings/samchon-framework/samchon-framework.d.ts:2631</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Private constructor with population. </p>
 								</div>
-								<p> Private constructor of GAPopulation does not create <a href="samchon.library.gapopulation.html#children">children</a>. (candidate genes) but only assigns
+								<p> Private constructor of GAPopulation does not create <a href="../interfaces/bws.folding.iplacementviewerprops.html#children">children</a>. (candidate genes) but only assigns
 								<i>null</i> repeatedly following the <i>population size</i>. </p>
 								<p> This private constructor is designed only for <a href="samchon.library.geneticalgorithm.html">GeneticAlgorithm</a>. Don&#39;t create <a href="samchon.library.gapopulation.html">GAPopulation</a>
 								with this constructor, by yourself. </p>
@@ -188,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2612">typings/samchon-framework/samchon-framework.d.ts:2612</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2643">typings/samchon-framework/samchon-framework.d.ts:2643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -223,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2623">typings/samchon-framework/samchon-framework.d.ts:2623</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2654">typings/samchon-framework/samchon-framework.d.ts:2654</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -290,12 +291,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="children" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> children</h3>
-					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="children_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> children_</h3>
+					<div class="tsd-signature tsd-kind-icon">children_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2581">typings/samchon-framework/samchon-framework.d.ts:2581</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2612">typings/samchon-framework/samchon-framework.d.ts:2612</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -305,19 +306,19 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="compare" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compare</h3>
-					<div class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="compare_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compare_</h3>
+					<div class="tsd-signature tsd-kind-icon">compare_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2600">typings/samchon-framework/samchon-framework.d.ts:2600</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2631">typings/samchon-framework/samchon-framework.d.ts:2631</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p> A comparison function returns whether left gene is more optimal, greater. </p>
 						</div>
-						<p> Default value of this <a href="samchon.library.gapopulation.html#compare">compare</a> is <a href="../modules/std.html#greater">std.greater</a>. It means to compare two array
+						<p> Default value of this {@link compare} is <a href="../modules/std.html#greater">std.greater</a>. It means to compare two array
 						(GeneArray must be a type of <a href="../interfaces/std.base.iarraycontainer.html">std.base.IArrayContainer</a>). Thus, you&#39;ve to keep follwing rule. </p>
 						<ul>
 							<li> GeneArray is implemented from <a href="../interfaces/std.base.iarraycontainer.html">std.base.IArrayContainer</a>. </li>
@@ -335,6 +336,23 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="_get_children" class="tsd-anchor"></a>
+					<h3>_<wbr>Get_<wbr>children</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_<wbr>Get_<wbr>children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GeneArray</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2667">typings/samchon-framework/samchon-framework.d.ts:2667</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GeneArray</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="fittest" class="tsd-anchor"></a>
 					<h3>fit<wbr>Test</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -344,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2641">typings/samchon-framework/samchon-framework.d.ts:2641</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2673">typings/samchon-framework/samchon-framework.d.ts:2673</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,6 +407,9 @@
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.test.html">test</a>
+							</li>
 						</ul>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -428,10 +449,13 @@
 								<a href="samchon.library.gapopulation.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.gapopulation.html#children" class="tsd-kind-icon">children</a>
+								<a href="samchon.library.gapopulation.html#children_" class="tsd-kind-icon">children_</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.gapopulation.html#compare" class="tsd-kind-icon">compare</a>
+								<a href="samchon.library.gapopulation.html#compare_" class="tsd-kind-icon">compare_</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.library.gapopulation.html#_get_children" class="tsd-kind-icon">_<wbr>Get_<wbr>children</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.gapopulation.html#fittest" class="tsd-kind-icon">fit<wbr>Test</a>
@@ -447,9 +471,6 @@
 						<a href="samchon.library.permuationgenerator.html" class="tsd-kind-icon">Permuation<wbr>Generator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.progressevent.html" class="tsd-kind-icon">Progress<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.library.stringutil.html" class="tsd-kind-icon">String<wbr>Util</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
@@ -463,6 +484,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/samchon.library.ieventdispatcher.html" class="tsd-kind-icon">IEvent<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.library.html#basiceventlistener" class="tsd-kind-icon">Basic<wbr>Event<wbr>Listener</a>
 					</li>
 				</ul>
 			</nav>

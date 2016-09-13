@@ -64,13 +64,18 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="folding">Folding</h1>
+				<h2 id="-">참고자료</h2>
+				<ul>
+					<li><a href="http://betterwaysystems.github.io/folding/api/">API 문서</a></li>
+					<li><a href="http://betterwaysystems.github.io/folding/design/class_diagram.pdf">Class Diagram</a></li>
+				</ul>
 				<h2 id="-">용어</h2>
-				<h4 id="-">도</h4>
+				<h3 id="-">도</h3>
 				<p>색상코드의 갯수</p>
 				<ul>
 					<li>ex) CMYK: 4도</li>
 				</ul>
-				<h4 id="-">면</h4>
+				<h3 id="-">면</h3>
 				<p>출력에 사용될 종이면의 수량</p>
 				<ul>
 					<li>단면: 매당 1면</li>
@@ -83,18 +88,18 @@
 					<li>분할수량: 장당 8 페이지</li>
 					<li>매수 = 페이지 수 / 분할수량 = 1,600페이지 / 8페이지 = 200매</li>
 				</ul>
-				<h4 id="-">판</h4>
+				<h3 id="-">판</h3>
 				<p>도장과 비슷하다.</p>
 				<ul>
 					<li>판수 = 원본 면수 X 도</li>
 					<li>판수 = 원본 페이지수 / 분할수량 X 도</li>
 				</ul>
-				<h4 id="-">작업비</h4>
+				<h3 id="-">작업비</h3>
 				<p>판수 (면수) X 부수 (사본 수)</p>
-				<h2 id="-">견적</h2>
-				<h4 id="-">용지</h4>
+				<h2 id="-">가격모형</h2>
+				<h3 id="-">용지</h3>
 				<p>매수 x 용지면적 (제곱미터당)</p>
-				<h4 id="-">인쇄</h4>
+				<h3 id="-">인쇄</h3>
 				<ol>
 					<li>작업비: 7,000원 / 1,000면 X 도 (CMYK: 4도) - <em>계단형 변동비</em></li>
 					<li>CTP 출력비: 판 X 도 X 7,000 원 - <em>변동비</em></li>
@@ -123,7 +128,7 @@
 					<li>양단면 선택 가능</li>
 					<li>여유 용지: (판) 면당 125 매</li>
 				</ul>
-				<h4 id="-">박</h4>
+				<h3 id="-">박</h3>
 				<ol>
 					<li>단위당 작업비: 25,000 원 / 1,000 면 - <em>변동비</em></li>
 					<li>한 판 동판비 (도장): 200 원 / cm<sup>2</sup> - <em>변동비</em></li>
@@ -134,9 +139,9 @@
 					<li>양단면 선택 가능</li>
 					<li>여유 용지: 면당 30 매</li>
 				</ul>
-				<h4 id="-">스코딕스</h4>
+				<h3 id="-">스코딕스</h3>
 				<ol>
-					<li>인쇄 단위당 작업비: 230원 / 1247.4cm^2<ul>
+					<li>피딩비: 230원 / 회1247.4cm^2<ul>
 							<li>1247.4cm^2: A3 1면</li>
 						</ul>
 					</li>
@@ -151,7 +156,7 @@
 					<li>여유 용지: 면당 30 매</li>
 					<li>할증률이 들어갈 수도 있다 (출력 면수에 반비례한 할증률)</li>
 				</ul>
-				<h4 id="-">톰슨</h4>
+				<h3 id="-">톰슨</h3>
 				<ol>
 					<li>단위당 작업비
 						1.1. 고정비용: 30,000 원 / 1,000 매
@@ -186,26 +191,77 @@
 					<li>양단면 선택 가능</li>
 					<li>여유 용지: 면당 30 매</li>
 				</ul>
-				<h2 id="-">돈땡과 판걸이</h2>
-				<h4 id="-">사장</h4>
-				<p>가격을 줄이는 게 최우선. 돈땡과 판걸이가 동시에 들어가도 상관 없다.</p>
-				<h4 id="-">연구소장</h4>
-				<p>돈땡도 과도하면 곤란하고
-				돈땡과 판걸이가 함께 행해지면, 사고 위험이 높아서 안 된다.</p>
+				<h2 id="-">특이사항</h2>
+				<h3 id="-">돈땡과 판걸이</h3>
+				<h3 id="-">양-단면이 혼재하는 공정</h3>
+				<p>각 모형별로 양-단면이 혼재하는 경우, 각 공정이 사용하는 판면수가 변할 수 있다 (단, 접지를 행하지 않을 때. 접지를 행하는 경우, 단면 인쇄 또한 양면 조판을 해야되기 때문에 해당사항 없음).</p>
+				<p>이 때, 인쇄가 양단면의 기준이 된다.</p>
+				<ul>
+					<li>인쇄가 단면이되, 그 외의 공정이 양면이면, 그 공정은 2배의 판면수를 쓰게 될 것이고,</li>
+					<li>인쇄가 양면이되, 그 외의 공정이 단면이면, 그 공정은 절반의 판면수를 사용하게 된다.</li>
+				</ul>
+				<p>15p, 1,000부 비접지 인쇄시: </p>
+				<table>
+					<thead>
+						<tr>
+							<th>인쇄</th>
+							<th>박</th>
+							<th>박비 총합</th>
+							<th>박 작업비</th>
+							<th>박 동판비</th>
+							<th>박 박비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>양면</td>
+							<td>양면</td>
+							<td>266,112 원</td>
+							<td>50,000 원</td>
+							<td>130,977 원</td>
+							<td>85,135 원</td>
+						</tr>
+						<tr>
+							<td>양면</td>
+							<td>단면</td>
+							<td>140,260 원</td>
+							<td>25,000 원</td>
+							<td>69,854 원</td>
+							<td>45,405 원</td>
+						</tr>
+						<tr>
+							<td>단면</td>
+							<td>단면</td>
+							<td>266,112 원</td>
+							<td>50,000 원</td>
+							<td>130,977 원</td>
+							<td>85,135 원</td>
+						</tr>
+						<tr>
+							<td>단면</td>
+							<td>양면</td>
+							<td>532,224 원</td>
+							<td>100,000 원</td>
+							<td>261,954 원</td>
+							<td>170,270 원</td>
+						</tr>
+					</tbody>
+				</table>
 				<h2 id="todo">TODO</h2>
-				<h4 id="-">재단 사이즈 및 작업 사이즈</h4>
+				<h3 id="-">재단 사이즈 및 작업 사이즈</h3>
 				<p>재단 사이즈 := 이미지 원본 사이즈
 				작업 사이즈 = 재단 사이즈 + 마진</p>
-				<h4 id="-">전단지 및 링제본</h4>
+				<h3 id="-">전단지 및 링제본</h3>
 				<p>상하좌우 모두 여백이 필요하다
 				전단지는 사용하지 아니함</p>
-				<h4 id="-">상철</h4>
+				<h3 id="-">상철</h3>
 				<p>상철은 상단부도 여백이 필요하다? 상철은 사용하지 아니함</p>
-				<h4 id="-">종이 재단</h4>
+				<h3 id="-">종이 재단</h3>
 				<p>아직 분류가 명확하지 않은 상태이다. 현재 보류 중</p>
 				<ul>
 					<li>1장일 때는 1,000 원</li>
 					<li>300 장 마다 2,000 원</li>
+					<li>절단 횟수마다 요금을 받는다 -&gt; 일단 100원으로 해 보자</li>
 					<li>반칼 요소를 고려해야 함 (not specified).</li>
 				</ul>
 			</div>
@@ -238,6 +294,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/iobjectassign.html" class="tsd-kind-icon">IObject<wbr>Assign</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#reactdatagrid" class="tsd-kind-icon">React<wbr>Data<wbr>Grid</a>
 					</li>

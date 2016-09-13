@@ -76,7 +76,7 @@
 					<div class="lead">
 						<p>A <a href="../modules/samchon.collection.dequecollection.deque.html">Deque</a> who can detect element I/O events.</p>
 					</div>
-					<p> Below are list of methods who are dispatching <a href="samchon.collection.collectionevent.html">CollectionEvent</a>: </p>
+					<p> Below are list of methods who are dispatching {@link CollectionEvent}: </p>
 					<ul>
 						<li> <i>insert</i> typed events: <ul>
 								<li> <a href="samchon.collection.dequecollection.html#assign">assign</a> </li>
@@ -132,7 +132,7 @@
 					<li><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/std.base.idequecontainer.html" class="tsd-signature-type">IDequeContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					<li><a href="../interfaces/samchon.collection.icollection.html" class="tsd-signature-type">ICollection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">ICollection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -168,7 +168,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#capacity" class="tsd-kind-icon">capacity</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#empty" class="tsd-kind-icon">empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#erase" class="tsd-kind-icon">erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.collection.dequecollection.html#front" class="tsd-kind-icon">front</a></li>
@@ -201,7 +201,7 @@
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><a href="std.deque.html" class="tsd-signature-type">Deque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Deque<wbr>Collection<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.collection.dequecollection.html" class="tsd-signature-type">DequeCollection</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
@@ -210,7 +210,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3262">typings/typescript-stl/typescript-stl.d.ts:3262</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3262">typings/typescript-stl/typescript-stl.d.ts:3262</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +226,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3268">typings/typescript-stl/typescript-stl.d.ts:3268</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3268">typings/typescript-stl/typescript-stl.d.ts:3268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -248,7 +248,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3276">typings/typescript-stl/typescript-stl.d.ts:3276</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3276">typings/typescript-stl/typescript-stl.d.ts:3276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,7 +279,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3286">typings/typescript-stl/typescript-stl.d.ts:3286</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3286">typings/typescript-stl/typescript-stl.d.ts:3286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -291,7 +291,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>container: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>container: <a href="std.deque.html" class="tsd-signature-type">Deque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Another container object of the same type (with the same class template
@@ -307,7 +307,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#constructor">constructor</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3295">typings/typescript-stl/typescript-stl.d.ts:3295</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3295">typings/typescript-stl/typescript-stl.d.ts:3295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +349,7 @@
 					<div class="tsd-signature tsd-kind-icon">event_<wbr>dispatcher_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L348">typings/samchon-framework/samchon-framework.d.ts:348</a></li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L338">typings/samchon-framework/samchon-framework.d.ts:338</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -365,21 +365,20 @@
 					<a name="addeventlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L404">typings/samchon-framework/samchon-framework.d.ts:404</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L394">typings/samchon-framework/samchon-framework.d.ts:394</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -394,16 +393,15 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L405">typings/samchon-framework/samchon-framework.d.ts:405</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L395">typings/samchon-framework/samchon-framework.d.ts:395</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -412,16 +410,15 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L406">typings/samchon-framework/samchon-framework.d.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L396">typings/samchon-framework/samchon-framework.d.ts:396</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -430,16 +427,15 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L407">typings/samchon-framework/samchon-framework.d.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L397">typings/samchon-framework/samchon-framework.d.ts:397</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,16 +444,15 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L411">typings/samchon-framework/samchon-framework.d.ts:411</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L401">typings/samchon-framework/samchon-framework.d.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,7 +467,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -482,9 +477,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L412">typings/samchon-framework/samchon-framework.d.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L402">typings/samchon-framework/samchon-framework.d.ts:402</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -493,7 +487,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -503,9 +497,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L413">typings/samchon-framework/samchon-framework.d.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L403">typings/samchon-framework/samchon-framework.d.ts:403</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -514,7 +507,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -524,9 +517,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L414">typings/samchon-framework/samchon-framework.d.ts:414</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L404">typings/samchon-framework/samchon-framework.d.ts:404</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -535,7 +527,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -555,11 +547,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#assign">assign</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#assign">assign</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#assign">assign</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3309">typings/typescript-stl/typescript-stl.d.ts:3309</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3309">typings/typescript-stl/typescript-stl.d.ts:3309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -595,7 +587,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#assign">assign</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3313">typings/typescript-stl/typescript-stl.d.ts:3313</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3313">typings/typescript-stl/typescript-stl.d.ts:3313</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -630,7 +622,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#at">at</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#at">at</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3349">typings/typescript-stl/typescript-stl.d.ts:3349</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3353">typings/typescript-stl/typescript-stl.d.ts:3353</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -665,7 +657,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#back">back</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#back">back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3361">typings/typescript-stl/typescript-stl.d.ts:3361</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3365">typings/typescript-stl/typescript-stl.d.ts:3365</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -691,11 +683,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#begin">begin</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#begin">begin</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#begin">begin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3325">typings/typescript-stl/typescript-stl.d.ts:3325</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3325">typings/typescript-stl/typescript-stl.d.ts:3325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -723,7 +715,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#capacity">capacity</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#capacity">capacity</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3345">typings/typescript-stl/typescript-stl.d.ts:3345</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3349">typings/typescript-stl/typescript-stl.d.ts:3349</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,11 +750,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#clear">clear</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#clear">clear</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#clear">clear</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3321">typings/typescript-stl/typescript-stl.d.ts:3321</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3321">typings/typescript-stl/typescript-stl.d.ts:3321</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -779,45 +771,45 @@
 					<a name="dispatchevent" class="tsd-anchor"></a>
 					<h3>dispatch<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#dispatchevent">dispatchEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L388">typings/samchon-framework/samchon-framework.d.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L378">typings/samchon-framework/samchon-framework.d.ts:378</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Dispatches an event into the event flow. </p>
-									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+									<h5>event: <a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="empty" class="tsd-anchor"></a>
 					<h3>empty</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#empty">empty</a></p>
-								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#empty">empty</a></p>
+								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#empty">empty</a></p>
+								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3345">typings/typescript-stl/typescript-stl.d.ts:3345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -842,11 +834,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#end">end</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#end">end</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#end">end</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3329">typings/typescript-stl/typescript-stl.d.ts:3329</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3329">typings/typescript-stl/typescript-stl.d.ts:3329</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -882,19 +874,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3433">typings/typescript-stl/typescript-stl.d.ts:3433</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3435">typings/typescript-stl/typescript-stl.d.ts:3435</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Erase an element. </p>
-								</div>
-								<p> Removes from the container a single element. </p>
-								<p> This effectively reduces the container size by the number of element removed. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -903,25 +893,20 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator pointing to the element that followed the last element erased by the function
-								call. This is the <a href="samchon.collection.dequecollection.html#end">Container.end</a> if the operation erased the last element in the
-							sequence.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3437">typings/typescript-stl/typescript-stl.d.ts:3437</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3439">typings/typescript-stl/typescript-stl.d.ts:3439</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Erase elements. </p>
-								</div>
-								<p> Removes from the container a range of elements. </p>
-								<p> This effectively reduces the container size by the number of elements removed. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -933,25 +918,20 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator pointing to the element that followed the last element erased by the function
-								call. This is the <a href="samchon.collection.dequecollection.html#end">Container.end</a> if the operation erased the last element in
-							the sequence.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3441">typings/typescript-stl/typescript-stl.d.ts:3441</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3443">typings/typescript-stl/typescript-stl.d.ts:3443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Erase an element. </p>
-								</div>
-								<p> Removes from the container a single element. </p>
-								<p> This effectively reduces the container size by the number of element removed. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -960,25 +940,20 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequereverseiterator.html" class="tsd-signature-type">DequeReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator pointing to the element that followed the last element erased by the function
-								call. This is the <a href="samchon.collection.dequecollection.html#end">Container.end</a> if the operation erased the last element in the
-							sequence.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#erase">erase</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3445">typings/typescript-stl/typescript-stl.d.ts:3445</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3447">typings/typescript-stl/typescript-stl.d.ts:3447</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Erase elements. </p>
-								</div>
-								<p> Removes from the container a range of elements. </p>
-								<p> This effectively reduces the container size by the number of elements removed. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -990,9 +965,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequereverseiterator.html" class="tsd-signature-type">DequeReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator pointing to the element that followed the last element erased by the function
-								call. This is the <a href="samchon.collection.dequecollection.html#end">Container.end</a> if the operation erased the last element in
-							the sequence.</p>
 						</li>
 					</ul>
 				</section>
@@ -1008,7 +980,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#front">front</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#front">front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3357">typings/typescript-stl/typescript-stl.d.ts:3357</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3361">typings/typescript-stl/typescript-stl.d.ts:3361</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1034,21 +1006,15 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#haseventlistener">hasEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L384">typings/samchon-framework/samchon-framework.d.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L374">typings/samchon-framework/samchon-framework.d.ts:374</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Checks whether the EventDispatcher object has any listeners registered for a specific type
-										of event. This allows you to determine where an EventDispatcher object has altered handling of
-										an event type in the event flow hierarchy. To determine whether a specific event type actually
-									triggers an event listener, use willTrigger(). </p>
-								</div>
-								<p> The difference between hasEventListener() and willTrigger() is that hasEventListener()
-									examines only the object to which it belongs, whereas willTrigger() examines the entire event
-								flow for the event specified by the type parameter. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1074,20 +1040,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#insert">insert</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3393">typings/typescript-stl/typescript-stl.d.ts:3393</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3395">typings/typescript-stl/typescript-stl.d.ts:3395</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Insert an element. </p>
-								</div>
-								<p> The container is extended by inserting a new element before the element at the specified
-									<i>position</i>. This effectively increases the <a href="../interfaces/std.base.icontainer.html#size">container size</a> by the amount of
-								elements inserted. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1099,14 +1062,13 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator that points to the newly inserted element.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3397">typings/typescript-stl/typescript-stl.d.ts:3397</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3399">typings/typescript-stl/typescript-stl.d.ts:3399</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1134,7 +1096,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3401">typings/typescript-stl/typescript-stl.d.ts:3401</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3403">typings/typescript-stl/typescript-stl.d.ts:3403</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1168,20 +1130,17 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#insert">insert</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3405">typings/typescript-stl/typescript-stl.d.ts:3405</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3407">typings/typescript-stl/typescript-stl.d.ts:3407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Insert an element. </p>
-								</div>
-								<p> The container is extended by inserting a new element before the element at the specified
-									<i>position</i>. This effectively increases the <a href="../interfaces/std.base.icontainer.html#size">container size</a> by the amount of
-								elements inserted. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1193,14 +1152,13 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.dequereverseiterator.html" class="tsd-signature-type">DequeReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An iterator that points to the newly inserted element.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3409">typings/typescript-stl/typescript-stl.d.ts:3409</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3411">typings/typescript-stl/typescript-stl.d.ts:3411</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1228,7 +1186,7 @@
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3413">typings/typescript-stl/typescript-stl.d.ts:3413</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3415">typings/typescript-stl/typescript-stl.d.ts:3415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1274,7 +1232,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#pop_back">pop_back</a></p>
 								<p>Overwrites <a href="std.deque.html">Deque</a>.<a href="std.deque.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L368">typings/samchon-framework/samchon-framework.d.ts:368</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L358">typings/samchon-framework/samchon-framework.d.ts:358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1300,7 +1258,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#pop_front">pop_front</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#pop_front">pop_front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3385">typings/typescript-stl/typescript-stl.d.ts:3385</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3387">typings/typescript-stl/typescript-stl.d.ts:3387</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1323,10 +1281,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#push">push</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push">push</a></p>
 								<p>Overwrites <a href="std.deque.html">Deque</a>.<a href="std.deque.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L352">typings/samchon-framework/samchon-framework.d.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L342">typings/samchon-framework/samchon-framework.d.ts:342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1364,7 +1322,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push_back">push_back</a></p>
 								<p>Overwrites <a href="std.deque.html">Deque</a>.<a href="std.deque.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L356">typings/samchon-framework/samchon-framework.d.ts:356</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L346">typings/samchon-framework/samchon-framework.d.ts:346</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1396,7 +1354,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push_front">push_front</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#push_front">push_front</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3377">typings/typescript-stl/typescript-stl.d.ts:3377</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3379">typings/typescript-stl/typescript-stl.d.ts:3379</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1426,11 +1384,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#rbegin">rbegin</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#rbegin">rbegin</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#rbegin">rbegin</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3333">typings/typescript-stl/typescript-stl.d.ts:3333</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3333">typings/typescript-stl/typescript-stl.d.ts:3333</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1460,45 +1418,29 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L392">typings/samchon-framework/samchon-framework.d.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L382">typings/samchon-framework/samchon-framework.d.ts:382</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
-								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
-									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
-								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
-								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
-									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="samchon.collection.dequecollection.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
-								<i>refresh</i> typed will be dispatched. </p>
-								<p> If you don&#39;t specify any iterator, then the range of the <i>refresh<i> event will be all elements in this
-								<a href="../interfaces/samchon.collection.icollection.html">collection</a>; <a href="samchon.collection.dequecollection.html#begin">begin()</a> to <a href="samchon.collection.dequecollection.html#end">end()</a>. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L396">typings/samchon-framework/samchon-framework.d.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L386">typings/samchon-framework/samchon-framework.d.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
-								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
-									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
-								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
-								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
-									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="samchon.collection.dequecollection.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
-								<i>refresh</i> typed will be dispatched. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1510,22 +1452,15 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L400">typings/samchon-framework/samchon-framework.d.ts:400</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L390">typings/samchon-framework/samchon-framework.d.ts:390</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Dispatch a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with <i>refresh</i> typed. </p>
-								</div>
-								<p> <a href="../interfaces/samchon.collection.icollection.html">ICollection</a> dispatches <a href="samchon.collection.collectionevent.html">CollectionEvent</a> typed <i>insert</i> or <i>erase</i> whenever
-									elements I/O has occured. However, unlike those elements I/O events, content change in element level can&#39;t be
-								detected. There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>. </p>
-								<p> If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
-									dispatch <i>refresh</i> typed event manually, by yourself. Call <a href="samchon.collection.dequecollection.html#refresh">refresh()</a> with specified
-									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collection.collectionevent.html">CollectionEvent</a> with
-								<i>refresh</i> typed will be dispatched. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1544,21 +1479,20 @@
 					<a name="removeeventlistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L418">typings/samchon-framework/samchon-framework.d.ts:418</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L408">typings/samchon-framework/samchon-framework.d.ts:408</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1573,16 +1507,15 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L419">typings/samchon-framework/samchon-framework.d.ts:419</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L409">typings/samchon-framework/samchon-framework.d.ts:409</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1591,16 +1524,15 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L420">typings/samchon-framework/samchon-framework.d.ts:420</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L410">typings/samchon-framework/samchon-framework.d.ts:410</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1609,16 +1541,15 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L421">typings/samchon-framework/samchon-framework.d.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L411">typings/samchon-framework/samchon-framework.d.ts:411</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1627,16 +1558,15 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L425">typings/samchon-framework/samchon-framework.d.ts:425</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L415">typings/samchon-framework/samchon-framework.d.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1651,7 +1581,7 @@
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-type">EventListener</span></h5>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1661,9 +1591,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L426">typings/samchon-framework/samchon-framework.d.ts:426</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L416">typings/samchon-framework/samchon-framework.d.ts:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1672,7 +1601,7 @@
 									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1682,9 +1611,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L427">typings/samchon-framework/samchon-framework.d.ts:427</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L417">typings/samchon-framework/samchon-framework.d.ts:417</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1693,7 +1621,7 @@
 									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1703,9 +1631,8 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/samchon-framework/samchon-framework.d.ts#L428">typings/samchon-framework/samchon-framework.d.ts:428</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L418">typings/samchon-framework/samchon-framework.d.ts:418</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1714,7 +1641,7 @@
 									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
 								</li>
 								<li>
-									<h5>listener: <a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>listener: <a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
 								</li>
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
@@ -1733,11 +1660,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#rend">rend</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#rend">rend</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#rend">rend</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3337">typings/typescript-stl/typescript-stl.d.ts:3337</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3337">typings/typescript-stl/typescript-stl.d.ts:3337</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1766,7 +1693,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#reserve">reserve</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#reserve">reserve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3317">typings/typescript-stl/typescript-stl.d.ts:3317</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3317">typings/typescript-stl/typescript-stl.d.ts:3317</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1805,7 +1732,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#set">set</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3353">typings/typescript-stl/typescript-stl.d.ts:3353</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3357">typings/typescript-stl/typescript-stl.d.ts:3357</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1842,11 +1769,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#size">size</a></p>
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#size">size</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#size">size</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3341">typings/typescript-stl/typescript-stl.d.ts:3341</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3341">typings/typescript-stl/typescript-stl.d.ts:3341</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1863,16 +1790,50 @@
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.deque.html" class="tsd-signature-type">Deque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/samchon.collection.icollection.html">ICollection</a>.<a href="../interfaces/samchon.collection.icollection.html#swap">swap</a></p>
 								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#swap">swap</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/af78aed/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3453">typings/typescript-stl/typescript-stl.d.ts:3453</a></li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3469">typings/typescript-stl/typescript-stl.d.ts:3469</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Swap content. </p>
+								</div>
+								<p> Exchanges the content of the container by the content of <i>obj</i>, which is another
+								<a href="../modules/samchon.collection.dequecollection.deque.html">container</a> object with same type of elements. Sizes and container type may differ. </p>
+								<p> After the call to this member function, the elements in this container are those which were in <i>obj</i>
+									before the call, and the elements of <i>obj</i> are those which were in this. All iterators, references and
+								pointers remain valid for the swapped objects. </p>
+								<p> Notice that a non-member function exists with the same name, <a href="../modules/std.html#swap">swap</a>, overloading that
+								algorithm with an optimization that behaves like this member function. </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="std.deque.html" class="tsd-signature-type">Deque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Another <a href="../modules/samchon.collection.dequecollection.deque.html">container</a> of the same type of elements (i.e., instantiated
+											with the same template parameter, <b>T</b>) whose content is swapped with that of this
+										{@link container Deque}.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#swap">swap</a></p>
+								<p>Inherited from <a href="std.deque.html">Deque</a>.<a href="std.deque.html#swap">swap</a></p>
+								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L3473">typings/typescript-stl/typescript-stl.d.ts:3473</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1929,6 +1890,9 @@
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.test.html">test</a>
+							</li>
 						</ul>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -1940,9 +1904,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.collection.arraycollection.html" class="tsd-kind-icon">Array<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="samchon.collection.collectionevent.html" class="tsd-kind-icon">Collection<wbr>Event</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -1979,7 +1940,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.collection.dequecollection.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.collection.dequecollection.html#empty" class="tsd-kind-icon">empty</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
@@ -2056,6 +2017,9 @@
 						<a href="samchon.collection.listcollection.html" class="tsd-kind-icon">List<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="samchon.collection.mapcollectionevent.html" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.collection.treemapcollection.html" class="tsd-kind-icon">Tree<wbr>Map<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
@@ -2070,11 +2034,11 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.collection.xmllistcollection.html" class="tsd-kind-icon">XMLList<wbr>Collection</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../interfaces/samchon.collection.collectioneventlistener.html" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.collection.html#collectioneventlistener" class="tsd-kind-icon">Collection<wbr>Event<wbr>Listener</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../interfaces/samchon.collection.icollection.html" class="tsd-kind-icon">ICollection</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.collection.html#mapcollectioneventlistener" class="tsd-kind-icon">Map<wbr>Collection<wbr>Event<wbr>Listener</a>
 					</li>
 				</ul>
 			</nav>
