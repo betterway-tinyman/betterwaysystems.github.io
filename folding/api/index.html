@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>@types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title"></a>
+					<a href="index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -55,7 +55,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> </h1>
+			<h1> @types/typescript-stl</h1>
 		</div>
 	</div>
 </header>
@@ -63,207 +63,24 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="folding">Folding</h1>
-				<h2 id="-">참고자료</h2>
+				<h1 id="installation">Installation</h1>
+				<blockquote>
+					<p><code>npm install --save @types/typescript-stl</code></p>
+				</blockquote>
+				<h1 id="summary">Summary</h1>
+				<p>This package contains type definitions for TypeScript-STL v1.1.3 (<a href="https://github.com/samchon/typescript-stl">https://github.com/samchon/typescript-stl</a>).</p>
+				<h1 id="details">Details</h1>
+				<p>Files were exported from <a href="https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/typescript-stl">https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/types-2.0/typescript-stl</a></p>
+				<p>Additional Details</p>
 				<ul>
-					<li><a href="http://betterwaysystems.github.io/folding/api/">API 문서</a></li>
-					<li><a href="http://betterwaysystems.github.io/folding/design/class_diagram.pdf">Class Diagram</a></li>
+					<li>Last updated: Fri, 07 Oct 2016 17:35:57 GMT</li>
+					<li>File structure: OldUMD</li>
+					<li>Library Dependencies: none</li>
+					<li>Module Dependencies: none</li>
+					<li>Global values: std</li>
 				</ul>
-				<h2 id="-">용어</h2>
-				<h3 id="-">도</h3>
-				<p>색상코드의 갯수</p>
-				<ul>
-					<li>ex) CMYK: 4도</li>
-				</ul>
-				<h3 id="-">면</h3>
-				<p>출력에 사용될 종이면의 수량</p>
-				<ul>
-					<li>단면: 매당 1면</li>
-					<li>양면: 매당 2면</li>
-					<li>페이지 수 / 분할수량</li>
-				</ul>
-				<p>가령 A4 사이즈 1,600페이지를 인쇄코자 하는데, 이를 A2에 양면 인쇄하여, A2 한 장 당 A4를 8장씩 담을 수 있다면, 이 때 매수는 200매가 된다.</p>
-				<ul>
-					<li>페이지 수: 1,600 페이지</li>
-					<li>분할수량: 장당 8 페이지</li>
-					<li>매수 = 페이지 수 / 분할수량 = 1,600페이지 / 8페이지 = 200매</li>
-				</ul>
-				<h3 id="-">판</h3>
-				<p>도장과 비슷하다.</p>
-				<ul>
-					<li>판수 = 원본 면수 X 도</li>
-					<li>판수 = 원본 페이지수 / 분할수량 X 도</li>
-				</ul>
-				<h3 id="-">작업비</h3>
-				<p>판수 (면수) X 부수 (사본 수)</p>
-				<h2 id="-">가격모형</h2>
-				<h3 id="-">용지</h3>
-				<p>매수 x 용지면적 (제곱미터당)</p>
-				<h3 id="-">인쇄</h3>
-				<ol>
-					<li>작업비: 7,000원 / 1,000면 X 도 (CMYK: 4도) - <em>계단형 변동비</em></li>
-					<li>CTP 출력비: 판 X 도 X 7,000 원 - <em>변동비</em></li>
-					<li>ex) 800페이지의 책 A를 CMYK로 2,000부 인쇄하려고 한다. 한 판당 8페이지를 넣어 총 100판이 생겼다.<ul>
-							<li>작업비: 2,800,000원<ul>
-									<li>단위: (100면 X 2,000부 / 1,000면) = 200 단위</li>
-									<li>도: CMYK 4도</li>
-									<li>작업비 = 7,000원 X 200단위 X 4도 = 5,600,000원</li>
-								</ul>
-							</li>
-							<li>CTP 출력비: 140,000원<ul>
-									<li>원본면수: 800페이지 = 100면</li>
-									<li>판수 = 원본면수 X 도수 = 100면 X 4도 = 400판<ul>
-											<li>매수 X 도수만큼의 판을 찍어야 한다.</li>
-										</ul>
-									</li>
-									<li>400판 X 7,000원 = 2,800,000원</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>양면일 때 행하는 돈땡은, 오로지 양면의 색상도수가 다를 때도 가능하되, 큰 색상도수의 비용을 사용해야 한다.</li>
-				</ol>
-				<h6 id="-">비고</h6>
-				<ul>
-					<li>양단면 선택 가능</li>
-					<li>여유 용지: (판) 면당 125 매</li>
-				</ul>
-				<h3 id="-">박</h3>
-				<ol>
-					<li>단위당 작업비: 25,000 원 / 1,000 면 - <em>변동비</em></li>
-					<li>한 판 동판비 (도장): 200 원 / cm<sup>2</sup> - <em>변동비</em></li>
-					<li>한 판 박비 (잉크비): 1,300 원 / m<sup>2</sup> - <em>변동비</em></li>
-				</ol>
-				<h6 id="-">비고</h6>
-				<ul>
-					<li>양단면 선택 가능</li>
-					<li>여유 용지: 면당 30 매</li>
-				</ul>
-				<h3 id="-">스코딕스</h3>
-				<ol>
-					<li>피딩비: 230원 / 회1247.4cm^2<ul>
-							<li>1247.4cm^2: A3 1면</li>
-						</ul>
-					</li>
-					<li>한 판 잉크비: 15원 / 12.474cm^2<ul>
-							<li>12.474cm^2: A3 면적대비 1% 잉크량</li>
-						</ul>
-					</li>
-				</ol>
-				<p>비고</p>
-				<ul>
-					<li>양단면 선택 가능</li>
-					<li>여유 용지: 면당 30 매</li>
-					<li>할증률이 들어갈 수도 있다 (출력 면수에 반비례한 할증률)</li>
-				</ul>
-				<h3 id="-">톰슨</h3>
-				<ol>
-					<li>단위당 작업비
-						1.1. 고정비용: 30,000 원 / 1,000 매
-						1.2. 변동비용: 50원 / 매
-					1.3. 수식: 30,000 + 50 X (1,000 - <em>x</em>)</li>
-					<li>한 판 칼비 (도장, 판 only): 5,000원 / m<ul>
-							<li>추후 복잡도에 따라 가격이 변할 수 있다.</li>
-						</ul>
-					</li>
-				</ol>
-				<h6 id="-">비고</h6>
-				<ul>
-					<li>여유 용지: 면당 30 매</li>
-				</ul>
-				<h4 id="-">라미네이팅</h4>
-				<p>특이사항: 라미네이팅은 조판면이 아닌, 각 용지크기별로 단위를 매긴다.</p>
-				<ol>
-					<li>작업비<ul>
-							<li>기본 요금 25,000원, 200면까지</li>
-							<li>200면 초과는 필름 코팅비를 사용한다</li>
-						</ul>
-					</li>
-					<li>필름 코팅비<ul>
-							<li>초과용지면적 (m<sup>2</sup>) x 200 원 / m<sup>2</sup></li>
-							<li>라미네이팅으로 코팅 가능한 종이는 크기에 한계가 있다</li>
-							<li>이런 <strong>사용가능 종이</strong> 와 같은 정보는, 장치에 종속된다.</li>
-						</ul>
-					</li>
-				</ol>
-				<h6 id="-">비고</h6>
-				<ul>
-					<li>양단면 선택 가능</li>
-					<li>여유 용지: 면당 30 매</li>
-				</ul>
-				<h2 id="-">특이사항</h2>
-				<h3 id="-">돈땡과 판걸이</h3>
-				<h3 id="-">양-단면이 혼재하는 공정</h3>
-				<p>각 모형별로 양-단면이 혼재하는 경우, 각 공정이 사용하는 판면수가 변할 수 있다 (단, 접지를 행하지 않을 때. 접지를 행하는 경우, 단면 인쇄 또한 양면 조판을 해야되기 때문에 해당사항 없음).</p>
-				<p>이 때, 인쇄가 양단면의 기준이 된다.</p>
-				<ul>
-					<li>인쇄가 단면이되, 그 외의 공정이 양면이면, 그 공정은 2배의 판면수를 쓰게 될 것이고,</li>
-					<li>인쇄가 양면이되, 그 외의 공정이 단면이면, 그 공정은 절반의 판면수를 사용하게 된다.</li>
-				</ul>
-				<p>15p, 1,000부 비접지 인쇄시: </p>
-				<table>
-					<thead>
-						<tr>
-							<th>인쇄</th>
-							<th>박</th>
-							<th>박비 총합</th>
-							<th>박 작업비</th>
-							<th>박 동판비</th>
-							<th>박 박비</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>양면</td>
-							<td>양면</td>
-							<td>266,112 원</td>
-							<td>50,000 원</td>
-							<td>130,977 원</td>
-							<td>85,135 원</td>
-						</tr>
-						<tr>
-							<td>양면</td>
-							<td>단면</td>
-							<td>140,260 원</td>
-							<td>25,000 원</td>
-							<td>69,854 원</td>
-							<td>45,405 원</td>
-						</tr>
-						<tr>
-							<td>단면</td>
-							<td>단면</td>
-							<td>266,112 원</td>
-							<td>50,000 원</td>
-							<td>130,977 원</td>
-							<td>85,135 원</td>
-						</tr>
-						<tr>
-							<td>단면</td>
-							<td>양면</td>
-							<td>532,224 원</td>
-							<td>100,000 원</td>
-							<td>261,954 원</td>
-							<td>170,270 원</td>
-						</tr>
-					</tbody>
-				</table>
-				<h2 id="todo">TODO</h2>
-				<h3 id="-">재단 사이즈 및 작업 사이즈</h3>
-				<p>재단 사이즈 := 이미지 원본 사이즈
-				작업 사이즈 = 재단 사이즈 + 마진</p>
-				<h3 id="-">전단지 및 링제본</h3>
-				<p>상하좌우 모두 여백이 필요하다
-				전단지는 사용하지 아니함</p>
-				<h3 id="-">상철</h3>
-				<p>상철은 상단부도 여백이 필요하다? 상철은 사용하지 아니함</p>
-				<h3 id="-">종이 재단</h3>
-				<p>아직 분류가 명확하지 않은 상태이다. 현재 보류 중</p>
-				<ul>
-					<li>1장일 때는 1,000 원</li>
-					<li>300 장 마다 2,000 원</li>
-					<li>절단 횟수마다 요금을 받는다 -&gt; 일단 100원으로 해 보자</li>
-					<li>반칼 요소를 고려해야 함 (not specified).</li>
-				</ul>
+				<h1 id="credits">Credits</h1>
+				<p>These definitions were written by Jeongho Nam <a href="http://samchon.org">http://samchon.org</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

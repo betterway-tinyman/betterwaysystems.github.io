@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IEventDispatcher | </title>
+	<title>IEventDispatcher | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,24 +74,25 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> The IEventDispatcher interface defines methods for adding or removing event listeners, checks
-						whether specific types of event listeners are registered, and dispatches events. </p>
+						<p>The IEventDispatcher interface defines methods for adding or removing event listeners, checks whether specific
+						types of event listeners are registered, and dispatches events.</p>
 					</div>
-					<p> Event targets are an important part of the Flash�� Player and Adobe AIR event model. The event
-						target serves as the local point for how events flow through the display list hierarchy. When an
-						event such as a mouse click or a key press occurs, an event object is dispatched into the event flow
-						from the root of the display list. The event object makes a round-trip journey to the event target,
-						which is conceptually divided into three phases: the capture phase includes the journey from the
-						root to the last node before the event target&#39;s node; the target phase includes only the event
-						target node; and the bubbling phase includes any subsequent nodes encountered on the return trip to
-					the root of the display list. </p>
-					<p> In general, the easiest way for a user-defined class to gain event dispatching capabilities is
-						to extend EventDispatcher. If this is impossible (that is, if the class is already extending another
-						class), you can instead implement the IEventDispatcher interface, create an EventDispatcher member,
-					and write simple hooks to route calls into the aggregated EventDispatcher. </p>
+					<p>The event target serves as the local point for how events flow through the display list hierarchy. When an
+						event such as a mouse click or a key press occurs, an event object is dispatched into the event flow from the
+						root of the display list. The event object makes a round-trip journey to the event target, which is
+						conceptually divided into three phases: the capture phase includes the journey from the root to the last node
+						before the event target&#39;s node; the target phase includes only the event target node; and the bubbling phase
+					includes any subsequent nodes encountered on the return trip to the root of the display list.</p>
+					<p>In general, the easiest way for a user-defined class to gain event dispatching capabilities is to extend
+						<a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a>. If this is impossible (that is, if the class is already extending another class), you
+						can instead implement the <a href="samchon.library.ieventdispatcher.html">IEventDispatcher</a> interface, create an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> member, and
+					write simple hooks to route calls into the aggregated <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a>.</p>
 					<dl class="tsd-comment-tags">
 						<dt>reference</dt>
 						<dd><p><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/IEventDispatcher.html">http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/IEventDispatcher.html</a></p>
+						</dd>
+						<dt>handbook</dt>
+						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Library-EventDispatcher">https://github.com/samchon/framework/wiki/TypeScript-Library-EventDispatcher</a></p>
 						</dd>
 						<dt>author</dt>
 						<dd><p>Migrated by Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
@@ -144,41 +145,40 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2016">typings/samchon-framework/samchon-framework.d.ts:2016</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2041</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
-											receives notification of an event. You can register event listeners on all nodes in the display
-										list for a specific type of event, phase, and priority.</p>
+									<p>Registers an event listener object with an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object so that the listener receives
+										notification of an event. You can register event listeners on all nodes in the display list for a specific
+									type of event, phase, and priority.</p>
 								</div>
-								<p> After you successfully register an event listener, you cannot change its priority through
-									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
-								removeEventListener(). Then you can register the listener again with the new priority level. </p>
-								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
-									with a different type or useCapture value result in the creation of a separate listener
-									registration. For example, if you first register a listener with useCapture set to true,
-									it listens only during the capture phase. If you call addEventListener() again using the same
-									listener object, but with useCapture set to false, you have two separate listeners: one that
-								listens during the capture phase and another that listens during the target and bubbling phases. </p>
-								<p> You cannot register an event listener for only the target phase or the bubbling phase.
-									Those phases are coupled during registration because bubbling applies only to the ancestors of
-								the target node. </p>
-								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
-									memory problems could result. Event listeners are not automatically removed from memory because
-									the garbage collector does not remove the listener as long as the dispatching object exists
-								(unless the useWeakReference parameter is set to true). </p>
-								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
-									your newly created node needs an event listener, you must attach the listener after creating
-									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
-								it move along with it. </p>
-								<p> If the event listener is being registered on a node while an event is also being processed
-									on this node, the event listener is not triggered during the current phase but may be triggered
-								during a later phase in the event flow, such as the bubbling phase. </p>
-								<p> If an event listener is removed from a node while an event is being processed on the node,
-									it is still triggered by the current actions. After it is removed, the event listener is never
-								invoked again (unless it is registered again for future processing). </p>
+								<p>After you successfully register an event listener, you cannot change its priority through additional calls
+									to {@link addEventListener addEventListener()|} To change a listener&#39;s priority, you must first call
+									<a href="samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener()</a>. Then you can register the listener again with the new
+								priority level.</p>
+								<p>Keep in mind that after the listener is registered, subsequent calls to <a href="samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a> with a
+									different type or useCapture value result in the creation of a separate listener registration. For example,
+									if you first register a listener with useCapture set to true, it listens only during the capture phase. If
+									you call <a href="samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a> again using the same listener object, but with useCapture set to false,
+									you have two separate listeners: one that listens during the capture phase and another that listens during
+								the target and bubbling phases.</p>
+								<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are
+								coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+								<p>If you no longer need an event listener, remove it by calling <a href="samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a>, or memory
+									problems could result. Event listeners are not automatically removed from memory because the garbage
+									collector does not remove the listener as long as the dispatching object exists (unless the
+								useWeakReference parameter is set to true).</p>
+								<p>Copying an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> instance does not copy the event listeners attached to it. (If your n
+									ewly created node needs an event listener, you must attach the listener after creating the node.) However,
+								if you move an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> instance, the event listeners attached to it move along with it.</p>
+								<p>If the event listener is being registered on a node while an event is also being processed on this node,
+									the event listener is not triggered during the current phase but may be triggered during a later phase in
+								the event flow, such as the bubbling phase.</p>
+								<p>If an event listener is removed from a node while an event is being processed on the node, it is still
+									triggered by the current actions. After it is removed, the event listener is never invoked again (unless it
+								is registered again for future processing).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -199,41 +199,40 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2061">typings/samchon-framework/samchon-framework.d.ts:2061</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2085</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
-											receives notification of an event. You can register event listeners on all nodes in the display
-										list for a specific type of event, phase, and priority.</p>
+									<p>Registers an event listener object with an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object so that the listener receives
+										notification of an event. You can register event listeners on all nodes in the display list for a specific
+									type of event, phase, and priority.</p>
 								</div>
-								<p> After you successfully register an event listener, you cannot change its priority through
-									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
-								removeEventListener(). Then you can register the listener again with the new priority level. </p>
-								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
-									with a different type or useCapture value result in the creation of a separate listener
-									registration. For example, if you first register a listener with useCapture set to true,
-									it listens only during the capture phase. If you call addEventListener() again using the same
-									listener object, but with useCapture set to false, you have two separate listeners: one that
-								listens during the capture phase and another that listens during the target and bubbling phases. </p>
-								<p> You cannot register an event listener for only the target phase or the bubbling phase.
-									Those phases are coupled during registration because bubbling applies only to the ancestors of
-								the target node. </p>
-								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
-									memory problems could result. Event listeners are not automatically removed from memory because
-									the garbage collector does not remove the listener as long as the dispatching object exists
-								(unless the useWeakReference parameter is set to true). </p>
-								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
-									your newly created node needs an event listener, you must attach the listener after creating
-									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
-								it move along with it. </p>
-								<p> If the event listener is being registered on a node while an event is also being processed
-									on this node, the event listener is not triggered during the current phase but may be triggered
-								during a later phase in the event flow, such as the bubbling phase. </p>
-								<p> If an event listener is removed from a node while an event is being processed on the node,
-									it is still triggered by the current actions. After it is removed, the event listener is never
-								invoked again (unless it is registered again for future processing). </p>
+								<p>After you successfully register an event listener, you cannot change its priority through additional calls
+									to {@link addEventListener addEventListener()|} To change a listener&#39;s priority, you must first call
+									<a href="samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener()</a>. Then you can register the listener again with the new
+								priority level.</p>
+								<p>Keep in mind that after the listener is registered, subsequent calls to <a href="samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a> with a
+									different type or useCapture value result in the creation of a separate listener registration. For example,
+									if you first register a listener with useCapture set to true, it listens only during the capture phase. If
+									you call <a href="samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a> again using the same listener object, but with useCapture set to false,
+									you have two separate listeners: one that listens during the capture phase and another that listens during
+								the target and bubbling phases.</p>
+								<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are
+								coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+								<p>If you no longer need an event listener, remove it by calling <a href="samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a>, or memory
+									problems could result. Event listeners are not automatically removed from memory because the garbage
+									collector does not remove the listener as long as the dispatching object exists (unless the
+								useWeakReference parameter is set to true).</p>
+								<p>Copying an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> instance does not copy the event listeners attached to it. (If your n
+									ewly created node needs an event listener, you must attach the listener after creating the node.) However,
+								if you move an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> instance, the event listeners attached to it move along with it.</p>
+								<p>If the event listener is being registered on a node while an event is also being processed on this node,
+									the event listener is not triggered during the current phase but may be triggered during a later phase in
+								the event flow, such as the bubbling phase.</p>
+								<p>If an event listener is removed from a node while an event is being processed on the node, it is still
+									triggered by the current actions. After it is removed, the event listener is never invoked again (unless it
+								is registered again for future processing).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -251,7 +250,7 @@
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The object to be used as the <b>this</b> object.</p>
+										<p>The object to be used as the <strong>this</strong> object.</p>
 									</div>
 								</li>
 							</ul>
@@ -269,23 +268,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1972">typings/samchon-framework/samchon-framework.d.ts:1972</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:1998</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Dispatches an event into the event flow. </p>
-									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
+									<p>Dispatches an event into the event flow.</p>
 								</div>
+								<p>The event target is the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object upon which the <a href="samchon.library.ieventdispatcher.html#dispatchevent">dispatchEvent()</a>
+								method is called.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <a href="../classes/samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The Event object that is dispatched into the event flow. If the event is being
-											redispatched, a clone of the event is created automatically. After an event is
-											dispatched, its target property cannot be changed, so you must create a new copy
+										<p>The <a href="../classes/samchon.library.basicevent.html">BasicEvent</a> object that is dispatched into the event flow. If the event is being
+											redispatched, a clone of the event is created automatically. After an event is dispatched, its
+											target property cannot be changed, so you must create a new copy
 										of the event for redispatching to work.</p>
 									</div>
 								</li>
@@ -304,19 +304,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1962">typings/samchon-framework/samchon-framework.d.ts:1962</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:1986</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Checks whether the EventDispatcher object has any listeners registered for a specific type
-										of event. This allows you to determine where an EventDispatcher object has altered handling of
-										an event type in the event flow hierarchy. To determine whether a specific event type actually
-									triggers an event listener, use willTrigger(). </p>
+									<p>Checks whether the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object has any listeners registered for a specific type of event.
+										This allows you to determine where an <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object has altered handling of an event type
+										in the event flow hierarchy. To determine whether a specific event type actually triggers an event listener,
+									use {@link willTrigger willTrigger()}.</p>
 								</div>
-								<p> The difference between hasEventListener() and willTrigger() is that hasEventListener()
-									examines only the object to which it belongs, whereas willTrigger() examines the entire event
-								flow for the event specified by the type parameter. </p>
+								<p>The difference between <a href="samchon.library.ieventdispatcher.html#haseventlistener">hasEventListener()</a> and {@link willTrigger willTrigger()} is
+									that <a href="samchon.library.ieventdispatcher.html#haseventlistener">hasEventListener</a> examines only the object to which it belongs, whereas {@link willTrigger}
+								examines the entire event flow for the event specified by the type parameter.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -342,13 +342,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2069">typings/samchon-framework/samchon-framework.d.ts:2069</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2093</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
-									with the EventDispatcher object, a call to this method has no effect.</p>
+									<p>Removes a listener from the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object. If there is no matching listener registered
+									with the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object, a call to this method has no effect.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -371,13 +371,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2078">typings/samchon-framework/samchon-framework.d.ts:2078</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
-									with the EventDispatcher object, a call to this method has no effect.</p>
+									<p>Removes a listener from the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object. If there is no matching listener registered
+									with the <a href="../classes/samchon.library.eventdispatcher.html">EventDispatcher</a> object, a call to this method has no effect.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -397,7 +397,7 @@
 								<li>
 									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The object to be used as the <b>this</b> object.</p>
+										<p>The object to be used as the <strong>this</strong> object.</p>
 									</div>
 								</li>
 							</ul>
@@ -429,7 +429,7 @@
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
+								<a href="../modules/samchon.collections.html">collections</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.library.html">library</a>
@@ -438,7 +438,7 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
+								<a href="../modules/samchon.templates.html">templates</a>
 							</li>
 						</ul>
 					</li>

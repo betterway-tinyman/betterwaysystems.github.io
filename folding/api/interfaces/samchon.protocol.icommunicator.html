@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICommunicator | </title>
+	<title>ICommunicator | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,118 +74,26 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> An interface taking full charge of network communication. </p>
+						<p>An interface taking full charge of network communication.</p>
 					</div>
-					<p> <a href="samchon.protocol.icommunicator.html">ICommunicator</a> is an interface for communicator classes who take full charge of network communication
-					with external system, without reference to whether the external system is a server or a client. </p>
-					<p> Whenever a replied message comes from the external system, the message will be converted to an
-						<a href="../classes/samchon.protocol.invoke.html">Invoke</a> class and will be shifted to the {@link WebCommunicator.listener listener}&#39;s
-					<a href="samchon.protocol.iprotocol.html#replydata">replyData()</a> method. </p>
-					<p><code>
-interface ICommmunicator
-{
-private socket: SomeSocketClass;</p>
-<p>// LISTENER LISTENS INVOKE MESSAGE BY IT&#39;S IProtocol.replyData() METHOD
-protected listener: IProtocol;</p>
-<p>// YOU CAN DETECT DISCONNECTION BY ENROLLING FUNCTION POINTER TO HERE.
-public onClose: Function;</p>
-<p>public sendData(invoke: Invoke): void
-{
-this.socket.write(invoke);
-}
-public replyData(invoke: Invoke): void
-{
-// WHENEVER COMMUNICATOR GETS MESSAGE, THEN SHIFT IT TO LISTENER&#39;S replyData() METHOD.
-this.listener.replyData(invoke);
-}
-}
-</code></p>
-					<p> <a href="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_basic_components.png"
+					<p><a href="samchon.protocol.icommunicator.html">ICommunicator</a> is an interface for communicator classes who take full charge of network communication with
+						remote system, without reference to whether the remote system is a server or a client. Type of the
+						<a href="samchon.protocol.icommunicator.html">ICommunicator</a> is specified to <a href="samchon.protocol.iserverconnector.html">IServerConnector</a> and <a href="samchon.protocol.iclientdriver.html">IClientDriver</a> whether the remote system
+					is a server (that I&#39;ve to connect) or a client (a client connected to my server).</p>
+					<p>Whenever a replied message comes from the remote system, the message will be converted to an <a href="../classes/samchon.protocol.invoke.html">Invoke</a> class
+						and the <a href="../classes/samchon.protocol.invoke.html">Invoke</a> object will be shifted to the <a href="samchon.protocol.iprotocol.html">listener</a>&#39;s
+					<a href="samchon.protocol.iprotocol.html#replydata">IProtocol.replyData()</a> method.</p>
+					<p><a href="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_basic_components.png"
 						target="_blank">
 						<img src="http://samchon.github.io/framework/images/design/ts_class_diagram/protocol_basic_components.png"
 						style="max-width: 100%" />
-					</a> </p>
-					<p><h2> Basic Components </h2></p>
-					<p><h4> What Basic Components are </h4></p>
-					<p> <b>Basic Components</b> are the smallest unit of network communication in this <i>Samchon Framework</i>. With
-						<b>Basic Components</b>, you can construct any type of network system, even how the network system is enormously
-					scaled and complicated, by just combinating the <b>Basic Components</b>. </p>
-					<p> All the system templates in this framework are also being implemented by utilization of the
-					<b>Basic Compoonents</b>. </p>
-					<ul>
-						<li> <a href="../modules/samchon.protocol.service.html">Service</a> </il>
-							<li> <a href="../modules/samchon.protocol.external.html">External System</a> </il>
-								<li> <a href="../modules/samchon.protocol.parallel.html">Parallel System</a> </il>
-									<li> <a href="../modules/samchon.protocol.distributed.html">Distributed System</a> </il>
-					</ul>
-					<p> Note that, whatever the network system what you&#39;ve to construct is, just concentrate on role of each system
-						and attach matched <b>Basic Components</b> to the role, within framework of the <b>Object-Oriented Design</b>.
-					Then construction of the network system will be much easier. </p>
-					<ul>
-						<li> A system is a server, then use <a href="samchon.protocol.iserver.html">IServer</a> or <a href="samchon.protocol.iserverbase.html">IServerBase</a>. </li>
-						<li> A server wants to handle a client has connected, then use <a href="samchon.protocol.iclientdriver.html">IClientDriver</a>. </li>
-						<li> A system is a client connecting to an external server, then use <a href="samchon.protocol.iserverconnector.html">IServerConnector</a>. </li>
-						<li> </li>
-					</ul>
-					<p><h4> Example - System Templates </h4></p>
-					<p> Learning and understanding <i>Basic Components</i> of Samchon Framework, reading source codes and design of
-					<b>System Templates</b>&#39; modules will be very helpful. </p>
-					<table>
-						<tr>
-							<th> Name </th>
-							<th> Source </th>
-							<th> API Documents </th>
-						</tr>
-						<tr>
-							<td> Cloud Service </td>
-							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/service"
-							target="_blank"> protocol/service </a> </td>
-							<td> <a href="../modules/samchon.protocol.service.html">protocol.service</a> </td>
-						</tr>
-						<tr>
-							<td> External System </td>
-							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/external"
-							target="_blank"> protocol/external </a> </td>
-							<td> <a href="../modules/samchon.protocol.external.html">protocol.external</a> </td>
-						</tr>
-						<tr>
-							<td> Parallel System </td>
-							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/parallel"
-							target="_blank"> protocol/parallel </a> </td>
-							<td> <a href="../modules/samchon.protocol.parallel.html">protocol.parallel</a> </td>
-						</tr>
-						<tr>
-							<td> Distributed System </td>
-							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/distributed"
-							target="_blank"> protocol/distributed </a> </td>
-							<td> <a href="../modules/samchon.protocol.distributed.html">protocol.distributed</a> </td>
-						</tr>
-						<tr>
-							<td> Slave System </td>
-							<td> <a href="https://github.com/samchon/framework/tree/master/ts/src/samchon/protocol/slave"
-							target="_blank"> protocol/slave </a> </td>
-							<td> <a href="../modules/samchon.protocol.slave.html">protocol.slave</a> </td>
-						</tr>
-					</table>
-					<p><h4> Example - Projects </h4></p>
-					<ul>
-						<li>
-							<a href="https://github.com/samchon/framework/wiki/Examples-Calculator" target="_blank"> Calculator </a>
-						</li>
-						<li>
-							<a href="https://github.com/samchon/framework/wiki/Examples-Chatting" target="_blank"> Chatting </a>
-						</li>
-						<li>
-							<a href="https://github.com/samchon/framework/wiki/Examples-Interaction" target="_blank"> Interaction </a>
-						</li>
-					</ul>
+					</a></p>
 					<dl class="tsd-comment-tags">
 						<dt>see</dt>
-						<dd><p><a href="samchon.protocol.iclientdriver.html">IClientDriver</a>, <a href="samchon.protocol.iserverconnector.html">IServerConnector</a></p>
+						<dd><p><a href="samchon.protocol.iclientdriver.html">IClientDriver</a>, <a href="samchon.protocol.iserverconnector.html">IServerConnector</a>, <a href="samchon.protocol.iprotocol.html">IProtocol</a></p>
 						</dd>
 						<dt>handbook</dt>
-						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Protocol-Basic_Components#icommunicator"
-							target="_blank"> Basic Components - ICommunicator </a></p>
+						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Protocol-Basic_Components#icommunicator">Protocol - Basic Components</a></p>
 						</dd>
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
@@ -260,7 +168,7 @@ this.listener.replyData(invoke);
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3153">typings/samchon-framework/samchon-framework.d.ts:3153</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:4082</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,7 +190,7 @@ this.listener.replyData(invoke);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3157">typings/samchon-framework/samchon-framework.d.ts:3157</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:4086</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,10 +212,19 @@ this.listener.replyData(invoke);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3158">typings/samchon-framework/samchon-framework.d.ts:3158</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:4096</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test connection.</p>
+								</div>
+								<p>Test whether this <a href="samchon.protocol.icommunicator.html">communicator</a> object is connected with the remote system. If the
+									connection is alive, then returns <code>true</code>. Otherwise, the connection is not alive or this
+								{@link ICommunicator communicator has not connected with the remote system yet, then returns <code>false</code>.</p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if connected, otherwise false.</p>
 						</li>
 					</ul>
 				</section>
@@ -322,13 +239,23 @@ this.listener.replyData(invoke);
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.iprotocol.html">IProtocol</a>.<a href="samchon.protocol.iprotocol.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3160">typings/samchon-framework/samchon-framework.d.ts:3160</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:4113</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle replied message.</p>
+								</div>
+								<p>Handles replied <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message recived from remove system. The <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message will be shifted
+								to the <a href="samchon.protocol.iprotocol.html">listener</a>&#39;s <a href="samchon.protocol.iprotocol.html#replydata">IProtocol.replyData()</a> by this method.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>invoke: <a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message received from remote system.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -346,13 +273,22 @@ this.listener.replyData(invoke);
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.protocol.iprotocol.html">IProtocol</a>.<a href="samchon.protocol.iprotocol.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L3159">typings/samchon-framework/samchon-framework.d.ts:3159</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:4104</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send message.</p>
+								</div>
+								<p>Send <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message to remote system.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>invoke: <a href="../classes/samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="../classes/samchon.protocol.invoke.html">Invoke</a> message to send.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -383,33 +319,16 @@ this.listener.replyData(invoke);
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
+								<a href="../modules/samchon.collections.html">collections</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.library.html">library</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.protocol.html">protocol</a>
-								<ul>
-									<li class=" tsd-kind-module tsd-parent-kind-module">
-										<a href="../modules/samchon.protocol.distributed.html">distributed</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module">
-										<a href="../modules/samchon.protocol.external.html">external</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module">
-										<a href="../modules/samchon.protocol.parallel.html">parallel</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module">
-										<a href="../modules/samchon.protocol.service.html">service</a>
-									</li>
-									<li class=" tsd-kind-module tsd-parent-kind-module">
-										<a href="../modules/samchon.protocol.slave.html">slave</a>
-									</li>
-								</ul>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
+								<a href="../modules/samchon.templates.html">templates</a>
 							</li>
 						</ul>
 					</li>

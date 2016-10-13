@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StringUtil | </title>
+	<title>StringUtil | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,11 +74,11 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> A utility class supporting static methods of string. </p>
+						<p>A utility class supporting static methods of string.</p>
 					</div>
-					<p> The <a href="samchon.library.stringutil.html">StringUtil</a> utility class is an all-static class with methods for working with string objects within
-						Samchon Framework. You do not create instances of <a href="samchon.library.stringutil.html">StringUtil</a>; instead you call methods such as the
-					<code>StringUtil.substitute()</code> method. </p>
+					<p>The <a href="samchon.library.stringutil.html">StringUtil</a> utility class is an all-static class with methods for working with string objects.
+						You do not create instances of <a href="samchon.library.stringutil.html">StringUtil</a>; instead you call methods such as the
+					<code>StringUtil.substitute()</code> method.</p>
 					<dl class="tsd-comment-tags">
 						<dt>reference</dt>
 						<dd><p><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/utils/StringUtil.html">http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/utils/StringUtil.html</a></p>
@@ -134,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">SPACE_<wbr>ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2739">typings/samchon-framework/samchon-framework.d.ts:2739</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2733</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -156,601 +156,600 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2715">typings/samchon-framework/samchon-framework.d.ts:2715</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2709</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Generate a substring. </p>
+									<p>Generate a substring.</p>
 								</div>
-								<p> Extracts a substring consisting of the characters from specified start to end.
-								It&#39;s same with str.substring( ? = (str.find(start) + start.size()), str.find(end, ?) ) </p>
-								<p><code>
-let str = between(&quot;ABCD[EFGH]IJK&quot;, &quot;[&quot;, &quot;]&quot;);
-console.log(str); // PRINTS &quot;EFGH&quot;
-</code></p>
+								<p>Extracts a substring consisting of the characters from specified start to end.
+								It&#39;s same with str.substring( ? = (str.find(start) + start.size()), str.find(end, ?) )</p>
+								<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> str: <span class="hljs-built_in">string</span> = StringUtil.between(<span class="hljs-string">"ABCD(EFGH)IJK"</span>, <span class="hljs-string">"("</span>, <span class="hljs-string">")"</span>);
+<span class="hljs-built_in">console</span>.log(str); <span class="hljs-comment">// PRINTS "EFGH"</span>
+</code></pre>
 								<ul>
-									<li> If start is not specified, extracts from begin of the string to end. </li>
-									<li> If end is not specified, extracts from start to end of the string. </li>
-									<li> If start and end are all omitted, returns str, itself. </li>
-								</ul>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target string to be applied between.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A string for separating substring at the front.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A string for separating substring at the end.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>substring by specified terms.</p>
-						</li>
+						<li>If start is not specified, extracts from begin of the string to end. </li></li>
+						<li>If end is not specified, extracts from start to end of the string. </li></li>
+						<li>If start and end are all omitted, returns str, itself. </li></li>
 					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="betweens" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> betweens</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">betweens<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2735">typings/samchon-framework/samchon-framework.d.ts:2735</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Fetch substrings. </p>
-								</div>
-								<p> Splits a string into an array of substrings dividing by specified delimeters of start and end.
-								It&#39;s the array of substrings adjusted the between. </p>
-								<ul>
-									<li> If startStr is omitted, it&#39;s same with the split by endStr not having last item. </li>
-									<li> If endStr is omitted, it&#39;s same with the split by startStr not having first item. </li>
-									<li> If startStr and endStar are all omitted, returns <i>str</i>. </li>
-								</ul>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target string to split by between.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A string for separating substring at the front.
-										If omitted, it&#39;s same with split(end) not having last item.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A string for separating substring at the end.
-										If omitted, it&#39;s same with split(start) not having first item.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An array of substrings.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="ltrim" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> ltrim</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">ltrim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2757">typings/samchon-framework/samchon-framework.d.ts:2757</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove all designated characters from the beginning of the specified string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string should be trimmed.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>Updated string where designated characters was removed from the beginning</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="numberformat" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> number<wbr>Format</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">number<wbr>Format<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, precision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2826">typings/samchon-framework/samchon-framework.d.ts:2826</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Number to formatted string with &quot;,&quot; sign. </p>
-								</div>
-								<p> Returns a string converted from the number rounded off from specified precision with &quot;,&quot; symbols. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>val: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A number wants to convert to string.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> precision: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target precision of round off.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A string who represents the number with roundoff and &quot;,&quot; symbols.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="percentformat" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> percent<wbr>Format</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">percent<wbr>Format<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, precision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2827">typings/samchon-framework/samchon-framework.d.ts:2827</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>val: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> precision: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="removehtmlspaces" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> removeHTMLSpaces</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">removeHTMLSpaces<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2804">typings/samchon-framework/samchon-framework.d.ts:2804</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Replace all HTML spaces to a literal space.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target string to replace.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="repeat" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> repeat</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">repeat<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2815">typings/samchon-framework/samchon-framework.d.ts:2815</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Repeat a string. </p>
-								</div>
-								<p> Returns a string consisting of a specified string concatenated with itself a specified number of times. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to be repeated.</p>
-									</div>
-								</li>
-								<li>
-									<h5>n: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The repeat count.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The repeated string.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="replaceall" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> replace<wbr>All</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">replace<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, after<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-signature tsd-kind-icon">replace<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>pairs<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2789">typings/samchon-framework/samchon-framework.d.ts:2789</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a string specified word is replaced.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target string to replace</p>
-									</div>
-								</li>
-								<li>
-									<h5>before: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Specific word you want to be replaced</p>
-									</div>
-								</li>
-								<li>
-									<h5>after: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Specific word you want to replace</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A string specified word is replaced</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2798">typings/samchon-framework/samchon-framework.d.ts:2798</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a string specified words are replaced.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Target string to replace</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>pairs: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A specific word&#39;s pairs you want to replace and to be replaced</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A string specified words are replaced</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="rtrim" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> rtrim</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">rtrim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2766">typings/samchon-framework/samchon-framework.d.ts:2766</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove all designated characters from the end of the specified string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string should be trimmed.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>Updated string where designated characters was removed from the end.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="substitute" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> substitute</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">substitute<span class="tsd-signature-symbol">(</span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2779">typings/samchon-framework/samchon-framework.d.ts:2779</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Substitute <code>{n}</code> tokens within the specified string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>format: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string to make substitutions in. This string can contain special tokens of the form
-											<code>{n}</code>, where <code>n</code> is a zero based index, that will be replaced with the
-										additional parameters found at that index if specified.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Additional parameters that can be substituted in the <i>format</i> parameter at each
-											<code>{n}</code> location, where <code>n</code> is an integer (zero based) index value into
-										the array of values specified.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>New string with all of the <code>{n}</code> tokens replaced with the respective arguments specified.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="trim" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> trim</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">trim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2748">typings/samchon-framework/samchon-framework.d.ts:2748</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove all designated characters from the beginning and end of the specified string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The string whose designated characters should be trimmed.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Designated character(s).</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>Updated string where designated characters was removed from the beginning and end.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
 		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/bws.html">bws</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/flex.html">flex</a>
-					</li>
-					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/samchon.html">samchon</a>
+		<h4 class="tsd-parameters-title">Parameters</h4>
+		<ul class="tsd-parameters">
+			<li>
+				<h5>str: <span class="tsd-signature-type">string</span></h5>
+				<div class="tsd-comment tsd-typography">
+					<p>Target string to be applied between.</p>
+				</div>
+			</li>
+			<li>
+				<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <span class="tsd-signature-type">string</span></h5>
+				<div class="tsd-comment tsd-typography">
+					<p>A string for separating substring at the front.</p>
+				</div>
+			</li>
+			<li>
+				<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <span class="tsd-signature-type">string</span></h5>
+				<div class="tsd-comment tsd-typography">
+					<p>A string for separating substring at the end.</p>
+				</div>
+			</li>
+		</ul>
+		<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+		<p>substring by specified terms.</p>
+		</li>
+		</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="betweens" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> betweens</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">betweens<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
 						<ul>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
-							</li>
-							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.library.html">library</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.protocol.html">protocol</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
-							</li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2729</li>
 						</ul>
-					</li>
-					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/std.html">std</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.basicevent.html" class="tsd-kind-icon">Basic<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.casegenerator.html" class="tsd-kind-icon">Case<wbr>Generator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.combinedpermutationgenerator.html" class="tsd-kind-icon">Combined<wbr>Permutation<wbr>Generator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.factorialgenerator.html" class="tsd-kind-icon">Factorial<wbr>Generator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.filereference.html" class="tsd-kind-icon">File<wbr>Reference</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.filereferencelist.html" class="tsd-kind-icon">File<wbr>Reference<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="samchon.library.gapopulation.html" class="tsd-kind-icon">GAPopulation</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.geneticalgorithm.html" class="tsd-kind-icon">Genetic<wbr>Algorithm</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.permuationgenerator.html" class="tsd-kind-icon">Permuation<wbr>Generator</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.stringutil.html" class="tsd-kind-icon">String<wbr>Util</a>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fetch substrings.</p>
+						</div>
+						<p>Splits a string into an array of substrings dividing by specified delimeters of start and end.
+						It&#39;s the array of substrings adjusted the between.</p>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#space_array" class="tsd-kind-icon">SPACE_<wbr>ARRAY</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#between" class="tsd-kind-icon">between</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#betweens" class="tsd-kind-icon">betweens</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#ltrim" class="tsd-kind-icon">ltrim</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#numberformat" class="tsd-kind-icon">number<wbr>Format</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#percentformat" class="tsd-kind-icon">percent<wbr>Format</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#removehtmlspaces" class="tsd-kind-icon">removeHTMLSpaces</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#repeat" class="tsd-kind-icon">repeat</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#replaceall" class="tsd-kind-icon">replace<wbr>All</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#rtrim" class="tsd-kind-icon">rtrim</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#substitute" class="tsd-kind-icon">substitute</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.stringutil.html#trim" class="tsd-kind-icon">trim</a>
-							</li>
+							<li> If startStr is omitted, it&#39;s same with the split by endStr not having last item. </li>
+							<li> If endStr is omitted, it&#39;s same with the split by startStr not having first item. </li>
+							<li> If startStr and endStar are all omitted, returns <em>str</em>. </li>
 						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.urlvariables.html" class="tsd-kind-icon">URLVariables</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.xml.html" class="tsd-kind-icon">XML</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.library.xmllist.html" class="tsd-kind-icon">XMLList</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../interfaces/samchon.library.ieventdispatcher.html" class="tsd-kind-icon">IEvent<wbr>Dispatcher</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/samchon.library.html#basiceventlistener" class="tsd-kind-icon">Basic<wbr>Event<wbr>Listener</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Target string to split by between.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>A string for separating substring at the front.
+								If omitted, it&#39;s same with split(end) not having last item.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>A string for separating substring at the end.
+								If omitted, it&#39;s same with split(start) not having first item.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					<p>An array of substrings.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="ltrim" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> ltrim</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">ltrim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2751</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Remove all designated characters from the beginning of the specified string.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The string should be trimmed.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>Updated string where designated characters was removed from the beginning</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="numberformat" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> number<wbr>Format</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">number<wbr>Format<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, precision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2820</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number to formatted string with &quot;,&quot; sign.</p>
+						</div>
+						<p>Returns a string converted from the number rounded off from specified precision with &quot;,&quot; symbols.</p>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>val: <span class="tsd-signature-type">number</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>A number wants to convert to string.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> precision: <span class="tsd-signature-type">number</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Target precision of round off.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>A string who represents the number with roundoff and &quot;,&quot; symbols.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="percentformat" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> percent<wbr>Format</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">percent<wbr>Format<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, precision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2821</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>val: <span class="tsd-signature-type">number</span></h5>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> precision: <span class="tsd-signature-type">number</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="removehtmlspaces" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> removeHTMLSpaces</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">removeHTMLSpaces<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2798</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Replace all HTML spaces to a literal space.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Target string to replace.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="repeat" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> repeat</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">repeat<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2809</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Repeat a string.</p>
+						</div>
+						<p>Returns a string consisting of a specified string concatenated with itself a specified number of times.</p>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The string to be repeated.</p>
+							</div>
+						</li>
+						<li>
+							<h5>n: <span class="tsd-signature-type">number</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The repeat count.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>The repeated string.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="replaceall" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> replace<wbr>All</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">replace<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, after<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				<li class="tsd-signature tsd-kind-icon">replace<wbr>All<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>pairs<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2783</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns a string specified word is replaced.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Target string to replace</p>
+							</div>
+						</li>
+						<li>
+							<h5>before: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Specific word you want to be replaced</p>
+							</div>
+						</li>
+						<li>
+							<h5>after: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Specific word you want to replace</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>A string specified word is replaced</p>
+				</li>
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2792</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns a string specified words are replaced.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Target string to replace</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>pairs: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>A specific word&#39;s pairs you want to replace and to be replaced</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>A string specified words are replaced</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="rtrim" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> rtrim</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">rtrim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2760</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Remove all designated characters from the end of the specified string.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The string should be trimmed.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>Updated string where designated characters was removed from the end.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="substitute" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> substitute</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">substitute<span class="tsd-signature-symbol">(</span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2773</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Substitute <code>{n}</code> tokens within the specified string.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>format: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The string to make substitutions in. This string can contain special tokens of the form
+									<code>{n}</code>, where <code>n</code> is a zero based index, that will be replaced with the
+								additional parameters found at that index if specified.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Additional parameters that can be substituted in the <em>format</em> parameter at each
+									<code>{n}</code> location, where <code>n</code> is an integer (zero based) index value into
+								the array of values specified.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>New string with all of the <code>{n}</code> tokens replaced with the respective arguments specified.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+			<a name="trim" class="tsd-anchor"></a>
+			<h3><span class="tsd-flag ts-flagStatic">Static</span> trim</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+				<li class="tsd-signature tsd-kind-icon">trim<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2742</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Remove all designated characters from the beginning and end of the specified string.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>str: <span class="tsd-signature-type">string</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>The string whose designated characters should be trimmed.</p>
+							</div>
+						</li>
+						<li>
+							<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>Designated character(s).</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					<p>Updated string where designated characters was removed from the beginning and end.</p>
+				</li>
+			</ul>
+		</section>
+		</section>
 	</div>
+	<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+		<nav class="tsd-navigation primary">
+			<ul>
+				<li class="globals  ">
+					<a href="../globals.html"><em>Globals</em></a>
+				</li>
+				<li class=" tsd-kind-module tsd-is-not-exported">
+					<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
+				</li>
+				<li class=" tsd-kind-module tsd-is-not-exported">
+					<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+				</li>
+				<li class=" tsd-kind-module">
+					<a href="../modules/bws.html">bws</a>
+				</li>
+				<li class=" tsd-kind-module">
+					<a href="../modules/flex.html">flex</a>
+				</li>
+				<li class="current tsd-kind-module tsd-is-not-exported">
+					<a href="../modules/samchon.html">samchon</a>
+					<ul>
+						<li class=" tsd-kind-module tsd-parent-kind-module">
+							<a href="../modules/samchon.collections.html">collections</a>
+						</li>
+						<li class="current tsd-kind-module tsd-parent-kind-module">
+							<a href="../modules/samchon.library.html">library</a>
+						</li>
+						<li class=" tsd-kind-module tsd-parent-kind-module">
+							<a href="../modules/samchon.protocol.html">protocol</a>
+						</li>
+						<li class=" tsd-kind-module tsd-parent-kind-module">
+							<a href="../modules/samchon.templates.html">templates</a>
+						</li>
+					</ul>
+				</li>
+				<li class=" tsd-kind-module tsd-is-not-exported">
+					<a href="../modules/std.html">std</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="tsd-navigation secondary menu-sticky">
+			<ul class="before-current">
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.basicevent.html" class="tsd-kind-icon">Basic<wbr>Event</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.casegenerator.html" class="tsd-kind-icon">Case<wbr>Generator</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.combinedpermutationgenerator.html" class="tsd-kind-icon">Combined<wbr>Permutation<wbr>Generator</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.eventdispatcher.html" class="tsd-kind-icon">Event<wbr>Dispatcher</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.factorialgenerator.html" class="tsd-kind-icon">Factorial<wbr>Generator</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.filereference.html" class="tsd-kind-icon">File<wbr>Reference</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.filereferencelist.html" class="tsd-kind-icon">File<wbr>Reference<wbr>List</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+					<a href="samchon.library.gapopulation.html" class="tsd-kind-icon">GAPopulation</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.geneticalgorithm.html" class="tsd-kind-icon">Genetic<wbr>Algorithm</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.permuationgenerator.html" class="tsd-kind-icon">Permuation<wbr>Generator</a>
+				</li>
+			</ul>
+			<ul class="current">
+				<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.stringutil.html" class="tsd-kind-icon">String<wbr>Util</a>
+					<ul>
+						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#space_array" class="tsd-kind-icon">SPACE_<wbr>ARRAY</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#between" class="tsd-kind-icon">between</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#betweens" class="tsd-kind-icon">betweens</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#ltrim" class="tsd-kind-icon">ltrim</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#numberformat" class="tsd-kind-icon">number<wbr>Format</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#percentformat" class="tsd-kind-icon">percent<wbr>Format</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#removehtmlspaces" class="tsd-kind-icon">removeHTMLSpaces</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#repeat" class="tsd-kind-icon">repeat</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#replaceall" class="tsd-kind-icon">replace<wbr>All</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#rtrim" class="tsd-kind-icon">rtrim</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#substitute" class="tsd-kind-icon">substitute</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
+							<a href="samchon.library.stringutil.html#trim" class="tsd-kind-icon">trim</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="after-current">
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.urlvariables.html" class="tsd-kind-icon">URLVariables</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.xml.html" class="tsd-kind-icon">XML</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<a href="samchon.library.xmllist.html" class="tsd-kind-icon">XMLList</a>
+				</li>
+				<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+					<a href="../interfaces/samchon.library.ieventdispatcher.html" class="tsd-kind-icon">IEvent<wbr>Dispatcher</a>
+				</li>
+				<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+					<a href="../modules/samchon.library.html#basiceventlistener" class="tsd-kind-icon">Basic<wbr>Event<wbr>Listener</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
 </div>
 <footer class="with-border-bottom">
 	<div class="container">

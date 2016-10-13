@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>XML | </title>
+	<title>XML | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,52 +74,50 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> XML is a class representing a tree structued xml objects. </p>
-						<p> The XML class provides methods and properties for working with XML objects. </p>
+						<p>A tree-structured XML object.</p>
 					</div>
-					<p> The XML class (along with the XMLList and Namespace) implements
-					the powerful XML-handling standard defined in ECMAScript for XML (E4X) specification. </p>
-					<p> XML class has a recursive, hierarchical relationship. </p>
-					<p> Relationships between XML and XMLList </p>
-					<ul>
-						<li> XML is <code>std.HashMap<string, XMLList></code> </li>
-						<li> XMLList is <code>std.Deque<XML></code> </li>
-					</ul>
-					<h4> Note </h4>
-					<p> Do not abuse values for expressing member variables. </p>
-					<table>
-						<tr>
-							<th>Standard Usage</th>
-							<th>Non-standard usage abusing value</th>
-						</tr>
-						<tr>
-							<td>
-								<code>
-<memberList>
-    <member id='jhnam88' name='Jeongho+Nam' birthdate='1988-03-11' />
-    <member id='master' name='Administartor' birthdate='2011-07-28' />
-</memberList>
-</code>
-							</td>
-							<td>
-								<code>
-<memberList>
-    <member>
-        <id>jhnam88</id>
-        <name>Jeongho Nam</name>
-        <birthdate>1988-03-11</birthdate>
-    </member>
-    <member>
-        <id>master</id>
-        <name>Administartor</name>
-        <birthdate>2011-07-28</birthdate>
-    </member>
-</memberList>
-</code>
-							</td>
-						</tr>
-					</table>
+					<p>The <a href="samchon.library.xml.html"> class contains methods and properties for working with XML objects. The {@link XML</a> class (along
+						with the <a href="samchon.library.xmllist.html">XMLList</a>) implements the powerful XML-handling standards defined in ECMAScript for XML (E4X)
+					specification (ECMA-357 edition 2).</p>
+					<p>An XML object, it is composed with three members; <a href="samchon.library.xml.html#gettag">tag</a>, <a href="samchon.library.xml.html#getproperty">properties</a> and
+						<a href="samchon.library.xml.html#getvalue">value</a>. As you know, XML is a tree structured data expression method. The tree-stucture;
+						<a href="samchon.library.xml.html">XML</a> class realizes it by extending <code>std.HashMap&lt;string, XMLList&gt;</code>. Child <a href="samchon.library.xml.html">XML</a> objects are
+						contained in the matched <a href="samchon.library.xmllist.html">XMLList</a> object being grouped by their <a href="samchon.library.xml.html#gettag">tag name</a>. The
+						<a href="samchon.library.xmllist.html">XMLList</a> objects, they&#39;re stored in the <a href="std.hashmap.html">std.HashMap</a> (<a href="samchon.library.xml.html">XML</a> itself) with its <strong>key</strong>; common
+					<a href="samchon.library.xml.html#gettag">tag name</a> of children <a href="samchon.library.xml.html">XML</a> objects.</p>
+					<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> XML extends std.HashMap&lt;<span class="hljs-built_in">string</span>, XMLList&gt;
+{
+    <span class="hljs-keyword">private</span> tag_: <span class="hljs-built_in">string</span>;
+    <span class="hljs-keyword">private</span> properties_: std.HashMap&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">string</span>&gt;;
+    <span class="hljs-keyword">private</span> value_: <span class="hljs-built_in">string</span>;
+}
+</code></pre>
+					<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">TAG</span> <span class="hljs-attr">property_name</span>=<span class="hljs-string">{property_value}</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+        The cchild XML objects with "CHILD_TAG", They're contained in an XMLList object.
+        The XMLList object, it is stored in std.HashMap (XML class itself) with its key "CHILD_TAG"
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">CHILD_TAG</span> <span class="hljs-attr">property_name</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">CHILD_TAG</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">CHILD_TAG</span> <span class="hljs-attr">property_name</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">CHILD_TAG</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">CHILD_TAG</span> <span class="hljs-attr">property_name</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">CHILD_TAG</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!--
+        The child XML object named "ANOTHER_TAG", it also belonged to an XMLList ojbect.
+        And the XMLList is also being contained in the std.HashMap with its key "ANOTHER_TAG"
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ANOTHER_TAG</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">TAG</span>&gt;</span>
+</code></pre>
+					<p>Use the <a href="samchon.library.xml.html#tostring">toString()</a> method to return a string representation of the <a href="samchon.library.xml.html">XML</a> object regardless
+					of whether the <a href="samchon.library.xml.html">XML</a> object has simple content or complex content.</p>
 					<dl class="tsd-comment-tags">
+						<dt>reference</dt>
+						<dd><p><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html">http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html</a></p>
+						</dd>
+						<dt>handbook</dt>
+						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Library-XML">https://github.com/samchon/framework/wiki/TypeScript-Library-XML</a></p>
+						</dd>
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
 						</dd>
@@ -162,18 +160,9 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="samchon.library.xml.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#property_map_" class="tsd-kind-icon">property_<wbr>map_</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#tag_" class="tsd-kind-icon">tag_</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#value_" class="tsd-kind-icon">value_</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.library.xml.html#_get_data" class="tsd-kind-icon">_<wbr>Get_<wbr>data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.library.xml.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.library.xml.html#_handle_insert" class="tsd-kind-icon">_<wbr>Handle_<wbr>insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.xml.html#addallproperties" class="tsd-kind-icon">add<wbr>All<wbr>Properties</a></li>
@@ -182,11 +171,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#bucket" class="tsd-kind-icon">bucket</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#bucket_count" class="tsd-kind-icon">bucket_<wbr>count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#bucket_size" class="tsd-kind-icon">bucket_<wbr>size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#calcminindex" class="tsd-kind-icon">calc<wbr>Min<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.xml.html#clearproperties" class="tsd-kind-icon">clear<wbr>Properties</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#emplace" class="tsd-kind-icon">emplace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#emplace_hint" class="tsd-kind-icon">emplace_<wbr>hint</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#erase" class="tsd-kind-icon">erase</a></li>
@@ -203,11 +192,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#insert_or_assign" class="tsd-kind-icon">insert_<wbr>or_<wbr>assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#max_load_factor" class="tsd-kind-icon">max_<wbr>load_<wbr>factor</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#parsechildren" class="tsd-kind-icon">parse<wbr>Children</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#parseproperty" class="tsd-kind-icon">parse<wbr>Property</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#parsetag" class="tsd-kind-icon">parse<wbr>Tag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="samchon.library.xml.html#parsevalue" class="tsd-kind-icon">parse<wbr>Value</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported"><a href="samchon.library.xml.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#merge" class="tsd-kind-icon">merge</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#rehash" class="tsd-kind-icon">rehash</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#rend" class="tsd-kind-icon">rend</a></li>
@@ -218,12 +203,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.xml.html#setvalue" class="tsd-kind-icon">set<wbr>Value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.library.xml.html#swap" class="tsd-kind-icon">swap</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.xml.html#tohtml" class="tsd-kind-icon">toHTML</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.xml.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="samchon.library.xml.html#decodeproperty" class="tsd-kind-icon">decode<wbr>Property</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="samchon.library.xml.html#decodevalue" class="tsd-kind-icon">decode<wbr>Value</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="samchon.library.xml.html#encodeproperty" class="tsd-kind-icon">encode<wbr>Property</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported"><a href="samchon.library.xml.html#encodevalue" class="tsd-kind-icon">encode<wbr>Value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -235,31 +215,45 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new XML<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
+						<li class="tsd-signature tsd-kind-icon">new XML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
+						<li class="tsd-signature tsd-kind-icon">new XML<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1425">typings/samchon-framework/samchon-framework.d.ts:1425</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2923</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Default Constructor. </p>
+									<p>Default Constructor.</p>
 								</div>
-								<p> If the string parameter is not omitted, constructs its tag, value and
-									properties by parsing the string. If there&#39;s children, then construct the
-								children XML, XMLList objects, too. </p>
+								<p>Creates <a href="samchon.library.xml.html">XML</a> object by parsing a string who represents xml structure.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2927</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct from string.</p>
+								</div>
+								<p>Creates <a href="samchon.library.xml.html">XML</a> object by parsing a string who represents xml structure.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> str: <span class="tsd-signature-type">string</span></h5>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>A string to be parsed</p>
+											<p>A string represents XML structure.</p>
 										</div>
 									</div>
 								</li>
@@ -269,90 +263,8 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="property_map_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> property_<wbr>map_</h3>
-					<div class="tsd-signature tsd-kind-icon">property_<wbr>map_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1425">typings/samchon-framework/samchon-framework.d.ts:1425</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p> Properties belongs to the XML. </p>
-							<p> A Dictionary of properties accessing each property by its key. </p>
-						</div>
-						<ul>
-							<li> \<price <b>high=&#39;1500&#39; low=&#39;1300&#39; open=&#39;1450&#39; close=&#39;1320&#39;</b> />:
-							propertyMap =&gt; {{\&quot;high\&quot;: 1500}, {\&quot;low\&quot;: 1300}, {\&quot;open\&quot;: 1450}, {\&quot;close\&quot;, 1320}} </li>
-							<li> \<member <b>id=&#39;jhnam88&#39; name=&#39;Jeongho+Nam&#39; comment=&#39;Hello.+My+name+is+Jeongho+Nam&#39;</b> >:
-									propertyMap =&gt; {{\&quot;id\&quot;, \&quot;jhnam88\&quot;}, {\&quot;name\&quot;, \&quot;Jeongho Nam <a href="http://samchon.org">http://samchon.org</a>\&quot;},
-							{\&quot;comment\&quot;, \&quot;Hello. My name is Jeongho Nam <a href="http://samchon.org">http://samchon.org</a>\&quot;}} </li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="tag_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> tag_</h3>
-					<div class="tsd-signature tsd-kind-icon">tag_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1403">typings/samchon-framework/samchon-framework.d.ts:1403</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p> Tag name of the XML. </p>
-						</div>
-						<ul>
-							<li> \&lt;<b>tag</b> label=&#39;property&#39; />: tag =&gt; \&quot;tag\&quot; </li>
-							<li> \&lt;<b>price</b> high=&#39;1500&#39; low=&#39;1300&#39; open=&#39;1450&#39; close=&#39;1320&#39; />: tag =&gt; \&quot;price\&quot; </li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="value_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> value_</h3>
-					<div class="tsd-signature tsd-kind-icon">value_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1412">typings/samchon-framework/samchon-framework.d.ts:1412</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p> Value of the XML. </p>
-						</div>
-						<ul>
-							<li> \<parameter name='age' type='int'\><b>26</b>\</parameter\>: value =&gt; 26 </li>
-							<li> \<price high='1500' low='1300' open='1450' close='1320' /\>: value =&gt; null </li>
-						</ul>
-					</div>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="_get_data" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Get_<wbr>data</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">_<wbr>Get_<wbr>data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#_get_data">_Get_data</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4583">typings/typescript-stl/typescript-stl.d.ts:4583</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_handle_erase" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _<wbr>Handle_<wbr>erase</h3>
@@ -365,7 +277,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#_handle_erase">_Handle_erase</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#_handle_erase">_Handle_erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5413">typings/typescript-stl/typescript-stl.d.ts:5413</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8673</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -399,7 +311,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#_handle_insert">_Handle_insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#_handle_insert">_Handle_insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5409">typings/typescript-stl/typescript-stl.d.ts:5409</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8669</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,19 +337,41 @@
 					<a name="addallproperties" class="tsd-anchor"></a>
 					<h3>add<wbr>All<wbr>Properties</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>All<wbr>Properties<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>All<wbr>Properties<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1521">typings/samchon-framework/samchon-framework.d.ts:1521</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3114</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add all properties from other <a href="samchon.library.xml.html">XML</a> object.</p>
+								</div>
+								<p>All the properties in the <em>obj</em> are copied to this <a href="samchon.library.xml.html">XML</a> object. If this <a href="samchon.library.xml.html">XML</a> object has same
+									property key in the <em>obj</em>, then value of the property will be replaced to <em>obj</em>&#39;s own. If you don&#39;t want to
+								overwrite properties with same key, then use <a href="samchon.library.xml.html#getpropertymap">getPropertyMap()</a> method.</p>
+								<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> x: library.XML;
+<span class="hljs-keyword">let</span> y: library.XML;
+
+x.addAllProperties(y); <span class="hljs-comment">// duplicated key exists, then overwrites</span>
+x.getPropertyMap().insert(y.getPropertyMap().begin(), y.getPropertyMap().end());
+    <span class="hljs-comment">// ducpliated key, then ignores. only non-duplicateds are copied.</span>
+</code></pre>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY1</span>=<span class="hljs-string">{property_value1}</span>
+        <span class="hljs-attr">PROPERTY_KEY2</span>=<span class="hljs-string">{property_value2}</span>
+        <span class="hljs-attr">PROPERTY_KEY3</span>=<span class="hljs-string">{property_value3}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>xml: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+									<h5>obj: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target <a href="samchon.library.xml.html">XML</a> object to copy properties.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -457,7 +391,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#assign">assign</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4477">typings/typescript-stl/typescript-stl.d.ts:4477</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4477</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +440,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#begin">begin</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5337">typings/typescript-stl/typescript-stl.d.ts:5337</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8597</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -526,7 +460,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#begin">begin</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5341">typings/typescript-stl/typescript-stl.d.ts:5341</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8601</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -560,7 +494,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#bucket">bucket</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5385">typings/typescript-stl/typescript-stl.d.ts:5385</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8645</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -591,7 +525,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#bucket_count">bucket_count</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#bucket_count">bucket_count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5369">typings/typescript-stl/typescript-stl.d.ts:5369</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8629</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -623,7 +557,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#bucket_size">bucket_size</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#bucket_size">bucket_size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5373">typings/typescript-stl/typescript-stl.d.ts:5373</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8633</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,29 +582,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="calcminindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> calc<wbr>Min<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">calc<wbr>Min<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1523">typings/samchon-framework/samchon-framework.d.ts:1523</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
@@ -684,7 +595,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#clear">clear</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5329">typings/typescript-stl/typescript-stl.d.ts:5329</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8589</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -707,38 +618,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1522">typings/samchon-framework/samchon-framework.d.ts:1522</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="construct" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> construct</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1439">typings/samchon-framework/samchon-framework.d.ts:1439</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3126</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Construct XML objects by parsing a string. </p>
+									<p>Clear properties.</p>
 								</div>
+								<p>Remove all properties. It&#39;s same with calling <code>getPropertyMap().clear()</code>.</p>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY1</span>=<span class="hljs-string">{property_value1}</span>
+        <span class="hljs-attr">PROPERTY_KEY2</span>=<span class="hljs-string">{property_value2}</span>
+        <span class="hljs-attr">PROPERTY_KEY3</span>=<span class="hljs-string">{property_value3}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -754,7 +647,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#count">count</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#count">count</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4955">typings/typescript-stl/typescript-stl.d.ts:4955</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6825</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -774,6 +667,264 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="emplace" class="tsd-anchor"></a>
+					<h3>emplace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">emplace<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">emplace<span class="tsd-signature-symbol">(</span>pair<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#emplace">emplace</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6871</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element.</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.uniquemap.html">UniqueMap</a> if its <em>key</em> is unique. This new element is constructed in
+									place using args as the arguments for the construction of a <em>value_type</em> (which is an  object of a
+								<a href="std.pair.html">Pair</a> type).</p>
+								<p>The insertion only takes place if no other element in the container has a <em>key equivalent</em> to the one
+								being emplaced (<em>keys</em> in a <a href="std.base.uniquemap.html">UniqueMap</a> container are unique).</p>
+								<p>If inserted, this effectively increases the container <a href="samchon.library.xml.html#size">size</a> by one.</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves existing objects into the
+								container.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The key used both to look up and to insert if not found.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value, the item.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>If the function successfully inserts the element (because no equivalent element existed already in
+								the <a href="std.base.uniquemap.html">UniqueMap</a>), the function returns a <a href="std.pair.html">Pair</a> of an <a href="std.mapiterator.html">iterator</a> to
+								the newly inserted element and a value of true. Otherwise, it returns an
+							<a href="std.mapiterator.html">iterator</a> to the equivalent element within the container and a value of false.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#emplace">emplace</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6896</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element.</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.uniquemap.html">UniqueMap</a> if its <em>key</em> is unique. This new element is constructed in
+									place using args as the arguments for the construction of a <em>value_type</em> (which is an  object of a
+								<a href="std.pair.html">Pair</a> type).</p>
+								<p>The insertion only takes place if no other element in the container has a <em>key equivalent</em> to the one
+								being emplaced (<em>keys</em> in a <a href="std.base.uniquemap.html">UniqueMap</a> container are unique).</p>
+								<p>If inserted, this effectively increases the container <a href="samchon.library.xml.html#size">size</a> by one.</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves existing objects into the
+								container.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pair: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A single argument of a <a href="std.pair.html">Pair</a> type with a value for the <em>key</em> as
+											<a href="std.pair.html#first">first</a> member, and a <em>value</em> for the mapped value as
+										<a href="std.pair.html#second">second</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>If the function successfully inserts the element (because no equivalent element existed already in
+								the <a href="std.base.uniquemap.html">UniqueMap</a>), the function returns a <a href="std.pair.html">Pair</a> of an <a href="std.mapiterator.html">iterator</a> to
+								the newly inserted element and a value of true. Otherwise, it returns an
+							<a href="std.mapiterator.html">iterator</a> to the equivalent element within the container and a value of false.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="emplace_hint" class="tsd-anchor"></a>
+					<h3>emplace_<wbr>hint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">emplace_<wbr>hint<span class="tsd-signature-symbol">(</span>hint<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">emplace_<wbr>hint<span class="tsd-signature-symbol">(</span>hint<span class="tsd-signature-symbol">: </span><a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">emplace_<wbr>hint<span class="tsd-signature-symbol">(</span>hint<span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span>, pair<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">emplace_<wbr>hint<span class="tsd-signature-symbol">(</span>hint<span class="tsd-signature-symbol">: </span><a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span>, pair<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#emplace_hint">emplace_hint</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4609</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element with hint</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.mapcontainer.html">map container</a>. This new element is constructed in
+									place using <em>args</em> as the arguments for the element&#39;s constructor. <em>hint</em> points to a location in the
+									container suggested as a hint on where to start the search for its insertion point (the container may or
+								may not use this suggestion to optimize the insertion operation).</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves an existing object into
+								the container, and may also take a position <em>hint</em>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hint: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hint for the position where the element can be inserted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The key used both to look up and to insert if not found.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to either the newly inserted element or to the element that already had an
+							equivalent key in the <a href="std.base.mapcontainer.html">MapContainer</a>.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#emplace_hint">emplace_hint</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4628</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element with hint</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.mapcontainer.html">map container</a>. This new element is constructed in
+									place using <em>args</em> as the arguments for the element&#39;s constructor. <em>hint</em> points to a location in the
+									container suggested as a hint on where to start the search for its insertion point (the container may or
+								may not use this suggestion to optimize the insertion operation).</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves an existing object into
+								the container, and may also take a position <em>hint</em>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hint: <a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hint for the position where the element can be inserted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The key used both to look up and to insert if not found.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An <a href="std.mapiterator.html">iterator</a> pointing to either the newly inserted element or to the element
+							that already had an equivalent key in the <a href="std.base.mapcontainer.html">MapContainer</a>.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#emplace_hint">emplace_hint</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4648</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element with hint</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.mapcontainer.html">map container</a>. This new element is constructed in
+									place using <em>args</em> as the arguments for the element&#39;s constructor. <em>hint</em> points to a location in the
+									container suggested as a hint on where to start the search for its insertion point (the container may or
+								may not use this suggestion to optimize the insertion operation).</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves an existing object into
+								the container, and may also take a position <em>hint</em>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hint: <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hint for the position where the element can be inserted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>pair: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A single argument of a <a href="std.pair.html">Pair</a> type with a value for the <em>key</em> as
+											<a href="std.pair.html#first">first</a> member, and a <em>value</em> for the mapped value as
+										<a href="std.pair.html#second">second</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator pointing to either the newly inserted element or to the element that already had an
+							equivalent key in the <a href="std.base.mapcontainer.html">MapContainer</a>.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#emplace_hint">emplace_hint</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4668</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct and insert element with hint</p>
+								</div>
+								<p>Inserts a new element in the <a href="std.base.mapcontainer.html">map container</a>. This new element is constructed in
+									place using <em>args</em> as the arguments for the element&#39;s constructor. <em>hint</em> points to a location in the
+									container suggested as a hint on where to start the search for its insertion point (the container may or
+								may not use this suggestion to optimize the insertion operation).</p>
+								<p>A similar member function exists, <a href="samchon.library.xml.html#insert">insert</a>, which either copies or moves an existing object into
+								the container, and may also take a position <em>hint</em>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hint: <a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Hint for the position where the element can be inserted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>pair: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A single argument of a <a href="std.pair.html">Pair</a> type with a value for the <em>key</em> as
+											<a href="std.pair.html#first">first</a> member, and a <em>value</em> for the mapped value as
+										<a href="std.pair.html#second">second</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="std.mapreverseiterator.html" class="tsd-signature-type">MapReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An <a href="std.mapiterator.html">iterator</a> pointing to either the newly inserted element or to the element
+							that already had an equivalent key in the <a href="std.base.mapcontainer.html">MapContainer</a>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="empty" class="tsd-anchor"></a>
 					<h3>empty</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -785,7 +936,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="../interfaces/std.base.icontainer.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L2832">typings/typescript-stl/typescript-stl.d.ts:2832</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:2796</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -815,7 +966,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#end">end</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5345">typings/typescript-stl/typescript-stl.d.ts:5345</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8605</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,7 +994,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#end">end</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5349">typings/typescript-stl/typescript-stl.d.ts:5349</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8609</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -886,7 +1037,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4686">typings/typescript-stl/typescript-stl.d.ts:4686</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4767</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -913,7 +1064,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4697">typings/typescript-stl/typescript-stl.d.ts:4697</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4778</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -940,7 +1091,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4713">typings/typescript-stl/typescript-stl.d.ts:4713</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4794</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -977,7 +1128,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4724">typings/typescript-stl/typescript-stl.d.ts:4724</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4805</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1004,7 +1155,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#erase">erase</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4740">typings/typescript-stl/typescript-stl.d.ts:4740</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4821</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1048,16 +1199,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1516">typings/samchon-framework/samchon-framework.d.ts:1516</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3079</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Erase a property by its key. </p>
+									<p>Erase property.</p>
 								</div>
+								<p>Erases a property by its <em>key</em>, property name. If the matched <em>key</em> does not exist, then exception
+									<a href="std.outofrange.html">std.OutOfRange</a> is thrown. Thus, it would better to test whether the <em>key</em> exits or not by calling the
+								<a href="samchon.library.xml.html#hasproperty">hasProperty()</a> method before calling this <a href="samchon.library.xml.html#eraseproperty">eraseProperty()</a>.</p>
+								<p>This method can be substituted by ``getPropertyMap().erase(key)````.</p>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>throw</dt>
-									<dd><p>exception out of range</p>
+									<dd><p><a href="std.outofrange.html">std.OutOfRange</a></p>
 									</dd>
 								</dl>
 							</div>
@@ -1066,7 +1223,7 @@
 								<li>
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The key of the property to erase</p>
+										<p>Key of the property to erase</p>
 									</div>
 								</li>
 							</ul>
@@ -1087,7 +1244,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#extract">extract</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4987">typings/typescript-stl/typescript-stl.d.ts:4987</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7039</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1112,7 +1269,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#extract">extract</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4998">typings/typescript-stl/typescript-stl.d.ts:4998</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7050</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1138,7 +1295,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#extract">extract</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5009">typings/typescript-stl/typescript-stl.d.ts:5009</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7061</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1174,7 +1331,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#find">find</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#find">find</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5333">typings/typescript-stl/typescript-stl.d.ts:5333</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8593</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1204,7 +1361,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4967">typings/typescript-stl/typescript-stl.d.ts:4967</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6837</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1242,13 +1399,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1471">typings/samchon-framework/samchon-framework.d.ts:1471</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3003</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Get property by its key. </p>
+									<p>Get property.</p>
 								</div>
+								<p>Get property by its <em>key</em>, property name. If the matched <em>key</em> does not exist, then exception
+									<a href="std.outofrange.html">std.OutOfRange</a> is thrown. Thus, it would better to test whether the <em>key</em> exits or not by calling the
+								<a href="samchon.library.xml.html#hasproperty">hasProperty()</a> method before calling this <a href="samchon.library.xml.html#getproperty">getProperty()</a>.</p>
+								<p>This method can be substituted by <a href="samchon.library.xml.html#getpropertymap">getPropertyMap()</a> such below:</p>
+								<ul>
+									<li><code>getPropertyMap().get(key, value);</code></li>
+									<li><code>getPropertyMap().find(key).second;</code></li>
+								</ul>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY</span>=<span class="hljs-string">{PROPERTY_VALUE}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1257,6 +1424,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>Value of the matched property.</p>
 						</li>
 					</ul>
 				</section>
@@ -1270,10 +1438,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1472">typings/samchon-framework/samchon-framework.d.ts:1472</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3015</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get property map.</p>
+								</div>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY1</span>=<span class="hljs-string">{PROPERTY_VALUE1}</span>
+        <span class="hljs-attr">PROPERTY_KEY2</span>=<span class="hljs-string">{PROPERTY_VALUE2}</span>
+        <span class="hljs-attr">PROPERTY_KEY3</span>=<span class="hljs-string">{PROPERTY_VALUE3}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>containing properties&#39; keys and values.</p>
 						</li>
 					</ul>
 				</section>
@@ -1287,15 +1465,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1459">typings/samchon-framework/samchon-framework.d.ts:1459</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2965</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Get tag. </p>
+									<p>Get tag.</p>
 								</div>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TAG</span> <span class="hljs-attr">property_key</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">TAG</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>tag.</p>
 						</li>
 					</ul>
 				</section>
@@ -1309,15 +1490,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1463">typings/samchon-framework/samchon-framework.d.ts:1463</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2975</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Get value. </p>
+									<p>Get value.</p>
 								</div>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">property_key</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{VALUE}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>value.</p>
 						</li>
 					</ul>
 				</section>
@@ -1332,7 +1516,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4568">typings/typescript-stl/typescript-stl.d.ts:4568</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4568</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1365,13 +1549,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1467">typings/samchon-framework/samchon-framework.d.ts:1467</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2985</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Test whether a property exists or not. </p>
+									<p>Test whether a property exists.</p>
 								</div>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1380,6 +1566,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Whether a property has the <em>key</em> exists or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -1401,7 +1588,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5042">typings/typescript-stl/typescript-stl.d.ts:5042</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6919</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1421,7 +1608,9 @@
 								<li>
 									<h5>pair: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>to be inserted as an element.</p>
+										<p>A single argument of a <a href="std.pair.html">Pair</a> type with a value for the <em>key</em> as
+											<a href="std.pair.html#first">first</a> member, and a <em>value</em> for the mapped value as
+										<a href="std.pair.html#second">second</a>.</p>
 									</div>
 								</li>
 							</ul>
@@ -1436,7 +1625,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5063">typings/typescript-stl/typescript-stl.d.ts:5063</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6940</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1480,7 +1669,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5067">typings/typescript-stl/typescript-stl.d.ts:5067</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6944</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1505,7 +1694,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5071">typings/typescript-stl/typescript-stl.d.ts:5071</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6948</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1530,7 +1719,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5075">typings/typescript-stl/typescript-stl.d.ts:5075</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6952</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1564,7 +1753,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5079">typings/typescript-stl/typescript-stl.d.ts:5079</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6956</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1598,7 +1787,7 @@
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert">insert</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5083">typings/typescript-stl/typescript-stl.d.ts:5083</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6960</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1645,7 +1834,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert_or_assign">insert_or_assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5104">typings/typescript-stl/typescript-stl.d.ts:5104</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6981</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1684,7 +1873,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert_or_assign">insert_or_assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5124">typings/typescript-stl/typescript-stl.d.ts:5124</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7001</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1727,7 +1916,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#insert_or_assign">insert_or_assign</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5144">typings/typescript-stl/typescript-stl.d.ts:5144</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7021</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1781,7 +1970,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#max_load_factor">max_load_factor</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#max_load_factor">max_load_factor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5377">typings/typescript-stl/typescript-stl.d.ts:5377</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8637</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1806,7 +1995,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#max_load_factor">max_load_factor</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#max_load_factor">max_load_factor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5381">typings/typescript-stl/typescript-stl.d.ts:5381</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8641</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1833,135 +2022,30 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="parsechildren" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Children</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Children<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">merge&lt;L, U&gt;<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#merge">merge</a></p>
+								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#merge">merge</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1455">typings/samchon-framework/samchon-framework.d.ts:1455</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:7084</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Parse and construct children XML objects. </p>
+									<p>Merge two maps.</p>
 								</div>
+								<p>Attempts to extract each element in <em>source</em> and insert it into this container. If there&#39;s an element in this
+									container with key equivalent to the key of an element from <em>source</em>, tnen that element is not extracted from
+									the <em>source</em>. Otherwise, no element with same key exists in this container, then that element will be
+								transfered from the <em>source</em> to this container.</p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="parseproperty" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Property<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1447">typings/samchon-framework/samchon-framework.d.ts:1447</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Parse and fetch properties. </p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="parsetag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Tag</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Tag<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1443">typings/samchon-framework/samchon-framework.d.ts:1443</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Parse and fetch a tag. </p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="parsevalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Value<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1451">typings/samchon-framework/samchon-framework.d.ts:1451</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Parse and fetch a value. </p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported">
-					<a name="push" class="tsd-anchor"></a>
-					<h3>push</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">push&lt;L, U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon">push&lt;L, U&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xmls<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xmlLists<span class="tsd-signature-symbol">: </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#push">push</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1517">typings/samchon-framework/samchon-framework.d.ts:1517</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -1974,64 +2058,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>source: <a href="std.base.mapcontainer.html" class="tsd-signature-type">MapContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A <a href="std.base.mapcontainer.html">map container</a> to transfer the elements from.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#push">push</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1518">typings/samchon-framework/samchon-framework.d.ts:1518</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>L<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
-								</li>
-								<li>
-									<h4>U<span class="tsd-signature-symbol">: </span><a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">L</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#push">push</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1519">typings/samchon-framework/samchon-framework.d.ts:1519</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>xmls: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#push">push</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1520">typings/samchon-framework/samchon-framework.d.ts:1520</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>xmlLists: <a href="samchon.library.xmllist.html" class="tsd-signature-type">XMLList</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2049,7 +2082,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#rbegin">rbegin</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5353">typings/typescript-stl/typescript-stl.d.ts:5353</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8613</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2072,7 +2105,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#rbegin">rbegin</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5357">typings/typescript-stl/typescript-stl.d.ts:5357</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8617</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2111,7 +2144,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#rehash">rehash</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#rehash">rehash</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5393">typings/typescript-stl/typescript-stl.d.ts:5393</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8653</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2157,7 +2190,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#rend">rend</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5361">typings/typescript-stl/typescript-stl.d.ts:5361</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8621</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2178,7 +2211,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#rend">rend</a></p>
 								<p>Overwrites <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5365">typings/typescript-stl/typescript-stl.d.ts:5365</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8625</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2217,7 +2250,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.ihashmap.html">IHashMap</a>.<a href="../interfaces/std.base.ihashmap.html#reserve">reserve</a></p>
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#reserve">reserve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5389">typings/typescript-stl/typescript-stl.d.ts:5389</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8649</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2251,7 +2284,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.uniquemap.html">UniqueMap</a>.<a href="std.base.uniquemap.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4977">typings/typescript-stl/typescript-stl.d.ts:4977</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:6847</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2290,21 +2323,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1509">typings/samchon-framework/samchon-framework.d.ts:1509</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3062</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Set a property with its key. </p>
+									<p>Set property.</p>
 								</div>
+								<p>Set a property <em>value</em> with its <em>key</em>. If the <em>key</em> already exists, then the <em>value</em> will be overwritten to
+									the property. Otherwise the <em>key</em> is not exist yet, then insert the <em>key</em> and <em>value</em> <a href="std.pair.html">pair</a> to
+								{@link getPropertyMao property map}.</p>
+								<p>This method can be substituted by <a href="samchon.library.xml.html#getpropertymap">getPropertyMap()</a> such below:</p>
+								<ul>
+									<li><code>getPropertyMap().set(key, value);</code></li>
+									<li><code>getPropertyMap().emplace(key, value);</code></li>
+									<li><code>getPropertyMap().insert([key, value]);</code></li>
+									<li><code>getPropertyMap().insert(std.make_pair(key, value));</code></li>
+								</ul>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">PROPERTY_KEY</span>=<span class="hljs-string">{PROPERTY_VALUE}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Key, identifier of property to be newly inserted.</p>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value of new property to be newly inserted.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2315,24 +2366,33 @@
 					<a name="settag" class="tsd-anchor"></a>
 					<h3>set<wbr>Tag</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Tag<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Tag<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1476">typings/samchon-framework/samchon-framework.d.ts:1476</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3031</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Set tag (identifier) of the XML. </p>
+									<p>Set tag.</p>
 								</div>
+								<p>Set tag name, identifier of this <a href="samchon.library.xml.html">XML</a> object.</p>
+								<p>If this <a href="samchon.library.xml.html">XML</a> object is belonged to, a child of, an <a href="samchon.library.xmllist.html">XMLList</a> and its related <a href="samchon.library.xml.html">XML</a> objects,
+									then calling this <a href="samchon.library.xml.html#settag">setTag()</a> method direclty is not recommended. Erase this <a href="samchon.library.xml.html">XML</a> object
+								from parent objects and insert this object again.</p>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TAG</span> <span class="hljs-attr">property_key</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{value}<span class="hljs-tag">&lt;/<span class="hljs-name">TAG</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<h5>val: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>To be new <a href="samchon.library.xml.html#gettag">tag</a>.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2343,46 +2403,29 @@
 					<a name="setvalue" class="tsd-anchor"></a>
 					<h3>set<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1505">typings/samchon-framework/samchon-framework.d.ts:1505</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3041</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Set value of the XML. </p>
+									<p>Set value.</p>
 								</div>
-								<p><p> Do not abuse values for expressing member variables. </p></p>
-								<table>
-									<tr>
-										<th>Standard Usage</th>
-										<th>Non-standard usage abusing value</th>
-									</tr>
-									<tr>
-										<td>
-											\<memberList\>\n
-												&nbsp;&nbsp;&nbsp;&nbsp;\<member id='jhnam88' name='Jeongho+Nam' birthdate='1988-03-11' /\>\n
-													&nbsp;&nbsp;&nbsp;&nbsp;\<member id='master' name='Administartor' birthdate='2011-07-28' /\>\n
-											\</memberList\>
-										</td>
-										<td>
-											\<member\>\n
-												\<id\>jhnam88\</id\>\n
-												\<name\>Jeongho+Nam\</name\>\n
-												\<birthdate\>1988-03-11\</birthdate\>\n
-											\</member\>
-										</td>
-									</tr>
-								</table>
+								<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tag</span> <span class="hljs-attr">property_key</span>=<span class="hljs-string">{property_value}</span>&gt;</span>{VALUE}<span class="hljs-tag">&lt;/<span class="hljs-name">tag</span>&gt;</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<h5>val: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>To be new <a href="samchon.library.xml.html#getvalue">value</a>.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2402,7 +2445,7 @@
 								<p>Inherited from <a href="std.base.mapcontainer.html">MapContainer</a>.<a href="std.base.mapcontainer.html#size">size</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L4582">typings/typescript-stl/typescript-stl.d.ts:4582</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4582</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2427,7 +2470,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#swap">swap</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5431">typings/typescript-stl/typescript-stl.d.ts:5431</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8691</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2461,7 +2504,7 @@
 								<p>Inherited from <a href="std.hashmap.html">HashMap</a>.<a href="std.hashmap.html#swap">swap</a></p>
 								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/typescript-stl/typescript-stl.d.ts#L5435">typings/typescript-stl/typescript-stl.d.ts:5435</a></li>
+									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8695</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2487,294 +2530,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="tohtml" class="tsd-anchor"></a>
-					<h3>toHTML</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">toHTML<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1679">typings/samchon-framework/samchon-framework.d.ts:1679</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Convert the XML to HTML string. </p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> level: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>tab<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1675">typings/samchon-framework/samchon-framework.d.ts:1675</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3155</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Convert the XML to a string. </p>
+									<p><a href="samchon.library.xml.html">XML</a> object to xml string.</p>
 								</div>
+								<p>Returns a string representation of the <a href="samchon.library.xml.html">XML</a> object.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> level: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tab: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of tabs to spacing.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="decodeproperty" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">decode<wbr>Property<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1622">typings/samchon-framework/samchon-framework.d.ts:1622</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Decode a property. </p>
-								</div>
-								<table>
-									<tr>
-										<th>Encoded</th>
-										<th>Decoded</th>
-									</tr>
-									<tr>
-										<td>\&amp;</td>
-										<td>\&amp;</td>
-									</tr>
-									<tr>
-										<td>\&lt;</td>
-										<td>\&lt;</td>
-									</tr>
-									<tr>
-										<td>\&gt;</td>
-										<td>></td>
-									</tr>
-									<tr>
-										<td>&quot;</td>
-										<td>\&quot;</td>
-									</tr>
-									<tr>
-										<td>&apos;</td>
-										<td>&#39;</td>
-									</tr>
-									<tr>
-										<td>&#x9;</td>
-										<td>&#39;</td>
-									</tr>
-									<tr>
-										<td>&apos;</td>
-										<td>\t</td>
-									</tr>
-									<tr>
-										<td>&#xA;</td>
-										<td>\n</td>
-									</tr>
-									<tr>
-										<td>&#xD;</td>
-										<td>\r</td>
-									</tr>
-								</table>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A decoded string represents a property</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="decodevalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">decode<wbr>Value<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1548">typings/samchon-framework/samchon-framework.d.ts:1548</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Decode a value. </p>
-								</div>
-								<table>
-									<tr>
-										<th>Encoded</th>
-										<th>Decoded</th>
-									</tr>
-									<tr>
-										<td>\&amp;</td>
-										<td>\&amp;</td>
-									</tr>
-									<tr>
-										<td>\&lt;</td>
-										<td>\&lt;</td>
-									</tr>
-									<tr>
-										<td>\&gt;</td>
-										<td>></td>
-									</tr>
-								</table>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A decoded string represents a value</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="encodeproperty" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> encode<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">encode<wbr>Property<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1671">typings/samchon-framework/samchon-framework.d.ts:1671</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Decode a property. </p>
-								</div>
-								<table>
-									<tr>
-										<th>Original</th>
-										<th>Encoded</th>
-									</tr>
-									<tr>
-										<td>\&amp;</td>
-										<td>\&amp;</td>
-									</tr>
-									<tr>
-										<td>\&lt;</td>
-										<td>\&lt;</td>
-									</tr>
-									<tr>
-										<td>></td>
-										<td>\&gt;</td>
-									</tr>
-									<tr>
-										<td>\&quot;</td>
-										<td>&quot;</td>
-									</tr>
-									<tr>
-										<td>&#39;</td>
-										<td>&apos;</td>
-									</tr>
-									<tr>
-										<td>&#39;</td>
-										<td>&#x9;</td>
-									</tr>
-									<tr>
-										<td>\t</td>
-										<td>&apos;</td>
-									</tr>
-									<tr>
-										<td>\n</td>
-										<td>&#xA;</td>
-									</tr>
-									<tr>
-										<td>\r</td>
-										<td>&#xD;</td>
-									</tr>
-								</table>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A encoded string represents a property</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-					<a name="encodevalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> encode<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">encode<wbr>Value<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L1573">typings/samchon-framework/samchon-framework.d.ts:1573</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Encode a value. </p>
-								</div>
-								<table>
-									<tr>
-										<th>Original</th>
-										<th>Encoded</th>
-									</tr>
-									<tr>
-										<td>\&amp;</td>
-										<td>\&amp;</td>
-									</tr>
-									<tr>
-										<td>\&lt;</td>
-										<td>\&lt;</td>
-									</tr>
-									<tr>
-										<td>></td>
-										<td>\&gt;</td>
-									</tr>
-								</table>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A encoded string represents a value</p>
+							<p>The string representation of the <a href="samchon.library.xml.html">XML</a> object.</p>
 						</li>
 					</ul>
 				</section>
@@ -2802,7 +2586,7 @@
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
+								<a href="../modules/samchon.collections.html">collections</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.library.html">library</a>
@@ -2811,7 +2595,7 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
+								<a href="../modules/samchon.templates.html">templates</a>
 							</li>
 						</ul>
 					</li>
@@ -2866,18 +2650,6 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="samchon.library.xml.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#property_map_" class="tsd-kind-icon">property_<wbr>map_</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#tag_" class="tsd-kind-icon">tag_</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#value_" class="tsd-kind-icon">value_</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="samchon.library.xml.html#_get_data" class="tsd-kind-icon">_<wbr>Get_<wbr>data</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="samchon.library.xml.html#_handle_erase" class="tsd-kind-icon">_<wbr>Handle_<wbr>erase</a>
 							</li>
@@ -2902,20 +2674,20 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#bucket_size" class="tsd-kind-icon">bucket_<wbr>size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#calcminindex" class="tsd-kind-icon">calc<wbr>Min<wbr>Index</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.xml.html#clearproperties" class="tsd-kind-icon">clear<wbr>Properties</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#construct" class="tsd-kind-icon">construct</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#count" class="tsd-kind-icon">count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.library.xml.html#emplace" class="tsd-kind-icon">emplace</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.library.xml.html#emplace_hint" class="tsd-kind-icon">emplace_<wbr>hint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#empty" class="tsd-kind-icon">empty</a>
@@ -2965,20 +2737,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#max_load_factor" class="tsd-kind-icon">max_<wbr>load_<wbr>factor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#parsechildren" class="tsd-kind-icon">parse<wbr>Children</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#parseproperty" class="tsd-kind-icon">parse<wbr>Property</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#parsetag" class="tsd-kind-icon">parse<wbr>Tag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="samchon.library.xml.html#parsevalue" class="tsd-kind-icon">parse<wbr>Value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-not-exported">
-								<a href="samchon.library.xml.html#push" class="tsd-kind-icon">push</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.library.xml.html#merge" class="tsd-kind-icon">merge</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.library.xml.html#rbegin" class="tsd-kind-icon">rbegin</a>
@@ -3011,22 +2771,7 @@
 								<a href="samchon.library.xml.html#swap" class="tsd-kind-icon">swap</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="samchon.library.xml.html#tohtml" class="tsd-kind-icon">toHTML</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.xml.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.xml.html#decodeproperty" class="tsd-kind-icon">decode<wbr>Property</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.xml.html#decodevalue" class="tsd-kind-icon">decode<wbr>Value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.xml.html#encodeproperty" class="tsd-kind-icon">encode<wbr>Property</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-not-exported">
-								<a href="samchon.library.xml.html#encodevalue" class="tsd-kind-icon">encode<wbr>Value</a>
 							</li>
 						</ul>
 					</li>

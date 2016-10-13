@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GAPopulation | </title>
+	<title>GAPopulation | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,16 +74,16 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> A population in a generation. </p>
+						<p>A population in a generation.</p>
 					</div>
-					<p> <a href="samchon.library.gapopulation.html">GAPopulation</a> is a class representing population of candidate genes (sequence listing) having an array
+					<p><a href="samchon.library.gapopulation.html">GAPopulation</a> is a class representing population of candidate genes (sequence listing) having an array
 						of GeneArray as a member. <a href="samchon.library.gapopulation.html">GAPopulation</a> also manages initial set of genes and handles fitting test direclty
-					by the method <a href="samchon.library.gapopulation.html#fittest">fitTest()</a>. </p>
-					<p> The success of evolution of genetic algorithm is depend on the <a href="samchon.library.gapopulation.html">GAPopulation</a>&#39;s initial set and fitting
-					test. (<i>GeneArray</i> and {@link compare}.) </p>
-					<p><h4> Warning </h4></p>
-					<p> Be careful for the mistakes of direction or position of the {@link compare}. </p>
-					<p> Most of logical errors failed to access optimal solution are occured from those mistakes. </p>
+					by the method <a href="samchon.library.gapopulation.html#fittest">fitTest()</a>.</p>
+					<p>The success of evolution of genetic algorithm is depend on the <a href="samchon.library.gapopulation.html">GAPopulation</a>&#39;s initial set and fitting
+					test. (<em>GeneArray</em> and {@link compare}.)</p>
+					<p><h4> Warning </h4>
+						Be careful for the mistakes of direction or position of the {@link compare}.
+					Most of logical errors failed to access optimal solution are occured from those mistakes.</p>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
 						<dd><p>Jeongho Nam <a href="http://samcho.org">http://samcho.org</a></p>
@@ -140,7 +140,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.gapopulation.html#_get_children" class="tsd-kind-icon">_<wbr>Get_<wbr>children</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.gapopulation.html#children" class="tsd-kind-icon">children</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.gapopulation.html#fittest" class="tsd-kind-icon">fit<wbr>Test</a></li>
 							</ul>
 						</section>
@@ -161,17 +161,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2631">typings/samchon-framework/samchon-framework.d.ts:2631</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2627</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Private constructor with population. </p>
+									<p>Private constructor with population.</p>
 								</div>
-								<p> Private constructor of GAPopulation does not create <a href="../interfaces/bws.folding.iplacementviewerprops.html#children">children</a>. (candidate genes) but only assigns
-								<i>null</i> repeatedly following the <i>population size</i>. </p>
-								<p> This private constructor is designed only for <a href="samchon.library.geneticalgorithm.html">GeneticAlgorithm</a>. Don&#39;t create <a href="samchon.library.gapopulation.html">GAPopulation</a>
-								with this constructor, by yourself. </p>
+								<p>Private constructor of GAPopulation does not create <a href="samchon.library.gapopulation.html#children">children</a>. (candidate genes) but only assigns
+								<em>null</em> repeatedly following the <em>population size</em>.</p>
+								<p>This private constructor is designed only for <a href="samchon.library.geneticalgorithm.html">GeneticAlgorithm</a>. Don&#39;t create <a href="samchon.library.gapopulation.html">GAPopulation</a>
+								with this constructor, by yourself.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -189,16 +189,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2643">typings/samchon-framework/samchon-framework.d.ts:2643</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2639</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Construct from a {@link GeneArray} and <i>size of the population</i>. </p>
+									<p>Construct from a {@link GeneArray} and <em>size of the population</em>.</p>
 								</div>
-								<p> This public constructor creates <i>GeneArray(s)</i> as population (size) having shuffled genes which are
-									came from the initial set of genes (<i>geneArray</i>). It uses <a href="../modules/std.html#greater">std.greater</a> as default comparison function.
-								</p>
+								<p>This public constructor creates <em>GeneArray(s)</em> as population (size) having shuffled genes which are
+								came from the initial set of genes (<em>geneArray</em>). It uses <a href="../modules/std.html#greater">std.greater</a> as default comparison function.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -224,16 +223,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2654">typings/samchon-framework/samchon-framework.d.ts:2654</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2650</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Constructor from a GeneArray, size of the poluation and custom comparison function. </p>
+									<p>Constructor from a GeneArray, size of the poluation and custom comparison function.</p>
 								</div>
-								<p> This public constructor creates <i>GeneArray(s)</i> as population (size) having shuffled genes which are
-									came from the initial set of genes (<i>geneArray</i>). The <i>compare</i> is used for comparison function.
-								</p>
+								<p>This public constructor creates <em>GeneArray(s)</em> as population (size) having shuffled genes which are
+								came from the initial set of genes (<em>geneArray</em>). The <em>compare</em> is used for comparison function.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -296,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">children_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2612">typings/samchon-framework/samchon-framework.d.ts:2612</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2608</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -311,15 +309,15 @@
 					<div class="tsd-signature tsd-kind-icon">compare_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2631">typings/samchon-framework/samchon-framework.d.ts:2631</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2627</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> A comparison function returns whether left gene is more optimal, greater. </p>
+							<p>A comparison function returns whether left gene is more optimal, greater.</p>
 						</div>
-						<p> Default value of this {@link compare} is <a href="../modules/std.html#greater">std.greater</a>. It means to compare two array
-						(GeneArray must be a type of <a href="../interfaces/std.base.iarraycontainer.html">std.base.IArrayContainer</a>). Thus, you&#39;ve to keep follwing rule. </p>
+						<p>Default value of this {@link compare} is <a href="../modules/std.html#greater">std.greater</a>. It means to compare two array
+						(GeneArray must be a type of <a href="../interfaces/std.base.iarraycontainer.html">std.base.IArrayContainer</a>). Thus, you&#39;ve to keep follwing rule.</p>
 						<ul>
 							<li> GeneArray is implemented from <a href="../interfaces/std.base.iarraycontainer.html">std.base.IArrayContainer</a>. </li>
 							<ul>
@@ -328,24 +326,24 @@
 							</ul>
 							<li> GeneArray has custom <code>public less(obj: T): boolean;</code> function. </li>
 						</ul>
-						<p> If you don&#39;t want to follow the rule or want a custom comparison function, you have to realize a
-						comparison function. </p>
+						<p>If you don&#39;t want to follow the rule or want a custom comparison function, you have to realize a
+						comparison function.</p>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="_get_children" class="tsd-anchor"></a>
-					<h3>_<wbr>Get_<wbr>children</h3>
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">_<wbr>Get_<wbr>children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GeneArray</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GeneArray</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2667">typings/samchon-framework/samchon-framework.d.ts:2667</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2663</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GeneArray</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -362,16 +360,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2673">typings/samchon-framework/samchon-framework.d.ts:2673</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2669</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Test fitness of each <i>GeneArray</i> in the {@link population}.</p>
+									<p>Test fitness of each <em>GeneArray</em> in the {@link population}.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GeneArray</span></h4>
-							<p>The best <i>GeneArray</i> in the {@link population}.</p>
+							<p>The best <em>GeneArray</em> in the {@link population}.</p>
 						</li>
 					</ul>
 				</section>
@@ -399,7 +397,7 @@
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
+								<a href="../modules/samchon.collections.html">collections</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.library.html">library</a>
@@ -408,7 +406,7 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
+								<a href="../modules/samchon.templates.html">templates</a>
 							</li>
 						</ul>
 					</li>
@@ -455,7 +453,7 @@
 								<a href="samchon.library.gapopulation.html#compare_" class="tsd-kind-icon">compare_</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="samchon.library.gapopulation.html#_get_children" class="tsd-kind-icon">_<wbr>Get_<wbr>children</a>
+								<a href="samchon.library.gapopulation.html#children" class="tsd-kind-icon">children</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.gapopulation.html#fittest" class="tsd-kind-icon">fit<wbr>Test</a>

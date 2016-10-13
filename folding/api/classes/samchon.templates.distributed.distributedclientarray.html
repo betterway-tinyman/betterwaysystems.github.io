@@ -1,0 +1,2169 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DistributedClientArray | @types/typescript-stl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/samchon.html">samchon</a>
+				</li>
+				<li>
+					<a href="../modules/samchon.templates.html">templates</a>
+				</li>
+				<li>
+					<a href="../modules/samchon.templates.distributed.html">distributed</a>
+				</li>
+				<li>
+					<a href="samchon.templates.distributed.distributedclientarray.html">DistributedClientArray</a>
+				</li>
+			</ul>
+			<h1>Class DistributedClientArray</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Master of Distributed Processing System, a server accepting slave clients.</p>
+					</div>
+					<p>The <a href="samchon.templates.distributed.distributedclientarray.html">DistributedClientArray</a> is an abstract class, derived from the <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> class,
+					opening a server accepting <a href="samchon.templates.distributed.distributedsystem.html">distributed clients</a>.</p>
+					<p>Extends this <a href="samchon.templates.distributed.distributedclientarray.html">DistributedClientArray</a>, overrides <a href="samchon.templates.distributed.distributedclientarray.html#createserverbase">createServerBase()</a> to determine
+						which protocol to follow and <a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient">createExternalClient()</a> creating child
+						<a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object. After the extending and overridings, open this server using the
+					{@liok open open()} method.</p>
+					<h4 id="-inherited-a-href-samchon-templates-distributed-distributedsystemarray-html-distributedsystemarray-a-">[Inherited] <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a></h4>
+					<p>The <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> is an abstract class containing and managing remote distributed <strong>slave</strong> system
+						drivers, <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> objects. Within framework of network, <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> represents
+						your system, a <strong>Master</strong> of <em>Distributed Processing System</em> that requesting <em>distributed process</em> to <strong>slave</strong>
+						systems and the children <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> objects represent the remote <strong>slave</strong> systems, who is being
+					requested the <em>distributed processes</em>.</p>
+					<p>The <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> contains <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects directly. You can request a
+						<strong>distributed process</strong> through the <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> object. You can access the
+					<a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> object(s) with those methods:</p>
+					<ul>
+						<li><a href="samchon.templates.distributed.distributedclientarray.html#hasrole">hasRole</a></li>
+						<li><a href="samchon.templates.distributed.distributedclientarray.html#getrole">getRole</a></li>
+						<li>{@link insertRole}</li>
+						<li>{@link eraseRole}</li>
+						<li>{@link getRoleMap}</li>
+					</ul>
+					<p>When you need the <strong>distributed process</strong>, call the <a href="samchon.templates.distributed.distributedprocess.html#senddata">DistributedProcess.sendData</a> method. Then the
+						<a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> will find the most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object who represents a distributed
+						<strong>slave </strong>system. The <a href="samchon.protocol.invoke.html">Invoke</a> message will be sent to the most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object. When
+						the <strong>distributed process</strong> has completed, then <a href="samchon.templates.distributed.distributedsystem.html#getperformance">performance index</a> and
+					<a href="samchon.templates.distributed.distributedprocess.html#getresource">resource index</a> of related objects will be revaluated.</p>
+					<p><a href="http://samchon.github.io/framework/images/design/ts_class_diagram/templates_distributed_system.png"
+						target="_blank">
+						<img src="http://samchon.github.io/framework/images/design/ts_class_diagram/templates_distributed_system.png"
+						style="max-width: 100%" />
+					</a></p>
+					<h4 id="parallel-process">Parallel Process</h4>
+					<p>This <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> class is derived from the <a href="samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> class, so you can request
+					a <strong>parallel process</strong>, too.</p>
+					<p>When you need the <strong>parallel process</strong>, then call one of them: <a href="samchon.templates.distributed.distributedclientarray.html#sendsegmentdata">sendSegmentData</a> or <a href="samchon.templates.distributed.distributedclientarray.html#sendpiecedata">sendPieceData</a>.
+						When the <strong>parallel process</strong> has completed, <a href="samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> estimates each <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>&#39;s
+						<a href="samchon.templates.parallel.parallelsystem.html#getperformance">performance index</a> basis on their execution time. Those performance indices will
+					be reflected to the next <strong>parallel process</strong>, how much pieces to allocate to each <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.</p>
+					<h4 id="proxy-pattern">Proxy Pattern</h4>
+					<p>This class <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> is derived from the <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a> class. Thus, you can take
+						advantage of the <em>Proxy Pattern</em> in the <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> class. If a process to request is not the
+						<em>parallel process</em> (to be distrubted to all slaves), but the <strong>exclusive process</strong> handled in a system, then it
+					may better to utilizing the <em>Proxy Pattern</em>:</p>
+					<p>The <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a> class can use <em>Proxy Pattern</em>. In framework within user, which
+						<a href="samchon.templates.external.externalsystem.html">external system</a> is connected with <a href="samchon.templates.external.externalsystemarray.html">this system</a>, it&#39;s not
+					important. Only interested in user&#39;s perspective is <em>which can be done</em>.</p>
+					<p>By using the <em>logical proxy</em>, user dont&#39;t need to know which <a href="samchon.templates.external.externalsystemrole.html">role</a> is belonged
+						to which <a href="samchon.templates.external.externalsystem.html">system</a>. Just access to a role directly from <a href="samchon.templates.external.externalsystemarray.html#getrole">ExternalSystemArray.getRole</a>.
+					Sends and receives <a href="samchon.protocol.invoke.html">Invoke</a> message via the <a href="samchon.templates.external.externalsystemrole.html">role</a>.</p>
+					<ul>
+						<li>
+							<a href="samchon.templates.external.externalsystemrole.html">ExternalSystemRole</a> can be accessed from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a> directly, without inteferring
+							from <a href="samchon.templates.external.externalsystem.html">ExternalSystem</a>, with <a href="samchon.templates.external.externalsystemarray.html#getrole">ExternalSystemArray.getRole</a>.
+						</li>
+						<li>
+							When you want to send an <a href="samchon.protocol.invoke.html">Invoke</a> message to the belonged <a href="samchon.templates.external.externalsystem.html">system</a>, just call
+							<a href="samchon.templates.external.externalsystemrole.html#senddata">ExternalSystemRole.sendData()</a>. Then, the message will be sent to the
+							external system.
+						</li>
+						<li> Those strategy is called <em>Proxy Pattern</em>. </li>
+					</ul>
+					<dl class="tsd-comment-tags">
+						<dt>handbook</dt>
+						<dd><p><a href="https://github.com/samchon/framework/wiki/TypeScript-Templates-Distributed_System">Templates - Distributed System</a></p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Jeongho Nam <a href="http://samchon.org">http://samchon.org</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DistributedClientArray</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="samchon.templates.distributed.distributedserverclientarray.html" class="tsd-signature-type">DistributedServerClientArray</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">ICollection</span><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/samchon.protocol.ientitycollection.html" class="tsd-signature-type">IEntityCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/samchon.protocol.iprotocol.html" class="tsd-signature-type">IProtocol</a></li>
+					<li><a href="../interfaces/samchon.templates.external.iexternalclientarray.html" class="tsd-signature-type">IExternalClientArray</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-module tsd-parent-kind-class"><a href="../modules/samchon.templates.distributed.distributedclientarray.deque.html" class="tsd-kind-icon">Deque</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#child_tag" class="tsd-kind-icon">CHILD_<wbr>TAG</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#tag" class="tsd-kind-icon">TAG</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#addclient" class="tsd-kind-icon">add<wbr>Client</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#at" class="tsd-kind-icon">at</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#construct" class="tsd-kind-icon">construct</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient" class="tsd-kind-icon">create<wbr>External<wbr>Client</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#createprocess" class="tsd-kind-icon">create<wbr>Process</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#createserverbase" class="tsd-kind-icon">create<wbr>Server<wbr>Base</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#eraseprocess" class="tsd-kind-icon">erase<wbr>Process</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#getprocess" class="tsd-kind-icon">get<wbr>Process</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#getprocessmap" class="tsd-kind-icon">get<wbr>Process<wbr>Map</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#getrole" class="tsd-kind-icon">get<wbr>Role</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#hasprocess" class="tsd-kind-icon">has<wbr>Process</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#hasrole" class="tsd-kind-icon">has<wbr>Role</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#insertprocess" class="tsd-kind-icon">insert<wbr>Process</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#refresh" class="tsd-kind-icon">refresh</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#senddata" class="tsd-kind-icon">send<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#sendpiecedata" class="tsd-kind-icon">send<wbr>Piece<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#sendsegmentdata" class="tsd-kind-icon">send<wbr>Segment<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.distributedclientarray.html#toxml" class="tsd-kind-icon">toXML</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Distributed<wbr>Client<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedclientarray.html" class="tsd-signature-type">DistributedClientArray</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6176</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default Constructor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedclientarray.html" class="tsd-signature-type">DistributedClientArray</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="child_tag" class="tsd-anchor"></a>
+					<h3>CHILD_<wbr>TAG</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">CHILD_<wbr>TAG<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#child_tag">CHILD_TAG</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#child_tag">CHILD_TAG</a></p>
+								<p>Overwrites <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#child_tag">CHILD_TAG</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3576</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tag name of <a href="samchon.templates.external.externalsystem.html">children elements</a> belonged to the {@link ExternalSytemArray} in <a href="samchon.library.xml.html">XML</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p><em>system</em>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3>TAG</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">TAG<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#tag">TAG</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#tag">TAG</a></p>
+								<p>Overwrites <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#tag">TAG</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3570</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tag name of the {@link ExternalSytemArray} in <a href="samchon.library.xml.html">XML</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p><em>systemArray</em>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="addclient" class="tsd-anchor"></a>
+					<h3>add<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Client<span class="tsd-signature-symbol">(</span>driver<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addclient">addClient</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6206</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a newly connected remote client.</p>
+								</div>
+								<p>When a <a href="../interfaces/samchon.protocol.iclientdriver.html">remote client</a> connects to this <em>master server of parallel processing system</em>,
+									then this <a href="samchon.templates.parallel.parallelclientarray.html">ParallelClientArray</a> creates a child <a href="samchon.templates.parallel.parallelsystem.html">parallel client</a> object through
+								the <a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient">createExternalClient()</a> method and <a href="std.base.container.html#insert">inserts</a> it.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>driver: <a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A communicator for external client.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:492</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:493</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:494</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:495</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:499</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:500</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:501</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:502</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="at" class="tsd-anchor"></a>
+					<h3>at</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">at<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#at">at</a></p>
+								<p>Overwrites <a href="samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a>.<a href="samchon.templates.parallel.parallelsystemarray.html#at">at</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3835</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#close">close</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6242</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Close server.</p>
+								</div>
+								<p>Close opened server. All remote clients, have connected with this server, are also closed and their call back
+								functions, for closed connection, <a href="../interfaces/samchon.protocol.iclientdriver.html#onclose">IClientDriver.onClose</a> are also called.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="construct" class="tsd-anchor"></a>
+					<h3>construct</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#construct">construct</a></p>
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#construct">construct</a></p>
+								<p>Overwrites <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#construct">construct</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3824</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct data of the Entity from an XML object.</p>
+								</div>
+								<p>Constructs the EntityArray&#39;s own member variables only from the input XML object.</p>
+								<p>Do not consider about constructing children Entity objects&#39; data in EntityArray::construct().
+									Those children Entity objects&#39; data will constructed by their own construct() method. Even insertion
+								of XML objects representing children are done by abstract method of EntityArray::toXML().</p>
+								<p>Constructs only data of EntityArray&#39;s own.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xml: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="count" class="tsd-anchor"></a>
+					<h3>count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#count">count</a></p>
+								<p>Inherited from <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#count">count</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3455</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Count elements with a specific key.</p>
+								</div>
+								<p>Searches the container for elements whose key is <em>key</em> and returns the number of elements found.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The number of elements in the container with a <em>key</em>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="createchild" class="tsd-anchor"></a>
+					<h3>create<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#createchild">createChild</a></p>
+								<p>Overwrites <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#createchild">createChild</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6218</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(Deprecated) Factory method creating child object.</p>
+								</div>
+								<p>The method <a href="samchon.templates.distributed.distributedclientarray.html#createchild">createChild()</a> is deprecated. Don&#39;t use and override this.</p>
+								<p>Note that, the <a href="samchon.templates.parallel.parallelclientarray.html">ParallelClientArray</a> is a server accepting <a href="samchon.templates.parallel.parallelsystem.html">parallel clients</a>.
+								There&#39;s no way to creating the <a href="samchon.templates.parallel.parallelsystem.html">parallel clients</a> in advance before opening the server.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xml: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.library.xml.html">XML</a> object represents the child <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></h4>
+							<p><code>null</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="createexternalclient" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>External<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>External<wbr>Client<span class="tsd-signature-symbol">(</span>driver<span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6234</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Factory method creating <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object.</p>
+								</div>
+								<p>The method <a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient">createExternalClient()</a> is a factory method creating a child
+									<a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> object, that is called whenever a parallel client has connected, by
+								<a href="samchon.templates.distributed.distributedclientarray.html#addclient">addClient()</a>.</p>
+								<p>Overrides this <a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient">createExternalClient</a> method and creates a type of <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object with
+									the <em>driver</em> that communicates with the parallel client. After the creation, returns the object. Then whenever
+									a parallel client has connected, matched <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object will be constructed and
+								<a href="std.base.container.html#insert">inserted</a> into this <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>driver: <a href="../interfaces/samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A communicator with the parallel client.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></h4>
+							<p>A newly created <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="createprocess" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Process<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#createprocess">createProcess</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3831</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Factory method creating a child <a href="samchon.templates.distributed.distributedprocess.html">process</a> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xml: <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>represents the <a href="samchon.templates.distributed.distributedprocess.html">child</a> object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></h4>
+							<p>A new <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="createserverbase" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Server<wbr>Base</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Server<wbr>Base<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/samchon.protocol.iserverbase.html" class="tsd-signature-type">IServerBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6196</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Factory method creating <a href="../interfaces/samchon.protocol.iserverbase.html">IServerBase</a> object.</p>
+								</div>
+								<p>This method <a href="samchon.templates.distributed.distributedclientarray.html#createserverbase">createServerBase()</a> determines which protocol is used in this server,
+									<a href="samchon.templates.external.externalclientarray.html">ExternalClientArray</a>. If the protocol is determined, then <a href="samchon.templates.external.externalsystem.html">external clients</a> who
+								may connect to <a href="samchon.templates.external.externalclientarray.html">this server</a> must follow the specified protocol.</p>
+								<p>Overrides the <a href="samchon.templates.distributed.distributedclientarray.html#createserverbase">createServerBase()</a> method to create and return one of them:</p>
+								<ul>
+									<li><a href="samchon.protocol.serverbase.html">ServerBase</a></li>
+									<li><a href="samchon.protocol.webserverbase.html">WebServerBase</a></li>
+									<li><a href="samchon.protocol.sharedworkerserverbase.html">SharedWorkerServerBase</a></li>
+								</ul>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/samchon.protocol.iserverbase.html" class="tsd-signature-type">IServerBase</a></h4>
+							<p>A new <a href="../interfaces/samchon.protocol.iserverbase.html">IServerBase</a> object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3>dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#dispatchevent">dispatchEvent</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#dispatchevent">dispatchEvent</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:476</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispatches an event into the event flow.</p>
+								</div>
+								<p>The event target is the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object upon which the <a href="samchon.templates.distributed.distributedclientarray.html#dispatchevent">dispatchEvent()</a>
+								method is called.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="samchon.library.basicevent.html" class="tsd-signature-type">BasicEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="eraseprocess" class="tsd-anchor"></a>
+					<h3>erase<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">erase<wbr>Process<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#eraseprocess">eraseProcess</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3872</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Erase a process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name, identifier of target <a href="samchon.templates.distributed.distributedprocess.html">process</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#get">get</a></p>
+								<p>Inherited from <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#get">get</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3459</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an element</p>
+								</div>
+								<p>Returns a reference to the mapped value of the element identified with <em>key</em>.</p>
+								<dl class="tsd-comment-tags">
+									<dt>throw</dt>
+									<dd><p>exception out of range</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h4>
+							<p>A reference object of the mapped value (_Ty)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="getprocess" class="tsd-anchor"></a>
+					<h3>get<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Process<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#getprocess">getProcess</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3859</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name, identifier of target <a href="samchon.templates.distributed.distributedprocess.html">process</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></h4>
+							<p>The specified process.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="getprocessmap" class="tsd-anchor"></a>
+					<h3>get<wbr>Process<wbr>Map</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Process<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#getprocessmap">getProcessMap</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3843</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get process map.</p>
+								</div>
+								<p>Gets an <a href="std.hashmap.html">HashMap</a> containing <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects with their <em>key</em>.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An {@link HasmMap&gt; containing pairs of string and {@link DistributedProcess} object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="getrole" class="tsd-anchor"></a>
+					<h3>get<wbr>Role</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Role<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.external.externalsystemrole.html" class="tsd-signature-type">ExternalSystemRole</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#getrole">getRole</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#getrole">getRole</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3552</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a role.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name, identifier of target <a href="samchon.templates.external.externalsystemrole.html">role</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.external.externalsystemrole.html" class="tsd-signature-type">ExternalSystemRole</a></h4>
+							<p>The specified role.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="has" class="tsd-anchor"></a>
+					<h3>has</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#has">has</a></p>
+								<p>Inherited from <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#has">has</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3451</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Whether have the item or not.</p>
+								</div>
+								<p>Indicates whether a map has an item having the specified identifier.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Whether the map has an item having the specified identifier.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="haseventlistener" class="tsd-anchor"></a>
+					<h3>has<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#haseventlistener">hasEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#haseventlistener">hasEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:472</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object has any listeners registered for a specific type of event.
+										This allows you to determine where an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object has altered handling of an event type
+										in the event flow hierarchy. To determine whether a specific event type actually triggers an event listener,
+									use {@link willTrigger willTrigger()}.</p>
+								</div>
+								<p>The difference between <a href="samchon.templates.distributed.distributedclientarray.html#haseventlistener">hasEventListener()</a> and {@link willTrigger willTrigger()} is
+									that <a href="samchon.templates.distributed.distributedclientarray.html#haseventlistener">hasEventListener</a> examines only the object to which it belongs, whereas {@link willTrigger}
+								examines the entire event flow for the event specified by the type parameter.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="hasprocess" class="tsd-anchor"></a>
+					<h3>has<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Process<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#hasprocess">hasProcess</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3851</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the process exists.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name, identifier of target <a href="samchon.templates.distributed.distributedprocess.html">process</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Whether the process has or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="hasrole" class="tsd-anchor"></a>
+					<h3>has<wbr>Role</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Role<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#hasrole">hasRole</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#hasrole">hasRole</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3544</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the role exists.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name, identifier of target <a href="samchon.templates.external.externalsystemrole.html">role</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Whether the role has or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="insertprocess" class="tsd-anchor"></a>
+					<h3>insert<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>Process<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#insertprocess">insertProcess</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3866</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Insert a process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A process to be inserted.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Success flag.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="key" class="tsd-anchor"></a>
+					<h3>key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#key">key</a></p>
+								<p>Inherited from <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#key">key</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3447</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a key that can identify the Entity uniquely.</p>
+								</div>
+								<p>If identifier of the Entity is not atomic value, returns a paired or tuple object
+								that can represents the composite identifier.</p>
+								<p><code>
+class Point extends Entity
+{
+    private x: number;
+    private y: number;</p>
+<pre><code><span class="hljs-keyword">public</span> key(): std.Pair&lt;number, number&gt;
+{
+    <span class="hljs-keyword">return</span> std.make_pair(<span class="hljs-keyword">this</span>.x, <span class="hljs-keyword">this</span>.y);
+}
+</code></pre><p>}
+									</code></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="open" class="tsd-anchor"></a>
+					<h3>open</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#open">open</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6238</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Open server.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>port: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="pop_back" class="tsd-anchor"></a>
+					<h3>pop_<wbr>back</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">pop_<wbr>back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#pop_back">pop_back</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#pop_back">pop_back</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:456</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="push" class="tsd-anchor"></a>
+					<h3>push</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#push">push</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#push">push</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:440</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="push_back" class="tsd-anchor"></a>
+					<h3>push_<wbr>back</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">push_<wbr>back<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#push_back">push_back</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#push_back">push_back</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:444</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="refresh" class="tsd-anchor"></a>
+					<h3>refresh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span>it<span class="tsd-signature-symbol">: </span><a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#refresh">refresh</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#refresh">refresh</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:480</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispatch a <a href="samchon.collections.collectionevent.html">CollectionEvent</a> with <em>refresh</em> typed.</p>
+								</div>
+								<p>{@link ICollection} dispatches <a href="samchon.collections.collectionevent.html">CollectionEvent</a> typed <em>insert</em> or <em>erase</em> whenever elements I/O has
+									occured. However, unlike those elements I/O events, content change in element level can&#39;t be detected.
+								There&#39;s no way to detect those events automatically by <a href="../interfaces/std.base.icontainer.html">IContainer</a>.</p>
+								<p>If you want to dispatch those typed events (notifying change on contents in element level), you&#39;ve to
+									dispatch <em>refresh</em> typed event manually, by yourself. Call <a href="samchon.templates.distributed.distributedclientarray.html#refresh">refresh()</a> with specified
+									iterators who&#39;re pointing the elements whose content have changed. Then a <a href="samchon.collections.collectionevent.html">CollectionEvent</a> with
+								<em>refresh</em> typed will be dispatched.</p>
+								<p>If you don&#39;t specify any iterator, then the range of the <em>refresh</em> event will be all elements in this
+								{@link ICollection collection}; {@link begin begin()} to {@link end end()}.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#refresh">refresh</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#refresh">refresh</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:484</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>it: <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#refresh">refresh</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#refresh">refresh</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:488</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>last: <a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.external.externalsystem.html" class="tsd-signature-type">ExternalSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="removeeventlistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"insert"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"erase"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"refresh"</span>, listener<span class="tsd-signature-symbol">: </span><a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a>, thisArg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:506</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:507</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:508</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:509</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:513</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:514</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"insert"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:515</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"erase"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="samchon.collections.dequecollection.html">DequeCollection</a>.<a href="samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:516</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">"refresh"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <a href="../modules/samchon.collections.html#collectioneventlistener" class="tsd-signature-type">CollectionEventListener</a></h5>
+								</li>
+								<li>
+									<h5>thisArg: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="replydata" class="tsd-anchor"></a>
+					<h3>reply<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reply<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#replydata">replyData</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#replydata">replyData</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3564</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle an {@Invoke} message have received.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.protocol.invoke.html">Invoke</a> message have received.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="senddata" class="tsd-anchor"></a>
+					<h3>send<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#senddata">sendData</a></p>
+								<p>Inherited from <a href="samchon.templates.external.externalsystemarray.html">ExternalSystemArray</a>.<a href="samchon.templates.external.externalsystemarray.html#senddata">sendData</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3558</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send an <a href="samchon.protocol.invoke.html">Invoke</a> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.protocol.invoke.html">Invoke</a> message to send.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="sendpiecedata" class="tsd-anchor"></a>
+					<h3>send<wbr>Piece<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Piece<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a>, first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, last<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a>.<a href="samchon.templates.parallel.parallelsystemarray.html#sendpiecedata">sendPieceData</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3715</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send an <a href="samchon.protocol.invoke.html">Invoke</a> message with range of pieces.</p>
+								</div>
+								<p>Sends an <a href="samchon.protocol.invoke.html">Invoke</a> message requesting a <strong>parallel process</strong> with its <em>range of pieces [first, last)</em>.
+									The <a href="samchon.protocol.invoke.html">Invoke</a> will be delivered to children <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> objects with the newly computed
+									<em>range of sub-pieces</em>, which is divided from the <em>range of pieces (first to last)</em>, basis on their
+								<a href="samchon.templates.parallel.parallelsystem.html#getperformance">performance indices</a>.</p>
+								<ul>
+									<li>If indices of pieces are 0 to 50,</li>
+									<li>The sub-pieces will be allocated such below:</li>
+								</ul>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Performance index</th>
+											<th>Range of sub-pieces to be allocated</th>
+											<th>Formula</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Snail</td>
+											<td>1</td>
+											<td>( 0,  5]</td>
+											<td>(50 - 0) / 10 * 1</td>
+										</tr>
+										<tr>
+											<td>Cheetah</td>
+											<td>4</td>
+											<td>( 5, 25]</td>
+											<td>(50 - 0) / 10 * 4 + 5</td>
+										</tr>
+										<tr>
+											<td>Rabbit</td>
+											<td>3</td>
+											<td>(25, 40]</td>
+											<td>(50 - 0) / 10 * 3 + 25</td>
+										</tr>
+										<tr>
+											<td>Turtle</td>
+											<td>2</td>
+											<td>(40, 50]</td>
+											<td>(50 - 0) / 10 * 2 + 40</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>When the <strong>parallel process</strong> has completed, then this {@link ParallelSystemArraY} will estimate
+									<a href="samchon.templates.parallel.parallelsystem.html#getperformance">performance indices</a> of <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> objects basis on their
+								execution time.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="samchon.templates.distributed.distributedclientarray.html#sendsegmentdata">sendSegmentData</a>, {@link ParallelSystem.getPerformacen}</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.protocol.invoke.html">Invoke</a> message requesting parallel process.</p>
+									</div>
+								</li>
+								<li>
+									<h5>first: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Initial piece&#39;s index in a section.</p>
+									</div>
+								</li>
+								<li>
+									<h5>last: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Final piece&#39;s index in a section. The range used is [<em>first</em>, <em>last</em>), which contains
+											all the pieces&#39; indices between <em>first</em> and <em>last</em>, including the piece pointed by index
+										<em>first</em>, but not the piece pointed by the index <em>last</em>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="sendsegmentdata" class="tsd-anchor"></a>
+					<h3>send<wbr>Segment<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Segment<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a>, size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a>.<a href="samchon.templates.parallel.parallelsystemarray.html#sendsegmentdata">sendSegmentData</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3684</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send an <a href="samchon.protocol.invoke.html">Invoke</a> message with segment size.</p>
+								</div>
+								<p>Sends an <a href="samchon.protocol.invoke.html">Invoke</a> message requesting a <strong>parallel process</strong> with its <em>segment size</em>. The <a href="samchon.protocol.invoke.html">Invoke</a>
+									message will be delivered to children <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> objects with the <em>piece size</em>, which is divided
+								from the <em>segment size</em>, basis on their <a href="samchon.templates.parallel.parallelsystem.html#getperformance">performance indices</a>.</p>
+								<ul>
+									<li>If segment size is 100,</li>
+									<li>The segment will be allocated such below:</li>
+								</ul>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Performance index</th>
+											<th>Number of pieces to be allocated</th>
+											<th>Formula</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Snail</td>
+											<td>1</td>
+											<td>10</td>
+											<td>100 / 10 * 1</td>
+										</tr>
+										<tr>
+											<td>Cheetah</td>
+											<td>4</td>
+											<td>40</td>
+											<td>100 / 10 * 4</td>
+										</tr>
+										<tr>
+											<td>Rabbit</td>
+											<td>3</td>
+											<td>30</td>
+											<td>100 / 10 * 3</td>
+										</tr>
+										<tr>
+											<td>Turtle</td>
+											<td>2</td>
+											<td>20</td>
+											<td>100 / 10 * 2</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>When the <strong>parallel process</strong> has completed, then this {@link ParallelSystemArraY} will estimate
+									<a href="samchon.templates.parallel.parallelsystem.html#getperformance">performance indices</a> of <a href="samchon.templates.parallel.parallelsystem.html">ParallelSystem</a> objects basis on their
+								execution time.</p>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="samchon.templates.distributed.distributedclientarray.html#sendpiecedata">sendPieceData</a>, {@link ParallelSystem.getPerformacen}</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.protocol.invoke.html">Invoke</a> message requesting parallel process.</p>
+									</div>
+								</li>
+								<li>
+									<h5>size: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of pieces to segment.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="toxml" class="tsd-anchor"></a>
+					<h3>toXML</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">toXML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/samchon.templates.external.iexternalclientarray.html">IExternalClientArray</a>.<a href="../interfaces/samchon.templates.external.iexternalclientarray.html#toxml">toXML</a></p>
+								<p>Inherited from <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a>.<a href="samchon.templates.distributed.distributedsystemarray.html#toxml">toXML</a></p>
+								<p>Overwrites <a href="samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="samchon.protocol.entitydequecollection.html#toxml">toXML</a></p>
+								<ul>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3892</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an XML object represents the EntityArray.</p>
+								</div>
+								<p>Archives the EntityArray&#39;s own member variables only to the returned XML object.</p>
+								<p>Do not consider about archiving children Entity objects&#39; data in EntityArray::toXML().
+									Those children Entity objects will converted to XML object by their own toXML() method. The
+									insertion of XML objects representing children are done by abstract method of
+								EntityArray::toXML().</p>
+								<p>Archives only data of EntityArray&#39;s own.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.library.xml.html" class="tsd-signature-type">XML</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/bws.html">bws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/flex.html">flex</a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/samchon.html">samchon</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.collections.html">collections</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.library.html">library</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.protocol.html">protocol</a>
+							</li>
+							<li class="current tsd-kind-module tsd-parent-kind-module">
+								<a href="../modules/samchon.templates.html">templates</a>
+								<ul>
+									<li class="current tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.templates.distributed.html">distributed</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.templates.external.html">external</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.templates.parallel.html">parallel</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.templates.service.html">service</a>
+									</li>
+									<li class=" tsd-kind-module tsd-parent-kind-module">
+										<a href="../modules/samchon.templates.slave.html">slave</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/std.html">std</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-kind-icon">DSInvoke<wbr>History</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedclientarray.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#child_tag" class="tsd-kind-icon">CHILD_<wbr>TAG</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#tag" class="tsd-kind-icon">TAG</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#addclient" class="tsd-kind-icon">add<wbr>Client</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#at" class="tsd-kind-icon">at</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#construct" class="tsd-kind-icon">construct</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#count" class="tsd-kind-icon">count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#createchild" class="tsd-kind-icon">create<wbr>Child</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#createexternalclient" class="tsd-kind-icon">create<wbr>External<wbr>Client</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#createprocess" class="tsd-kind-icon">create<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#createserverbase" class="tsd-kind-icon">create<wbr>Server<wbr>Base</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#eraseprocess" class="tsd-kind-icon">erase<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#getprocess" class="tsd-kind-icon">get<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#getprocessmap" class="tsd-kind-icon">get<wbr>Process<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#getrole" class="tsd-kind-icon">get<wbr>Role</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#has" class="tsd-kind-icon">has</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#hasprocess" class="tsd-kind-icon">has<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#hasrole" class="tsd-kind-icon">has<wbr>Role</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#insertprocess" class="tsd-kind-icon">insert<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#open" class="tsd-kind-icon">open</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#push" class="tsd-kind-icon">push</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#push_back" class="tsd-kind-icon">push_<wbr>back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#refresh" class="tsd-kind-icon">refresh</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#removeeventlistener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#senddata" class="tsd-kind-icon">send<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#sendpiecedata" class="tsd-kind-icon">send<wbr>Piece<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#sendsegmentdata" class="tsd-kind-icon">send<wbr>Segment<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.distributed.distributedclientarray.html#toxml" class="tsd-kind-icon">toXML</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array<wbr>Mediator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedprocess.html" class="tsd-kind-icon">Distributed<wbr>Process</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedserver.html" class="tsd-kind-icon">Distributed<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedserverarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedserverarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array<wbr>Mediator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedserverclientarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedserverclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array<wbr>Mediator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedsystem.html" class="tsd-kind-icon">Distributed<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array<wbr>Mediator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/samchon.templates.distributed.idistributedserver.html" class="tsd-kind-icon">IDistributed<wbr>Server</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

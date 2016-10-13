@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileReference | </title>
+	<title>FileReference | @types/typescript-stl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title"></a>
+					<a href="../index.html" class="title">@types/typescript-stl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,39 +74,38 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> The <a href="samchon.library.filereference.html">FileReference</a> class provides a means to load and save files in browser level. </p>
+						<p>The <a href="samchon.library.filereference.html">FileReference</a> class provides a means to load and save files in browser level.</p>
 					</div>
-					<p> The <a href="samchon.library.filereference.html">FileReference</a> class provides a means to <a href="samchon.library.filereference.html#load">load</a> and <a href="samchon.library.filereference.html#save-1">save</a> files in browser level. A
+					<p>The <a href="samchon.library.filereference.html">FileReference</a> class provides a means to <a href="samchon.library.filereference.html#load">load</a> and <a href="samchon.library.filereference.html#save-1">save</a> files in browser level. A
 						browser-system dialog box prompts the user to select a file to <a href="samchon.library.filereference.html#load">load</a> or a location for {@link svae}. Each
 						<a href="samchon.library.filereference.html">FileReference</a> object refers to a single file on the user&#39;s disk and has properties that contain
-						information about the file&#39;s size, type, name, creation date, modification date, and creator type (Macintosh only).
-					</p>
-					<p> FileReference instances are created in the following ways: </p>
+					information about the file&#39;s size, type, name, creation date, modification date, and creator type (Macintosh only).</p>
+					<p>FileReference instances are created in the following ways:</p>
 					<ul>
 						<li>
 							When you use the new operator with the <a href="samchon.library.filereference.html">FileReference</a> constructor:
-							<code>var myFileReference = new FileReference();</code>
+							<code>let myFileReference: FileReference = new FileReference();</code>
 						</li>
 						<li>
 							When you call the <a href="samchon.library.filereferencelist.html#browse">FileReferenceList.browse</a> method, which creates an array of <a href="samchon.library.filereference.html">FileReference</a>
 							objects.
 						</li>
 					</ul>
-					<p> During a load operation, all the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calls to the
+					<p>During a load operation, all the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calls to the
 						<a href="samchon.library.filereference.html#browse">FileReference.browse</a> or <a href="samchon.library.filereferencelist.html#browse">FileReferenceList.browse</a> methods. During a save operation, the name
 						property is populated when the select event is dispatched; all other properties are populated when the complete
-					event is dispatched. </p>
-					<p> The <a href="samchon.library.filereference.html#browse">browse()</a> method opens an browser-system dialog box that prompts the user to select a file
+					event is dispatched.</p>
+					<p>The <a href="samchon.library.filereference.html#browse">browse()</a> method opens an browser-system dialog box that prompts the user to select a file
 						for <a href="samchon.library.filereference.html#load">load</a>. The <a href="samchon.library.filereference.html#browse">FileReference.browse</a> method lets the user select a single file; the
 						<a href="samchon.library.filereferencelist.html#browse">FileReferenceList.browse</a> method lets the user select multiple files. After a successful call to the
 						<a href="samchon.library.filereference.html#browse">browse()</a> method, call the <a href="samchon.library.filereference.html#load">FileReference.load</a> method to load one file at a time. The
 						<a href="samchon.library.filereference.html#save-1">FileReference.save</a> method prompts the user for a location to save the file and initiates downloading from
-					a binary or string data. </p>
-					<p> The <a href="samchon.library.filereference.html">FileReference</a> and <a href="samchon.library.filereferencelist.html">FileReferenceList</a> classes do not let you set the default file location
+					a binary or string data.</p>
+					<p>The <a href="samchon.library.filereference.html">FileReference</a> and <a href="samchon.library.filereferencelist.html">FileReferenceList</a> classes do not let you set the default file location
 						for the dialog box that the <a href="samchon.library.filereference.html#browse">browse</a> or <a href="samchon.library.filereference.html#save-1">save</a> methods generate. The default location shown in the
 						dialog box is the most recently browsed folder, if that location can be determined, or the desktop. The classes do
 						not allow you to read from or write to the transferred file. They do not allow the browser that initiated the
-					<a href="samchon.library.filereference.html#load">load</a> or <a href="samchon.library.filereference.html#save-1">save</a> to access the loaded or saved file or the file&#39;s location on the user&#39;s disk. </p>
+					<a href="samchon.library.filereference.html#load">load</a> or <a href="samchon.library.filereference.html#save-1">save</a> to access the loaded or saved file or the file&#39;s location on the user&#39;s disk.</p>
 					<dl class="tsd-comment-tags">
 						<dt>references</dt>
 						<dd><p><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html">http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/FileReference.html</a></p>
@@ -150,8 +149,6 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.filereference.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.library.filereference.html#event_dispatcher_" class="tsd-kind-icon">event_<wbr>dispatcher_</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="samchon.library.filereference.html#event_listeners_" class="tsd-kind-icon">event_<wbr>listeners_</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.filereference.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.filereference.html#modificationdate" class="tsd-kind-icon">modification<wbr>Date</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.library.filereference.html#name" class="tsd-kind-icon">name</a></li>
@@ -188,7 +185,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2220">typings/samchon-framework/samchon-framework.d.ts:2220</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2221</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -209,49 +206,16 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2234">typings/samchon-framework/samchon-framework.d.ts:2234</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2235</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The data from the loaded file after a successful call to the <a href="samchon.library.filereference.html#load">load()</a> method. </p>
+							<p>The data from the loaded file after a successful call to the <a href="samchon.library.filereference.html#load">load()</a> method.</p>
 						</div>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="event_dispatcher_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> event_<wbr>dispatcher_</h3>
-					<div class="tsd-signature tsd-kind-icon">event_<wbr>dispatcher_<span class="tsd-signature-symbol">:</span> <a href="../interfaces/samchon.library.ieventdispatcher.html" class="tsd-signature-type">IEventDispatcher</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#event_dispatcher_">event_dispatcher_</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2128">typings/samchon-framework/samchon-framework.d.ts:2128</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The origin object who issuing events.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-					<a name="event_listeners_" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> event_<wbr>listeners_</h3>
-					<div class="tsd-signature tsd-kind-icon">event_<wbr>listeners_<span class="tsd-signature-symbol">:</span> <a href="std.hashmap.html" class="tsd-signature-type">HashMap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="std.hashset.html" class="tsd-signature-type">HashSet</a><span class="tsd-signature-symbol">&lt;</span><a href="std.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/samchon.library.html#basiceventlistener" class="tsd-signature-type">BasicEventListener</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#event_listeners_">event_listeners_</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2132">typings/samchon-framework/samchon-framework.d.ts:2132</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Container of listeners.</p>
-						</div>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -260,19 +224,18 @@
 					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2257">typings/samchon-framework/samchon-framework.d.ts:2257</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2258</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The filename extension. </p>
+							<p>The filename extension.</p>
 						</div>
-						<p> A file&#39;s extension is the part of the name following (and not including) the final dot (&quot;.&quot;). If
-						there is no dot in the filename, the extension is <code>null</code>. </p>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
+						<p>A file&#39;s extension is the part of the name following (and not including) the final dot (&quot;.&quot;). If
+						there is no dot in the filename, the extension is <code>null</code>.</p>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -281,17 +244,16 @@
 					<div class="tsd-signature tsd-kind-icon">modification<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2287">typings/samchon-framework/samchon-framework.d.ts:2287</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2288</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The date that the file on the local disk was last modified. </p>
+							<p>The date that the file on the local disk was last modified.</p>
 						</div>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -300,17 +262,16 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2244">typings/samchon-framework/samchon-framework.d.ts:2244</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2245</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The name of the file on the local disk. </p>
+							<p>The name of the file on the local disk.</p>
 						</div>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -319,17 +280,16 @@
 					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2277">typings/samchon-framework/samchon-framework.d.ts:2277</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2278</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The size of the file on the local disk in bytes. </p>
+							<p>The size of the file on the local disk in bytes.</p>
 						</div>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -338,17 +298,16 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2267">typings/samchon-framework/samchon-framework.d.ts:2267</a></li>
+							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2268</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p> The file type, metadata of the <a href="samchon.library.filereference.html#extension">extension</a>. </p>
+							<p>The file type, metadata of the <a href="samchon.library.filereference.html#extension">extension</a>.</p>
 						</div>
-						<p> If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
-						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property. </p>
-						<p> All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.
-						</p>
+						<p>If the <a href="samchon.library.filereference.html">FileReference</a> object was not populated (by a valid call to <a href="samchon.library.filereference.html#browse">FileReference.browse</a>),
+						an <a href="std.logicerror.html">exception</a> will be thrown when you try to get the value of this property.</p>
+						<p>All the properties of a <a href="samchon.library.filereference.html">FileReference</a> object are populated by calling the <a href="samchon.library.filereference.html#browse">browse()</a>.</p>
 					</div>
 				</section>
 			</section>
@@ -367,41 +326,40 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2154">typings/samchon-framework/samchon-framework.d.ts:2154</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2155</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
-											receives notification of an event. You can register event listeners on all nodes in the display
-										list for a specific type of event, phase, and priority.</p>
+									<p>Registers an event listener object with an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object so that the listener receives
+										notification of an event. You can register event listeners on all nodes in the display list for a specific
+									type of event, phase, and priority.</p>
 								</div>
-								<p> After you successfully register an event listener, you cannot change its priority through
-									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
-								removeEventListener(). Then you can register the listener again with the new priority level. </p>
-								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
-									with a different type or useCapture value result in the creation of a separate listener
-									registration. For example, if you first register a listener with useCapture set to true,
-									it listens only during the capture phase. If you call addEventListener() again using the same
-									listener object, but with useCapture set to false, you have two separate listeners: one that
-								listens during the capture phase and another that listens during the target and bubbling phases. </p>
-								<p> You cannot register an event listener for only the target phase or the bubbling phase.
-									Those phases are coupled during registration because bubbling applies only to the ancestors of
-								the target node. </p>
-								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
-									memory problems could result. Event listeners are not automatically removed from memory because
-									the garbage collector does not remove the listener as long as the dispatching object exists
-								(unless the useWeakReference parameter is set to true). </p>
-								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
-									your newly created node needs an event listener, you must attach the listener after creating
-									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
-								it move along with it. </p>
-								<p> If the event listener is being registered on a node while an event is also being processed
-									on this node, the event listener is not triggered during the current phase but may be triggered
-								during a later phase in the event flow, such as the bubbling phase. </p>
-								<p> If an event listener is removed from a node while an event is being processed on the node,
-									it is still triggered by the current actions. After it is removed, the event listener is never
-								invoked again (unless it is registered again for future processing). </p>
+								<p>After you successfully register an event listener, you cannot change its priority through additional calls
+									to {@link addEventListener addEventListener()|} To change a listener&#39;s priority, you must first call
+									<a href="samchon.library.filereference.html#removeeventlistener">removeEventListener()</a>. Then you can register the listener again with the new
+								priority level.</p>
+								<p>Keep in mind that after the listener is registered, subsequent calls to <a href="samchon.library.filereference.html#addeventlistener">addEventListener</a> with a
+									different type or useCapture value result in the creation of a separate listener registration. For example,
+									if you first register a listener with useCapture set to true, it listens only during the capture phase. If
+									you call <a href="samchon.library.filereference.html#addeventlistener">addEventListener</a> again using the same listener object, but with useCapture set to false,
+									you have two separate listeners: one that listens during the capture phase and another that listens during
+								the target and bubbling phases.</p>
+								<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are
+								coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+								<p>If you no longer need an event listener, remove it by calling <a href="samchon.library.filereference.html#removeeventlistener">removeEventListener</a>, or memory
+									problems could result. Event listeners are not automatically removed from memory because the garbage
+									collector does not remove the listener as long as the dispatching object exists (unless the
+								useWeakReference parameter is set to true).</p>
+								<p>Copying an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> instance does not copy the event listeners attached to it. (If your n
+									ewly created node needs an event listener, you must attach the listener after creating the node.) However,
+								if you move an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> instance, the event listeners attached to it move along with it.</p>
+								<p>If the event listener is being registered on a node while an event is also being processed on this node,
+									the event listener is not triggered during the current phase but may be triggered during a later phase in
+								the event flow, such as the bubbling phase.</p>
+								<p>If an event listener is removed from a node while an event is being processed on the node, it is still
+									triggered by the current actions. After it is removed, the event listener is never invoked again (unless it
+								is registered again for future processing).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -419,41 +377,40 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#addeventlistener">addEventListener</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2158">typings/samchon-framework/samchon-framework.d.ts:2158</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2159</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p><p> Registers an event listener object with an EventDispatcher object so that the listener
-											receives notification of an event. You can register event listeners on all nodes in the display
-										list for a specific type of event, phase, and priority.</p>
+									<p>Registers an event listener object with an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object so that the listener receives
+										notification of an event. You can register event listeners on all nodes in the display list for a specific
+									type of event, phase, and priority.</p>
 								</div>
-								<p> After you successfully register an event listener, you cannot change its priority through
-									additional calls to addEventListener(). To change a listener&#39;s priority, you must first call
-								removeEventListener(). Then you can register the listener again with the new priority level. </p>
-								<p> Keep in mind that after the listener is registered, subsequent calls to addEventListener()
-									with a different type or useCapture value result in the creation of a separate listener
-									registration. For example, if you first register a listener with useCapture set to true,
-									it listens only during the capture phase. If you call addEventListener() again using the same
-									listener object, but with useCapture set to false, you have two separate listeners: one that
-								listens during the capture phase and another that listens during the target and bubbling phases. </p>
-								<p> You cannot register an event listener for only the target phase or the bubbling phase.
-									Those phases are coupled during registration because bubbling applies only to the ancestors of
-								the target node. </p>
-								<p> If you no longer need an event listener, remove it by calling removeEventListener(), or
-									memory problems could result. Event listeners are not automatically removed from memory because
-									the garbage collector does not remove the listener as long as the dispatching object exists
-								(unless the useWeakReference parameter is set to true). </p>
-								<p> Copying an EventDispatcher instance does not copy the event listeners attached to it. (If
-									your newly created node needs an event listener, you must attach the listener after creating
-									the node.) However, if you move an EventDispatcher instance, the event listeners attached to
-								it move along with it. </p>
-								<p> If the event listener is being registered on a node while an event is also being processed
-									on this node, the event listener is not triggered during the current phase but may be triggered
-								during a later phase in the event flow, such as the bubbling phase. </p>
-								<p> If an event listener is removed from a node while an event is being processed on the node,
-									it is still triggered by the current actions. After it is removed, the event listener is never
-								invoked again (unless it is registered again for future processing). </p>
+								<p>After you successfully register an event listener, you cannot change its priority through additional calls
+									to {@link addEventListener addEventListener()|} To change a listener&#39;s priority, you must first call
+									<a href="samchon.library.filereference.html#removeeventlistener">removeEventListener()</a>. Then you can register the listener again with the new
+								priority level.</p>
+								<p>Keep in mind that after the listener is registered, subsequent calls to <a href="samchon.library.filereference.html#addeventlistener">addEventListener</a> with a
+									different type or useCapture value result in the creation of a separate listener registration. For example,
+									if you first register a listener with useCapture set to true, it listens only during the capture phase. If
+									you call <a href="samchon.library.filereference.html#addeventlistener">addEventListener</a> again using the same listener object, but with useCapture set to false,
+									you have two separate listeners: one that listens during the capture phase and another that listens during
+								the target and bubbling phases.</p>
+								<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are
+								coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+								<p>If you no longer need an event listener, remove it by calling <a href="samchon.library.filereference.html#removeeventlistener">removeEventListener</a>, or memory
+									problems could result. Event listeners are not automatically removed from memory because the garbage
+									collector does not remove the listener as long as the dispatching object exists (unless the
+								useWeakReference parameter is set to true).</p>
+								<p>Copying an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> instance does not copy the event listeners attached to it. (If your n
+									ewly created node needs an event listener, you must attach the listener after creating the node.) However,
+								if you move an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> instance, the event listeners attached to it move along with it.</p>
+								<p>If the event listener is being registered on a node while an event is also being processed on this node,
+									the event listener is not triggered during the current phase but may be triggered during a later phase in
+								the event flow, such as the bubbling phase.</p>
+								<p>If an event listener is removed from a node while an event is being processed on the node, it is still
+									triggered by the current actions. After it is removed, the event listener is never invoked again (unless it
+								is registered again for future processing).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -481,21 +438,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2308">typings/samchon-framework/samchon-framework.d.ts:2308</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2305</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Displays a file-browsing dialog box that lets the user select a file to upload. The dialog box is native
+									<p>Displays a file-browsing dialog box that lets the user select a file to upload. The dialog box is native
 										to the user&#39;s browser system. The user can select a file on the local computer or from other systems, for
-									example, through a UNC path on Windows. </p>
+									example, through a UNC path on Windows.</p>
 								</div>
-								<p> When you call this method and the user successfully selects a file, the properties of this
+								<p>When you call this method and the user successfully selects a file, the properties of this
 									<a href="samchon.library.filereference.html">FileReference</a> object are populated with the properties of that file. Each subsequent time that the
 									<a href="samchon.library.filereference.html#browse">FileReference.browse</a> method is called, the <a href="samchon.library.filereference.html">FileReference</a> object&#39;s properties are reset to
 									the file that the user selects in the dialog box. Only one <a href="samchon.library.filereference.html#browse">browse()</a> can be performed at a time
-								(because only one dialog box can be invoked at a time). </p>
-								<p> Using the <i>typeFilter parameter</i>, you can determine which files the dialog box displays. </p>
+								(because only one dialog box can be invoked at a time).</p>
+								<p>Using the <em>typeFilter parameter</em>, you can determine which files the dialog box displays.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -523,14 +480,15 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#dispatchevent">dispatchEvent</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#dispatchevent">dispatchEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2150">typings/samchon-framework/samchon-framework.d.ts:2150</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2151</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Dispatches an event into the event flow. </p>
-									<p> The event target is the EventDispatcher object upon which the dispatchEvent() method is called. </p>
+									<p>Dispatches an event into the event flow.</p>
 								</div>
+								<p>The event target is the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object upon which the <a href="samchon.library.filereference.html#dispatchevent">dispatchEvent()</a>
+								method is called.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -554,19 +512,19 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#haseventlistener">hasEventListener</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#haseventlistener">hasEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2146">typings/samchon-framework/samchon-framework.d.ts:2146</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2147</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Checks whether the EventDispatcher object has any listeners registered for a specific type
-										of event. This allows you to determine where an EventDispatcher object has altered handling of
-										an event type in the event flow hierarchy. To determine whether a specific event type actually
-									triggers an event listener, use willTrigger(). </p>
+									<p>Checks whether the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object has any listeners registered for a specific type of event.
+										This allows you to determine where an <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object has altered handling of an event type
+										in the event flow hierarchy. To determine whether a specific event type actually triggers an event listener,
+									use {@link willTrigger willTrigger()}.</p>
 								</div>
-								<p> The difference between hasEventListener() and willTrigger() is that hasEventListener()
-									examines only the object to which it belongs, whereas willTrigger() examines the entire event
-								flow for the event specified by the type parameter. </p>
+								<p>The difference between <a href="samchon.library.filereference.html#haseventlistener">hasEventListener()</a> and {@link willTrigger willTrigger()} is
+									that <a href="samchon.library.filereference.html#haseventlistener">hasEventListener</a> examines only the object to which it belongs, whereas {@link willTrigger}
+								examines the entire event flow for the event specified by the type parameter.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -588,20 +546,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2322">typings/samchon-framework/samchon-framework.d.ts:2322</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2319</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Starts the load of a local file selected by a user. </p>
+									<p>Starts the load of a local file selected by a user.</p>
 								</div>
-								<p> You must call the <a href="samchon.library.filereference.html#browse">FileReference.browse</a> or <a href="samchon.library.filereferencelist.html#browse">FileReferenceList.browse</a> method before you call
-								the <a href="samchon.library.filereference.html#load">load()</a> method. </p>
-								<p> Listeners receive events to indicate the progress, success, or failure of the load. Although you can use
+								<p>You must call the <a href="samchon.library.filereference.html#browse">FileReference.browse</a> or <a href="samchon.library.filereferencelist.html#browse">FileReferenceList.browse</a> method before you call
+								the <a href="samchon.library.filereference.html#load">load()</a> method.</p>
+								<p>Listeners receive events to indicate the progress, success, or failure of the load. Although you can use
 									the <a href="samchon.library.filereferencelist.html">FileReferenceList</a> object to let users select multiple files to load, you must <a href="samchon.library.filereference.html#load">load</a> the
 									<a href="samchon.library.filereferencelist.html">files</a> one by one. To <a href="samchon.library.filereference.html#load">load</a> the files one by one, iterate through the
-								<a href="samchon.library.filereferencelist.html#filelist">FileReferenceList.fileList</a> array of <a href="samchon.library.filereference.html">FileReference</a> objects. </p>
-								<p> If the file finishes loading successfully, its contents are stored in the <a href="samchon.library.filereference.html#data">data</a> property. </p>
+								<a href="samchon.library.filereferencelist.html#filelist">FileReferenceList.fileList</a> array of <a href="samchon.library.filereference.html">FileReference</a> objects.</p>
+								<p>If the file finishes loading successfully, its contents are stored in the <a href="samchon.library.filereference.html#data">data</a> property.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -620,13 +578,13 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2162">typings/samchon-framework/samchon-framework.d.ts:2162</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2163</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
-									with the EventDispatcher object, a call to this method has no effect.</p>
+									<p>Removes a listener from the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object. If there is no matching listener registered
+									with the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object, a call to this method has no effect.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -645,13 +603,13 @@
 								<p>Implementation of <a href="../interfaces/samchon.library.ieventdispatcher.html">IEventDispatcher</a>.<a href="../interfaces/samchon.library.ieventdispatcher.html#removeeventlistener">removeEventListener</a></p>
 								<p>Inherited from <a href="samchon.library.eventdispatcher.html">EventDispatcher</a>.<a href="samchon.library.eventdispatcher.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2166">typings/samchon-framework/samchon-framework.d.ts:2166</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2167</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes a listener from the EventDispatcher object. If there is no matching listener registered
-									with the EventDispatcher object, a call to this method has no effect.</p>
+									<p>Removes a listener from the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object. If there is no matching listener registered
+									with the <a href="samchon.library.eventdispatcher.html">EventDispatcher</a> object, a call to this method has no effect.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -680,26 +638,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2347">typings/samchon-framework/samchon-framework.d.ts:2347</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2344</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Save a file to local filesystem. </p>
+									<p>Save a file to local filesystem.</p>
 								</div>
-								<p> <a href="samchon.library.filereference.html#save-1">FileReference.save</a> implemented the save function by downloading a file from a hidden anchor tag.
-								However, the plan, future&#39;s <a href="samchon.library.filereference.html">FileReference</a> will follow such rule: </p>
-								<p> Opens a dialog box that lets the user save a file to the local filesystem. </p>
-								<p> The <a href="samchon.library.filereference.html#save-1">save()</a> method first opens an browser-system dialog box that asks the user to enter a
+								<p><a href="samchon.library.filereference.html#save-1">FileReference.save</a> implemented the save function by downloading a file from a hidden anchor tag.
+								However, the plan, future&#39;s <a href="samchon.library.filereference.html">FileReference</a> will follow such rule:</p>
+								<p>Opens a dialog box that lets the user save a file to the local filesystem.</p>
+								<p>The <a href="samchon.library.filereference.html#save-1">save()</a> method first opens an browser-system dialog box that asks the user to enter a
 									filename and select a location on the local computer to save the file. When the user selects a location and
 									confirms the save operation (for example, by clicking Save), the save process begins. Listeners receive events
 									to indicate the progress, success, or failure of the save operation. To ascertain the status of the dialog box
 									and the save operation after calling <a href="samchon.library.filereference.html#save-1">save()</a>, your code must listen for events such as cancel,
-								open, progress, and complete. </p>
-								<p> When the file is saved successfully, the properties of the <a href="samchon.library.filereference.html">FileReference</a> object are populated with
-								the properties of the local file. The complete event is dispatched if the save is successful. </p>
-								<p> Only one <a href="samchon.library.filereference.html#browse">browse()</a> or {@link save()} session can be performed at a time (because only one
-								dialog box can be invoked at a time). </p>
+								open, progress, and complete.</p>
+								<p>When the file is saved successfully, the properties of the <a href="samchon.library.filereference.html">FileReference</a> object are populated with
+								the properties of the local file. The complete event is dispatched if the save is successful.</p>
+								<p>Only one <a href="samchon.library.filereference.html#browse">browse()</a> or {@link save()} session can be performed at a time (because only one
+								dialog box can be invoked at a time).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -730,26 +688,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/802cd35/ts/src/typings/samchon-framework/samchon-framework.d.ts#L2372">typings/samchon-framework/samchon-framework.d.ts:2372</a></li>
+									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:2369</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Save a file to local filesystem. </p>
+									<p>Save a file to local filesystem.</p>
 								</div>
-								<p> <a href="samchon.library.filereference.html#save-1">FileReference.save</a> implemented the save function by downloading a file from a hidden anchor tag.
-								However, the plan, future&#39;s <a href="samchon.library.filereference.html">FileReference</a> will follow such rule: </p>
-								<p> Opens a dialog box that lets the user save a file to the local filesystem. </p>
-								<p> The <a href="samchon.library.filereference.html#save-1">save()</a> method first opens an browser-system dialog box that asks the user to enter a
+								<p><a href="samchon.library.filereference.html#save-1">FileReference.save</a> implemented the save function by downloading a file from a hidden anchor tag.
+								However, the plan, future&#39;s <a href="samchon.library.filereference.html">FileReference</a> will follow such rule:</p>
+								<p>Opens a dialog box that lets the user save a file to the local filesystem.</p>
+								<p>The <a href="samchon.library.filereference.html#save-1">save()</a> method first opens an browser-system dialog box that asks the user to enter a
 									filename and select a location on the local computer to save the file. When the user selects a location and
 									confirms the save operation (for example, by clicking Save), the save process begins. Listeners receive events
 									to indicate the progress, success, or failure of the save operation. To ascertain the status of the dialog box
 									and the save operation after calling <a href="samchon.library.filereference.html#save-1">save()</a>, your code must listen for events such as cancel,
-								open, progress, and complete. </p>
-								<p> When the file is saved successfully, the properties of the <a href="samchon.library.filereference.html">FileReference</a> object are populated with
-								the properties of the local file. The complete event is dispatched if the save is successful. </p>
-								<p> Only one <a href="samchon.library.filereference.html#browse">browse()</a> or {@link save()} session can be performed at a time (because only one
-								dialog box can be invoked at a time). </p>
+								open, progress, and complete.</p>
+								<p>When the file is saved successfully, the properties of the <a href="samchon.library.filereference.html">FileReference</a> object are populated with
+								the properties of the local file. The complete event is dispatched if the save is successful.</p>
+								<p>Only one <a href="samchon.library.filereference.html#browse">browse()</a> or {@link save()} session can be performed at a time (because only one
+								dialog box can be invoked at a time).</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -794,7 +752,7 @@
 						<a href="../modules/samchon.html">samchon</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.collection.html">collection</a>
+								<a href="../modules/samchon.collections.html">collections</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/samchon.library.html">library</a>
@@ -803,7 +761,7 @@
 								<a href="../modules/samchon.protocol.html">protocol</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/samchon.test.html">test</a>
+								<a href="../modules/samchon.templates.html">templates</a>
 							</li>
 						</ul>
 					</li>
@@ -839,12 +797,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.filereference.html#data" class="tsd-kind-icon">data</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="samchon.library.filereference.html#event_dispatcher_" class="tsd-kind-icon">event_<wbr>dispatcher_</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="samchon.library.filereference.html#event_listeners_" class="tsd-kind-icon">event_<wbr>listeners_</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.library.filereference.html#extension" class="tsd-kind-icon">extension</a>
