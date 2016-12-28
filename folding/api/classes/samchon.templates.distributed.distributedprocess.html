@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DistributedProcess | @types/typescript-stl</title>
+	<title>DistributedProcess | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -77,7 +76,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A role of Distributed Processing System.</p>
+						<p>A process of Distributed Processing System.</p>
 					</div>
 					<p>The <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> is an abstract class who represents a <strong>process</strong>, <em>SOMETHING TO DISTRIBUTE</em> in a Distributed
 					Processing System. Overrides the <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> and defines the <em>SOMETHING TO DISTRIBUTE</em>.</p>
@@ -151,7 +150,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#enforceresource" class="tsd-kind-icon">enforce<wbr>Resource</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#getname" class="tsd-kind-icon">get<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#getresource" class="tsd-kind-icon">get<wbr>Resource</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#key" class="tsd-kind-icon">key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.distributedprocess.html#senddata" class="tsd-kind-icon">send<wbr>Data</a></li>
@@ -168,14 +167,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Distributed<wbr>Process<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Distributed<wbr>Process<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6478</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6685">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6685</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +185,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>systemArray: <a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a></h5>
+									<h5>systemArray: <a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The parent <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
@@ -207,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6462</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6669">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6669</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,9 +230,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6602</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6832">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6832</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +256,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3323</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3282">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3282</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -280,14 +279,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6571</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6784">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6784</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Enforce resource index.</p>
 								</div>
-								<p>Enforce <em>resource index</em> that indicates how much heavy the <a href="samchon.templates.distributed.distributedprocess.html">role is</a>. The
+								<p>Enforce <em>resource index</em> that indicates how much heavy the <a href="samchon.templates.distributed.distributedprocess.html">process is</a>. The
 								<em>resource index</em> will be fixed, never be <strong>revaluated</strong>.</p>
 								<p>Note that, initial and average <em>resource index</em> of <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects are <code>1.0</code>. If the
 									<em>resource index</em> is higher than other <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects, then this
@@ -297,7 +296,7 @@
 									This <a href="samchon.templates.distributed.distributedprocess.html#enforceresource">enforceResource</a> does not allow the <strong>revaluation</strong>. The <em>resource index</em> is clearly fixed and
 									never be changed by the <strong>revaluation</strong>. But you&#39;ve to keep in mind that, you can&#39;t avoid the <strong>mis-valuation</strong>
 								with this <a href="samchon.templates.distributed.distributedprocess.html#enforceresource">enforceResource</a>.</p>
-								<p>For example, there&#39;s a <a href="samchon.templates.distributed.distributedprocess.html">role</a> much heavier than any other, but you
+								<p>For example, there&#39;s a <a href="samchon.templates.distributed.distributedprocess.html">process</a> much heavier than any other, but you
 									<strong>mis-estimated</strong> it to the lightest. In that case, there&#39;s no way. The
 									<a href="samchon.templates.distributed.distributedsystemarray.html">entire distributed processing system</a> will be slower by the <strong>mis-valuation</strong>.
 									By the reason, using <a href="samchon.templates.distributed.distributedprocess.html#enforceresource">enforceResource</a>, it&#39;s recommended only when you can clearly certain the
@@ -327,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6498</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6711">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6711</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,19 +348,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6521</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6734">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6734</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Get resource index.</p>
 								</div>
-								<p>Get <em>resource index</em> that indicates how much this <a href="samchon.templates.distributed.distributedprocess.html">role</a> is heavy.</p>
-								<p>If this <a href="samchon.templates.distributed.distributedprocess.html">role</a> does not have any    <a href="samchon.protocol.invoke.html">Invoke</a> message had handled, then the
+								<p>Get <em>resource index</em> that indicates how much this <a href="samchon.templates.distributed.distributedprocess.html">process</a> is heavy.</p>
+								<p>If this <a href="samchon.templates.distributed.distributedprocess.html">process</a> does not have any    <a href="samchon.protocol.invoke.html">Invoke</a> message had handled, then the
 									<em>resource index</em> will be <code>1.0</code>, which means default and average value between all
 								<a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> instances (that are belonged to a same <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object).</p>
 								<p>You can specify the <em>resource index</em> by yourself, but notice that, if the <em>resource index</em> is higher than
-									other <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects, then this <a href="samchon.templates.distributed.distributedprocess.html">role</a> will be ordered to
+									other <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects, then this <a href="samchon.templates.distributed.distributedprocess.html">process</a> will be ordered to
 									handle less processes than other <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects. Otherwise, the <em>resource index</em> is
 								lower than others, of course, much processes will be requested.</p>
 								<ul>
@@ -376,17 +375,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
 					<a name="getsystemarray" class="tsd-anchor"></a>
 					<h3>get<wbr>System<wbr>Array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array&lt;SystemArray&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SystemArray</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6494</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6701">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6701</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -394,7 +394,27 @@
 									<p>Get parent <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The parent <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6707">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6707</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get parent <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>SystemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SystemArray</span></h4>
 							<p>The parent <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object.</p>
 						</li>
 					</ul>
@@ -408,9 +428,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6488</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6695">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6695</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,7 +453,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.iprotocol.html">IProtocol</a>.<a href="../interfaces/samchon.protocol.iprotocol.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6579</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6792">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6792</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -457,13 +477,14 @@
 					<h3>send<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">send<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Data<span class="tsd-signature-symbol">(</span>invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a>, weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.protocol.iprotocol.html">IProtocol</a>.<a href="../interfaces/samchon.protocol.iprotocol.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6594</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6807">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6807</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -489,6 +510,41 @@
 							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></h4>
 							<p>The most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object who may send the <a href="samchon.protocol.invoke.html">Invoke</a> message.</p>
 						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6824">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6824</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send an <a href="samchon.protocol.invoke.html">Invoke</a> message.</p>
+								</div>
+								<p>Sends an <a href="samchon.protocol.invoke.html">Invoke</a> message requesting a <strong>distributed process</strong>. The <a href="samchon.protocol.invoke.html">Invoke</a> message will be sent
+									to the most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object, which represents a slave system, and the most idle
+								<a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object will be returned.</p>
+								<p>When the <strong>distributed process</strong> has completed, then the <a href="samchon.templates.distributed.distributedsystemarray.html">DistributedSystemArray</a> object will revaluate
+									<a href="samchon.templates.distributed.distributedprocess.html#getresource">resource index</a> and <a href="samchon.templates.distributed.distributedsystem.html#getperformance">performance index</a> of this
+								<a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> and the most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> objects basis on the execution time.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invoke: <a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An <a href="samchon.protocol.invoke.html">Invoke</a> message requesting distributed process.</p>
+									</div>
+								</li>
+								<li>
+									<h5>weight: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Weight of resource which indicates how heavy this <a href="samchon.protocol.invoke.html">Invoke</a> message is. Default is 1.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a></h4>
+							<p>The most idle <a href="samchon.templates.distributed.distributedsystem.html">DistributedSystem</a> object who may send the <a href="samchon.protocol.invoke.html">Invoke</a> message.</p>
+						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -501,14 +557,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6545</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6758">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6758</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Set resource index.</p>
 								</div>
-								<p>Set <em>resource index</em> that indicates how much this <a href="samchon.templates.distributed.distributedprocess.html">role</a> is heavy. This
+								<p>Set <em>resource index</em> that indicates how much this <a href="samchon.templates.distributed.distributedprocess.html">process</a> is heavy. This
 								<em>resource index</em> can be <strong>revaulated</strong>.</p>
 								<p>Note that, initial and average <em>resource index</em> of <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects are <code>1.0</code>. If the
 									<em>resource index</em> is higher than other <a href="samchon.templates.distributed.distributedprocess.html">DistributedProcess</a> objects, then this
@@ -516,10 +572,10 @@
 								objects. Otherwise, the <em>resource index</em> is lower than others, of course, less processes will be requested.</p>
 								<p>Unlike <a href="samchon.templates.distributed.distributedprocess.html#enforceresource">enforceResource</a>, configuring <em>resource index</em> by this <a href="samchon.templates.distributed.distributedprocess.html#setresource">setResource</a> allows the
 									<strong>revaluation</strong>. This <strong>revaluation</strong> prevents wrong valuation from user. For example, you <em>mis-valuated</em> the
-									<em>resource index</em>. The <a href="samchon.templates.distributed.distributedprocess.html">role</a> is much heavier than any other, but you estimated it
+									<em>resource index</em>. The <a href="samchon.templates.distributed.distributedprocess.html">process</a> is much heavier than any other, but you estimated it
 									to the lightest one. It looks like a terrible case that causes
 									<a href="samchon.templates.distributed.distributedsystemarray.html">entire distributed processing system</a> to be slower, however, don&#39;t mind. The
-									<a href="samchon.templates.distributed.distributedprocess.html">role</a> will the direct to the <em>propriate resource index</em> eventually with the
+									<a href="samchon.templates.distributed.distributedprocess.html">process</a> will the direct to the <em>propriate resource index</em> eventually with the
 								<strong>revaluation</strong>.</p>
 								<ul>
 									<li>The <strong>revaluation</strong> is caused by the <a href="samchon.templates.distributed.distributedprocess.html#senddata">sendData()</a> method.</li>
@@ -549,7 +605,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3335</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3294">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3294</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,12 +630,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
@@ -626,10 +682,10 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-kind-icon">DSInvoke<wbr>History</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedclientarray.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 				</ul>
@@ -658,7 +714,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="samchon.templates.distributed.distributedprocess.html#getresource" class="tsd-kind-icon">get<wbr>Resource</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
 								<a href="samchon.templates.distributed.distributedprocess.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
@@ -683,25 +739,25 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserver.html" class="tsd-kind-icon">Distributed<wbr>Server</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array<wbr>Mediator</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverclientarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystem.html" class="tsd-kind-icon">Distributed<wbr>System</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
@@ -772,7 +828,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

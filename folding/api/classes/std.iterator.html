@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Iterator | @types/typescript-stl</title>
+	<title>Iterator | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -77,10 +76,10 @@
 					in a range in both directions (towards the end and towards the beginning). </p>
 					<p> All <a href="../interfaces/std.base.iarrayiterator.html">random-access iterators</a> are also valid {@link Iterrator bidirectional iterators}.
 					</p>
-					<p> There is not a single type of <a href="std.iterator.html">bidirectional iterator</a>: <a href="../interfaces/std.base.icontainer.html">Each container</a>
+					<p> There is not a single type of <a href="std.iterator.html">bidirectional iterator</a>: {@link IContainer Each container}
 					may define its own specific iterator type able to iterate through it and access its elements. </p>
-					<p> <a href="http://samchon.github.io/typescript-stl/images/class_diagram/abstract_containers.png" target="_blank">
-						<img src="http://samchon.github.io/typescript-stl/images/class_diagram/abstract_containers.png" style="max-width: 100%" /></a>
+					<p> <a href="http://samchon.github.io/tstl/images/class_diagram/abstract_containers.png" target="_blank">
+						<img src="http://samchon.github.io/tstl/images/class_diagram/abstract_containers.png" style="max-width: 100%" /></a>
 					</p>
 					<dl class="tsd-comment-tags">
 						<dt>reference</dt>
@@ -113,16 +112,10 @@
 								<a href="std.reverseiterator.html" class="tsd-signature-type">ReverseIterator</a>
 							</li>
 							<li>
-								<a href="std.mapiterator.html" class="tsd-signature-type">MapIterator</a>
-							</li>
-							<li>
-								<a href="std.setiterator.html" class="tsd-signature-type">SetIterator</a>
+								<a href="std.base.listiteratorbase.html" class="tsd-signature-type">ListIteratorBase</a>
 							</li>
 							<li>
 								<a href="std.dequeiterator.html" class="tsd-signature-type">DequeIterator</a>
-							</li>
-							<li>
-								<a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a>
 							</li>
 							<li>
 								<a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a>
@@ -135,10 +128,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section tsd-is-private-protected tsd-is-not-exported">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="std.iterator.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -152,43 +145,43 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#advance" class="tsd-kind-icon">advance</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported"><a href="std.iterator.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#get_source" class="tsd-kind-icon">get_<wbr>source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#equals" class="tsd-kind-icon">equals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#next" class="tsd-kind-icon">next</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#prev" class="tsd-kind-icon">prev</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#source" class="tsd-kind-icon">source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="std.iterator.html#swap" class="tsd-kind-icon">swap</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-not-exported">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Iterator<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a></li>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Iterator<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4114</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4118">node_modules/tstl/lib/tstl.d.ts:4118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Construct from the source <a href="../interfaces/std.base.icontainer.html">container</a>.</p>
+									<p>Construct from the source {@link IContainer container}.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>source: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>source: <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The source</p>
+											<p>The source container.</p>
 										</div>
 									</div>
 								</li>
@@ -203,10 +196,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="source_" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> source_</h3>
-					<div class="tsd-signature tsd-kind-icon">source_<span class="tsd-signature-symbol">:</span> <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">source_<span class="tsd-signature-symbol">:</span> <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4114</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4118">node_modules/tstl/lib/tstl.d.ts:4118</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4168</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4172">node_modules/tstl/lib/tstl.d.ts:4172</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4142</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4146">node_modules/tstl/lib/tstl.d.ts:4146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,17 +263,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
-					<a name="equal_to" class="tsd-anchor"></a>
-					<h3>equal_<wbr>to</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">equal_<wbr>to&lt;U&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4162</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4166">node_modules/tstl/lib/tstl.d.ts:4166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,21 +282,15 @@
 								</div>
 								<p> Compare two iterators and returns whether they are equal or not. </p>
 								<p><h4> Note </h4></p>
-								<p> Iterator&#39;s equal_to() only compare souce container and index number. </p>
-								<p> Although elements in a pair, key and value are equal_to, if the source map or
-									index number is different, then the <a href="std.iterator.html#equal_to">equal_to()</a> will return false. If you want to
+								<p> Iterator&#39;s <a href="std.iterator.html#equals">equals()</a> only compare souce container and index number. </p>
+								<p> Although elements in a pair, key and value are <a href="../modules/std.html#equal_to">equal_to</a>, if the source map or
+									index number is different, then the <a href="std.iterator.html#equals">equals()</a> will return false. If you want to
 								compare the elements of a pair, compare them directly by yourself. </p>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h4>
-								</li>
-							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An iterator to compare</p>
 									</div>
@@ -311,28 +298,6 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>Indicates whether equal or not.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="get_source" class="tsd-anchor"></a>
-					<h3>get_<wbr>source</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get_<wbr>source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4146</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get source</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -346,13 +311,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4135</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4139">node_modules/tstl/lib/tstl.d.ts:4139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Get iterator to next element. </p>
-									<p> If current iterator is the last item, returns <a href="../interfaces/std.base.icontainer.html#end">IContainer.end()</a>. </p>
+									<p> If current iterator is the last item, returns {@link IContainer.end IContainer.end()}. </p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -370,18 +335,40 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4128</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4132">node_modules/tstl/lib/tstl.d.ts:4132</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Get iterator to previous element. </p>
-									<p> If current iterator is the first item(equal with <a href="../interfaces/std.base.icontainer.html#begin">IContainer.begin()</a>),
-									returns <a href="../interfaces/std.base.icontainer.html#end">IContainer.end()</a>. </p>
+									<p> If current iterator is the first item(equal with {@link IContainer.begin IContainer.begin()}),
+									returns {@link IContainer.end IContainer.end()}. </p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>An iterator of the previous item.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="source" class="tsd-anchor"></a>
+					<h3>source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4150">node_modules/tstl/lib/tstl.d.ts:4150</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get source container.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -395,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4169</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4173">node_modules/tstl/lib/tstl.d.ts:4173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -420,12 +407,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -451,7 +438,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="std.iterator.html" class="tsd-kind-icon">Iterator</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 								<a href="std.iterator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
@@ -463,17 +450,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.iterator.html#advance" class="tsd-kind-icon">advance</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-not-exported">
-								<a href="std.iterator.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="std.iterator.html#get_source" class="tsd-kind-icon">get_<wbr>source</a>
+								<a href="std.iterator.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.iterator.html#next" class="tsd-kind-icon">next</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.iterator.html#prev" class="tsd-kind-icon">prev</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="std.iterator.html#source" class="tsd-kind-icon">source</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.iterator.html#swap" class="tsd-kind-icon">swap</a>
@@ -547,7 +534,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

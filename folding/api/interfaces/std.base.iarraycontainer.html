@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IArrayContainer | @types/typescript-stl</title>
+	<title>IArrayContainer | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -74,12 +73,12 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> Array  </p>
+						<p> Array Container. </p>
 					</div>
-					<p> {@link IArray} is an interface for sequence containers representing <i>arrays</i> that can change in
-						<a href="std.base.iarraycontainer.html#size">size</a>. However, compared to <i>arrays</i>, {@link IArray} objectss consume more memory in exchange for
+					<p> <a href="std.base.iarraycontainer.html">IArrayContainer</a> is an interface for sequence containers representing <i>arrays</i> that can change in
+						<a href="std.base.iarraycontainer.html#size">size</a>. However, compared to <i>arrays</i>, <a href="std.base.iarraycontainer.html">IArrayContainer</a> objectss consume more memory in exchange for
 					the ability to manage storage and grow dynamically in an efficient way. </p> </p>
-					<p> Both <a href="../classes/std.vector.html">Vectors</a> and <a href="../classes/std.deque.html">Deques</a> who implemented {@link IArray} provide a very
+					<p> Both <a href="../classes/std.vector.html">Vectors</a> and <a href="../classes/std.deque.html">Deques</a> who implemented <a href="std.base.iarraycontainer.html">IArrayContainer</a> provide a very
 						similar interface and can be used for similar purposes, but internally both work in quite different ways:
 						While <a href="../classes/std.vector.html">Vectors</a> use a single array that needs to be occasionally reallocated for growth, the
 						elements of a <a href="../classes/std.deque.html">Deque</a> can be scattered in different chunks of storage, with the container keeping the
@@ -96,10 +95,10 @@
 						but this allows them to grow more efficiently under certain circumstances, especially with very long
 					sequences, where reallocations become more expensive. </p>
 					<p> For operations that involve frequent insertion or removals of elements at positions other than the
-						beginning or the end, {@link IArray} objects perform worse and have less consistent iterators and references
+						beginning or the end, <a href="std.base.iarraycontainer.html">IArrayContainer</a> objects perform worse and have less consistent iterators and references
 					than <a href="../classes/std.list.html">Lists</a> </p>.
-					<p> <a href="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" target="_blank">
-							<img src="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" />
+					<p> <a href="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" target="_blank">
+							<img src="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" />
 					</a> </p>
 					<p><h3> Container properties </h3></p>
 					<dl>
@@ -163,6 +162,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="std.base.iarraycontainer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -170,25 +175,49 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.base.iarraycontainer.html#at" class="tsd-kind-icon">at</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#back" class="tsd-kind-icon">back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#begin" class="tsd-kind-icon">begin</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.base.iarraycontainer.html#capacity" class="tsd-kind-icon">capacity</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#erase" class="tsd-kind-icon">erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#erase" class="tsd-kind-icon">erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#front" class="tsd-kind-icon">front</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#insert" class="tsd-kind-icon">insert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#rend" class="tsd-kind-icon">rend</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.base.iarraycontainer.html#reserve" class="tsd-kind-icon">reserve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.base.iarraycontainer.html#set" class="tsd-kind-icon">set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.base.iarraycontainer.html#swap" class="tsd-kind-icon">swap</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new IArray<wbr>Container<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2806">node_modules/tstl/lib/tstl.d.ts:2806</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default Constructor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -204,9 +233,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#assign">assign</a></p>
-								<p>Overwrites <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#assign">assign</a></p>
+								<p>Overrides <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3966</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3658">node_modules/tstl/lib/tstl.d.ts:3658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,9 +267,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#assign">assign</a></p>
-								<p>Overwrites <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#assign">assign</a></p>
+								<p>Overrides <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3977</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3669">node_modules/tstl/lib/tstl.d.ts:3669</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,16 +309,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3673</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3211">node_modules/tstl/lib/tstl.d.ts:3211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Access element. </p>
-									<p> Returns a value to the element at position <i>index</i> in the {@link IArray container}.</p>
+									<p> Returns a value to the element at position <i>index</i> in the <a href="std.base.iarraycontainer.html">container</a>.</p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the {@link IArray container}, throwing an <a href="../classes/std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
+									in the <a href="std.base.iarraycontainer.html">container</a>, throwing an <a href="../classes/std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
 								if <i>index</i> is greater or equal than its <a href="std.base.iarraycontainer.html#size">size</a>). </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -298,7 +327,7 @@
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Position of an element in the
-											If this is greater than or equal to the {@link IArray container} <a href="std.base.iarraycontainer.html#size">size</a>, an
+											If this is greater than or equal to the <a href="std.base.iarraycontainer.html">container</a> <a href="std.base.iarraycontainer.html#size">size</a>, an
 											exception of type <a href="../classes/std.outofrange.html">OutOfRange</a> is thrown. Notice that the first
 										element has a position of 0 (not 1).</p>
 									</div>
@@ -320,7 +349,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#back">back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4001</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3693">node_modules/tstl/lib/tstl.d.ts:3693</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,9 +375,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#begin">begin</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3781</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2837">node_modules/tstl/lib/tstl.d.ts:2837</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -364,42 +393,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="capacity" class="tsd-anchor"></a>
-					<h3>capacity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3657</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Return size of allocated storage capacity. </p>
-								</div>
-								<p> Returns the size of the storage space currently allocated for the {@link IArray container},
-								expressed in terms of elements. </p>
-								<p> This <a href="std.base.iarraycontainer.html#capacity">capacity</a> is not necessarily equal to the {@link IArray container} <a href="std.base.iarraycontainer.html#size">size</a>.
-									It can be equal or greater, with the extra space allowing to accommodate for growth without the
-								need to reallocate on each insertion. </p>
-								<p> Notice that this <a href="std.base.iarraycontainer.html#capacity">capacity</a> does not suppose a limit on the <a href="std.base.iarraycontainer.html#size">size</a> of the
-									{@link IArray container}. When this <a href="std.base.iarraycontainer.html#capacity">capacity</a> is exhausted and more is needed, it is
-									automatically expanded by the {@link IArray container} (reallocating it storage space).
-									The theoretical limit on the <a href="std.base.iarraycontainer.html#size">size</a> of a {@link IArray container} is given by member
-								{@link max_size}. </p>
-								<p> The <a href="std.base.iarraycontainer.html#capacity">capacity</a> of a {@link IArray container} can be explicitly altered by calling member
-								{@link IArray.reserve}. </p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the currently allocated storage capacity in the {@link IArray container},
-							measured in terms of the number elements it can hold.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
@@ -409,9 +402,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#clear">clear</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3770</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2826">node_modules/tstl/lib/tstl.d.ts:2826</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,9 +426,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#empty">empty</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3845</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2901">node_modules/tstl/lib/tstl.d.ts:2901</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,9 +453,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#end">end</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3802</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2858">node_modules/tstl/lib/tstl.d.ts:2858</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,10 +466,10 @@
 								<p> The past-the-end element is the theoretical element that would follow the last element in the
 								It does not point to any element, and thus shall not be dereferenced. </p>
 								<p> Because the ranges used by functions of the Container do not include the element reference by their
-									closing iterator, this function is often used in combination with <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.iarraycontainer.html#begin">begin</a> to
+									closing iterator, this function is often used in combination with {@link IContainer}.<a href="std.base.iarraycontainer.html#begin">begin</a> to
 								specify a range including all the elements in the container. </p>
 								<p><h4> Note </h4></p>
-								<p> Returned iterator from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.iarraycontainer.html#end">end</a> does not refer any element. Trying to accessing
+								<p> Returned iterator from {@link IContainer}.<a href="std.base.iarraycontainer.html#end">end</a> does not refer any element. Trying to accessing
 								element by the iterator will cause throwing exception (<a href="../classes/std.outofrange.html">OutOfRange</a>). </p>
 								<p> If the container is <a href="std.base.iarraycontainer.html#empty">empty</a>, this function returns the same as <a href="../classes/std.base.container.html">Container</a>.<a href="std.base.iarraycontainer.html#begin">begin</a>.
 								</p>
@@ -486,19 +479,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 					<a name="erase" class="tsd-anchor"></a>
 					<h3>erase</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">erase&lt;U&gt;<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, end<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#erase">erase</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3884</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2943">node_modules/tstl/lib/tstl.d.ts:2943</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -524,9 +517,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#erase">erase</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3899</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2958">node_modules/tstl/lib/tstl.d.ts:2958</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -536,16 +529,22 @@
 								<p> Removes from the container a range of elements. </p>
 								<p> This effectively reduces the container size by the number of elements removed. </p>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>begin: <a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>begin: <a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An iterator specifying a range of beginning to erase.</p>
 									</div>
 								</li>
 								<li>
-									<h5>end: <a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>end: <a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An iterator specifying a range of end to erase.</p>
 									</div>
@@ -569,7 +568,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#front">front</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3989</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3681">node_modules/tstl/lib/tstl.d.ts:3681</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -586,10 +585,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 					<a name="insert" class="tsd-anchor"></a>
 					<h3>insert</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">insert&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -598,9 +597,8 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#insert">insert</a></p>
-								<p>Overwrites <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4032</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3724">node_modules/tstl/lib/tstl.d.ts:3724</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,9 +632,8 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#insert">insert</a></p>
-								<p>Overwrites <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4048</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3740">node_modules/tstl/lib/tstl.d.ts:3740</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -676,9 +673,8 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#insert">insert</a></p>
-								<p>Overwrites <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4064</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3756">node_modules/tstl/lib/tstl.d.ts:3756</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -737,7 +733,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4017</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3709">node_modules/tstl/lib/tstl.d.ts:3709</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -760,9 +756,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#push">push</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#push">push</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3855</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2911">node_modules/tstl/lib/tstl.d.ts:2911</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,7 +792,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="std.base.ilinearcontainer.html">ILinearContainer</a>.<a href="std.base.ilinearcontainer.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:4010</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3702">node_modules/tstl/lib/tstl.d.ts:3702</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,9 +824,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#rbegin">rbegin</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3817</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2873">node_modules/tstl/lib/tstl.d.ts:2873</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,9 +854,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#rend">rend</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3829</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2885">node_modules/tstl/lib/tstl.d.ts:2885</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -869,52 +865,11 @@
 								</div>
 								<p> Returns a <a href="../classes/std.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
 								first element in the container (which is considered its <i>reverse end</i>). </p>
-								<p><p> The range between <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.iarraycontainer.html#rbegin">rbegin</a> and <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.iarraycontainer.html#rend">rend</a> contains all
+								<p><p> The range between {@link IContainer}.<a href="std.base.iarraycontainer.html#rbegin">rbegin</a> and {@link IContainer}.<a href="std.base.iarraycontainer.html#rend">rend</a> contains all
 									the elements of the container (in reverse order).</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.base.ireverseiterator.html" class="tsd-signature-type">IReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A <a href="../classes/std.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="reserve" class="tsd-anchor"></a>
-					<h3>reserve</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">reserve<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3634</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Request a change in capacity. </p>
-								</div>
-								<p> Requests that the {@link IArray container} <a href="std.base.iarraycontainer.html#capacity">capacity</a> be at least enough to contain
-								<i>n</i> elements. </p>
-								<p> If <i>n</i> is greater than the current {@link IArray container} <a href="std.base.iarraycontainer.html#capacity">capacity</a>, the
-									function causes the {@link IArray container} to reallocate its storage increasing its
-								<a href="std.base.iarraycontainer.html#capacity">capacity</a> to <i>n</i> (or greater). </p>
-								<p> In all other cases, the function call does not cause a reallocation and the
-								{@link IArray container} <a href="std.base.iarraycontainer.html#capacity">capacity</a> is not affected. </p>
-								<p> This function has no effect on the {@link IArray container} <a href="std.base.iarraycontainer.html#size">size</a> and cannot alter
-								its elements. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>n: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Minimum <a href="std.base.iarraycontainer.html#capacity">capacity</a> for the {@link IArray container}.
-										Note that the resulting <a href="std.base.iarraycontainer.html#capacity">capacity</a> may be equal or greater than <i>n</i>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -928,17 +883,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3688</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L3226">node_modules/tstl/lib/tstl.d.ts:3226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Modify element. </p>
-									<p> Replaces an element at the specified position (<i>index</i>) in this {@link IArray container}
+									<p> Replaces an element at the specified position (<i>index</i>) in this <a href="std.base.iarraycontainer.html">container</a>
 									with the specified element (<i>val</i>). </p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the {@link IArray container}, throwing an <a href="../classes/std.outofrange.html">OutOfRange</a> exception if it is not (i.e., if
+									in the <a href="std.base.iarraycontainer.html">container</a>, throwing an <a href="../classes/std.outofrange.html">OutOfRange</a> exception if it is not (i.e., if
 								<i>index</i> is greater or equal than its <a href="std.base.iarraycontainer.html#size">size</a>). </p>
 								<p>@.param index A specified position of the value to replace.</p>
 							</div>
@@ -968,9 +923,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#size">size</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3835</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2891">node_modules/tstl/lib/tstl.d.ts:2891</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -987,14 +942,14 @@
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../classes/std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="std.base.icontainer.html">IContainer</a>.<a href="std.base.icontainer.html#swap">swap</a></p>
+								<p>Inherited from <a href="../classes/std.base.container.html">Container</a>.<a href="../classes/std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:3917</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2976">node_modules/tstl/lib/tstl.d.ts:2976</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1002,7 +957,7 @@
 									<p> Swap content. </p>
 								</div>
 								<p> Exchanges the content of the container by the content of <i>obj</i>, which is another
-								<a href="std.base.icontainer.html">container</a> object with same type of elements. Sizes and container type may differ. </p>
+								{@link IContainer container} object with same type of elements. Sizes and container type may differ. </p>
 								<p> After the call to this member function, the elements in this container are those which were in <i>obj</i>
 									before the call, and the elements of <i>obj</i> are those which were in this. All iterators, references and
 								pointers remain valid for the swapped objects. </p>
@@ -1012,9 +967,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="../classes/std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Another <a href="std.base.icontainer.html">container</a> of the same type of elements (i.e., instantiated
+										<p>Another {@link IContainer container} of the same type of elements (i.e., instantiated
 											with the same template parameter, <b>T</b>) whose content is swapped with that of this
 										{@link container IContainer}.</p>
 									</div>
@@ -1036,12 +991,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -1062,15 +1017,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../enums/std.base.color.html" class="tsd-kind-icon">Color</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../enums/std.base.hash.html" class="tsd-kind-icon">Hash</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.atomictree.html" class="tsd-kind-icon">Atomic<wbr>Tree</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.container.html" class="tsd-kind-icon">Container</a>
 					</li>
@@ -1078,13 +1024,13 @@
 						<a href="../classes/std.base.errorinstance.html" class="tsd-kind-icon">Error<wbr>Instance</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.hashbuckets.html" class="tsd-kind-icon">Hash<wbr>Buckets</a>
+						<a href="../classes/std.base.listcontainer.html" class="tsd-kind-icon">List<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../classes/std.base.listiteratorbase.html" class="tsd-kind-icon">List<wbr>Iterator<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.mapcontainer.html" class="tsd-kind-icon">Map<wbr>Container</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.maphashbuckets.html" class="tsd-kind-icon">Map<wbr>Hash<wbr>Buckets</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.multimap.html" class="tsd-kind-icon">Multi<wbr>Map</a>
@@ -1093,13 +1039,7 @@
 						<a href="../classes/std.base.multiset.html" class="tsd-kind-icon">Multi<wbr>Set</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.pairtree.html" class="tsd-kind-icon">Pair<wbr>Tree</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.setcontainer.html" class="tsd-kind-icon">Set<wbr>Container</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.sethashbuckets.html" class="tsd-kind-icon">Set<wbr>Hash<wbr>Buckets</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.uniquemap.html" class="tsd-kind-icon">Unique<wbr>Map</a>
@@ -1107,17 +1047,14 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/std.base.uniqueset.html" class="tsd-kind-icon">Unique<wbr>Set</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.xtree.html" class="tsd-kind-icon">XTree</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../classes/std.base.xtreenode.html" class="tsd-kind-icon">XTree<wbr>Node</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="std.base.iarraycontainer.html" class="tsd-kind-icon">IArray<wbr>Container</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="std.base.iarraycontainer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#assign" class="tsd-kind-icon">assign</a>
 							</li>
@@ -1130,9 +1067,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#begin" class="tsd-kind-icon">begin</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="std.base.iarraycontainer.html#capacity" class="tsd-kind-icon">capacity</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
@@ -1142,13 +1076,13 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#end" class="tsd-kind-icon">end</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#erase" class="tsd-kind-icon">erase</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#front" class="tsd-kind-icon">front</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#insert" class="tsd-kind-icon">insert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -1167,9 +1101,6 @@
 								<a href="std.base.iarraycontainer.html#rend" class="tsd-kind-icon">rend</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="std.base.iarraycontainer.html#reserve" class="tsd-kind-icon">reserve</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="std.base.iarraycontainer.html#set" class="tsd-kind-icon">set</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -1184,9 +1115,6 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="std.base.iarrayiterator.html" class="tsd-kind-icon">IArray<wbr>Iterator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="std.base.icontainer.html" class="tsd-kind-icon">IContainer</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="std.base.idequecontainer.html" class="tsd-kind-icon">IDeque<wbr>Container</a>
@@ -1277,7 +1205,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

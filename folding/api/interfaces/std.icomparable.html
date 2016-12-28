@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IComparable | @types/typescript-stl</title>
+	<title>IComparable | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -109,6 +108,8 @@
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../classes/std.mapiterator.html" class="tsd-signature-type">MapIterator</a></li>
+					<li><a href="../classes/std.pair.html" class="tsd-signature-type">Pair</a></li>
+					<li><a href="../classes/bws.folding.core.papersize.html" class="tsd-signature-type">PaperSize</a></li>
 					<li><a href="../classes/std.setiterator.html" class="tsd-signature-type">SetIterator</a></li>
 				</ul>
 			</section>
@@ -126,12 +127,12 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.icomparable.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#hasownproperty" class="tsd-kind-icon">has<wbr>Own<wbr>Property</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.icomparable.html#hash" class="tsd-kind-icon">hash</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.icomparable.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#hasownproperty" class="tsd-kind-icon">has<wbr>Own<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.icomparable.html#hashcode" class="tsd-kind-icon">hash<wbr>Code</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#isprototypeof" class="tsd-kind-icon">is<wbr>Prototype<wbr>Of</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="std.icomparable.html#less" class="tsd-kind-icon">less</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#propertyisenumerable" class="tsd-kind-icon">property<wbr>IsEnumerable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#propertyisenumerable" class="tsd-kind-icon">property<wbr>IsEnumerable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="std.icomparable.html#valueof" class="tsd-kind-icon">value<wbr>Of</a></li>
@@ -148,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObjectConstructor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:235</li>
+							<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:251</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +165,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Object.constructor</p>
 						<ul>
-							<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:96</li>
+							<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:100</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,23 +178,23 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="equal_to" class="tsd-anchor"></a>
-					<h3>equal_<wbr>to</h3>
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">equal_<wbr>to<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8216</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8374">node_modules/tstl/lib/tstl.d.ts:8374</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Indicates whether some other object is &quot;equal to&quot; this one. </p>
 								</div>
-								<p> The <a href="std.icomparable.html#equal_to">equal_to</a> method implements an equivalence relation on non-null object references: </p>
+								<p> The <a href="../modules/std.html#equal_to">equal_to</a> method implements an equivalence relation on non-null object references: </p>
 								<ul>
 									<li>
 										It is <b>reflexive</b>: for any non-null reference value <code>x</code>, <code>x.equal_to(x)</code>
@@ -218,7 +219,7 @@
 										<code>false</code>.
 									</li>
 								</ul>
-								<p> The <a href="std.icomparable.html#equal_to">equal_to</a> method for interface <a href="std.icomparable.html">IComparable</a> implements the most discriminating possible
+								<p> The <a href="../modules/std.html#equal_to">equal_to</a> method for interface <a href="std.icomparable.html">IComparable</a> implements the most discriminating possible
 									equivalence relation on objects; that is, for any non-null reference values <code>x</code> and
 									<code>y</code>, this method returns <code>true</code> if and only if <code>x</code> and <code>y</code>
 								refer to the same object (<code>x == y</code> has the value <code>true</code>). </p>
@@ -226,7 +227,7 @@
 									overridden, so as to maintain the general contract for the {@link hash_code} method, which states that
 								equal objects must have equal hash codes. </p>
 								<ul>
-									<li> <a href="std.icomparable.html#equal_to">IComparable.equal_to</a> is called by <a href="../modules/std.html#equal_to">std.equal_to</a>. </li>
+									<li> {@link IComparable.equal_to} is called by <a href="../modules/std.html#equal_to">std.equal_to</a>. </li>
 								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -243,18 +244,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="hasownproperty" class="tsd-anchor"></a>
 					<h3>has<wbr>Own<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">has<wbr>Own<wbr>Property<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Object.hasOwnProperty</p>
+								<p>Overrides Object.hasOwnProperty</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:111</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:115</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,16 +278,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="hash" class="tsd-anchor"></a>
-					<h3>hash</h3>
+					<a name="hashcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> hash<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">hash<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">hash<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8256</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8414">node_modules/tstl/lib/tstl.d.ts:8414</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,7 +324,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Object.isPrototypeOf</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:117</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:121</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:8234</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8392">node_modules/tstl/lib/tstl.d.ts:8392</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -383,18 +385,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="propertyisenumerable" class="tsd-anchor"></a>
 					<h3>property<wbr>IsEnumerable</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">property<wbr>IsEnumerable<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Object.propertyIsEnumerable</p>
+								<p>Overrides Object.propertyIsEnumerable</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:123</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:127</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +429,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Object.toLocaleString</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:102</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:106</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +452,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Object.toString</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:99</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:103</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,7 +475,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Object.valueOf</p>
 								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:105</li>
+									<li>Defined in C:/Users/samch/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.es6.d.ts:109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -496,12 +499,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -534,13 +537,13 @@
 								<a href="std.icomparable.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="std.icomparable.html#equal_to" class="tsd-kind-icon">equal_<wbr>to</a>
+								<a href="std.icomparable.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.icomparable.html#hasownproperty" class="tsd-kind-icon">has<wbr>Own<wbr>Property</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="std.icomparable.html#hash" class="tsd-kind-icon">hash</a>
+								<a href="std.icomparable.html#hashcode" class="tsd-kind-icon">hash<wbr>Code</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="std.icomparable.html#isprototypeof" class="tsd-kind-icon">is<wbr>Prototype<wbr>Of</a>
@@ -548,7 +551,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="std.icomparable.html#less" class="tsd-kind-icon">less</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="std.icomparable.html#propertyisenumerable" class="tsd-kind-icon">property<wbr>IsEnumerable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -629,7 +632,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

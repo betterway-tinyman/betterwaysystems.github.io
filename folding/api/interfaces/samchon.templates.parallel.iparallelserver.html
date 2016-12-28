@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IParallelServer | @types/typescript-stl</title>
+	<title>IParallelServer | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -174,11 +173,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#getname" class="tsd-kind-icon">get<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#getperformance" class="tsd-kind-icon">get<wbr>Performance</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#haseventlistener" class="tsd-kind-icon">has<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#key" class="tsd-kind-icon">key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#pop_front" class="tsd-kind-icon">pop_<wbr>front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.iparallelserver.html#refresh" class="tsd-kind-icon">refresh</a></li>
@@ -198,16 +198,16 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new IParallel<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new IParallel<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a>, communicator<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new IParallel<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new IParallel<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span>, communicator<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.iclientdriver.html" class="tsd-signature-type">IClientDriver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.iparallelserver.html" class="tsd-signature-type">IParallelServer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#constructor">constructor</a></p>
+								<p>Overrides <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6825</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7059">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7059</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,7 +218,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>systemArray: <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a></h5>
+									<h5>systemArray: <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The parent <a href="../classes/samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> object.</p>
@@ -231,9 +231,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#constructor">constructor</a></p>
+								<p>Overrides <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6831</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7065">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7065</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -244,7 +244,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>systemArray: <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a></h5>
+									<h5>systemArray: <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The parent <a href="../classes/samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> object.</p>
@@ -274,7 +274,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#name">name</a></p>
 						<ul>
-							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6649</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6879">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6879</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -296,9 +296,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#child_tag">CHILD_TAG</a></p>
-								<p>Overwrites <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#child_tag">CHILD_TAG</a></p>
+								<p>Overrides <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#child_tag">CHILD_TAG</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6751</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6985">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6985</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,9 +321,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#tag">TAG</a></p>
-								<p>Overwrites <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#tag">TAG</a></p>
+								<p>Overrides <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6745</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6979">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6979</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -354,7 +354,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:492</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L425">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:425</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +378,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:493</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L426">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:426</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -396,7 +396,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:494</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L427">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:427</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -414,7 +414,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:495</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L428">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:428</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -432,7 +432,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:499</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L432">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:432</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,7 +459,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:500</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L433">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:433</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -480,7 +480,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:501</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L434">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:434</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,7 +501,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:502</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L435">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:435</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -531,7 +531,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#close">close</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6727</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6961">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6961</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,7 +553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:9184</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L9604">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:9604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -576,7 +576,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3439</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3398">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3398</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -606,7 +606,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#count">count</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3455</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3414">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3414</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -636,7 +636,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#createchild">createChild</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3443</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3402">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3402</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -665,9 +665,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#destructor">destructor</a></p>
-								<p>Overwrites <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#destructor">destructor</a></p>
+								<p>Overrides <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#destructor">destructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6871</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7105">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -714,7 +714,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#dispatchevent">dispatchEvent</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:476</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L409">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -744,7 +744,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#enforceperformance">enforcePerformance</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6954</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7194">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -791,7 +791,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#get">get</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3459</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3418">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3418</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -821,7 +821,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#getname">getName</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6716</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6950">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6950</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -844,7 +844,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#getperformance">getPerformance</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6904</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7144">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -876,19 +876,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="getsystemarray" class="tsd-anchor"></a>
 					<h3>get<wbr>System<wbr>Array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array&lt;SystemArray&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SystemArray</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#getsystemarray">getSystemArray</a></p>
-								<p>Overwrites <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#getsystemarray">getSystemArray</a></p>
+								<p>Overrides <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#getsystemarray">getSystemArray</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6877</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7111">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -896,7 +897,29 @@
 									<p>Get manager of this object.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The parent <a href="../classes/samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> object.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#getsystemarray">getSystemArray</a></p>
+								<p>Overrides <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#getsystemarray">getSystemArray</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7117">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7117</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get manager of this object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>SystemArray<span class="tsd-signature-symbol">: </span><a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SystemArray</span></h4>
 							<p>The parent <a href="../classes/samchon.templates.parallel.parallelsystemarray.html">ParallelSystemArray</a> object.</p>
 						</li>
 					</ul>
@@ -912,7 +935,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#has">has</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3451</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3410">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3410</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -942,7 +965,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#haseventlistener">hasEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:472</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L405">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -971,9 +994,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#key">key</a></p>
-								<p>Overwrites <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#key">key</a></p>
+								<p>Overrides <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#key">key</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6712</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6946">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6946</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -997,7 +1020,31 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:456</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L389">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:389</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="pop_front" class="tsd-anchor"></a>
+					<h3>pop_<wbr>front</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">pop_<wbr>front<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#pop_front">pop_front</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L385">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:385</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1021,7 +1068,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#push">push</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:440</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L369">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:369</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1051,7 +1098,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:444</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L373">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:373</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1083,7 +1130,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:480</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L413">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1098,7 +1145,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:484</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L417">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:417</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1119,7 +1166,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#refresh">refresh</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:488</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L421">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:421</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,7 +1206,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:506</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L439">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:439</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1183,7 +1230,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:507</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L440">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:440</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1201,7 +1248,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:508</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L441">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:441</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1219,7 +1266,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:509</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L442">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:442</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1237,7 +1284,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:513</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L446">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:446</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1264,7 +1311,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:514</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L447">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:447</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1285,7 +1332,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:515</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L448">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:448</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1306,7 +1353,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.collections.dequecollection.html">DequeCollection</a>.<a href="../classes/samchon.collections.dequecollection.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:516</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L449">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:449</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1336,7 +1383,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6739</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6973">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6973</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1368,7 +1415,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.external.externalsystem.html">ExternalSystem</a>.<a href="../classes/samchon.templates.external.externalsystem.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6733</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L6967">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:6967</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1400,7 +1447,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.templates.parallel.parallelsystem.html">ParallelSystem</a>.<a href="../classes/samchon.templates.parallel.parallelsystem.html#setperformance">setPerformance</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:6929</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7169">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1449,7 +1496,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="../classes/samchon.protocol.entitydequecollection.html">EntityDequeCollection</a>.<a href="../classes/samchon.protocol.entitydequecollection.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:3471</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L3430">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:3430</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1474,12 +1521,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
@@ -1527,6 +1574,9 @@
 						<a href="../classes/samchon.templates.parallel.mediatorclient.html" class="tsd-kind-icon">Mediator<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../classes/samchon.templates.parallel.mediatordedicatedworkerserver.html" class="tsd-kind-icon">Mediator<wbr>Dedicated<wbr>Worker<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.mediatorserver.html" class="tsd-kind-icon">Mediator<wbr>Server</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
@@ -1547,34 +1597,34 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.prinvokehistory.html" class="tsd-kind-icon">PRInvoke<wbr>History</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelclientarray.html" class="tsd-kind-icon">Parallel<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelclientarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelserver.html" class="tsd-kind-icon">Parallel<wbr>Server</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelserverarray.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelserverarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Array<wbr>Mediator</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelserverclientarray.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelserverclientarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelsystem.html" class="tsd-kind-icon">Parallel<wbr>System</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelsystemarray.html" class="tsd-kind-icon">Parallel<wbr>System<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-kind-icon">Parallel<wbr>System<wbr>Array<wbr>Mediator</a>
 					</li>
 				</ul>
@@ -1630,7 +1680,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.parallel.iparallelserver.html#getperformance" class="tsd-kind-icon">get<wbr>Performance</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.parallel.iparallelserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -1644,6 +1694,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.parallel.iparallelserver.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="samchon.templates.parallel.iparallelserver.html#pop_front" class="tsd-kind-icon">pop_<wbr>front</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.parallel.iparallelserver.html#push" class="tsd-kind-icon">push</a>
@@ -1738,7 +1791,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

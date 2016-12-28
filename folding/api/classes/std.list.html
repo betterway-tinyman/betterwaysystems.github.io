@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>List | @types/typescript-stl</title>
+	<title>List | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -78,8 +77,6 @@
 					<p> List containers are implemented as doubly-linked lists; Doubly linked lists can store each of the elements they
 						contain in different and unrelated storage locations. The ordering is kept internally by the association to each
 					element of a link to the element preceding it and a link to the element following it. </p>
-					<p> They are very similar to forward_list: The main difference being that forward_list objects are single-linked
-					lists, and thus they can only be iterated forwards, in exchange for being somewhat smaller and more efficient. </p>
 					<p> Compared to other base standard sequence containers (array, vector and deque), lists perform generally better
 						in inserting, extracting and moving elements in any position within the container for which an iterator has already
 					been obtained, and therefore also in algorithms that make intensive use of these, like sorting algorithms. </p>
@@ -88,8 +85,8 @@
 						iterate from a known position (like the beginning or the end) to that position, which takes linear time in the
 						distance between these. They also consume some extra memory to keep the linking information associated to each
 					element (which may be an important factor for large lists of small-sized elements). </p>
-					<p> <a href="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" target="_blank">
-						<img src="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" /></a>
+					<p> <a href="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" target="_blank">
+						<img src="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" /></a>
 					</p>
 					<p><h3> Container properties </h3></p>
 					<dl>
@@ -128,7 +125,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="std.base.listcontainer.html" class="tsd-signature-type">ListContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">List</span>
@@ -148,7 +145,6 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/std.base.idequecontainer.html" class="tsd-signature-type">IDequeContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
@@ -169,29 +165,35 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="std.list.html#rend_" class="tsd-kind-icon">rend_</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="std.list.html#assign" class="tsd-kind-icon">assign</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#back" class="tsd-kind-icon">back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#begin" class="tsd-kind-icon">begin</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#back" class="tsd-kind-icon">back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="std.list.html#begin" class="tsd-kind-icon">begin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="std.list.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="std.list.html#empty" class="tsd-kind-icon">empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="std.list.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#erase" class="tsd-kind-icon">erase</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#front" class="tsd-kind-icon">front</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#front" class="tsd-kind-icon">front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="std.list.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="std.list.html#merge" class="tsd-kind-icon">merge</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#pop_front" class="tsd-kind-icon">pop_<wbr>front</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#push" class="tsd-kind-icon">push</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#push_front" class="tsd-kind-icon">push_<wbr>front</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="std.list.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="std.list.html#pop_front" class="tsd-kind-icon">pop_<wbr>front</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="std.list.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="std.list.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="std.list.html#push_front" class="tsd-kind-icon">push_<wbr>front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#remove" class="tsd-kind-icon">remove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#remove_if" class="tsd-kind-icon">remove_<wbr>if</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#rend" class="tsd-kind-icon">rend</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="std.list.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.list.html#sort" class="tsd-kind-icon">sort</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="std.list.html#splice" class="tsd-kind-icon">splice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.list.html#swap" class="tsd-kind-icon">swap</a></li>
@@ -209,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">iterator<span class="tsd-signature-symbol">:</span> <a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9264</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8418">node_modules/tstl/lib/tstl.d.ts:8418</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">reverse_<wbr>iterator<span class="tsd-signature-symbol">:</span> <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9265</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8419">node_modules/tstl/lib/tstl.d.ts:8419</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,9 +241,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9324</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8464">node_modules/tstl/lib/tstl.d.ts:8464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,9 +256,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9330</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8470">node_modules/tstl/lib/tstl.d.ts:8470</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,9 +277,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9338</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8478">node_modules/tstl/lib/tstl.d.ts:8478</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,9 +307,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9348</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8488">node_modules/tstl/lib/tstl.d.ts:8488</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,9 +334,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9357</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8497">node_modules/tstl/lib/tstl.d.ts:8497</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,6 +370,19 @@
 					</ul>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rend_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rend_</h3>
+					<div class="tsd-signature tsd-kind-icon">rend_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8464">node_modules/tstl/lib/tstl.d.ts:8464</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
@@ -381,9 +396,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#assign">assign</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9371</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8519">node_modules/tstl/lib/tstl.d.ts:8519</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -407,17 +422,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#assign">assign</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9375</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8523">node_modules/tstl/lib/tstl.d.ts:8523</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Assign new content to content. </p>
-								</div>
-								<p> Assigns new contents to the container, replacing its current contents, and modifying its
-								<a href="std.list.html#size">size</a> accordingly. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -441,18 +455,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="back" class="tsd-anchor"></a>
 					<h3>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#back">back</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#back">back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9407</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8539">node_modules/tstl/lib/tstl.d.ts:8539</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,19 +484,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="begin" class="tsd-anchor"></a>
 					<h3>begin</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">begin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#begin">begin</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#begin">begin</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9383</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4497">node_modules/tstl/lib/tstl.d.ts:4497</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,19 +513,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#clear">clear</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#clear">clear</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9379</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4493">node_modules/tstl/lib/tstl.d.ts:4493</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +551,7 @@
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#empty">empty</a></p>
 								<p>Inherited from <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:2796</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L2901">node_modules/tstl/lib/tstl.d.ts:2901</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,19 +567,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="end" class="tsd-anchor"></a>
 					<h3>end</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.listiterator.html" class="tsd-signature-type">ListIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#end">end</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#end">end</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9387</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4501">node_modules/tstl/lib/tstl.d.ts:4501</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,10 +591,10 @@
 								<p> The past-the-end element is the theoretical element that would follow the last element in the
 								It does not point to any element, and thus shall not be dereferenced. </p>
 								<p> Because the ranges used by functions of the Container do not include the element reference by their
-									closing iterator, this function is often used in combination with <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.list.html#begin">begin</a> to
+									closing iterator, this function is often used in combination with {@link IContainer}.<a href="std.list.html#begin">begin</a> to
 								specify a range including all the elements in the container. </p>
 								<p><h4> Note </h4></p>
-								<p> Returned iterator from <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.list.html#end">end</a> does not refer any element. Trying to accessing
+								<p> Returned iterator from {@link IContainer}.<a href="std.list.html#end">end</a> does not refer any element. Trying to accessing
 								element by the iterator will cause throwing exception (<a href="std.outofrange.html">OutOfRange</a>). </p>
 								<p> If the container is <a href="std.list.html#empty">empty</a>, this function returns the same as <a href="std.base.container.html">Container</a>.<a href="std.list.html#begin">begin</a>.
 								</p>
@@ -598,9 +616,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9567</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8667">node_modules/tstl/lib/tstl.d.ts:8667</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -627,9 +645,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9584</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8684">node_modules/tstl/lib/tstl.d.ts:8684</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -662,9 +680,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9600</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8700">node_modules/tstl/lib/tstl.d.ts:8700</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -691,9 +709,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9617</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8717">node_modules/tstl/lib/tstl.d.ts:8717</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -726,18 +744,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="front" class="tsd-anchor"></a>
 					<h3>front</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">front<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#front">front</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#front">front</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9403</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8535">node_modules/tstl/lib/tstl.d.ts:8535</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -768,9 +787,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9445</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8557">node_modules/tstl/lib/tstl.d.ts:8557</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -805,9 +824,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9464</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8576">node_modules/tstl/lib/tstl.d.ts:8576</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -848,9 +867,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9483</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8595">node_modules/tstl/lib/tstl.d.ts:8595</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -900,9 +919,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9501</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8613">node_modules/tstl/lib/tstl.d.ts:8613</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -937,9 +956,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9520</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8632">node_modules/tstl/lib/tstl.d.ts:8632</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -980,9 +999,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#insert">insert</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9539</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8651">node_modules/tstl/lib/tstl.d.ts:8651</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1043,7 +1062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9711</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8807">node_modules/tstl/lib/tstl.d.ts:8807</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1089,7 +1108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9748</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8844">node_modules/tstl/lib/tstl.d.ts:8844</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1136,7 +1155,7 @@
 									<h5>compare: <span class="tsd-signature-type">function</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Binary predicate that, taking two values of the same type than those contained in the
-											<a href="std.listiterator.html#list">list</a>, returns <code>true</code> if the first argument is considered to go before
+											{@link list}, returns <code>true</code> if the first argument is considered to go before
 											the second in the strict weak ordering it defines, and <code>false</code> otherwise.
 										This shall be a function pointer or a function object.</p>
 									</div>
@@ -1167,18 +1186,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="pop_back" class="tsd-anchor"></a>
 					<h3>pop_<wbr>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">pop_<wbr>back<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#pop_back">pop_back</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9427</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4529">node_modules/tstl/lib/tstl.d.ts:4529</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1192,18 +1212,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="pop_front" class="tsd-anchor"></a>
 					<h3>pop_<wbr>front</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">pop_<wbr>front<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#pop_front">pop_front</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#pop_front">pop_front</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9423</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4525">node_modules/tstl/lib/tstl.d.ts:4525</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1217,19 +1238,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="push" class="tsd-anchor"></a>
 					<h3>push</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push">push</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#push">push</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9411</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4533">node_modules/tstl/lib/tstl.d.ts:4533</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1249,18 +1271,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="push_back" class="tsd-anchor"></a>
 					<h3>push_<wbr>back</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">push_<wbr>back<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push_back">push_back</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9419</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4521">node_modules/tstl/lib/tstl.d.ts:4521</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1280,18 +1303,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="push_front" class="tsd-anchor"></a>
 					<h3>push_<wbr>front</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">push_<wbr>front<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#push_front">push_front</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#push_front">push_front</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9415</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4517">node_modules/tstl/lib/tstl.d.ts:4517</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1322,9 +1346,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#rbegin">rbegin</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9391</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8527">node_modules/tstl/lib/tstl.d.ts:8527</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1353,7 +1377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9665</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8761">node_modules/tstl/lib/tstl.d.ts:8761</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1390,7 +1414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9682</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8778">node_modules/tstl/lib/tstl.d.ts:8778</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1448,9 +1472,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#rend">rend</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9395</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8531">node_modules/tstl/lib/tstl.d.ts:8531</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1459,7 +1483,7 @@
 								</div>
 								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
 								first element in the container (which is considered its <i>reverse end</i>). </p>
-								<p><p> The range between <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.list.html#rbegin">rbegin</a> and <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.list.html#rend">rend</a> contains all
+								<p><p> The range between {@link IContainer}.<a href="std.list.html#rbegin">rbegin</a> and {@link IContainer}.<a href="std.list.html#rend">rend</a> contains all
 									the elements of the container (in reverse order).</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.listreverseiterator.html" class="tsd-signature-type">ListReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1467,19 +1491,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#size">size</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
+								<p>Inherited from <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#size">size</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9399</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L4505">node_modules/tstl/lib/tstl.d.ts:4505</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1503,7 +1528,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9828</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8924">node_modules/tstl/lib/tstl.d.ts:8924</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1524,7 +1549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9849</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8945">node_modules/tstl/lib/tstl.d.ts:8945</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1589,7 +1614,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9764</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8860">node_modules/tstl/lib/tstl.d.ts:8860</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1629,7 +1654,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9786</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8882">node_modules/tstl/lib/tstl.d.ts:8882</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1680,7 +1705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9812</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8908">node_modules/tstl/lib/tstl.d.ts:8908</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1744,14 +1769,14 @@
 					<h3>swap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.list.html" class="tsd-signature-type">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9875</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8971">node_modules/tstl/lib/tstl.d.ts:8971</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1782,9 +1807,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.idequecontainer.html">IDequeContainer</a>.<a href="../interfaces/std.base.idequecontainer.html#swap">swap</a></p>
-								<p>Overwrites <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
+								<p>Overrides <a href="std.base.listcontainer.html">ListContainer</a>.<a href="std.base.listcontainer.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9879</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8975">node_modules/tstl/lib/tstl.d.ts:8975</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1792,7 +1817,7 @@
 									<p> Swap content. </p>
 								</div>
 								<p> Exchanges the content of the container by the content of <i>obj</i>, which is another
-								<a href="../interfaces/std.base.icontainer.html">container</a> object with same type of elements. Sizes and container type may differ. </p>
+								{@link IContainer container} object with same type of elements. Sizes and container type may differ. </p>
 								<p> After the call to this member function, the elements in this container are those which were in <i>obj</i>
 									before the call, and the elements of <i>obj</i> are those which were in this. All iterators, references and
 								pointers remain valid for the swapped objects. </p>
@@ -1802,7 +1827,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1820,7 +1845,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9630</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8726">node_modules/tstl/lib/tstl.d.ts:8726</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1836,7 +1861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9650</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L8746">node_modules/tstl/lib/tstl.d.ts:8746</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1901,12 +1926,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -1941,28 +1966,31 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.list.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="std.list.html#rend_" class="tsd-kind-icon">rend_</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="std.list.html#assign" class="tsd-kind-icon">assign</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.list.html#back" class="tsd-kind-icon">back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="std.list.html#begin" class="tsd-kind-icon">begin</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="std.list.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="std.list.html#empty" class="tsd-kind-icon">empty</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="std.list.html#end" class="tsd-kind-icon">end</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.list.html#erase" class="tsd-kind-icon">erase</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.list.html#front" class="tsd-kind-icon">front</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
@@ -1971,19 +1999,19 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="std.list.html#merge" class="tsd-kind-icon">merge</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="std.list.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="std.list.html#pop_front" class="tsd-kind-icon">pop_<wbr>front</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="std.list.html#push" class="tsd-kind-icon">push</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="std.list.html#push_back" class="tsd-kind-icon">push_<wbr>back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="std.list.html#push_front" class="tsd-kind-icon">push_<wbr>front</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
@@ -1998,7 +2026,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.list.html#rend" class="tsd-kind-icon">rend</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="std.list.html#size" class="tsd-kind-icon">size</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2082,7 +2110,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

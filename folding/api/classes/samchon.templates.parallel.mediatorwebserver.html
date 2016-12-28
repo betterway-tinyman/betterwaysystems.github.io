@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MediatorWebServer | @types/typescript-stl</title>
+	<title>MediatorWebServer | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -97,6 +96,7 @@
 						<li>A server slave accepting master client:<ul>
 								<li><a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a></li>
 								<li><a href="samchon.templates.parallel.mediatorwebserver.html">MediatorWebServer</a></li>
+								<li><a href="samchon.templates.parallel.mediatordedicatedworkerserver.html">MediatorDedicatedWorkerServer</a></li>
 								<li><a href="samchon.templates.parallel.mediatorsharedworkerserver.html">MediatorSharedWorkerServer</a></li>
 							</ul>
 						</li>
@@ -158,7 +158,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#addclient" class="tsd-kind-icon">add<wbr>Client</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#createserverbase" class="tsd-kind-icon">create<wbr>Server<wbr>Base</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#replydata" class="tsd-kind-icon">reply<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.parallel.mediatorwebserver.html#senddata" class="tsd-kind-icon">send<wbr>Data</a></li>
@@ -174,16 +174,16 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mediator<wbr>Web<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.mediatorwebserver.html" class="tsd-signature-type">MediatorWebServer</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Mediator<wbr>Web<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.mediatorwebserver.html" class="tsd-signature-type">MediatorWebServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mediator<wbr>Web<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.mediatorwebserver.html" class="tsd-signature-type">MediatorWebServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mediator<wbr>Web<wbr>Server<span class="tsd-signature-symbol">(</span>systemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.mediatorwebserver.html" class="tsd-signature-type">MediatorWebServer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8404</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8770">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8770</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,7 +194,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>systemArray: <a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a></h5>
+									<h5>systemArray: <a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The parent <a href="samchon.templates.parallel.parallelsystemarraymediator.html">ParallelSystemArrayMediator</a> object.</p>
@@ -215,9 +215,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#constructor">constructor</a></p>
-								<p>Overwrites <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8411</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8777">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8777</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,7 +228,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>systemArray: <a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a></h5>
+									<h5>systemArray: <a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The parent <a href="samchon.templates.parallel.parallelsystemarraymediator.html">ParallelSystemArrayMediator</a> object.</p>
@@ -263,7 +263,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.templates.slave.islaveserver.html">ISlaveServer</a>.<a href="../interfaces/samchon.templates.slave.islaveserver.html#addclient">addClient</a></p>
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#addclient">addClient</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8442</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8808">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8808</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,7 +299,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.templates.slave.islaveserver.html">ISlaveServer</a>.<a href="../interfaces/samchon.templates.slave.islaveserver.html#close">close</a></p>
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#close">close</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8454</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8820">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8820</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,9 +322,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#createserverbase">createServerBase</a></p>
+								<p>Overrides <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#createserverbase">createServerBase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8499</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8866">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8866</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,18 +337,37 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 					<a name="getsystemarray" class="tsd-anchor"></a>
 					<h3>get<wbr>System<wbr>Array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a><span class="tsd-signature-symbol"> | </span><a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array&lt;SystemArray&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SystemArray</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>System<wbr>Array&lt;SystemArray&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SystemArray</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#getsystemarray">getSystemArray</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8341</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8698">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8698</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get parent <a href="samchon.templates.parallel.parallelsystemarraymediator.html">ParallelSystemArrayMediator</a> or <a href="samchon.templates.distributed.distributedsystemarraymediator.html">DistributedSystemArrayMediator</a> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span>
+							</h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#getsystemarray">getSystemArray</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8702">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8702</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,10 +375,33 @@
 									<p>Get parent <a href="samchon.templates.parallel.parallelsystemarraymediator.html">ParallelSystemArrayMediator</a> object.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-signature-type">ParallelSystemArrayMediator</a>
-								<span class="tsd-signature-symbol"> | </span>
-								<a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-signature-type">DistributedSystemArrayMediator</a>
-							</h4>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>SystemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.parallel.parallelsystemarray.html" class="tsd-signature-type">ParallelSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.parallel.parallelsystem.html" class="tsd-signature-type">ParallelSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SystemArray</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#getsystemarray">getSystemArray</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8706">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8706</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get parent <a href="samchon.templates.distributed.distributedsystemarraymediator.html">DistributedSystemArrayMediator</a> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>SystemArray<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-signature-type">DistributedSystemArray</a><span class="tsd-signature-symbol">&lt;</span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SystemArray</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -375,7 +417,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.templates.slave.islaveserver.html">ISlaveServer</a>.<a href="../interfaces/samchon.templates.slave.islaveserver.html#open">open</a></p>
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#open">open</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8450</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8816">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8816</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,9 +446,9 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/samchon.templates.slave.islaveserver.html">ISlaveServer</a>.<a href="../interfaces/samchon.templates.slave.islaveserver.html#replydata">replyData</a></p>
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#replydata">replyData</a></p>
-								<p>Overwrites <a href="samchon.templates.slave.slavesystem.html">SlaveSystem</a>.<a href="samchon.templates.slave.slavesystem.html#replydata">replyData</a></p>
+								<p>Overrides <a href="samchon.templates.slave.slavesystem.html">SlaveSystem</a>.<a href="samchon.templates.slave.slavesystem.html#replydata">replyData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8353</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8718">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8718</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,7 +479,7 @@
 								<p>Implementation of <a href="../interfaces/samchon.templates.slave.islaveserver.html">ISlaveServer</a>.<a href="../interfaces/samchon.templates.slave.islaveserver.html#senddata">sendData</a></p>
 								<p>Inherited from <a href="samchon.templates.slave.slavesystem.html">SlaveSystem</a>.<a href="samchon.templates.slave.slavesystem.html#senddata">sendData</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8265</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8621">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8621</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -460,9 +502,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="samchon.templates.parallel.mediatorserver.html">MediatorServer</a>.<a href="samchon.templates.parallel.mediatorserver.html#start">start</a></p>
-								<p>Overwrites <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#start">start</a></p>
+								<p>Overrides <a href="samchon.templates.parallel.mediatorsystem.html">MediatorSystem</a>.<a href="samchon.templates.parallel.mediatorsystem.html#start">start</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:8446</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8812">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8812</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,12 +529,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
@@ -540,6 +582,9 @@
 						<a href="samchon.templates.parallel.mediatorclient.html" class="tsd-kind-icon">Mediator<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.templates.parallel.mediatordedicatedworkerserver.html" class="tsd-kind-icon">Mediator<wbr>Dedicated<wbr>Worker<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.parallel.mediatorserver.html" class="tsd-kind-icon">Mediator<wbr>Server</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
@@ -571,7 +616,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
 								<a href="samchon.templates.parallel.mediatorwebserver.html#createserverbase" class="tsd-kind-icon">create<wbr>Server<wbr>Base</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.parallel.mediatorwebserver.html#getsystemarray" class="tsd-kind-icon">get<wbr>System<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -593,34 +638,34 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.parallel.prinvokehistory.html" class="tsd-kind-icon">PRInvoke<wbr>History</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelclientarray.html" class="tsd-kind-icon">Parallel<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelclientarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelserver.html" class="tsd-kind-icon">Parallel<wbr>Server</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelserverarray.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelserverarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Array<wbr>Mediator</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelserverclientarray.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelserverclientarraymediator.html" class="tsd-kind-icon">Parallel<wbr>Server<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelsystem.html" class="tsd-kind-icon">Parallel<wbr>System</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelsystemarray.html" class="tsd-kind-icon">Parallel<wbr>System<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.parallel.parallelsystemarraymediator.html" class="tsd-kind-icon">Parallel<wbr>System<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
@@ -691,7 +736,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

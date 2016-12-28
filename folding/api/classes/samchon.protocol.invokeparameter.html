@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InvokeParameter | @types/typescript-stl</title>
+	<title>InvokeParameter | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -144,10 +143,12 @@
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Invoke<wbr>Parameter<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, val<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></li>
@@ -156,9 +157,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5041</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5098">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5098</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -170,9 +171,34 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5045</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5102">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default Constructor.
+									Construct from variable name and number value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5103">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,9 +221,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5046</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5104">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,9 +246,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5047</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5105">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,9 +271,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5048</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5106">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,14 +296,42 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5049</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5107">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Construct from variable name and number value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>val: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="samchon.protocol.invokeparameter.html" class="tsd-signature-type">InvokeParameter</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5114">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5114</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Default Constructor.
+									Construct from variable name and number value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -297,9 +351,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5056</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5115">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,9 +379,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5057</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5116">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,9 +407,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5058</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5117">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -390,7 +444,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5033</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5090">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5090</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -410,7 +464,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5037</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5094">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5094</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -422,10 +476,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 					<a name="value" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span></div>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5041</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5098">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5098</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -446,9 +500,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5087</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5147">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,9 +524,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5063</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5122">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -501,7 +555,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5075</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5135">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +577,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5079</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5139">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,7 +599,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5083</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5143">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -566,9 +620,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5071</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5131">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,6 +639,7 @@
 					<a name="setvalue" class="tsd-anchor"></a>
 					<h3>set<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="samchon.library.xml.html" class="tsd-signature-type">XML</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
@@ -594,7 +649,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5064</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5123">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5123</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5124">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -608,7 +677,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5065</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5125">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -622,7 +691,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5066</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5126">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -636,7 +705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5067</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5127">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -658,9 +727,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#toxml">toXML</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5091</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L5151">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:5151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -685,12 +754,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
@@ -727,10 +796,19 @@
 						<a href="samchon.protocol.communicatorbase.html" class="tsd-kind-icon">Communicator<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.protocol.dedicatedworker.html" class="tsd-kind-icon">Dedicated<wbr>Worker</a>
+						<a href="samchon.protocol.dedicatedworkerclientdriver.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Client<wbr>Driver</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.protocol.dedicatedworkerconnector.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Connector</a>
+						<a href="samchon.protocol.dedicatedworkercommunicator.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Communicator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworkerserver.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworkerserverbase.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Server<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="samchon.protocol.dedicatedworkerserverconnector.html" class="tsd-kind-icon">Dedicated<wbr>Worker<wbr>Server<wbr>Connector</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.protocol.entity.html" class="tsd-kind-icon">Entity</a>
@@ -755,9 +833,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.protocol.invoke.html" class="tsd-kind-icon">Invoke</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="samchon.protocol.invokehistory.html" class="tsd-kind-icon">Invoke<wbr>History</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -929,7 +1004,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

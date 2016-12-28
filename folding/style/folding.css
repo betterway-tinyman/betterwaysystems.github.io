@@ -12,7 +12,8 @@ tr.title_row
 
 tr.sum_row
 {
-    font-size: 12;
+    font-size: 12px;
+    font-weight: bold;
     text-decoration: underline;
     background-color: khaki;
 }
@@ -29,13 +30,13 @@ tr.comment_row
 {
 }
 
-tr.title_row:hover, 
-    tr.sum_row:hover, 
+tr.sum_row:hover, 
     tr.price_row:hover, 
     tr.sub_price_row:hover,
     tr.comment_row:hover
 {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    background-color: #d5e8f7;
 }
 
 td.border

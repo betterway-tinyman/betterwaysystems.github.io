@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DSInvokeHistory | @types/typescript-stl</title>
+	<title>DSInvokeHistory | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -103,7 +102,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="samchon.protocol.invokehistory.html" class="tsd-signature-type">InvokeHistory</a>
+						<a href="samchon.templates.slave.invokehistory.html" class="tsd-signature-type">InvokeHistory</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">DSInvokeHistory</span>
@@ -141,6 +140,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#getstarttime" class="tsd-kind-icon">get<wbr>Start<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#getsystem" class="tsd-kind-icon">get<wbr>System</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#getuid" class="tsd-kind-icon">getUID</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#getweight" class="tsd-kind-icon">get<wbr>Weight</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#key" class="tsd-kind-icon">key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#toinvoke" class="tsd-kind-icon">to<wbr>Invoke</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="samchon.templates.distributed.dsinvokehistory.html#toxml" class="tsd-kind-icon">toXML</a></li>
@@ -156,14 +156,14 @@
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">new DSInvoke<wbr>History<span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-signature-type">DSInvokeHistory</a></li>
-						<li class="tsd-signature tsd-kind-icon">new DSInvoke<wbr>History<span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a>, process<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a>, invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-signature-type">DSInvokeHistory</a></li>
+						<li class="tsd-signature tsd-kind-icon">new DSInvoke<wbr>History<span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedsystem.html" class="tsd-signature-type">DistributedSystem</a>, process<span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.distributedprocess.html" class="tsd-signature-type">DistributedProcess</a>, invoke<span class="tsd-signature-symbol">: </span><a href="samchon.protocol.invoke.html" class="tsd-signature-type">Invoke</a>, weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-signature-type">DSInvokeHistory</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7652</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7995">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7995</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,9 +186,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#constructor">constructor</a></p>
+								<p>Overrides <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7658</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8001">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8001</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -222,6 +222,14 @@
 										</div>
 									</div>
 								</li>
+								<li>
+									<h5>weight: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Weight of resource which indicates how heavy this <a href="samchon.protocol.invoke.html">Invoke</a> message is.</p>
+										</div>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="samchon.templates.distributed.dsinvokehistory.html" class="tsd-signature-type">DSInvokeHistory</a></h4>
 						</li>
@@ -239,10 +247,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#tag">TAG</a></p>
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#tag">TAG</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#tag">TAG</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5171</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7950">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7950</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,9 +272,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#complete">complete</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#complete">complete</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5144</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7923">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7923</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -288,9 +296,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#computeelapsedtime">computeElapsedTime</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#computeelapsedtime">computeElapsedTime</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5167</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7946">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7946</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,9 +320,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#construct">construct</a></p>
+								<p>Overrides <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7670</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8014">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8014</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,9 +350,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#getendtime">getEndTime</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#getendtime">getEndTime</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5161</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7940">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7940</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,9 +373,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#getlistener">getListener</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#getlistener">getListener</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5153</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7932">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7932</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7678</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8022">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8022</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,9 +418,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#getstarttime">getStartTime</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#getstarttime">getStartTime</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5157</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7936">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7936</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -434,7 +442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7674</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8018">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8018</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -455,15 +463,38 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#getuid">getUID</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#getuid">getUID</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5149</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7928">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7928</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Get unique ID.</p>
 								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="getweight" class="tsd-anchor"></a>
+					<h3>get<wbr>Weight</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Weight<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8028">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8028</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get weight.</p>
+								</div>
+								<p>Gets weight of resource which indicates how heavy this <a href="samchon.protocol.invoke.html">Invoke</a> message is. Default is 1.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
@@ -478,10 +509,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#key">key</a></p>
-								<p>Overwrites <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#key">key</a></p>
+								<p>Overrides <a href="samchon.protocol.entity.html">Entity</a>.<a href="samchon.protocol.entity.html#key">key</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5145</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7924">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7924</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -497,9 +528,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#toinvoke">toInvoke</a></p>
+								<p>Inherited from <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#toinvoke">toInvoke</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:5181</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L7960">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:7960</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -521,9 +552,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="samchon.protocol.invokehistory.html">InvokeHistory</a>.<a href="samchon.protocol.invokehistory.html#toxml">toXML</a></p>
+								<p>Overrides <a href="samchon.templates.slave.invokehistory.html">InvokeHistory</a>.<a href="samchon.templates.slave.invokehistory.html#toxml">toXML</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/samchon-framework/index.d.ts:7682</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/samchon-framework/lib/ts/samchon-framework.d.ts#L8032">node_modules/samchon-framework/lib/ts/samchon-framework.d.ts:8032</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,12 +579,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
@@ -635,6 +666,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.distributed.dsinvokehistory.html#getuid" class="tsd-kind-icon">getUID</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="samchon.templates.distributed.dsinvokehistory.html#getweight" class="tsd-kind-icon">get<wbr>Weight</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="samchon.templates.distributed.dsinvokehistory.html#key" class="tsd-kind-icon">key</a>
 							</li>
@@ -648,10 +682,10 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedclientarray.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
@@ -660,25 +694,25 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserver.html" class="tsd-kind-icon">Distributed<wbr>Server</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Array<wbr>Mediator</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverclientarray.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedserverclientarraymediator.html" class="tsd-kind-icon">Distributed<wbr>Server<wbr>Client<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystem.html" class="tsd-kind-icon">Distributed<wbr>System</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystemarray.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="samchon.templates.distributed.distributedsystemarraymediator.html" class="tsd-kind-icon">Distributed<wbr>System<wbr>Array<wbr>Mediator</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
@@ -749,7 +783,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

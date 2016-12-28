@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Vector | @types/typescript-stl</title>
+	<title>Vector | tstl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -23,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@types/typescript-stl</a>
+					<a href="../index.html" class="title">tstl</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -82,21 +81,13 @@
 						to be reallocated in order to grow in size when new elements are inserted, which implies allocating a new
 						array and moving all elements to it. This is a relatively expensive task in terms of processing time, and
 					thus, <a href="std.vector.html">Vector</a>s do not reallocate each time an element is added to the container. </p>
-					<p> Instead, <a href="std.vector.html">Vector</a> containers may allocate some extra storage to accommodate for possible growth, and
-						thus the container may have an actual <a href="std.vector.html#capacity">capacity</a> greater than the storage strictly needed to contain its
-						elements (i.e., its <a href="std.vector.html#size">size</a>). Libraries can implement different strategies for growth to balance between
-						memory usage and reallocations, but in any case, reallocations should only happen at logarithmically growing
-						intervals of <a href="std.vector.html#size">size</a> so that the insertion of individual elements at the end of the <a href="std.vector.html">Vector</a> can be
-					provided with amortized constant time complexity (see <a href="std.vector.html#push_back">push_back()</a>). </p>
-					<p> Therefore, compared to arrays, <a href="std.vector.html">Vector</a>s consume more memory in exchange for the ability to manage
-					storage and grow dynamically in an efficient way. </p>
 					<p> Compared to the other dynamic sequence containers (<a href="std.deque.html">Deque</a>s, <a href="std.list.html">List</a>s), <a href="std.vector.html">Vectors</a>
 						are very efficient accessing its elements (just like arrays) and relatively efficient adding or removing
 						elements from its end. For operations that involve inserting or removing elements at positions other than the
 						end, they perform worse than the others, and have less consistent iterators and references than <a href="std.list.html">List</a>s.
 					</p>
-					<p> <a href="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" target="_blank">
-							<img src="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" />
+					<p> <a href="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" target="_blank">
+							<img src="http://samchon.github.io/tstl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" />
 					</a> </p>
 					<p><h3> Container properties </h3></p>
 					<dl>
@@ -138,7 +129,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Vector</span>
@@ -158,56 +149,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li><a href="../interfaces/std.base.iarraycontainer.html" class="tsd-signature-type">IArrayContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
-			</section>
-			<section class="tsd-panel tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></div>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p> Vector, the dynamic array. </p>
-					</div>
-					<p> <a href="std.vector.html">Vector</a>s are sequence containers representing arrays that can change in size. </p>
-					<p> Just like arrays, <a href="std.vector.html">Vector</a>s use contiguous storage locations for their elements, which means that
-						their elements can also be accessed using offsets on regular pointers to its elements, and just as efficiently
-						as in arrays. But unlike arrays, their size can change dynamically, with their storage being handled
-					automatically by the container. </p>
-					<p> Internally, <a href="std.vector.html">Vector</a>s use a dynamically allocated array to store their elements. This array may need
-						to be reallocated in order to grow in size when new elements are inserted, which implies allocating a new
-						array and moving all elements to it. This is a relatively expensive task in terms of processing time, and
-					thus, <a href="std.vector.html">Vector</a>s do not reallocate each time an element is added to the container. </p>
-					<p> Instead, <a href="std.vector.html">Vector</a> containers may allocate some extra storage to accommodate for possible growth, and
-						thus the container may have an actual <a href="std.vector.html#capacity">capacity</a> greater than the storage strictly needed to contain its
-						elements (i.e., its <a href="std.vector.html#size">size</a>). Libraries can implement different strategies for growth to balance between
-						memory usage and reallocations, but in any case, reallocations should only happen at logarithmically growing
-						intervals of <a href="std.vector.html#size">size</a> so that the insertion of individual elements at the end of the <a href="std.vector.html">Vector</a> can be
-					provided with amortized constant time complexity (see <a href="std.vector.html#push_back">push_back()</a>). </p>
-					<p> Therefore, compared to arrays, <a href="std.vector.html">Vector</a>s consume more memory in exchange for the ability to manage
-					storage and grow dynamically in an efficient way. </p>
-					<p> Compared to the other dynamic sequence containers (<a href="std.deque.html">Deque</a>s, <a href="std.list.html">List</a>s), <a href="std.vector.html">Vectors</a>
-						are very efficient accessing its elements (just like arrays) and relatively efficient adding or removing
-						elements from its end. For operations that involve inserting or removing elements at positions other than the
-						end, they perform worse than the others, and have less consistent iterators and references than <a href="std.list.html">List</a>s.
-					</p>
-					<p> <a href="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" target="_blank">
-							<img src="http://samchon.github.io/typescript-stl/images/design/class_diagram/linear_containers.png" style="max-width: 100%" />
-					</a> </p>
-					<p><h3> Container properties </h3></p>
-					<dl>
-						<dt> Sequence </dt>
-						<dd>
-							Elements in sequence containers are ordered in a strict linear sequence. Individual elements are
-							accessed by their position in this sequence.
-						</dd>
-						<dt> Dynamic array </dt>
-						<dd>
-							Allows direct access to any element in the sequence, even through pointer arithmetics, and provides
-							relatively fast addition/removal of elements at the end of the sequence.
-						</dd>
-					</dl>
-				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
@@ -223,59 +166,31 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="std.vector.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="std.vector.html#array" class="tsd-kind-icon">Array</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="std.vector.html#assign" class="tsd-kind-icon">assign</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="std.vector.html#assign" class="tsd-kind-icon">assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#at" class="tsd-kind-icon">at</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#back" class="tsd-kind-icon">back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#begin" class="tsd-kind-icon">begin</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#capacity" class="tsd-kind-icon">capacity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#empty" class="tsd-kind-icon">empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#erase" class="tsd-kind-icon">erase</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#begin" class="tsd-kind-icon">begin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#empty" class="tsd-kind-icon">empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#erase" class="tsd-kind-icon">erase</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#front" class="tsd-kind-icon">front</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="std.vector.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#push_back" class="tsd-kind-icon">push_<wbr>back</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#rend" class="tsd-kind-icon">rend</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#reserve" class="tsd-kind-icon">reserve</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#rbegin" class="tsd-kind-icon">rbegin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#rend" class="tsd-kind-icon">rend</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="std.vector.html#swap" class="tsd-kind-icon">swap</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#concat" class="tsd-kind-icon">concat</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#every" class="tsd-kind-icon">every</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#filter" class="tsd-kind-icon">filter</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#join" class="tsd-kind-icon">join</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="std.vector.html#map" class="tsd-kind-icon">map</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#pop" class="tsd-kind-icon">pop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#push" class="tsd-kind-icon">push</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="std.vector.html#reduce" class="tsd-kind-icon">reduce</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="std.vector.html#reduceright" class="tsd-kind-icon">reduce<wbr>Right</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#reverse" class="tsd-kind-icon">reverse</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#shift" class="tsd-kind-icon">shift</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#slice" class="tsd-kind-icon">slice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#some" class="tsd-kind-icon">some</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#sort" class="tsd-kind-icon">sort</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#splice" class="tsd-kind-icon">splice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="std.vector.html#unshift" class="tsd-kind-icon">unshift</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="std.vector.html#swap" class="tsd-kind-icon">swap</a></li>
 							</ul>
 						</section>
 					</div>
@@ -289,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">iterator<span class="tsd-signature-symbol">:</span> <a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9985</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9069">node_modules/tstl/lib/tstl.d.ts:9069</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,17 +214,17 @@
 					<div class="tsd-signature tsd-kind-icon">reverse_<wbr>iterator<span class="tsd-signature-symbol">:</span> <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/typescript-stl/index.d.ts:9986</li>
+							<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9070">node_modules/tstl/lib/tstl.d.ts:9070</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Vector<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Vector<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Vector<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a></li>
@@ -320,8 +235,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10044</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9134">node_modules/tstl/lib/tstl.d.ts:9134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -334,24 +250,15 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10050</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9140">node_modules/tstl/lib/tstl.d.ts:9140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p> Default Constructor. </p>
-									<p> Initializer list Constructor. </p>
-									<p> Fill Constructor. </p>
-									<p> Copy Constructor. </p>
-									<p> Range Constructor. </p>
+									<p>Default Constructor.</p>
 								</div>
-								<p> Constructs an empty container, with no elements. </p>
-								<p> Constructs a container with a copy of each of the elements in <i>array</i>, in the same order. </p>
-								<p> Constructs a container with <i>n</i> elements. Each element is a copy of <i>val</i> (if provided). </p>
-								<p> Constructs a container with a copy of each of the elements in <i>container</i>, in the same order. </p>
-								<p> Constructs a container with as many elements as the range (<i>begin</i>, <i>end<i>), with each
-								element emplace-constructed from its corresponding element in that range, in the same order. </p>
 								<dl class="tsd-comment-tags">
 									<dt>inheritdoc</dt>
 									<dd></dd>
@@ -361,19 +268,15 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>An array containing elements to be copied and contained.</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.vector.html" class="tsd-signature-type">Vector</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10054</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9144">node_modules/tstl/lib/tstl.d.ts:9144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -386,19 +289,15 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>n: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Initial container size (i.e., the number of elements in the container at construction).</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="std.vector.html" class="tsd-signature-type">Vector</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10062</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9152">node_modules/tstl/lib/tstl.d.ts:9152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -412,18 +311,14 @@
 								<li>
 									<h5>n: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Initial container size (i.e., the number of elements in the container at construction).</p>
-										</div>
+										<p>Initial container size (i.e., the number of elements in the container at construction).</p>
 									</div>
 								</li>
 								<li>
 									<h5>val: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Value to fill the container with. Each of the <i>n</i> elements in the container is
-											initialized to a copy of this value.</p>
-										</div>
+										<p>Value to fill the container with. Each of the <i>n</i> elements in the container is
+										initialized to a copy of this value.</p>
 									</div>
 								</li>
 							</ul>
@@ -431,8 +326,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10072</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9162">node_modules/tstl/lib/tstl.d.ts:9162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,10 +342,8 @@
 								<li>
 									<h5>container: <a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Another container object of the same type (with the same class template
-											arguments <i>T</i>), whose contents are either copied or acquired.</p>
-										</div>
+										<p>Another container object of the same type (with the same class template
+										arguments <i>T</i>), whose contents are either copied or acquired.</p>
 									</div>
 								</li>
 							</ul>
@@ -457,8 +351,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10081</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9171">node_modules/tstl/lib/tstl.d.ts:9171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,17 +368,13 @@
 								<li>
 									<h5>begin: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Input interator of the initial position in a sequence.</p>
-										</div>
+										<p>Input interator of the initial position in a sequence.</p>
 									</div>
 								</li>
 								<li>
 									<h5>end: <a href="std.iterator.html" class="tsd-signature-type">Iterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Input interator of the final position in a sequence.</p>
-										</div>
+										<p>Input interator of the final position in a sequence.</p>
 									</div>
 								</li>
 							</ul>
@@ -493,40 +384,11 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="array" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> Array</h3>
-					<div class="tsd-signature tsd-kind-icon">Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ArrayConstructor</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1264</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="length" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> length</h3>
-					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from Array.length</p>
-						<ul>
-							<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1117</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 					<a name="assign" class="tsd-anchor"></a>
 					<h3>assign</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">assign&lt;U, InputIterator&gt;<span class="tsd-signature-symbol">(</span>begin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InputIterator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">assign<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -534,16 +396,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#assign">assign</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10095</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9185">node_modules/tstl/lib/tstl.d.ts:9185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Assign new content to content. </p>
-								</div>
-								<p> Assigns new contents to the container, replacing its current contents, and modifying its
-								<a href="std.vector.html#size">size</a> accordingly. </p>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -568,8 +430,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#assign">assign</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10099</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9189">node_modules/tstl/lib/tstl.d.ts:9189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -603,16 +466,16 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#at">at</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10139</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9221">node_modules/tstl/lib/tstl.d.ts:9221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Access element. </p>
-									<p> Returns a value to the element at position <i>index</i> in the {@link IArray container}.</p>
+									<p> Returns a value to the element at position <i>index</i> in the <a href="../interfaces/std.base.iarraycontainer.html">container</a>.</p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the {@link IArray container}, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
+									in the <a href="../interfaces/std.base.iarraycontainer.html">container</a>, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e.,
 								if <i>index</i> is greater or equal than its <a href="std.vector.html#size">size</a>). </p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -637,7 +500,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#back">back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10151</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9233">node_modules/tstl/lib/tstl.d.ts:9233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -654,18 +517,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="begin" class="tsd-anchor"></a>
 					<h3>begin</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">begin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#begin">begin</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#begin">begin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10111</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9197">node_modules/tstl/lib/tstl.d.ts:9197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -681,55 +545,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="capacity" class="tsd-anchor"></a>
-					<h3>capacity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">capacity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#capacity">capacity</a></p>
-								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10131</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Return size of allocated storage capacity. </p>
-								</div>
-								<p> Returns the size of the storage space currently allocated for the {@link IArray container},
-								expressed in terms of elements. </p>
-								<p> This <a href="std.vector.html#capacity">capacity</a> is not necessarily equal to the {@link IArray container} <a href="std.vector.html#size">size</a>.
-									It can be equal or greater, with the extra space allowing to accommodate for growth without the
-								need to reallocate on each insertion. </p>
-								<p> Notice that this <a href="std.vector.html#capacity">capacity</a> does not suppose a limit on the <a href="std.vector.html#size">size</a> of the
-									{@link IArray container}. When this <a href="std.vector.html#capacity">capacity</a> is exhausted and more is needed, it is
-									automatically expanded by the {@link IArray container} (reallocating it storage space).
-									The theoretical limit on the <a href="std.vector.html#size">size</a> of a {@link IArray container} is given by member
-								{@link max_size}. </p>
-								<p> The <a href="std.vector.html#capacity">capacity</a> of a {@link IArray container} can be explicitly altered by calling member
-								{@link IArray.reserve}. </p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the currently allocated storage capacity in the {@link IArray container},
-							measured in terms of the number elements it can hold.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#clear">clear</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10107</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9193">node_modules/tstl/lib/tstl.d.ts:9193</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -743,17 +571,42 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9241">node_modules/tstl/lib/tstl.d.ts:9241</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Access data.</p>
+								</div>
+								<p>Returns a direct array which is used internally by the {@link vector} to store its owned elements.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="empty" class="tsd-anchor"></a>
 					<h3>empty</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#empty">empty</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10135</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9217">node_modules/tstl/lib/tstl.d.ts:9217</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,18 +622,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="end" class="tsd-anchor"></a>
 					<h3>end</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#end">end</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#end">end</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10115</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9201">node_modules/tstl/lib/tstl.d.ts:9201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -791,10 +645,10 @@
 								<p> The past-the-end element is the theoretical element that would follow the last element in the
 								It does not point to any element, and thus shall not be dereferenced. </p>
 								<p> Because the ranges used by functions of the Container do not include the element reference by their
-									closing iterator, this function is often used in combination with <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.vector.html#begin">begin</a> to
+									closing iterator, this function is often used in combination with {@link IContainer}.<a href="std.vector.html#begin">begin</a> to
 								specify a range including all the elements in the container. </p>
 								<p><h4> Note </h4></p>
-								<p> Returned iterator from <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.vector.html#end">end</a> does not refer any element. Trying to accessing
+								<p> Returned iterator from {@link IContainer}.<a href="std.vector.html#end">end</a> does not refer any element. Trying to accessing
 								element by the iterator will cause throwing exception (<a href="std.outofrange.html">OutOfRange</a>). </p>
 								<p> If the container is <a href="std.vector.html#empty">empty</a>, this function returns the same as <a href="std.base.container.html">Container</a>.<a href="std.vector.html#begin">begin</a>.
 								</p>
@@ -804,10 +658,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="erase" class="tsd-anchor"></a>
 					<h3>erase</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, last<span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectoriterator.html" class="tsd-signature-type">VectorIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">erase<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -816,8 +670,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10328</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9404">node_modules/tstl/lib/tstl.d.ts:9404</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -847,8 +702,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10348</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9424">node_modules/tstl/lib/tstl.d.ts:9424</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -878,8 +734,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10367</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9443">node_modules/tstl/lib/tstl.d.ts:9443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -909,8 +766,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#erase">erase</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10387</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9463">node_modules/tstl/lib/tstl.d.ts:9463</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -951,7 +809,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#front">front</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10147</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9229">node_modules/tstl/lib/tstl.d.ts:9229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -983,7 +841,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10177</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9268">node_modules/tstl/lib/tstl.d.ts:9268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,8 +850,6 @@
 								</div>
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new element before the element at the specified
 								<i>position</i>, effectively increasing the container size by one. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
 									positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
@@ -1022,7 +878,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10200</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9288">node_modules/tstl/lib/tstl.d.ts:9288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1031,8 +887,6 @@
 								</div>
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
@@ -1067,7 +921,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10224</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9309">node_modules/tstl/lib/tstl.d.ts:9309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1077,8 +931,6 @@
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
 								iterators. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
@@ -1122,7 +974,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10246</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9328">node_modules/tstl/lib/tstl.d.ts:9328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1131,8 +983,6 @@
 								</div>
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new element before the element at the specified
 								<i>position</i>, effectively increasing the container size by one. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting element in
 									positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 									after <i>position</i> to its new position. This is generally an inefficient operation compared to the one
@@ -1161,7 +1011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10269</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9348">node_modules/tstl/lib/tstl.d.ts:9348</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1170,8 +1020,6 @@
 								</div>
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 								<i>position</i>, effectively increasing the container size by the number of elements inserted. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
@@ -1206,7 +1054,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10293</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9369">node_modules/tstl/lib/tstl.d.ts:9369</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1216,8 +1064,6 @@
 								<p> The <a href="std.vector.html">Vector</a> is extended by inserting new elements before the element at the specified
 									<i>position</i>, effectively increasing the container size by the number of elements inserted by range
 								iterators. </p>
-								<p> This causes an automatic reallocation of the allocated storage space if -and only if- the new
-								<a href="std.vector.html#size">size</a> surpasses the current <a href="std.vector.html#capacity">capacity</a>. </p>
 								<p><p> Because <a href="std.vector.html">Vector</a>s use an <code>Array</code> as their underlying storage, inserting elements in
 										positions other than the <a href="std.vector.html#end">end()</a> causes the container to relocate all the elements that were
 										after <i>position</i> to their new positions. This is generally an inefficient operation compared to the
@@ -1271,7 +1117,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#pop_back">pop_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10309</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9385">node_modules/tstl/lib/tstl.d.ts:9385</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1282,6 +1128,38 @@
 								{@link IList container} <a href="std.vector.html#size">size</a> by one. </p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="push" class="tsd-anchor"></a>
+					<h3>push</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#push">push</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#push">push</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9245">node_modules/tstl/lib/tstl.d.ts:9245</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> Insert elements. </p>
+								</div>
+								<p> Appends new elements to the container, and returns the new size of the  </p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>New size of the Container.</p>
 						</li>
 					</ul>
 				</section>
@@ -1296,7 +1174,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#push_back">push_back</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10155</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9249">node_modules/tstl/lib/tstl.d.ts:9249</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1316,18 +1194,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="rbegin" class="tsd-anchor"></a>
 					<h3>rbegin</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">rbegin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#rbegin">rbegin</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rbegin">rbegin</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10119</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9205">node_modules/tstl/lib/tstl.d.ts:9205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1346,18 +1225,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="rend" class="tsd-anchor"></a>
 					<h3>rend</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">rend<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#rend">rend</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#rend">rend</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10123</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9209">node_modules/tstl/lib/tstl.d.ts:9209</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1366,49 +1246,11 @@
 								</div>
 								<p> Returns a <a href="std.reverseiterator.html">reverse iterator</a> pointing to the theoretical element preceding the
 								first element in the container (which is considered its <i>reverse end</i>). </p>
-								<p><p> The range between <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.vector.html#rbegin">rbegin</a> and <a href="../interfaces/std.base.icontainer.html">IContainer</a>.<a href="std.vector.html#rend">rend</a> contains all
+								<p><p> The range between {@link IContainer}.<a href="std.vector.html#rbegin">rbegin</a> and {@link IContainer}.<a href="std.vector.html#rend">rend</a> contains all
 									the elements of the container (in reverse order).</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="std.vectorreverseiterator.html" class="tsd-signature-type">VectorReverseIterator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A <a href="std.reverseiterator.html">reverse iterator</a> to the <i>reverse end</i> of the sequence</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="reserve" class="tsd-anchor"></a>
-					<h3>reserve</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reserve<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#reserve">reserve</a></p>
-								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10103</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> Request a change in capacity. </p>
-								</div>
-								<p> Requests that the {@link IArray container} <a href="std.vector.html#capacity">capacity</a> be at least enough to contain
-								<i>n</i> elements. </p>
-								<p> If <i>n</i> is greater than the current {@link IArray container} <a href="std.vector.html#capacity">capacity</a>, the
-									function causes the {@link IArray container} to reallocate its storage increasing its
-								<a href="std.vector.html#capacity">capacity</a> to <i>n</i> (or greater). </p>
-								<p> In all other cases, the function call does not cause a reallocation and the
-								{@link IArray container} <a href="std.vector.html#capacity">capacity</a> is not affected. </p>
-								<p> This function has no effect on the {@link IArray container} <a href="std.vector.html#size">size</a> and cannot alter
-								its elements. </p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>size: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1423,17 +1265,17 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#set">set</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10143</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9225">node_modules/tstl/lib/tstl.d.ts:9225</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p> Modify element. </p>
-									<p> Replaces an element at the specified position (<i>index</i>) in this {@link IArray container}
+									<p> Replaces an element at the specified position (<i>index</i>) in this <a href="../interfaces/std.base.iarraycontainer.html">container</a>
 									with the specified element (<i>val</i>). </p>
 								</div>
 								<p> The function automatically checks whether <i>index</i> is within the bounds of valid elements
-									in the {@link IArray container}, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e., if
+									in the <a href="../interfaces/std.base.iarraycontainer.html">container</a>, throwing an <a href="std.outofrange.html">OutOfRange</a> exception if it is not (i.e., if
 								<i>index</i> is greater or equal than its <a href="std.vector.html#size">size</a>). </p>
 								<p>@.param index A specified position of the value to replace.</p>
 							</div>
@@ -1451,18 +1293,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#size">size</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#size">size</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10127</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9213">node_modules/tstl/lib/tstl.d.ts:9213</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1475,18 +1318,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10409</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9485">node_modules/tstl/lib/tstl.d.ts:9485</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1517,8 +1361,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/std.base.iarraycontainer.html">IArrayContainer</a>.<a href="../interfaces/std.base.iarraycontainer.html#swap">swap</a></p>
+								<p>Overrides <a href="std.base.container.html">Container</a>.<a href="std.base.container.html#swap">swap</a></p>
 								<ul>
-									<li>Defined in node_modules/@types/typescript-stl/index.d.ts:10413</li>
+									<li>Defined in <a href="https://github.com/betterwaysystems/folding/blob/d2472eb/node_modules/tstl/lib/tstl.d.ts#L9489">node_modules/tstl/lib/tstl.d.ts:9489</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1526,7 +1371,7 @@
 									<p> Swap content. </p>
 								</div>
 								<p> Exchanges the content of the container by the content of <i>obj</i>, which is another
-								<a href="../interfaces/std.base.icontainer.html">container</a> object with same type of elements. Sizes and container type may differ. </p>
+								{@link IContainer container} object with same type of elements. Sizes and container type may differ. </p>
 								<p> After the call to this member function, the elements in this container are those which were in <i>obj</i>
 									before the call, and the elements of <i>obj</i> are those which were in this. All iterators, references and
 								pointers remain valid for the swapped objects. </p>
@@ -1536,1084 +1381,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <a href="../interfaces/std.base.icontainer.html" class="tsd-signature-type">IContainer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>obj: <a href="std.base.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="concat" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> concat</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">concat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-signature tsd-kind-icon">concat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.concat</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1136</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Combines two or more arrays.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Additional items to add to the end of array1.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.concat</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1141</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Combines two or more arrays.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Additional items to add to the end of array1.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="every" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> every</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">every<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.every</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1200</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Determines whether all the members of an array satisfy the specified test.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>value: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>index: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="filter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> filter</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.filter</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1224</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the elements of an array that meet the condition specified in a callback function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>value: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>index: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="foreach" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> for<wbr>Each</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.forEach</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1212</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Performs the specified action for each element in an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>value: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>index: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="indexof" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> index<wbr>Of</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">index<wbr>Of<span class="tsd-signature-symbol">(</span>searchElement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.indexOf</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1188</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the index of the first occurrence of a value in an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>searchElement: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="join" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> join</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">join<span class="tsd-signature-symbol">(</span>separator<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.join</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1146</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds all the elements of an array separated by the specified separator string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> separator: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="lastindexof" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> last<wbr>Index<wbr>Of</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">last<wbr>Index<wbr>Of<span class="tsd-signature-symbol">(</span>searchElement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.lastIndexOf</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1194</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the index of the last occurrence of a specified value in an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>searchElement: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-					<a name="map" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> map</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">map&lt;U&gt;<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.map</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1218</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calls a defined callback function on each element of an array, and returns an array that contains the results.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>value: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>index: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="pop" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> pop</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">pop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.pop</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1131</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the last element from an array and returns it.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="push" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> push</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.push</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1127</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Appends new elements to an array, and returns the new length of the array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>New elements of the Array.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-					<a name="reduce" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> reduce</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">reduce<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-						<li class="tsd-signature tsd-kind-icon">reduce&lt;U&gt;<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.reduce</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1230</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>previousValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentIndex: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> initialValue: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.reduce</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1236</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, currentValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>previousValue: <span class="tsd-signature-type">U</span></h5>
-														</li>
-														<li>
-															<h5>currentValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentIndex: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>initialValue: <span class="tsd-signature-type">U</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-					<a name="reduceright" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> reduce<wbr>Right</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">reduce<wbr>Right<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-						<li class="tsd-signature tsd-kind-icon">reduce<wbr>Right&lt;U&gt;<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.reduceRight</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1242</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>previousValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentIndex: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> initialValue: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.reduceRight</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1248</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>U</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>previousValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, currentValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, currentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>previousValue: <span class="tsd-signature-type">U</span></h5>
-														</li>
-														<li>
-															<h5>currentValue: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>currentIndex: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>initialValue: <span class="tsd-signature-type">U</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="reverse" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> reverse</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">reverse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.reverse</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1150</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Reverses the elements in an Array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="shift" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> shift</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">shift<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.shift</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1154</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the first element from an array and returns it.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="slice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> slice</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">slice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.slice</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1160</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a section of an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The beginning of the specified portion of the array.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The end of the specified portion of the array.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="some" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> some</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">some<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.some</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1206</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Determines whether the specified callback function returns true for any element of an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>value: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>index: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="sort" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> sort</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">sort<span class="tsd-signature-symbol">(</span>compareFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.sort</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1165</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sorts an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> compareFn: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>a: <span class="tsd-signature-type">T</span></h5>
-														</li>
-														<li>
-															<h5>b: <span class="tsd-signature-type">T</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="splice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> splice</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-signature tsd-kind-icon">splice<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deleteCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.splice</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1170</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The zero-based location in the array from which to start removing elements.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.splice</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1177</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The zero-based location in the array from which to start removing elements.</p>
-									</div>
-								</li>
-								<li>
-									<h5>deleteCount: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of elements to remove.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Elements to insert into the array in place of the deleted elements.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="tolocalestring" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> to<wbr>Locale<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Locale<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.toLocaleString</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1122</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="tostring" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> to<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.toString</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1121</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a string representation of an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="unshift" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> unshift</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">unshift<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Array.unshift</p>
-								<ul>
-									<li>Defined in C:/Users/Jeongho Nam/AppData/Roaming/npm/node_modules/typedoc/node_modules/typescript/lib/lib.d.ts:1182</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts new elements at the start of an array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Elements to insert at the start of the Array.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2629,12 +1400,12 @@
 						<a href="../modules/_samchon_framework_.html">"samchon-<wbr>framework"</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_typescript_stl_.html">"typescript-<wbr>stl"</a>
+						<a href="../modules/_tstl_.html">"tstl"</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/bws.html">bws</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/flex.html">flex</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -2666,16 +1437,10 @@
 							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-not-exported">
 								<a href="std.vector.html#reverse_iterator" class="tsd-kind-icon">reverse_<wbr>iterator</a>
 							</li>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="std.vector.html#array" class="tsd-kind-icon">Array</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#length" class="tsd-kind-icon">length</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="std.vector.html#assign" class="tsd-kind-icon">assign</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2684,22 +1449,22 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="std.vector.html#back" class="tsd-kind-icon">back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#begin" class="tsd-kind-icon">begin</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="std.vector.html#capacity" class="tsd-kind-icon">capacity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="std.vector.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#empty" class="tsd-kind-icon">empty</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#end" class="tsd-kind-icon">end</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#erase" class="tsd-kind-icon">erase</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2711,89 +1476,26 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="std.vector.html#pop_back" class="tsd-kind-icon">pop_<wbr>back</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="std.vector.html#push" class="tsd-kind-icon">push</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="std.vector.html#push_back" class="tsd-kind-icon">push_<wbr>back</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#rbegin" class="tsd-kind-icon">rbegin</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#rend" class="tsd-kind-icon">rend</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="std.vector.html#reserve" class="tsd-kind-icon">reserve</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="std.vector.html#set" class="tsd-kind-icon">set</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#size" class="tsd-kind-icon">size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="std.vector.html#swap" class="tsd-kind-icon">swap</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#concat" class="tsd-kind-icon">concat</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#every" class="tsd-kind-icon">every</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#filter" class="tsd-kind-icon">filter</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#join" class="tsd-kind-icon">join</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#map" class="tsd-kind-icon">map</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#pop" class="tsd-kind-icon">pop</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#push" class="tsd-kind-icon">push</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#reduce" class="tsd-kind-icon">reduce</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#reduceright" class="tsd-kind-icon">reduce<wbr>Right</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#reverse" class="tsd-kind-icon">reverse</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#shift" class="tsd-kind-icon">shift</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#slice" class="tsd-kind-icon">slice</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#some" class="tsd-kind-icon">some</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#sort" class="tsd-kind-icon">sort</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#splice" class="tsd-kind-icon">splice</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#tolocalestring" class="tsd-kind-icon">to<wbr>Locale<wbr>String</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="std.vector.html#unshift" class="tsd-kind-icon">unshift</a>
 							</li>
 						</ul>
 					</li>
@@ -2864,7 +1566,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
