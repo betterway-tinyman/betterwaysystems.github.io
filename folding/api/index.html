@@ -62,122 +62,423 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="-u-t-u-ypescript-u-stl-u-"><u>T</u>ypeScript-<u>STL</u></h1>
-				<p><a href="https://nodei.co/npm/tstl"><img src="https://nodei.co/npm/tstl.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
-				<p>GitHub Repository: <a href="https://github.com/samchon/tstl">https://github.com/samchon/tstl</a></p>
-				<h2 id="introduction">Introduction</h2>
-				<p><strong>STL</strong> (Standard Template Library) Containers and Algorithms for <strong>TypeScript</strong>.</p>
-				<p><strong>T</strong>ypeScript-<strong>STL</strong> is an open-source JavaScript library providing containers and algorithms migrated from C++ STL. You can enjoy STL containers and algorithms in JavaScript. If TypeScript, you will be much happier feeling like using originla STL with type restriction and template programming.</p>
-				<p><img src="http://samchon.github.io/tstl/images/design/class_diagram/abstract_containers.png" alt="Abstract Containers"></p>
-				<h5 id="containers">Containers</h5>
+				<h1 id="folding">Folding</h1>
+				<p>Folding 은 오프셋 견적을, 접지에 대한 (최적) 최소 비용을 도출해내는 솔루션이다.</p>
 				<ul>
-					<li><a href="http://samchon.github.io/tstl/api/interfaces/std.base.container.ilinearcontainer.html"><strong>Linear containers</strong></a><ul>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.vector.html">Vector</a></li>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.list.html">List</a></li>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.deque.html">Deque</a></li>
-						</ul>
-					</li>
-					<li><strong>Associative Containers</strong><ul>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.base.tree.rbtree.html"><strong>Tree-structured Containers</strong></a><ul>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.treeset.html">TreeSet</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.treemap.html">TreeMap</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.treemultiset.html">TreeMultiSet</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.treemultimap.html">TreeMultiMap</a></li>
+					<li><a href="https://github.com/betterwaysystems/folding">GitHub Repository</a></li>
+					<li><a href="http://betterwaysystems.github.io/folding/api/">API 문서</a></li>
+					<li><a href="http://betterwaysystems.github.io/folding/design/class_diagram.pdf">Class Diagram</a></li>
+				</ul>
+				<h2 id="-">빌드하기</h2>
+				<pre><code class="lang-bash"><span class="hljs-comment"># TypeScript Compiler 가 필히 설치되어있어야 한다.</span>
+npm install -g typescript
+
+<span class="hljs-comment">#------------</span>
+<span class="hljs-comment"># 코어 연산부</span>
+<span class="hljs-comment">#------------</span>
+<span class="hljs-comment"># TypeScript 가 설치되었다면, 다음 명령어들을 수행한다.</span>
+<span class="hljs-comment"># lib/folding-core.js 및 d.ts 가 생상될 것이다.</span>
+npm install --save
+tsc -p ts/core.json 
+
+<span class="hljs-comment">#------------</span>
+<span class="hljs-comment"># 데모 어플리케이션</span>
+<span class="hljs-comment">#------------</span>
+<span class="hljs-comment"># Demo Application 을 빌드하려거든, 다음 명령어를 수행한 후,</span>
+<span class="hljs-comment"># ts/index.html 을 실행하면 된다.</span>
+tsc -p ts/tsconfig.json
+</code></pre>
+				<h2 id="-">사용 방법</h2>
+				<h3 id="-">입력 데이터</h3>
+				<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">processArray</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">process</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"이름 없음"</span> <span class="hljs-attr">paper</span>=<span class="hljs-string">"기본 용지"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">device</span> <span class="hljs-attr">biteLength</span>=<span class="hljs-string">"3"</span> <span class="hljs-attr">biteDirection</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">nonPrintableWidth</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">nonPrintableHeight</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">fold</span>=<span class="hljs-string">"true"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"210"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"297"</span> <span class="hljs-attr">margin</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">pages</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">copies</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">bindingDirection</span>=<span class="hljs-string">"4"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pricesModels</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">print</span> <span class="hljs-attr">used</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">side</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">sparePapers</span>=<span class="hljs-string">"125"</span> <span class="hljs-attr">workPrice</span>=<span class="hljs-string">"7000"</span> <span class="hljs-attr">workFaces</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">ctpPrice</span>=<span class="hljs-string">"7000"</span> <span class="hljs-attr">frontSideColorCode</span>=<span class="hljs-string">"CMYK"</span> <span class="hljs-attr">backSideColorCode</span>=<span class="hljs-string">"CMYK"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">foil</span> <span class="hljs-attr">used</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">side</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">sparePapers</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">workPrice</span>=<span class="hljs-string">"25000"</span> <span class="hljs-attr">workFaces</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">copperPrice</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">inkPrice</span>=<span class="hljs-string">"1300"</span> <span class="hljs-attr">inkAreaPercentage</span>=<span class="hljs-string">"7"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">scodix</span> <span class="hljs-attr">used</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">side</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">sparePapers</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">feedingPrice</span>=<span class="hljs-string">"230"</span> <span class="hljs-attr">inkPrice</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">inkAreaPercentage</span>=<span class="hljs-string">"7"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">thomson</span> <span class="hljs-attr">used</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">sparePapers</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">workBasePrice</span>=<span class="hljs-string">"30000"</span> <span class="hljs-attr">workBaseFaces</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">workOverPrice</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">cuttingPrice</span>=<span class="hljs-string">"5000"</span> <span class="hljs-attr">cuttingLength</span>=<span class="hljs-string">"50"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">laminating</span> <span class="hljs-attr">used</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">side</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">sparePapers</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">basePrice</span>=<span class="hljs-string">"25000"</span> <span class="hljs-attr">baseFaces</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">filmPrice</span>=<span class="hljs-string">"200"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">pricesModels</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">process</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">paperArray</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">paper</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"기본 용지"</span> <span class="hljs-attr">areaPrice</span>=<span class="hljs-string">"300"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">size</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"636"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"233"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">size</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"310"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">size</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"465"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"210"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">size</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"233"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">size</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"310"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"210"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">paper</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">paperArray</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cutter</span> <span class="hljs-attr">workPrice</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">workSheets</span>=<span class="hljs-string">"300"</span> <span class="hljs-attr">cutPrice</span>=<span class="hljs-string">"100"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">processArray</span>&gt;</span>
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>태그</th>
+							<th>개요</th>
+							<th>관련 클래스 API</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>processArray</td>
+							<td>공정 리스트</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.processarray.html">ProcessArray</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; <strong>process</strong></td>
+							<td>개별 공정 엔티티</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.process.html">Process</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; device</td>
+							<td>장치 정보</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.device.html">Device</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; image</td>
+							<td>이미지 (출력 대상) 정보</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.image.html">Image</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; <strong>priceModels</strong></td>
+							<td>가격 모형 리스트</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.pricemodels.html">PriceModels</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; print</td>
+							<td>인쇄 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.printmodel.html">PrintModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; foil</td>
+							<td>박 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.foilmodel.html">FoilModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; scodix</td>
+							<td>스코딕스 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.scodixmodel.html">ScodixModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; thomson</td>
+							<td>톰슨 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.thomsonmodel.html">ThomsonModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; laminating</td>
+							<td>라미네이팅 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.laminatingmodel.html">LaminatingModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; paperArray</td>
+							<td>용지 모형 리스트</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.papermodelarray.html">PaperModelArray</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; <strong>paper</strong></td>
+							<td>용지 모형</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.papermodel.html">PaperModel</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; -&gt; -&gt; size</td>
+							<td>소속 용지모형에 대한 크기 엔티티</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.papersize.html">PaperSize</a></td>
+						</tr>
+						<tr>
+							<td>-&gt; cutter</td>
+							<td>재단기</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.cutter.html">Cutter</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="-">연산 결과</h3>
+				<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">process</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"이름 없음"</span> <span class="hljs-attr">paper</span>=<span class="hljs-string">"기본 용지"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">placement</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">rotated</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">paperSize</span>=<span class="hljs-string">"939x636"</span> <span class="hljs-attr">images</span>=<span class="hljs-string">"8"</span> <span class="hljs-attr">faces</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">sheets</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">copies</span>=<span class="hljs-string">"4000"</span> <span class="hljs-attr">plastes</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">inverses</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">firstPage</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">lastPage</span>=<span class="hljs-string">"240"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">placement</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">rotated</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">paperSize</span>=<span class="hljs-string">"939x636"</span> <span class="hljs-attr">images</span>=<span class="hljs-string">"8"</span> <span class="hljs-attr">faces</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">sheets</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">copies</span>=<span class="hljs-string">"2000"</span> <span class="hljs-attr">plastes</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">inverses</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">firstPage</span>=<span class="hljs-string">"241"</span> <span class="hljs-attr">lastPage</span>=<span class="hljs-string">"248"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">placement</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">rotated</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">paperSize</span>=<span class="hljs-string">"636x456"</span> <span class="hljs-attr">images</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">faces</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">sheets</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">copies</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">plastes</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">inverses</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">firstPage</span>=<span class="hljs-string">"249"</span> <span class="hljs-attr">lastPage</span>=<span class="hljs-string">"250"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">process</span>&gt;</span>
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>속성</th>
+							<th>개요</th>
+							<th>관련 메소드 API</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>paperSize</td>
+							<td>사용한 용지의 사이즈</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#getpapersize">getPaperSize()</a></td>
+						</tr>
+						<tr>
+							<td>rows</td>
+							<td>배치에 따른 행의 크기</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#row_size">row_size()</a></td>
+						</tr>
+						<tr>
+							<td>cols</td>
+							<td>배치에 따른 열의 크기</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#col_size">col_size()</a></td>
+						</tr>
+						<tr>
+							<td>rotated</td>
+							<td>이미지를 회전하여 배치하였는가</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#isrotated">isRotated()</a></td>
+						</tr>
+						<tr>
+							<td>images</td>
+							<td>배치된 이미지의 수량</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#image_count">image_count()</a></td>
+						</tr>
+						<tr>
+							<td>faces</td>
+							<td>면수</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#face_count">face_count()</a></td>
+						</tr>
+						<tr>
+							<td>sheets</td>
+							<td>장수</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#sheet_count">sheet_count()</a></td>
+						</tr>
+						<tr>
+							<td>copies</td>
+							<td>사본수</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#copy_count">copy_count()</a></td>
+						</tr>
+						<tr>
+							<td>plastes</td>
+							<td>판걸이 수량</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#plaste_count">plaste_count()</a></td>
+						</tr>
+						<tr>
+							<td>inverses</td>
+							<td>돈땡 수량 (1 or 2)</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#inverse_count">inverse_count()</a></td>
+						</tr>
+						<tr>
+							<td>firstPage</td>
+							<td>배치될 첫 페이지</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#computefirstpage">computeFirstPage()</a></td>
+						</tr>
+						<tr>
+							<td>lastPage</td>
+							<td>배치될 마지막 페이지</td>
+							<td><a href="http://betterwaysystems.github.io/folding/api/classes/bws.folding.core.placement.html#computelastpage">computeLastPage()</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="-">용어</h2>
+				<h3 id="-">도</h3>
+				<p>색상코드의 갯수</p>
+				<ul>
+					<li>ex) CMYK: 4도</li>
+				</ul>
+				<h3 id="-">면</h3>
+				<p>출력에 사용될 종이면의 수량</p>
+				<ul>
+					<li>단면: 매당 1면</li>
+					<li>양면: 매당 2면</li>
+					<li>페이지 수 / 분할수량</li>
+				</ul>
+				<p>가령 A4 사이즈 1,600페이지를 인쇄코자 하는데, 이를 A2에 양면 인쇄하여, A2 한 장 당 A4를 8장씩 담을 수 있다면, 이 때 매수는 200매가 된다.</p>
+				<ul>
+					<li>페이지 수: 1,600 페이지</li>
+					<li>분할수량: 장당 8 페이지</li>
+					<li>매수 = 페이지 수 / 분할수량 = 1,600페이지 / 8페이지 = 200매</li>
+				</ul>
+				<h3 id="-">판</h3>
+				<p>도장과 비슷하다.</p>
+				<ul>
+					<li>판수 = 원본 면수 X 도</li>
+					<li>판수 = 원본 페이지수 / 분할수량 X 도</li>
+				</ul>
+				<h3 id="-">작업비</h3>
+				<p>판수 (면수) X 부수 (사본 수)</p>
+				<h2 id="-">가격모형</h2>
+				<h3 id="-">용지</h3>
+				<p>매수 x 용지면적 (제곱미터당)</p>
+				<h3 id="-">인쇄</h3>
+				<ol>
+					<li>작업비: 7,000원 / 1,000면 X 도 (CMYK: 4도) - <em>계단형 변동비</em></li>
+					<li>CTP 출력비: 판 X 도 X 7,000 원 - <em>변동비</em></li>
+					<li>ex) 800페이지의 책 A를 CMYK로 2,000부 인쇄하려고 한다. 한 판당 8페이지를 넣어 총 100판이 생겼다.<ul>
+							<li>작업비: 2,800,000원<ul>
+									<li>단위: (100면 X 2,000부 / 1,000면) = 200 단위</li>
+									<li>도: CMYK 4도</li>
+									<li>작업비 = 7,000원 X 200단위 X 4도 = 5,600,000원</li>
 								</ul>
 							</li>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.base.hash.hashbuckets.html"><strong>Hashed Containers</strong></a><ul>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.hashset.html">HashSet</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.hashmap.html">HashMap</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.hashmultiset.html">HashMultiSet</a></li>
-									<li><a href="http://samchon.github.io/tstl/api/classes/std.hashmultimap.html">HashMultiMap</a></li>
+							<li>CTP 출력비: 140,000원<ul>
+									<li>원본면수: 800페이지 = 100면</li>
+									<li>판수 = 원본면수 X 도수 = 100면 X 4도 = 400판<ul>
+											<li>매수 X 도수만큼의 판을 찍어야 한다.</li>
+										</ul>
+									</li>
+									<li>400판 X 7,000원 = 2,800,000원</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li><strong>Adaptor Containers</strong><ul>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.queue.html">Queue</a></li>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.stack.html">Stack</a></li>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.priorityqueue.html">PriorityQueue</a></li>
-						</ul>
-					</li>
-				</ul>
-				<h5 id="global-functions">Global Functions</h5>
+					<li>양면일 때 행하는 돈땡은, 오로지 양면의 색상도수가 다를 때도 가능하되, 큰 색상도수의 비용을 사용해야 한다.</li>
+				</ol>
+				<h6 id="-">비고</h6>
 				<ul>
-					<li><a href="http://www.cplusplus.com/reference/algorithm">&lt;algorithm&gt;</a></li>
-					<li><a href="http://www.cplusplus.com/reference/exception">&lt;exception&gt;</a></li>
-					<li><a href="http://www.cplusplus.com/reference/functional">&lt;functional&gt;</a><ul>
-							<li><a href="http://samchon.github.io/tstl/api/modules/std.html#bind">std.bind</a></li>
-						</ul>
-					</li>
-					<li><a href="http://www.cplusplus.com/reference/utility">&lt;utility&gt;</a><ul>
-							<li><a href="http://samchon.github.io/tstl/api/classes/std.pair.html">std.Pair</a></li>
-						</ul>
-					</li>
+					<li>양단면 선택 가능</li>
+					<li>여유 용지: (판) 면당 125 매</li>
 				</ul>
-				<h2 id="references">References</h2>
-				<p>You can learn and explore about TSTL more deeply with such below:</p>
+				<h3 id="-">박</h3>
+				<ol>
+					<li>단위당 작업비: 25,000 원 / 1,000 면 - <em>변동비</em></li>
+					<li>한 판 동판비 (도장): 200 원 / cm<sup>2</sup> - <em>변동비</em></li>
+					<li>한 판 박비 (잉크비): 1,300 원 / m<sup>2</sup> - <em>변동비</em></li>
+				</ol>
+				<h6 id="-">비고</h6>
 				<ul>
-					<li><a href="https://github.com/samchon/tstl/wiki">Guidebook (wiki)</a></li>
-					<li><a href="http://samchon.github.io/tstl/api">API Documents</a></li>
-					<li><a href="http://samchon.github.io/tstl/design/class_diagram.pdf">Class Diagram</a></li>
+					<li>양단면 선택 가능</li>
+					<li>여유 용지: 면당 30 매</li>
 				</ul>
-				<h2 id="installation">Installation</h2>
-				<p>Installing <em>TSTL</em> in <strong>node</strong> is very easy. Just install with <strong>npm</strong> and <strong>tsd</strong>.</p>
-				<h4 id="node">Node</h4>
-				<pre><code class="lang-bash"><span class="hljs-comment"># Install TSTL from NPM modules</span>
-npm install --save tstl 
-
-<span class="hljs-comment"># If you need only header, then fetch from the @types</span>
-npm install --save @types/tstl
-</code></pre>
-				<h4 id="typescript">TypeScript</h4>
-				<pre><code class="lang-typescript"><span class="hljs-comment">/// &lt;reference types="tstl" /&gt;</span>
-
-<span class="hljs-keyword">import</span> std = <span class="hljs-built_in">require</span>(<span class="hljs-string">"tstl"</span>);
-<span class="hljs-keyword">let</span> map: std.TreeMap&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>&gt; = <span class="hljs-keyword">new</span> std.TreeMap&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>&gt;();
-
-map.insert(std.make_pair(<span class="hljs-string">"First"</span>, <span class="hljs-number">1</span>));
-map.insert([<span class="hljs-string">"Second"</span>, <span class="hljs-number">2</span>]);
-map.insert_or_assign(<span class="hljs-string">"Third"</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// C++17 Feature.</span>
-map.set(<span class="hljs-string">"Fourth"</span>, <span class="hljs-number">4</span>); <span class="hljs-comment">// Non-standard Feature.</span>
-
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> it = map.begin(); !it.equals(map.end()); it = it.next())
-    <span class="hljs-built_in">console</span>.log(it.first, it.second); <span class="hljs-comment">// key =&gt; string, value =&gt; number</span>
-</code></pre>
-				<h4 id="browser">Browser</h4>
-				<p><em>TSTL</em> follows <em>CommonJS</em> module. </p>
-				<p>Use <a href="https://www.npmjs.com/package/browserify">browserify</a> or just include <em>TSTL</em>&#39;s <em>js file</em> with <code>&lt;script&gt;</code> tag.</p>
-				<h6 id="in-html-document">In HTML Document</h6>
-				<pre><code class="lang-javascript">&lt;script src=<span class="hljs-string">"tstl.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-</code></pre>
-				<h2 id="index-of-guidance-wiki-">Index of Guidance, Wiki.</h2>
+				<h3 id="-">스코딕스</h3>
+				<ol>
+					<li>피딩비: 230원 / 회1247.4cm^2<ul>
+							<li>1247.4cm^2: A3 1면</li>
+						</ul>
+					</li>
+					<li>한 판 잉크비: 15원 / 12.474cm^2<ul>
+							<li>12.474cm^2: A3 면적대비 1% 잉크량</li>
+						</ul>
+					</li>
+				</ol>
+				<p>비고</p>
 				<ul>
-					<li><a href="https://github.com/samchon/tstl/wiki/Home"><strong>Outline</strong></a><ul>
-							<li><a href="https://github.com/samchon/tstl/wiki/Home#introduction">Introduction</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Home#references">References</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Home#installation">Installation</a></li>
-						</ul>
-					</li>
-					<li><a href="https://github.com/samchon/tstl/wiki/Differences"><strong>Differences between C++</strong></a><ul>
-							<li><a href="https://github.com/samchon/tstl/wiki/Differences#naming-convention">Naming Convention</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Differences#operator-overriding">Operator Overriding</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Differences#iterator">Iterator</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Differences#tree-container">Tree Container</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Differences#hash-container">Hash Container</a></li>
-						</ul>
-					</li>
-					<li><a href="https://github.com/samchon/tstl/wiki/Tutorial"><strong>Tutorial</strong></a><ul>
-							<li><a href="https://github.com/samchon/tstl/wiki/Tutorial#linear-container">Linear Container</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Tutorial#tree-container">Tree Container</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Tutorial#hash-container">Hash Container</a></li>
-							<li><a href="https://github.com/samchon/tstl/wiki/Tutorial-Miscellaneous">Miscellaneous</a><ul>
-									<li><a href="https://github.com/samchon/tstl/wiki/Tutorial-Miscellaneous#algorithm">Algorithm</a></li>
-									<li><a href="https://github.com/samchon/tstl/wiki/Tutorial-Miscellaneous#functional">Functional</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+					<li>양단면 선택 가능</li>
+					<li>여유 용지: 면당 30 매</li>
+					<li>할증률이 들어갈 수도 있다 (출력 면수에 반비례한 할증률)</li>
 				</ul>
+				<h3 id="-">톰슨</h3>
+				<ol>
+					<li>단위당 작업비
+						1.1. 고정비용: 30,000 원 / 1,000 매
+						1.2. 변동비용: 50원 / 매
+					1.3. 수식: 30,000 + 50 X (1,000 - <em>x</em>)</li>
+					<li>한 판 칼비 (도장, 판 only): 5,000원 / m<ul>
+							<li>추후 복잡도에 따라 가격이 변할 수 있다.</li>
+						</ul>
+					</li>
+				</ol>
+				<h6 id="-">비고</h6>
+				<ul>
+					<li>여유 용지: 면당 30 매</li>
+				</ul>
+				<h4 id="-">라미네이팅</h4>
+				<p>특이사항: 라미네이팅은 조판면이 아닌, 각 용지크기별로 단위를 매긴다.</p>
+				<ol>
+					<li>작업비<ul>
+							<li>기본 요금 25,000원, 200면까지</li>
+							<li>200면 초과는 필름 코팅비를 사용한다</li>
+						</ul>
+					</li>
+					<li>필름 코팅비<ul>
+							<li>초과용지면적 (m<sup>2</sup>) x 200 원 / m<sup>2</sup></li>
+							<li>라미네이팅으로 코팅 가능한 종이는 크기에 한계가 있다</li>
+							<li>이런 <strong>사용가능 종이</strong> 와 같은 정보는, 장치에 종속된다.</li>
+						</ul>
+					</li>
+				</ol>
+				<h6 id="-">비고</h6>
+				<ul>
+					<li>양단면 선택 가능</li>
+					<li>여유 용지: 면당 30 매</li>
+				</ul>
+				<h2 id="-">특이사항</h2>
+				<h3 id="-">판걸이와 돈땡</h3>
+				<p>판걸이는 현재의 조판면을 N배 확장하여, 더 많은 페이지를 배치하며, 돈땡은 조판면을 2배 확장하고 앞뒷면을 교차배치한다.</p>
+				<p>판걸이는 복수(N)부의 사본을 하나의 조판면에 찍는 확장법이고, 돈땡은 하나의 사본에 대한 확장법이다.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>항목</th>
+							<th>판걸이</th>
+							<th>돈땡</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>배치 이미지 수의 확장</td>
+							<td>N 배</td>
+							<td>2배</td>
+						</tr>
+						<tr>
+							<td>배치 방식</td>
+							<td>순차</td>
+							<td>교차</td>
+						</tr>
+						<tr>
+							<td>배치되는 사본 수</td>
+							<td>N 부</td>
+							<td>1부</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="-">양-단면이 혼재하는 공정</h3>
+				<p>각 모형별로 양-단면이 혼재하는 경우, 각 공정이 사용하는 판면수가 변할 수 있다 (단, 접지를 행하지 않을 때. 접지를 행하는 경우, 단면 인쇄 또한 양면 조판을 해야되기 때문에 해당사항 없음).</p>
+				<p>이 때, 인쇄가 양단면의 기준이 된다.</p>
+				<ul>
+					<li>인쇄가 단면이되, 그 외의 공정이 양면이면, 그 공정은 2배의 판면수를 쓰게 될 것이고,</li>
+					<li>인쇄가 양면이되, 그 외의 공정이 단면이면, 그 공정은 절반의 판면수를 사용하게 된다.</li>
+				</ul>
+				<p>15p, 1,000부 비접지 인쇄시: </p>
+				<table>
+					<thead>
+						<tr>
+							<th>인쇄</th>
+							<th>박</th>
+							<th>박비 총합</th>
+							<th>박 작업비</th>
+							<th>박 동판비</th>
+							<th>박 박비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>양면</td>
+							<td>양면</td>
+							<td>266,112 원</td>
+							<td>50,000 원</td>
+							<td>130,977 원</td>
+							<td>85,135 원</td>
+						</tr>
+						<tr>
+							<td>양면</td>
+							<td>단면</td>
+							<td>140,260 원</td>
+							<td>25,000 원</td>
+							<td>69,854 원</td>
+							<td>45,405 원</td>
+						</tr>
+						<tr>
+							<td>단면</td>
+							<td>단면</td>
+							<td>266,112 원</td>
+							<td>50,000 원</td>
+							<td>130,977 원</td>
+							<td>85,135 원</td>
+						</tr>
+						<tr>
+							<td>단면</td>
+							<td>양면</td>
+							<td>532,224 원</td>
+							<td>100,000 원</td>
+							<td>261,954 원</td>
+							<td>170,270 원</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
